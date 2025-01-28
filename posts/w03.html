@@ -315,6 +315,12 @@ Tip&nbsp;1: <span class="emoji" data-emoji="peanuts">🥜</span> Aggregation in 
 </div>
 </div>
 <div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/in_a_nutshell.jpg" class="img-fluid figure-img"></p>
+<figcaption>Aggregation in a nutshell</figcaption>
+</figure>
+</div>
 <ol type="1">
 <li>more is different</li>
 <li><span class="emoji" data-emoji="bell">🔔</span> When small changes stack up, you are in the Central Limit Zone</li>
@@ -498,7 +504,7 @@ Figure&nbsp;2: Bell curve and empirical rule
 <p>We can now use this standard deviation to make statistical inferences. Airlines overbook to increase their profits, so they need to know the probability of someone not getting a seat. This allows them to estimate the expected cost of offering people a second ticket to take the next flight.</p>
 <div id="exm-plane-seats" class="theorem example">
 <p><span class="theorem-title"><strong>Example 5 (Flight Overbooking)</strong></span> &nbsp;</p>
-<div id="3cc4821c" class="cell" data-execution_count="1">
+<div id="690dd00a" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>p<span class="op">=</span><span class="fl">0.9</span>           <span class="co"># show up rate</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>seats <span class="op">=</span> <span class="dv">380</span>     <span class="co"># seat on plane</span></span>
@@ -995,14 +1001,19 @@ Figure&nbsp;7: Additional Patterns
 </section>
 <section id="sec-agg-langton-lambda" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="sec-agg-langton-lambda">Langton’s Lambda</h2>
-<p><img src="images/mt_langton.png" class="img-fluid" alt="Christopher Langton">{column-margin}</p>
 
 <div class="no-row-height column-margin column-container"><div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/mt_langton.png" class="img-fluid figure-img"></p>
+<figcaption>Christopher Langton</figcaption>
+</figure>
+</div><div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/mt_lambda_classes.jpg" class="img-fluid figure-img"></p>
 <figcaption>Behavior classes versus Lambda</figcaption>
 </figure>
-</div></div><p>Langton’s Lambda <span class="math inline">\(\lambda\)</span> can tell what the outcomes look like. <mark>Langton asked a much simpler question: How many things go on?</mark> e.g., in rule 30, four cells out of eight switch on. Lambda is the percentage of cells that go on; in this case, <span class="math inline">\(\lambda = 4/8 = 1/2\)</span>. For rule 110, <span class="math inline">\(\lambda = 5/8\)</span>.</p>
+</div></div>
+<p>Langton’s Lambda <span class="math inline">\(\lambda\)</span> can tell what the outcomes look like. <mark>Langton asked a much simpler question: How many things go on?</mark> e.g., in rule 30, four cells out of eight switch on. Lambda is the percentage of cells that go on; in this case, <span class="math inline">\(\lambda = 4/8 = 1/2\)</span>. For rule 110, <span class="math inline">\(\lambda = 5/8\)</span>.</p>
 <p>Based on the Lambdas values, we will see differnt behavior:</p>
 <ul>
 <li>if <span class="math inline">\(\lambda = 0\)</span> then all cells die off;</li>
