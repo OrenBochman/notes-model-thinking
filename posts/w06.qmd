@@ -1,12 +1,8 @@
 ---
 date: 2023-08-06
 title: Lesson 6 - Categorical and Linear Models
-categories: ["model thinking", "Linear model", "Multiple Regression", "Categorical Models","Logistic Regression","R-squared","Big coefficient","new realities"]
-from: markdown+emoji
-draft: false
-editor: 
-  markdown: 
-    wrap: 72
+categories: ["Model thinking", "Linear model", "Multiple Regression", "Categorical Models","Logistic Regression","R-squared","Big coefficient","Mew reality thinking"]
+
 ---
 
 ## Introduction to categorical, linear, and nonlinear models {#sec-introduction-to-categorical-linear-and-non-linear-models}
@@ -68,16 +64,16 @@ Categorical models allocate the data into different groups. Variation in and bet
 
 ::: {#exm-amazon-stock}
 
-e.g., at the time of the IPO of Amazon, most analysts catagorised it as a delivery service like DHL or FedEx, and because the delivery buiness was such a cut-throat bussiness companies in it  have low-profit margins so they thought Amazon would be a bad investment. A few analysts thought  Amazon would be a good investment because they saw Amazon as part of the new information economy. Differnt analysts put Amazon in a different boxes. Amazon did badly for over a decade then they started letting computers a totatly differnt business model and then they did very well, so which box we choose matters for our investment portfollio and also which story you choose to tell.
+e.g., at the time of the IPO of Amazon, most analysts categorized it as a delivery service like DHL or FedEx, and because the delivery business was such a cut-throat business companies in it  have low-profit margins so they thought Amazon would be a bad investment. A few analysts thought  Amazon would be a good investment because they saw Amazon as part of the new information economy. Different analysts put Amazon in a different boxes. Amazon did badly for over a decade then they started letting computers a totally different business model and then they did very well, so which box we choose matters for our investment portfolio and also which story you choose to tell.
 
 :::: {callout-info}
 ### dot.com crash & the information economy. :poop: :poop: :poop: 
 
-Any time I hear the concept of "the information economy" I am sad to recall how this "rethoric for a new economy" died with out when most of the dot.com companies burt through their VC/IPO  money through incompetency or corrupt management caused a global recession. So I think Dr. Page is being disingenious by picking this example.
+Any time I hear the concept of "the information economy" I am sad to recall how this "rhetoric for a new economy" died with out when most of the dot.com companies burt through their VC/IPO  money through incompetency or corrupt management caused a global recession. So I think Dr. Page is being disingenuous by picking this example.
 
-I also recall Amazon had zero or negative profits for over a decade after the doc.com crash. It overhauled its bussines concept servral times before it became a "good" investment and is facing stiff competition in its primery market from chinese stores. Also over times there are many new stories coming out how Amazon is making profits by squeezing it workforce to work harder and for less that DHL and FedEx which are both partners and competitors.
+I also recall Amazon had zero or negative profits for over a decade after the doc.com crash. It overhauled its business concept serval times before it became a "good" investment and is facing stiff competition in its primer market from chinese stores. Also over times there are many new stories coming out how Amazon is making profits by squeezing it workforce to work harder and for less that DHL and FedEx which are both partners and competitors.
 
-Finaly the question this example raises is: How can we find build a model that knows to place novel items accurately into new boxes without any other examples. Because model are supposed to better than analysts. In reality categorical model are not as resourceful as an analyst, they can't invent new catergories. Event if is add some extra lables,  without examples the model wont assign new items to these category. 
+Finally, the question this example raises is: How can we find build a model that knows to place novel items accurately into new boxes without any other examples. Because model are supposed to better than analysts. In reality categorical model are not as resourceful as an analyst, they can't invent new categories. Event if is add some extra labels,  without examples the model wont assign new items to these category. 
 
 ::::
 
@@ -182,11 +178,16 @@ data? That is $(m + b - 1)^2 + (2m + b - 5)^2 + (4m + b - 9)^2 = 21m^2 + 14mb + 
 $b$ and $m$ to make the total variation the smallest.
 
 These values are:
+
 $b = -1$ and $m = 8/3$ so that $Y = -1 + (8/3)m$. 
+
 In this case, the total variation would be 
+
 $(2/3)^2 + (2/3)^2 + (2/3)^2 = (4/9)\times3 = 4/3$. 
 This would explain 
+
 $(1 - (4/3)/32)$ 
+
 of the variation, which is over 95%. The line is now even closer to the data.
 
 Suppose there are multiple variables. e.g., the test score $Y$ of kids
@@ -221,12 +222,9 @@ class size $Z$ so that the model function could be $Y = cT + dZ + b$.
 We could expect that better teachers lead to better results so that
 $c > 0$ and bigger classes lead to poorer results so that $d < 0$.
 
-In the regression output, the standard error is 24.21, which tells us, on average, how much the values differ from the mean. The value of $R^2 = 0.72$, i.e., 72% of the variation, is explained by the
-linear model. There were 50 data points. The coefficient column tells us
-that the model is $Y = 20X_1 + 10X_2 + 25$.
+In the regression output, the standard error is 24.21, which tells us, on average, how much the values differ from the mean. The value of $R^2 = 0.72$, i.e., 72% of the variation, is explained by the linear model. There were 50 data points. The coefficient column tells us that the model is $Y = 20X_1 + 10X_2 + 25$.
 
-If $X_1$ is teacher quality and $X_2$ is class size, then the positive value for the class size coefficient raises some questions. Maybe the data is wrong, or maybe our intuition is wrong. So, we have to dig a little deeper. The first issue is that we have only 50 observations, so the coefficient may not be correct. The standard error (SE) column gives
-the error in the coefficients. 
+If $X_1$ is teacher quality and $X_2$ is class size, then the positive value for the class size coefficient raises some questions. Maybe the data is wrong, or maybe our intuition is wrong. So, we have to dig a little deeper. The first issue is that we have only 50 observations, so the coefficient may not be correct. The standard error (SE) column gives the error in the coefficients. 
 
 For the intercept, the coefficient is 25, and the standard error is 2, so 68% of the values are expected to be between 23 and 27. Hence, we could be really sure that the coefficient is between 19 and 31. Similarly, we could be really sure that $X_1$ is between 17 and 23, and $X_2$ is
 between -2 and 22. The p-value gives the probability that the sign of the coefficient is wrong. We should not be so sure about the positive
@@ -240,8 +238,7 @@ The important issues to deal with are the following:
     unit increase in *X*?
 4. what is the probability that the coefficient is wrong?
 
-![Approximate by breaking up in
-quadrants](images/mt_approximate.jpg){.column-margin}
+![Approximate by breaking up in quadrants](images/mt_approximate.jpg){.column-margin}
 
 ## From Linear to Nonlinear
 
@@ -267,7 +264,9 @@ $$
 
 ## The Big Coefficient versus the New Reality
 
-If we have some model like $$
+If we have some model like
+
+$$
 Y = m_1X_1 + m_2X_2 + b
 $$
 
@@ -308,28 +307,29 @@ understanding where they came from, because:
     variables within the data range. However, we need some understanding to
     tell whether the model will hold outside the data range.
 
-::: callout-note
-## Critical Note:
+::: {.callout-warning}
 
-I am afraid I have to disagree with this mischaracterization of big data.
+## Critical Note
+
+I am afraid I have to disagree with this characterization of big data.
 
 Who are these people who can analyze big data without a model?
 
 Also, almost all the models in his book and in the course are not constructed using Causal methods, which is how we can discriminate correlation from causation and model them appropriately.
 
-Regression and other methods shown here are not except for this problem. If the effects are linear, a linear model should extrapolate. If the effects are nonlinear, then who can say it, and why use a linear
-approximation? Also, I only know mathematical methods for extrapolating how a model (linear or not) will behave outside the observed range. Probabilistically, by looking at higher moments of a
-distribution analytically by considering more terms in a *Taylor approximation*. Statistically, cross-validation and Structural modeling are used to determine the impact of various causes on each effect. Finally, if we have more data, lots of patterns we initially see can be due to random chance, and we may be able to capture much more subtle effects happening in the real world.
+Regression and other methods shown here are not except for this problem. If the effects are linear, a linear model should extrapolate. If the effects are nonlinear, then who can say it, and why use a linear approximation? Also, I only know mathematical methods for extrapolating how a model (linear or not) will behave outside the observed range. Probabilistically, by looking at higher moments of a distribution analytically by considering more terms in a *Taylor approximation*. Statistically, cross-validation and Structural modeling are used to determine the impact of various causes on each effect. Finally, if we have more data, lots of patterns we initially see can be due to random chance, and we may be able to capture much more subtle effects happening in the real world.
+
 :::
 
 One crucial issue is feedback. e.g., We may think that anti-lock brakes will reduce the number of accidents. That may be true initially, but after a while, people may start to drive closer to the car in front of them, so the benefits of anti-lock brakes might fall off.
 
-::: callout-note
+::: {.callout-note}
+
 ## Bonkers :poop: :poop: :poop:
 
-So the good old boys who tech Price theory at Chicago have many examples like this about the unintended consequence of some dentist's intervention by adding flouride to the water makes people brush thier teeth less and having even more cavaties.... But they make a good case in explain this by saying the dentist missed the point -- people's prefernces wen'r to have perfect teeth, so they were happier to not have to brush thier teeth as much. That is a more honest explanation. Now milton friedman went on TV and discussed things like seatbelt in cars, better tires and explained that if the market wants safer cars people will pay for them and that regulation is usally the least economically efficent way to go about it. 
+So the good old boys who tech Price theory at Chicago have many examples like this about the unintended consequence of some dentist's intervention by adding fluoride to the water makes people brush their teeth less and having even more cavities.... But they make a good case in explain this by saying the dentist missed the point -- people's preferences wen'r to have perfect teeth, so they were happier to not have to brush their teeth as much. That is a more honest explanation. Now milton friedman went on TV and discussed things like seatbelt in cars, better tires and explained that if the market wants safer cars people will pay for them and that regulation is usually the least economically efficient way to go about it. 
 
-In the final anaysis if people paid for anti-lock brakes then these reduuced some accidents but not all accidents are caused by brakes locking and a car skidding. Head on collisions are a differnt story, burst tiers, falling asleep and many other reasons. I'm pretty sure that getting used to thier fancy brakes  didn't go to thier heads. 
+In the final analysis if people paid for anti-lock brakes then these reduced some accidents but not all accidents are caused by brakes locking and a car skidding. Head on collisions are a different story, burst tiers, falling asleep and many other reasons. I'm pretty sure that getting used to their fancy brakes  didn't go to their heads. 
 
 Dr. Page gave many trivial models, but this one is brought with purely hand waving.
 
@@ -342,7 +342,8 @@ The example is ridiculous - a person is taught how to drive, what distance to ke
 
 A bigger problem is **multiple peaks**. For example, we might have some data in a small range that suggests a peak. Thus, based on this data, the peak seems to be the optimal point, and you miss a better point.
 
-::: callout-note
+::: {.callout-note}
+
 ## Critical Note :poop:
 
 While this is true,
@@ -354,18 +355,18 @@ I am unsure if any local method can tell you if you are in a local or global max
 
 **The new reality** means that we may want to try something big and new, so we consider non-marginal changes. If we have only data in a small range, this may not help we very much. The multiple peak problem is just one instance of this issue.
 
-Sometimes, big co-efficient thinking may be helpful, like taxing cigarettes to reduce healthcare costs and raise money to finance healthcare. A new reality might be implementing universal healthcare in the US. ^[it might be but I prefer to view Universal healthcare and taxing cigatettes say to reduce lung cancer as two differnt issues and htus both likely to be perhaps run in parallel as happened during Barak Obama's presidency and leter reversed by Donald Trump]
+Sometimes, big co-efficient thinking may be helpful, like taxing cigarettes to reduce healthcare costs and raise money to finance healthcare. A new reality might be implementing universal healthcare in the US. ^[it might be but I prefer to view Universal healthcare and taxing cigarettes say to reduce lung cancer as two different issues and thus both likely to be perhaps run in parallel as happened during Barak Obama's presidency and later reversed by Donald Trump]
 
 
 The American Jobs Act is also an example of big coefficient thinking. A new reality was the US interstate highway system. In 1956, the US
 government allocated \$25 billion, which is about \$410 billion at today's prices, for 41,000 miles of roads. This was creating something completely new, so it was difficult to calculate the employment effects. Big coefficient thinking can be good for minor changes but ignores new realities.
 
-:::{callout-note}
+::: {.callout-note}
 Sad to say that:
-The American Jobs Act is not an example of big coefficient thinking. There are just so many difernt tax cuts and clauses to make us think this is all based out of a big coeffinct in somebody's regression model :poop:
-The construction of public works like roads is nothing new - following the great depression the government intiated a massive number of public works project.  :poop:
-It pretty simple for the bean counters in the treasury deprtment to calculate how many jobs building 41,000 miles of road would create.  :poop:
-Both are independent efforts tp solve  differnt problems.
+The American Jobs Act is not an example of big coefficient thinking. There are just so many different tax cuts and clauses to make us think this is all based out of a big coefficient in somebody's regression model :poop:
+The construction of public works like roads is nothing new - following the great depression the government initiated a massive number of public works project.  :poop:
+It pretty simple for the bean counters in the treasury department to calculate how many jobs building 41,000 miles of road would create.  :poop:
+Both are independent efforts tp solve  different problems.
 :::
 
 ![American Jobs Act](images/mt_jobs_act.jpg){.column-margin}

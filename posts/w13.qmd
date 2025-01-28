@@ -1,7 +1,7 @@
 ---
 date: 2023-08-13
 title: Lesson 13 - Path dependence
-categories: ["model thinking", "Path dependence","PHAT dependence", "Chaos","ESTIC", "Increasing Returns", "Urn Models"]
+categories: ["Model thinking", "Path dependence","PHAT dependence", "Chaos","ESTIC", "Increasing Returns", "Urn Models"]
 ---
 
 ### Path dependence {#sec-path-dependence}
@@ -25,7 +25,7 @@ Phat dependence
 
 ::: {#fig-electic-chair .column-margin}
 
-![Danges of A.C.](mt-electric-chair.jpg)
+![Danges of A.C.](images/mt-electric-chair.jpg)
 
 The execution of William Kemmler [Source](https://commons.wikimedia.org/wiki/File:Kemmler_ex%C3%A9cut%C3%A9_par_l%27%C3%A9lectricit%C3%A9.jpg)
 
@@ -33,7 +33,7 @@ The execution of William Kemmler [Source](https://commons.wikimedia.org/wiki/Fil
 
 ::: {#fig-edison-electic-chair .column-margin}
 
-![Eddison and The Electric Chair](mt-electric-chair.jpg)
+![Eddison and The Electric Chair](images/mt-electric-edison.jpg)
 
 Popular science book on the rivalry between Edison and Tesla
 :::

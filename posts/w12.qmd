@@ -1,9 +1,7 @@
 ---
 date: 2023-08-12
 title: Lesson 12 - Coordination and Culture
-categories: ["model thinking", "Coordination", "Culture", "Lyapunov function"]
-from: markdown+emoji
-draft: false
+categories: ["Model thinking", "Coordination", "Culture", "Lyapunov function"]
 ---
 
 ## Coordination and culture {#sec-coordination-and-culture}

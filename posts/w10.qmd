@@ -1,9 +1,7 @@
 ---
 date: 2023-08-10
 title: Lesson 10 - Markov Processes
-categories: ["model thinking", "Markov Processes", "Markov Chain", "Contagion models","diffusion","SIS model","R0", "SIR model","Herd Immunity","entropy","diversity index"]
-from: markdown+emoji
-draft: false
+categories: ["Model thinking", "Markov Processes", "Markov Chain"]
 ---
 
 ## Markov Chain models {#sec-markov-chain-models}
@@ -18,7 +16,7 @@ The Markov convergence theorem state that, as long as a couple of assumptions ho
 
 To understand Markov processes, matrices can be used. Matrices are grids of numbers. Those numbers will be the transition probabilities. Multiplication by matrices is used to understand Markov processes and the Markov convergence theorem. These matrices can be used to explain why these systems go to equilibria.
 
-Markov processes are interesting for two reasons. First, Markov processes are a useful way to think about how the world works and this gives powerful results The Markov convergence theorem says that these systems are going to equilibria. Second, is the idea of exaptation. That the Markov model is incredibly fertile and can be applied in a whole range of different settings. Transition probabilities and matrices can also be used in a lot of settings as well.
+Markov processes are interesting for two reasons. First, Markov processes are a useful way to think about how the world works and this gives powerful results The Markov convergence theorem says that these systems are going to equilibria. Second, is the idea of expectation. That the Markov model is incredibly fertile and can be applied in a whole range of different settings. Transition probabilities and matrices can also be used in a lot of settings as well.
 
 ![Markov transition matrix](images/mt_markov_matrix.jpg){.column-margin}
 
@@ -34,19 +32,19 @@ The Markov transition matrix gives the probabilities of moving from state to sta
 
 ![Markov transition matrix](images/mt_matrix_01.jpg){.column-margin}
 
-![Markov transition matrix](images/mt_matrix_02.jpg){.column-margin}
+![Markov transition matrix](images/mt_matrix_04.jpg){.column-margin}
 
 The calculation process works as follows. For each row you multiply the elements with the value at *t* to get the value at *t+1*. So *A(t+1) = 0.8A(t) + 0.25B(t)* and *B(t+1) = 0.2A(t) + 0.75B(t)*. It is possible to repeat these steps. The result after six periods is that only 58% of the students are alert.
 
 Where does this process stop? It is possible to do the same calculation starting with all students being bored. After 6 turns 53% is alert and 47% is bored. It looks like there is an equilibrium.
 
-![Markov equilibrium matrix](images/mt_matrix_04.jpg){.column-margin}
+![Markov equilibrium matrix](images/mt_matrix_05.jpg){.column-margin}
 
 So how do we calculate the equilibrium? The equilibrium would mean that at *t+1* the same percentage of people is alert as at *t*. So *0.8p + 0.25(1-p) = p =\> p/5 = (1-p)/4 =\> (4/5)p = 1 - p =\> (9/5)p = 1 =\> p = 5/9*. So in equilibrium 5/9 will be alert and 4/9 will be bored. In that case 20% of the alert will get bored, which is 1/9, and 25% of the bored will become alert, which is also 1/9.
 
 This is a stochastic equilibrium. The thing that doesn't change is the probability. The population is still moving from alert to bored and from bored to alert.
 
-## Markov model of democratisation {#sec-markov-model-of-democratisation}
+## Markov model of democratization {#sec-markov-model-of-democratisation}
 
 ![Markov transition matrix](images/mt_markov_01.jpg){.column-margin}
 

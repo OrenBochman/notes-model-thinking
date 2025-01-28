@@ -159,17 +159,9 @@ background-size: cover;
     <div class="quarto-title column-page-left">
       <h1 class="title">Lesson 10 - Markov Processes</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">model thinking</div>
+                <div class="quarto-category">Model thinking</div>
                 <div class="quarto-category">Markov Processes</div>
                 <div class="quarto-category">Markov Chain</div>
-                <div class="quarto-category">Contagion models</div>
-                <div class="quarto-category">diffusion</div>
-                <div class="quarto-category">SIS model</div>
-                <div class="quarto-category">R0</div>
-                <div class="quarto-category">SIR model</div>
-                <div class="quarto-category">Herd Immunity</div>
-                <div class="quarto-category">entropy</div>
-                <div class="quarto-category">diversity index</div>
               </div>
                   </div>
   </div>
@@ -199,7 +191,7 @@ background-size: cover;
   <ul>
   <li><a href="#sec-markov-chain-models" id="toc-sec-markov-chain-models" class="nav-link active" data-scroll-target="#sec-markov-chain-models">Markov Chain models</a></li>
   <li><a href="#sec-a-simple-markov-model" id="toc-sec-a-simple-markov-model" class="nav-link" data-scroll-target="#sec-a-simple-markov-model">A simple Markov model</a></li>
-  <li><a href="#sec-markov-model-of-democratisation" id="toc-sec-markov-model-of-democratisation" class="nav-link" data-scroll-target="#sec-markov-model-of-democratisation">Markov model of democratisation</a></li>
+  <li><a href="#sec-markov-model-of-democratisation" id="toc-sec-markov-model-of-democratisation" class="nav-link" data-scroll-target="#sec-markov-model-of-democratisation">Markov model of democratization</a></li>
   <li><a href="#sec-markov-convergence-theorem" id="toc-sec-markov-convergence-theorem" class="nav-link" data-scroll-target="#sec-markov-convergence-theorem">Markov convergence theorem</a></li>
   <li><a href="#sec-expectation-of-the-markov-model" id="toc-sec-expectation-of-the-markov-model" class="nav-link" data-scroll-target="#sec-expectation-of-the-markov-model">Expectation of the Markov model</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
@@ -225,7 +217,7 @@ background-size: cover;
 </div></div><p>This can also be applied to countries being free, being partially free or not free. Historically there are different trends. The free states seem to be increasing. The not-free tend to be decreasing. The Markov process can be used to figure out where this is going to end up.</p>
 <p>The Markov convergence theorem state that, as long as a couple of assumptions hold, namely that there is a finite number of states, and the transition probabilities stay fixed, and you can get from any state to any other state, then the system goes to equilibrium. This is a really powerful finding that has all sorts of implications.</p>
 <p>To understand Markov processes, matrices can be used. Matrices are grids of numbers. Those numbers will be the transition probabilities. Multiplication by matrices is used to understand Markov processes and the Markov convergence theorem. These matrices can be used to explain why these systems go to equilibria.</p>
-<p>Markov processes are interesting for two reasons. First, Markov processes are a useful way to think about how the world works and this gives powerful results The Markov convergence theorem says that these systems are going to equilibria. Second, is the idea of exaptation. That the Markov model is incredibly fertile and can be applied in a whole range of different settings. Transition probabilities and matrices can also be used in a lot of settings as well.</p>
+<p>Markov processes are interesting for two reasons. First, Markov processes are a useful way to think about how the world works and this gives powerful results The Markov convergence theorem says that these systems are going to equilibria. Second, is the idea of expectation. That the Markov model is incredibly fertile and can be applied in a whole range of different settings. Transition probabilities and matrices can also be used in a lot of settings as well.</p>
 
 <div class="no-row-height column-margin column-container"><div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -252,7 +244,7 @@ background-size: cover;
 </figure>
 </div><div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/mt_matrix_02.jpg" class="img-fluid figure-img"></p>
+<p><img src="images/mt_matrix_04.jpg" class="img-fluid figure-img"></p>
 <figcaption>Markov transition matrix</figcaption>
 </figure>
 </div></div>
@@ -261,14 +253,14 @@ background-size: cover;
 
 <div class="no-row-height column-margin column-container"><div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/mt_matrix_04.jpg" class="img-fluid figure-img"></p>
+<p><img src="images/mt_matrix_05.jpg" class="img-fluid figure-img"></p>
 <figcaption>Markov equilibrium matrix</figcaption>
 </figure>
 </div></div><p>So how do we calculate the equilibrium? The equilibrium would mean that at <em>t+1</em> the same percentage of people is alert as at <em>t</em>. So <em>0.8p + 0.25(1-p) = p =&gt; p/5 = (1-p)/4 =&gt; (4/5)p = 1 - p =&gt; (9/5)p = 1 =&gt; p = 5/9</em>. So in equilibrium 5/9 will be alert and 4/9 will be bored. In that case 20% of the alert will get bored, which is 1/9, and 25% of the bored will become alert, which is also 1/9.</p>
 <p>This is a stochastic equilibrium. The thing that doesn’t change is the probability. The population is still moving from alert to bored and from bored to alert.</p>
 </section>
 <section id="sec-markov-model-of-democratisation" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="sec-markov-model-of-democratisation">Markov model of democratisation</h2>
+<h2 class="anchored" data-anchor-id="sec-markov-model-of-democratisation">Markov model of democratization</h2>
 
 <div class="no-row-height column-margin column-container"><div class="quarto-figure quarto-figure-center">
 <figure class="figure">

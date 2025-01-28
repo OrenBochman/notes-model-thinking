@@ -54,3 +54,8 @@ format:
 bibliography: references.bib
 
 
+editor: 
+  markdown: 
+    wrap: sentence
+    #wrap: 72    
+from: markdown+emoji

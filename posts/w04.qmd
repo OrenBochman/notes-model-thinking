@@ -2,9 +2,7 @@
 date: 2023-08-04
 title: Lesson 4 - Decision Models
 subtitle: Model Thinking
-categories: ["model thinking","Decision Models","Multi-criterion Decision-making","Spatial choice models","Decision trees","Value of information"]
-from: markdown+emoji
-draft: false
+categories: ["Model thinking","Decision Models","Multi-criterion Decision-making","Spatial choice models","Decision trees","Value of information"]
 ---
 
 ## Introduction to Decision Making {#sec-introduction-to-decision-making}

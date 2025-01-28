@@ -1,7 +1,7 @@
 ---
 date: 2023-08-02
 title: Lesson 2 - Segregation and Peer Effects
-categories: ["model thinking", "sorting", "peer effects", "segregation", "homophily", "Schelling's Segregation Model", "Index of Dissimilarity", "Granovettor's Threshold Model", "Standing Ovation Model", "the Identification Problem", "Agent-Based Modelling" ]
+categories: ["Model thinking", "Sorting", "Peer effects", "Segregation", "Homophily", "Schelling's Segregation Model", "Index of Dissimilarity", "Granovettor's Threshold Model", "Standing Ovation Model", "Identification Problem", "Agent-Based Modelling" ]
 draft: false
 image: /images/nlp-brain-wordcloud.jpg
 title-block-banner: /images/banner_black_3.jpg

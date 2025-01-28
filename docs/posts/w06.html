@@ -202,14 +202,14 @@ window.Quarto = {
     <div class="quarto-title column-page-left">
       <h1 class="title">Lesson 6 - Categorical and Linear Models</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">model thinking</div>
+                <div class="quarto-category">Model thinking</div>
                 <div class="quarto-category">Linear model</div>
                 <div class="quarto-category">Multiple Regression</div>
                 <div class="quarto-category">Categorical Models</div>
                 <div class="quarto-category">Logistic Regression</div>
                 <div class="quarto-category">R-squared</div>
                 <div class="quarto-category">Big coefficient</div>
-                <div class="quarto-category">new realities</div>
+                <div class="quarto-category">Mew reality thinking</div>
               </div>
                   </div>
   </div>
@@ -310,12 +310,12 @@ Y = 6 X_1 + 6 X_2 - 8 X_3 \\ \text{subject to} (X_3 = max({X_1,X_2}))
 <h2 class="anchored" data-anchor-id="sec-categorical-models">Categorical models</h2>
 <p>Categorical models allocate the data into different groups. Variation in and between groups can be capture much of the overall variation in variations in the data.</p>
 <div id="exm-amazon-stock" class="theorem example">
-<p><span class="theorem-title"><strong>Example 1</strong></span> e.g., at the time of the IPO of Amazon, most analysts catagorised it as a delivery service like DHL or FedEx, and because the delivery buiness was such a cut-throat bussiness companies in it have low-profit margins so they thought Amazon would be a bad investment. A few analysts thought Amazon would be a good investment because they saw Amazon as part of the new information economy. Differnt analysts put Amazon in a different boxes. Amazon did badly for over a decade then they started letting computers a totatly differnt business model and then they did very well, so which box we choose matters for our investment portfollio and also which story you choose to tell.</p>
+<p><span class="theorem-title"><strong>Example 1</strong></span> e.g., at the time of the IPO of Amazon, most analysts categorized it as a delivery service like DHL or FedEx, and because the delivery business was such a cut-throat business companies in it have low-profit margins so they thought Amazon would be a bad investment. A few analysts thought Amazon would be a good investment because they saw Amazon as part of the new information economy. Different analysts put Amazon in a different boxes. Amazon did badly for over a decade then they started letting computers a totally different business model and then they did very well, so which box we choose matters for our investment portfolio and also which story you choose to tell.</p>
 <section id="dot.com-crash-the-information-economy." class="level3 {callout-info}">
 <h3 class="anchored" data-anchor-id="dot.com-crash-the-information-economy.">dot.com crash &amp; the information economy. <span class="emoji" data-emoji="poop">💩</span> <span class="emoji" data-emoji="poop">💩</span> <span class="emoji" data-emoji="poop">💩</span></h3>
-<p>Any time I hear the concept of “the information economy” I am sad to recall how this “rethoric for a new economy” died with out when most of the dot.com companies burt through their VC/IPO money through incompetency or corrupt management caused a global recession. So I think Dr.&nbsp;Page is being disingenious by picking this example.</p>
-<p>I also recall Amazon had zero or negative profits for over a decade after the doc.com crash. It overhauled its bussines concept servral times before it became a “good” investment and is facing stiff competition in its primery market from chinese stores. Also over times there are many new stories coming out how Amazon is making profits by squeezing it workforce to work harder and for less that DHL and FedEx which are both partners and competitors.</p>
-<p>Finaly the question this example raises is: How can we find build a model that knows to place novel items accurately into new boxes without any other examples. Because model are supposed to better than analysts. In reality categorical model are not as resourceful as an analyst, they can’t invent new catergories. Event if is add some extra lables, without examples the model wont assign new items to these category.</p>
+<p>Any time I hear the concept of “the information economy” I am sad to recall how this “rhetoric for a new economy” died with out when most of the dot.com companies burt through their VC/IPO money through incompetency or corrupt management caused a global recession. So I think Dr.&nbsp;Page is being disingenuous by picking this example.</p>
+<p>I also recall Amazon had zero or negative profits for over a decade after the doc.com crash. It overhauled its business concept serval times before it became a “good” investment and is facing stiff competition in its primer market from chinese stores. Also over times there are many new stories coming out how Amazon is making profits by squeezing it workforce to work harder and for less that DHL and FedEx which are both partners and competitors.</p>
+<p>Finally, the question this example raises is: How can we find build a model that knows to place novel items accurately into new boxes without any other examples. Because model are supposed to better than analysts. In reality categorical model are not as resourceful as an analyst, they can’t invent new categories. Event if is add some extra labels, without examples the model wont assign new items to these category.</p>
 </section>
 </div>
 <p>Lump to live means that we create categories to make sense of the world. For example, if we see a car, we do not say there goes a 2003 Volkswagen 1.6 GTI, but we say car. We model to decide, plan, and design. One reason we lump is to make faster decisions. For example, a child may have a rule not to eat green items. This helps the child avoid eating grasshoppers, which it does not like to eat. However, the rule is not optimal. The child might forego a juicy pear in this way.</p>
@@ -388,7 +388,12 @@ Y = 6 X_1 + 6 X_2 - 8 X_3 \\ \text{subject to} (X_3 = max({X_1,X_2}))
 </figure>
 </div></div><p>So, how do we fit the best line?</p>
 <p>Assume the line to be <span class="math inline">Y = mX + b</span>. Here <span class="math inline">b</span> is called the intercept, which is the value for <span class="math inline">Y</span> when <span class="math inline">X = 0</span>. How big is the total variation? How far would that line be from the data? That is <span class="math inline">(m + b - 1)^2 + (2m + b - 5)^2 + (4m + b - 9)^2 = 21m^2 + 14mb + 3b^2 - 94m - 30b + 81</span>. It is now possible to find the values for <span class="math inline">b</span> and <span class="math inline">m</span> to make the total variation the smallest.</p>
-<p>These values are: <span class="math inline">b = -1</span> and <span class="math inline">m = 8/3</span> so that <span class="math inline">Y = -1 + (8/3)m</span>. In this case, the total variation would be <span class="math inline">(2/3)^2 + (2/3)^2 + (2/3)^2 = (4/9)\times3 = 4/3</span>. This would explain <span class="math inline">(1 - (4/3)/32)</span> of the variation, which is over 95%. The line is now even closer to the data.</p>
+<p>These values are:</p>
+<p><span class="math inline">b = -1</span> and <span class="math inline">m = 8/3</span> so that <span class="math inline">Y = -1 + (8/3)m</span>.</p>
+<p>In this case, the total variation would be</p>
+<p><span class="math inline">(2/3)^2 + (2/3)^2 + (2/3)^2 = (4/9)\times3 = 4/3</span>. This would explain</p>
+<p><span class="math inline">(1 - (4/3)/32)</span></p>
+<p>of the variation, which is over 95%. The line is now even closer to the data.</p>
 <p>Suppose there are multiple variables. e.g., the test score <span class="math inline">Y</span> of kids might depend on their IQ <span class="math inline">Q</span>, teacher quality <span class="math inline">T</span> and class size <span class="math inline">Z</span> in the following way: <span class="math inline">Y = a + bQ + cT + dZ</span>. We expect the coefficient <span class="math inline">d</span> on class size to be negative and <span class="math inline">b</span> as well as <span class="math inline">c</span> to be positive.</p>
 <p>Of the 78 studies on class size, 4 showed a positive coefficient, 13 had a negative coefficient, and 61 showed no effect. Even though we think that class size matters, it appears not to matter much, at least within the range that has been studied. Research has shown that teacher quality matters far more.</p>
 <p>We can fit data in linear models. These models can often explain some percentage of the variation. The models also show us the sign and the magnitude of the coefficients. This shows whether the variable has a positive or a negative effect and how big that effect is, allowing us to make policy choices.</p>
@@ -440,7 +445,8 @@ Y = m\sqrt{X} + b. \qquad
 </section>
 <section id="the-big-coefficient-versus-the-new-reality" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="the-big-coefficient-versus-the-new-reality">The Big Coefficient versus the New Reality</h2>
-<p>If we have some model like <span class="math display">
+<p>If we have some model like</p>
+<p><span class="math display">
 Y = m_1X_1 + m_2X_2 + b
 </span></p>
 <p>Where:</p>
@@ -469,17 +475,17 @@ Y = m_1X_1 + m_2X_2 + b
 <li>Correlation is not causation.</li>
 <li>Linear models tell the sign and magnitude of changes in dependent variables within the data range. However, we need some understanding to tell whether the model will hold outside the data range.</li>
 </ol>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Critical Note:
+Critical Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>I am afraid I have to disagree with this mischaracterization of big data.</p>
+<p>I am afraid I have to disagree with this characterization of big data.</p>
 <p>Who are these people who can analyze big data without a model?</p>
 <p>Also, almost all the models in his book and in the course are not constructed using Causal methods, which is how we can discriminate correlation from causation and model them appropriately.</p>
 <p>Regression and other methods shown here are not except for this problem. If the effects are linear, a linear model should extrapolate. If the effects are nonlinear, then who can say it, and why use a linear approximation? Also, I only know mathematical methods for extrapolating how a model (linear or not) will behave outside the observed range. Probabilistically, by looking at higher moments of a distribution analytically by considering more terms in a <em>Taylor approximation</em>. Statistically, cross-validation and Structural modeling are used to determine the impact of various causes on each effect. Finally, if we have more data, lots of patterns we initially see can be due to random chance, and we may be able to capture much more subtle effects happening in the real world.</p>
@@ -496,8 +502,8 @@ Bonkers <span class="emoji" data-emoji="poop">💩</span> <span class="emoji" da
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>So the good old boys who tech Price theory at Chicago have many examples like this about the unintended consequence of some dentist’s intervention by adding flouride to the water makes people brush thier teeth less and having even more cavaties…. But they make a good case in explain this by saying the dentist missed the point – people’s prefernces wen’r to have perfect teeth, so they were happier to not have to brush thier teeth as much. That is a more honest explanation. Now milton friedman went on TV and discussed things like seatbelt in cars, better tires and explained that if the market wants safer cars people will pay for them and that regulation is usally the least economically efficent way to go about it.</p>
-<p>In the final anaysis if people paid for anti-lock brakes then these reduuced some accidents but not all accidents are caused by brakes locking and a car skidding. Head on collisions are a differnt story, burst tiers, falling asleep and many other reasons. I’m pretty sure that getting used to thier fancy brakes didn’t go to thier heads.</p>
+<p>So the good old boys who tech Price theory at Chicago have many examples like this about the unintended consequence of some dentist’s intervention by adding fluoride to the water makes people brush their teeth less and having even more cavities…. But they make a good case in explain this by saying the dentist missed the point – people’s preferences wen’r to have perfect teeth, so they were happier to not have to brush their teeth as much. That is a more honest explanation. Now milton friedman went on TV and discussed things like seatbelt in cars, better tires and explained that if the market wants safer cars people will pay for them and that regulation is usually the least economically efficient way to go about it.</p>
+<p>In the final analysis if people paid for anti-lock brakes then these reduced some accidents but not all accidents are caused by brakes locking and a car skidding. Head on collisions are a different story, burst tiers, falling asleep and many other reasons. I’m pretty sure that getting used to their fancy brakes didn’t go to their heads.</p>
 <p>Dr.&nbsp;Page gave many trivial models, but this one is brought with purely hand waving.</p>
 <p>A feedback mechanism can be positive or negative, but it is a nonlinear differential or difference equation.</p>
 <p>The example is ridiculous - a person is taught how to drive, what distance to keep, etc. For a person to adjust to the new minimal distance of better brakes, they would have to have crashed the car non-fatally, at different speeds before and after the new brakes are introduced, and then make an adjustment based on that feedback - this cannot be an example of feedback.</p>
@@ -527,9 +533,19 @@ Critical Note <span class="emoji" data-emoji="poop">💩</span>
 </div>
 <p><strong>The new reality</strong> means that we may want to try something big and new, so we consider non-marginal changes. If we have only data in a small range, this may not help we very much. The multiple peak problem is just one instance of this issue.</p>
 <p>Sometimes, big co-efficient thinking may be helpful, like taxing cigarettes to reduce healthcare costs and raise money to finance healthcare. A new reality might be implementing universal healthcare in the US. <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;it might be but I prefer to view Universal healthcare and taxing cigatettes say to reduce lung cancer as two differnt issues and htus both likely to be perhaps run in parallel as happened during Barak Obama’s presidency and leter reversed by Donald Trump</p></div></div><p>The American Jobs Act is also an example of big coefficient thinking. A new reality was the US interstate highway system. In 1956, the US government allocated $25 billion, which is about $410 billion at today’s prices, for 41,000 miles of roads. This was creating something completely new, so it was difficult to calculate the employment effects. Big coefficient thinking can be good for minor changes but ignores new realities.</p>
-<div class="{callout-note}">
-<p>Sad to say that: The American Jobs Act is not an example of big coefficient thinking. There are just so many difernt tax cuts and clauses to make us think this is all based out of a big coeffinct in somebody’s regression model <span class="emoji" data-emoji="poop">💩</span> The construction of public works like roads is nothing new - following the great depression the government intiated a massive number of public works project. <span class="emoji" data-emoji="poop">💩</span> It pretty simple for the bean counters in the treasury deprtment to calculate how many jobs building 41,000 miles of road would create. <span class="emoji" data-emoji="poop">💩</span> Both are independent efforts tp solve differnt problems.</p>
+<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;it might be but I prefer to view Universal healthcare and taxing cigarettes say to reduce lung cancer as two different issues and thus both likely to be perhaps run in parallel as happened during Barak Obama’s presidency and later reversed by Donald Trump</p></div></div><p>The American Jobs Act is also an example of big coefficient thinking. A new reality was the US interstate highway system. In 1956, the US government allocated $25 billion, which is about $410 billion at today’s prices, for 41,000 miles of roads. This was creating something completely new, so it was difficult to calculate the employment effects. Big coefficient thinking can be good for minor changes but ignores new realities.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Sad to say that: The American Jobs Act is not an example of big coefficient thinking. There are just so many different tax cuts and clauses to make us think this is all based out of a big coefficient in somebody’s regression model <span class="emoji" data-emoji="poop">💩</span> The construction of public works like roads is nothing new - following the great depression the government initiated a massive number of public works project. <span class="emoji" data-emoji="poop">💩</span> It pretty simple for the bean counters in the treasury department to calculate how many jobs building 41,000 miles of road would create. <span class="emoji" data-emoji="poop">💩</span> Both are independent efforts tp solve different problems.</p>
+</div>
 </div>
 
 <div class="no-row-height column-margin column-container"><div class="quarto-figure quarto-figure-center">
