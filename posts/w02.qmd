@@ -6,28 +6,31 @@ categories: ["Model thinking", "Sorting", "Peer effects", "Segregation", "Homoph
 
 ## Segregation and Peer Effects {#sec-segregation_and_peer_effects}
 
-In this lesson we get started by looking
+In this lesson we get started by looking at Segregation and Peer Effects. We will look at Schelling's model, Granovettor's threshold model, and the standing ovation model. We will also look at how to measure segregation.
 
 ::: callout-warning
 ## TLDR: Schelling👍🏽, Granovettor,👍🏽 Standing Ovation 👍🏽
 
+![Segregation in a nutshell](images/in_a_nutshell.jpg)
+
+
 This is a great lesson in which we cover lots of material:
 
 -   Schelling's model, in which segregation emerges from localized homophily. This simple and fertile model spawned generations of related models, such as the following.
--   Emergent properties of local models and Schelling's book "Micro Motives and Macro Behaviour"
+-   Emergent properties of local models and Schelling's book "Micro Motives and Macro Behavior"
 -   How to Measure segregation.
 -   Granovettor's threshold model: which explains why riots are hard to forecasts, and
 -   The standing ovation model
 -   the Identification Problem
 :::
 
-::: column-screen
+::: {#fig-mainmap .column-screen-inset-shaded }
 ```{mermaid}
 
 mindmap
   root((Segregation <br>Peer Effects <br> Threshold))
     Homophily
-        (Schelling's Segregation)
+        (Schellings Segregation)
             {{phase changes}}
               ((integration))
               ((segregation))
@@ -62,9 +65,11 @@ mindmap
               {{Percolation}}
               {{BandWagon}}
             
-
 ```
+
+Mindmap for Segregation Peer Effects and Threshold Models
 :::
+
 
 Some questions about segregation and segregation models:
 

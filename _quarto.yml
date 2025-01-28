@@ -23,6 +23,37 @@ website:
   repo-url: https://github.com/OrenBochman/notes-model-thinking
   repo-actions: [edit, issue]
   #favicon: favicon.ico
+  sidebar:
+    #background: "#f1de67" # Arylide Yellow
+    contents:
+      - section: "Lessons"
+        contents:
+          - href: posts/w01.qmd
+            text: Why Model?
+          - href: posts/w02.qmd
+            text: Segregation and Peer Effects
+          - href: posts/w03.qmd
+            text: Aggregation
+          - href: posts/w04.qmd
+            text: Decision Models
+          - href: posts/w05.qmd
+            text: Thinking Electrons Modelling People
+          - href: posts/w06.qmd
+            text: Categorical and Linear Models
+          - href: posts/w07.qmd
+            text: Tipping Points
+          - href: posts/w08.qmd
+            text: Economic Growth
+          - href: posts/w09.qmd
+            text: Diversity and innovation
+          - href: posts/w10.qmd
+            text: Markov Processes
+          - href: posts/w11.qmd
+            text: Lyapunov Functions
+          - href: posts/w12.qmd
+            text: Coordination and Culture
+          - href: posts/w13.qmd
+            text: Path dependence            
   page-footer:
     right: "This page is built with 💛 and [Quarto](https://quarto.org/)."
     left: "&copy; Copyright 2023-2025, Oren Bochman"
