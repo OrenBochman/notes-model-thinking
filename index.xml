@@ -27,19 +27,62 @@
 
 <section id="sec-path-dependence" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="sec-path-dependence">Path dependence</h3>
-<p><strong>Path dependence</strong> means that what happens at time <img src="https://latex.codecogs.com/png.latex?T"> depends on all time steps <img src="https://latex.codecogs.com/png.latex?t%3CT">. Or put plainly that history matters.</p>
+<dl>
+<dt>Path dependence</dt>
+<dd>
+Is a property of the state of a complex system at time <img src="https://latex.codecogs.com/png.latex?T"> depends on all prior time steps <img src="https://latex.codecogs.com/png.latex?t%3CT">. More plainly that history matters.
+</dd>
+</dl>
 <p>This is clearly quite different from Markov process models where only the current state matters and history does not.</p>
 <p>Urn models can help to understand path dependence, and to distinguish between different types of path dependence. 1. deterministic outcome such as what happens today could be path dependent, 2. stochastic path dependence which is an equilibrium distribution over all possible outcomes of what happens in the long run could also be path dependent.</p>
 <div id="exm-path-QWERTY" class="theorem example">
 <p><span class="theorem-title"><strong>Example 1</strong></span> One of the most famous examples of path dependence involves the standard typewriter keyboard configuration called QWERTY. Initially, there were lots of different keyboard configurations, but it turned out that in the path through which history played out, QWERTY ended up getting locked in due to a process of increasing returns. The more people had QWERTY, the more people wanted it, and the more typewriters that were built with it, and so it became locked in.</p>
 </div>
-<p><strong>Path dependence</strong> means that outcome probabilities depend on the sequence of previous outcomes, which is called the path.</p>
-<p><strong>Phat dependence</strong> means that outcome probabilities depend on past outcomes but not on their order. The past impacts the outcome but it doesn’t necessarily determine it.</p>
-<div id="exm-path-technology" class="theorem example">
-<p><span class="theorem-title"><strong>Example 2</strong></span> With choices over technology such as keyboards, alternating current or direct current, or gasoline cars versus electric cars.</p>
+<dl>
+<dt>Path dependence</dt>
+<dd>
+means that outcome probabilities depend on the sequence of previous outcomes, which is called the path.
+</dd>
+<dt>Phat dependence</dt>
+<dd>
+means that outcome probabilities depend on past outcomes but not on their order. The past impacts the outcome but it doesn’t necessarily determine it.
+</dd>
+</dl>
+
+<div class="no-row-height column-margin column-container"><div id="fig-electic-chair" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-electic-chair-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://orenbochman.github.io/notes-model-thinking/posts/images/mt-electric-chair.jpg" class="img-fluid figure-img"></p>
+<figcaption>Danges of A.C.</figcaption>
+</figure>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-electic-chair-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: The execution of William Kemmler <a href="https://commons.wikimedia.org/wiki/File:Kemmler_ex%C3%A9cut%C3%A9_par_l%27%C3%A9lectricit%C3%A9.jpg">Source</a>
+</figcaption>
+</figure>
+</div><div id="fig-edison-electic-chair" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-edison-electic-chair-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://orenbochman.github.io/notes-model-thinking/posts/images/mt-electric-edison.jpg" class="img-fluid figure-img"></p>
+<figcaption>Eddison and The Electric Chair</figcaption>
+</figure>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-edison-electic-chair-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Popular science book on the rivalry between Edison and Tesla
+</figcaption>
+</figure>
+</div></div>
+<div id="exm-currents" class="theorem example">
+<p><span class="theorem-title"><strong>Example 2 (Tesla v.s. Edison)</strong></span> Alternating current or direct current. Edison was a proponent of direct current, while Tesla was a proponent of alternating current. Edison was the first to develop a power plant, and he developed it using direct current. Tesla developed alternating current, which was more efficient for transmitting electricity over long distances. Edison was a proponent of direct current, and he was also a proponent of the electric chair. He wanted to show that alternating current was dangerous, so he used it to power the electric chair. This was a very public demonstration of the dangers of alternating current. However, alternating current was more efficient for transmitting electricity over long distances, so it ended up winning out. This is an example of path dependence. The outcome probabilities depend on the sequence of previous outcomes. The path that history took mattered. If history had taken a different path, then the outcome would have been different.</p>
 </div>
 <div id="exm-path-law" class="theorem example">
-<p><span class="theorem-title"><strong>Example 3</strong></span> The law which evolves through precedent depends on earlier laws and their interpretation made by judges in the past.</p>
+<p><span class="theorem-title"><strong>Example 3 (The Common Law)</strong></span> The law which evolves through precedent depends on earlier laws and their interpretation made by judges in the past.</p>
 </div>
 <p>It also the case with institutional choices like having a single payer healthcare system or defined benefits pensions versus defined contributions. These choices can depend on previous institutional choices. Economic success can also depend on sequences of past outcomes. e.g., Ann Arbor had the largest public university while Jackson had the largest prison. Population in Ann Arbor increased from 10,000 in 1910 to 110,000 in 2000 while in Jackson it first increased and then declined and grew only from 31,000 in 1910 to 36,000 in 2000. The public university greatly helped Ann Arbor.</p>
 <p>Path dependence often coincide with increasing returns. If you build a university then other educational institutions like hospitals, and law schools that weren’t originally part of the university, could join in. Eventually, you grow through a virtuous cycle. Increasing returns means building success on top of success. Path dependence isn’t the same as increasing returns.</p>
@@ -55,9 +98,9 @@
 <h3 class="anchored" data-anchor-id="sec-urn-models">Urn models</h3>
 <p><a href="https://en.wikipedia.org/wiki/Urn_problem">Urn models</a> can be used to distinguish between processes that are path-dependent and processes where the order doesn’t matter. They can also be used to distinguish between processes that have outcomes in a given period that are path-dependent, and processes that have long-run equilibria of distributions over the set of outcomes that are path-dependent.</p>
 <p>An urn model is a container with blue and red balls. You pick balls out of the urn. The ball you pick is the outcome. There is a probability of picking out balls of different colors. The simplest urn model is the Bernoulli model where Outcomes are independent of previous outcomes. The number of balls in the urn is fixed,</p>
-<p>:::{#exm-path-Pólya-urn}{.column-margin}</p>
-<p>Three red balls and one blue ball. After picking a ball, you return it into the urn. The probability of picking up a red ball is constant and always 3/4.<br>
-:::</p>
+<div id="exm-path-pólya-urn" class="theorem example">
+<p><span class="theorem-title"><strong>Example 4 (Pólya urn model)</strong></span> Three red balls and one blue ball. After picking a ball, you return it into the urn. The probability of picking up a red ball is constant and always 3/4.</p>
+</div>
 <p>The most famous path-dependent process is called the <a href="https://en.wikipedia.org/wiki/P%C3%B3lya_urn_model">Pólya process</a>. It works starts with an urn with two balls, one of them red and one of them blue. You pick a ball, and after you pick that ball, you put back the ball and add another ball of the same color you just picked. This can be repeated over and over again. Over time, probabilities change as more and more balls are added. This process is path-dependent as the probabilities depend on the path of previous choices.</p>
 <p>The Pólya process might apply to fashion. If more people are wearing a red shirt, this increases the probability that more people will be wearing red shirts. The interesting properties of the Pólya process are:</p>
 <ol type="1">
@@ -66,16 +109,16 @@
 </ol>
 <p>The opposite of the Pólya process is the <strong>Balancing Process</strong> where you return the ball but also add a new ball of the opposite color as the ball you just picked. The balancing process converges to equal percentages of the two colors of balls. This might apply to situations where you want to keep different constituencies happy,</p>
 <div id="exm-path-party-convention" class="theorem example">
-<p><span class="theorem-title"><strong>Example 4</strong></span> e.g.&nbsp;a party convention in the United States might be put it in a northern state or a southern state. If it is put a northern state, this increases the probability that it is going to be put it in a southern state four years later.</p>
+<p><span class="theorem-title"><strong>Example 5</strong></span> e.g.&nbsp;a party convention in the United States might be put it in a northern state or a southern state. If it is put a northern state, this increases the probability that it is going to be put it in a southern state four years later.</p>
 </div>
 <p>In the Pólya Process, the equilibrium is incredibly path-dependent, but in the balancing process it is not. There is also a distinction between the period outcomes, which is what happens in a particular period, e.g.&nbsp;red or blue, versus what the distribution of balls in the urn looks like in the long run. Path-dependent outcomes means that what happens in a period depends on what happened in the past. That is true for both the Pólya process and the balancing process.</p>
 <p>Path-dependent equilibrium means that what happens in the long run depends on the process along the way. The Pólya process has both path-dependent equilibria and path-dependent outcomes. The balancing process only has path-dependent outcomes. The equilibrium is always 1/2 and it doesn’t depend on what happened along the way. In the balancing process, history matters at each step in time. However, that doesn’t mean that what happens in the long run depends on the path.</p>
 <p>Two examples from history can illustrate this.</p>
 <div id="exm-path-manifest-destiny" class="theorem example">
-<p><span class="theorem-title"><strong>Example 5</strong></span> The United States had the idea of manifest destiny, meaning that the United States was likely to be a country that stretched from sea to sea. History played out in particular ways, but some people argue that it didn’t matter as the United States was destined to be a country that stretched from sea to sea.</p>
+<p><span class="theorem-title"><strong>Example 6</strong></span> The United States had the idea of manifest destiny, meaning that the United States was likely to be a country that stretched from sea to sea. History played out in particular ways, but some people argue that it didn’t matter as the United States was destined to be a country that stretched from sea to sea.</p>
 </div>
 <div id="exm-path-railroads" class="theorem example">
-<p><span class="theorem-title"><strong>Example 6</strong></span> Another example is the railroads. Some people argue that once the railroads were invented, building them became inevitable. The lay of each track was path-dependent, but the long-run outcome may not have been as the tracks were laid where it was economically efficient.</p>
+<p><span class="theorem-title"><strong>Example 7</strong></span> Another example is the railroads. Some people argue that once the railroads were invented, building them became inevitable. The lay of each track was path-dependent, but the long-run outcome may not have been as the tracks were laid where it was economically efficient.</p>
 </div>
 <p>Path-dependence means that the outcome probabilities depend on the sequence of past outcomes. Phat-dependence means that outcome probabilities depend on past outcomes but not their order. The Pólya process is phat-dependent. All that matters is the set of outcomes, not the order in which they appeared.</p>
 
@@ -131,7 +174,7 @@
 <p>You can also get path dependence without increasing returns, e.g.&nbsp;with symbiotes. You start with one red ball, one blue ball, one green ball, and one yellow ball in the urn. If a red ball is picked, you add a green one. If a green ball is picked, you add a red one. If a blue ball is picked, you add a yellow one. If a yellow ball is picked, you add a blue one. There are no increasing returns, because if a red ball is added, this increases the odds of green. If you order the balls into two sets, which are <em>{red, green}</em> and <em>{blue, yellow}</em> then the process is path-dependent but doesn’t have increasing returns.</p>
 <p>Increasing returns is logically distinct from path dependence but often in history path-dependence was caused by increasing returns. The urn models can be used to clarify that. Increasing returns is not the only way you get path dependence. To understand that, you have to move beyond urn models and look at externalities or the interdependencies between decisions.</p>
 <div id="exm-path-public-projects" class="theorem example page-columns page-full">
-<p><span class="theorem-title"><strong>Example 7</strong></span> <strong>Public projects</strong> like building a nuclear power plant, or creating a national park, are huge economic decisions that affect a lot of other things, so they create externalities.</p>
+<p><span class="theorem-title"><strong>Example 8</strong></span> <strong>Public projects</strong> like building a nuclear power plant, or creating a national park, are huge economic decisions that affect a lot of other things, so they create externalities.</p>
 
 <div class="no-row-height column-margin column-container"><div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -211,7 +254,7 @@ Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://
 </code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-2023" class="csl-entry quarto-appendix-citeas">
 <span>“Lesson 13 - Path Dependence.”</span> 2023. August 13, 2023. <a href="https://orenbochman.github.io/notes-model-thinking/posts/w13.html">https://orenbochman.github.io/notes-model-thinking/posts/w13.html</a>.
 </div></div></section></div> ]]></description>
-  <category>model thinking</category>
+  <category>Model thinking</category>
   <category>Path dependence</category>
   <category>PHAT dependence</category>
   <category>Chaos</category>
@@ -496,7 +539,7 @@ Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://
 <span>“Lesson 12 - Coordination and Culture.”</span> 2023. August 12,
 2023. <a href="https://orenbochman.github.io/notes-model-thinking/posts/w12.html">https://orenbochman.github.io/notes-model-thinking/posts/w12.html</a>.
 </div></div></section></div> ]]></description>
-  <category>model thinking</category>
+  <category>Model thinking</category>
   <category>Coordination</category>
   <category>Culture</category>
   <category>Lyapunov function</category>
@@ -634,7 +677,7 @@ Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://
 </code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-2023" class="csl-entry quarto-appendix-citeas">
 <span>“Lesson 11 - Lyapunov Functions.”</span> 2023. August 11, 2023. <a href="https://orenbochman.github.io/notes-model-thinking/posts/w11.html">https://orenbochman.github.io/notes-model-thinking/posts/w11.html</a>.
 </div></div></section></div> ]]></description>
-  <category>model thinking</category>
+  <category>Model thinking</category>
   <category>Lyapunov Functions</category>
   <category>Collatz problem</category>
   <guid>https://orenbochman.github.io/notes-model-thinking/posts/w11.html</guid>
@@ -661,7 +704,7 @@ Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://
 </div></div><p>This can also be applied to countries being free, being partially free or not free. Historically there are different trends. The free states seem to be increasing. The not-free tend to be decreasing. The Markov process can be used to figure out where this is going to end up.</p>
 <p>The Markov convergence theorem state that, as long as a couple of assumptions hold, namely that there is a finite number of states, and the transition probabilities stay fixed, and you can get from any state to any other state, then the system goes to equilibrium. This is a really powerful finding that has all sorts of implications.</p>
 <p>To understand Markov processes, matrices can be used. Matrices are grids of numbers. Those numbers will be the transition probabilities. Multiplication by matrices is used to understand Markov processes and the Markov convergence theorem. These matrices can be used to explain why these systems go to equilibria.</p>
-<p>Markov processes are interesting for two reasons. First, Markov processes are a useful way to think about how the world works and this gives powerful results The Markov convergence theorem says that these systems are going to equilibria. Second, is the idea of exaptation. That the Markov model is incredibly fertile and can be applied in a whole range of different settings. Transition probabilities and matrices can also be used in a lot of settings as well.</p>
+<p>Markov processes are interesting for two reasons. First, Markov processes are a useful way to think about how the world works and this gives powerful results The Markov convergence theorem says that these systems are going to equilibria. Second, is the idea of expectation. That the Markov model is incredibly fertile and can be applied in a whole range of different settings. Transition probabilities and matrices can also be used in a lot of settings as well.</p>
 
 <div class="no-row-height column-margin column-container"><div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -688,7 +731,7 @@ Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://
 </figure>
 </div><div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://orenbochman.github.io/notes-model-thinking/posts/images/mt_matrix_02.jpg" class="img-fluid figure-img"></p>
+<p><img src="https://orenbochman.github.io/notes-model-thinking/posts/images/mt_matrix_04.jpg" class="img-fluid figure-img"></p>
 <figcaption>Markov transition matrix</figcaption>
 </figure>
 </div></div>
@@ -697,14 +740,14 @@ Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://
 
 <div class="no-row-height column-margin column-container"><div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://orenbochman.github.io/notes-model-thinking/posts/images/mt_matrix_04.jpg" class="img-fluid figure-img"></p>
+<p><img src="https://orenbochman.github.io/notes-model-thinking/posts/images/mt_matrix_05.jpg" class="img-fluid figure-img"></p>
 <figcaption>Markov equilibrium matrix</figcaption>
 </figure>
 </div></div><p>So how do we calculate the equilibrium? The equilibrium would mean that at <em>t+1</em> the same percentage of people is alert as at <em>t</em>. So <em>0.8p + 0.25(1-p) = p =&gt; p/5 = (1-p)/4 =&gt; (4/5)p = 1 - p =&gt; (9/5)p = 1 =&gt; p = 5/9</em>. So in equilibrium 5/9 will be alert and 4/9 will be bored. In that case 20% of the alert will get bored, which is 1/9, and 25% of the bored will become alert, which is also 1/9.</p>
 <p>This is a stochastic equilibrium. The thing that doesn’t change is the probability. The population is still moving from alert to bored and from bored to alert.</p>
 </section>
 <section id="sec-markov-model-of-democratisation" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="sec-markov-model-of-democratisation">Markov model of democratisation</h2>
+<h2 class="anchored" data-anchor-id="sec-markov-model-of-democratisation">Markov model of democratization</h2>
 
 <div class="no-row-height column-margin column-container"><div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -789,17 +832,9 @@ Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://
 </code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-2023" class="csl-entry quarto-appendix-citeas">
 <span>“Lesson 10 - Markov Processes.”</span> 2023. August 10, 2023. <a href="https://orenbochman.github.io/notes-model-thinking/posts/w10.html">https://orenbochman.github.io/notes-model-thinking/posts/w10.html</a>.
 </div></div></section></div> ]]></description>
-  <category>model thinking</category>
+  <category>Model thinking</category>
   <category>Markov Processes</category>
   <category>Markov Chain</category>
-  <category>Contagion models</category>
-  <category>diffusion</category>
-  <category>SIS model</category>
-  <category>R0</category>
-  <category>SIR model</category>
-  <category>Herd Immunity</category>
-  <category>entropy</category>
-  <category>diversity index</category>
   <guid>https://orenbochman.github.io/notes-model-thinking/posts/w10.html</guid>
   <pubDate>Wed, 09 Aug 2023 21:00:00 GMT</pubDate>
 </item>
@@ -906,10 +941,11 @@ Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://
 <section id="sec-recombination" class="level2">
 <h2 class="anchored" data-anchor-id="sec-recombination">Recombination</h2>
 <p>Until now we focused on individual problems and individual solutions. Recombination is combing a solution or a heuristic to come up with even more solutions or more heuristics. Recombination is an incredibly powerful tool for science, innovation and economic growth. If we have a few solutions or a few heuristics, then we can combine those to create more. The real driving force behind innovation in the economy is that when we come up with a solution and then recombine it with all sorts of other solutions.</p>
-<p>e.g., fill in the missing number. 1 2 3 5 _ 13, the missing number is 8, because you add those numbers up, or substract them if you go back. 1 4 _ 16 25 36, the missing number is 9 because it is the square of the next number, which is 3. 1 2 6 _ 1806, the missing number here is 42. The solution is harder to find because you have to combine the first two techniques. <img src="https://latex.codecogs.com/png.latex?2%20-%201%20=%201%20=%201%C2%B2,%206%20-%202%20=%204%20=%202%C2%B2,%2042%20-%206%20=%2036%20=%206%C2%B2,%201806%20-%2042%20=%201764%20=%2042%C2%B2">.</p>
+<p>e.g., fill in the missing number. <img src="https://latex.codecogs.com/png.latex?1%5C%202%5C%203%5C%205%5C%20%5C_%5C%2013">, the missing number is 8, because you add those numbers up, or substract them if you go back. <img src="https://latex.codecogs.com/png.latex?1%5C%204%5C%20%5C_%5C%2016%2025%5C%2036">, the missing number is 9 because it is the square of the next number, which is 3. <img src="https://latex.codecogs.com/png.latex?1%5C%202%5C%206%5C%20%5C_%5C%201806">, the missing number here is 42. The solution is harder to find because you have to combine the first two techniques. <img src="https://latex.codecogs.com/png.latex?2%20-%201%20=%201%20=%201%C2%B2,%206%20-%202%20=%204%20=%202%C2%B2,%2042%20-%206%20=%2036%20=%206%C2%B2,%201806%20-%2042%20=%201764%20=%2042%C2%B2">.</p>
 <p>Recombining is a driver of economic growth and also of science because when a new solution can be combined with other solutions. This produces a geometric explosion in the number of possibilities. This may be the reason why it was possible to sustain economic growth by increasing the technology parameter <em>A</em>.</p>
-<p>To show how this works, let’s start with finding out how many ways there are to pick three objects from ten. There are 10 I can pick first, 9 I can pick second and 8 I can pick third. 10 * 9 * 8 is too much because picking A, B and C is the same as picking B, A and C. There are three things I can pick first, 2 I can pick second, and 1 I can pick last. Hence, the answer is (10 * 9 * 8) / (3 * 2 * 1) = 120. With far more than 10 solutions, the number is very big. e.g., if you have 52 cards, and you want to combine 20 of them, then the number of combinations becomes (52 * 51 * … * 33) / (20 * 19 * … * 1) ≈ 125,000,000,000,000.</p>
-<p>This idea of ideas building on ideas is the foundation of the theory of recombinant growth of Martin Weitzman. This theory states that ideas get generated all the time. e.g., the steam engine gets invented and developed, the gasoline engine gets developed, the microprocessor gets developed. And all these things get recombined into interesting combinations. And those combinations, in turn, get recombined to create ever more growth. e.g., many parts in the steam engine were solutions to previous problems. The same applies to the desk top computer.</p>
+<p>To show how this works, let’s start with finding out how many ways there are to pick three objects from ten. There are 10 I can pick first, 9 I can pick second and 8 I can pick third. <img src="https://latex.codecogs.com/png.latex?10%20%5Ctimes%209%20%5Ctimes%208"> is too much because picking A, B and C is the same as picking B, A and C. There are three things I can pick first, 2 I can pick second, and 1 I can pick last. Hence, the answer is <img src="https://latex.codecogs.com/png.latex?(10%20%5Ctimes%209%20%5Ctimes%208)%20/%20(3%20%5Ctimes%202%20%5Ctimes%201)%20=%20120">. With far more than 10 solutions, the number is very big. e.g., if you have 52 cards, and you want to combine 20 of them, then the number of combinations becomes</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A(52%20%5Ctimes%2051%20%5Ctimes%20...%20%5Ctimes%2033)%20/%20(20%20%5Ctimes%2019%20%5Ctimes%20...%20%5Ctimes%201)%20%E2%89%88%20125,000,000,000,000%0A"></p>
+<p>This idea of ideas building on ideas is the foundation of the theory of recombinant growth of <a href="https://en.wikipedia.org/wiki/Martin_Weitzman">Martin Weitzman</a>. This theory states that ideas get generated all the time. e.g., the steam engine gets invented and developed, the gasoline engine gets developed, the microprocessor gets developed. And all these things get recombined into interesting combinations. And those combinations, in turn, get recombined to create ever more growth. e.g., many parts in the steam engine were solutions to previous problems. The same applies to the desk top computer.</p>
 <p>All those parts of the steam engine weren’t developed the steam engine in mind. They were developed for other purposes. This is an idea from biology called exaptation. The classic example of exaptation, is the feather. Birds developed feathers primarily to keep them warm, but eventually those same feathers allowed them to fly. Expectation means that some innovation for one reason, gets used in another context. Another example is the laser. The laser was not invented with the idea of laser printers in mind. So once something is developed, it gets used for all sorts of unexpected things through the power of recombination.</p>
 <p>This also applies to perspectives, e.g.&nbsp;the masticity perspective of a candy bar. Masticity can be a useful perspective for other problems, e.g.&nbsp;pasta or breakfast cereal. So even failed solutions for one problem may work well as a solution to other problems. e.g., the glue in the post it note was originally a failure because the glue didn’t stick very well. But it turned out to be useful for other sorts of problems, mainly making sticky notes.</p>
 <p>There is more to it than this. It’s not just the recombination of ideas, because for hundreds and thousands of years people had ideas. There had to be some way to communicate those ideas. In <span class="citation" data-cites="mokyr2011gifts">Mokyr (2011)</span> the economist <a href="https://en.wikipedia.org/wiki/Joel_Mokyr">Joel Mokyr</a>, argues that the rise of modern universities, the printing press, and scientific communication allowed ideas to be transferred from one location and one person to another. The technological revolution was driven by the fact that people could share ideas and then recombine them.</p>
@@ -955,16 +991,11 @@ Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://
 2023. <a href="https://orenbochman.github.io/notes-model-thinking/posts/w09.html">https://orenbochman.github.io/notes-model-thinking/posts/w09.html</a>.
 </div></div></section></div> ]]></description>
   <category>model thinking</category>
-  <category>Tipping points</category>
-  <category>Percolation models</category>
-  <category>Contagion models</category>
-  <category>diffusion</category>
-  <category>SIS model</category>
-  <category>R0</category>
-  <category>SIR model</category>
-  <category>Herd Immunity</category>
-  <category>entropy</category>
-  <category>diversity index</category>
+  <category>Innovation</category>
+  <category>Diversity</category>
+  <category>Problem solving</category>
+  <category>Wisdom of the crowd</category>
+  <category>Heuristics</category>
   <guid>https://orenbochman.github.io/notes-model-thinking/posts/w09.html</guid>
   <pubDate>Tue, 08 Aug 2023 21:00:00 GMT</pubDate>
 </item>
@@ -1131,17 +1162,17 @@ Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://
 </code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-2023" class="csl-entry quarto-appendix-citeas">
 <span>“Lesson 8 - Economic Growth.”</span> 2023. August 8, 2023. <a href="https://orenbochman.github.io/notes-model-thinking/posts/w08.html">https://orenbochman.github.io/notes-model-thinking/posts/w08.html</a>.
 </div></div></section></div> ]]></description>
-  <category>model thinking</category>
+  <category>Model thinking</category>
   <category>Tipping points</category>
   <category>Percolation models</category>
   <category>Contagion models</category>
-  <category>diffusion</category>
+  <category>Diffusion</category>
   <category>SIS model</category>
   <category>R0</category>
   <category>SIR model</category>
   <category>Herd Immunity</category>
-  <category>entropy</category>
-  <category>diversity index</category>
+  <category>Entropy</category>
+  <category>Diversity index</category>
   <guid>https://orenbochman.github.io/notes-model-thinking/posts/w08.html</guid>
   <pubDate>Mon, 07 Aug 2023 21:00:00 GMT</pubDate>
 </item>
@@ -1420,7 +1451,7 @@ Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://
 </code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-2023" class="csl-entry quarto-appendix-citeas">
 <span>“Lesson 7 - Tipping Points.”</span> 2023. August 7, 2023. <a href="https://orenbochman.github.io/notes-model-thinking/posts/w07.html">https://orenbochman.github.io/notes-model-thinking/posts/w07.html</a>.
 </div></div></section></div> ]]></description>
-  <category>model thinking</category>
+  <category>Model thinking</category>
   <category>Tipping points</category>
   <category>Percolation models</category>
   <category>Contagion models</category>
@@ -1429,8 +1460,8 @@ Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://
   <category>R0</category>
   <category>SIR model</category>
   <category>Herd Immunity</category>
-  <category>entropy</category>
-  <category>diversity index</category>
+  <category>Entropy</category>
+  <category>Diversity index</category>
   <guid>https://orenbochman.github.io/notes-model-thinking/posts/w07.html</guid>
   <pubDate>Sun, 06 Aug 2023 21:00:00 GMT</pubDate>
 </item>
@@ -1447,10 +1478,19 @@ Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://
 <h2 class="anchored" data-anchor-id="sec-introduction-to-categorical-linear-and-non-linear-models">Introduction to categorical, linear, and nonlinear models</h2>
 <p>Categorical models allocates the data into different boxes. For example, trying to understand why some people live longer than others, we could divide them into people who exercise and people who do not exercise. By looking at the variation and the mean values in those boxes, you might find out whether or not this categorization says something about how long people live.</p>
 
-<div class="no-row-height column-margin column-container"><div class="quarto-figure quarto-figure-center">
+<div class="no-row-height column-margin column-container"><div id="fig-linear-model" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-linear-model-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://orenbochman.github.io/notes-model-thinking/posts/images/mt_linear_data.jpg" class="img-fluid figure-img"></p>
-<figcaption>Constructing linear model from data</figcaption>
+<figcaption>Scatter Plot with regression line fitted</figcaption>
+</figure>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-linear-model-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Constructing linear model from data
+</figcaption>
 </figure>
 </div></div><p>Linear models assume that some variable <img src="https://latex.codecogs.com/png.latex?Y"> depends on variable <img src="https://latex.codecogs.com/png.latex?X">, so <img src="https://latex.codecogs.com/png.latex?Y"> is a function of <img src="https://latex.codecogs.com/png.latex?X"> or <img src="https://latex.codecogs.com/png.latex?Y%20=%20f(X)">.</p>
 <p>For instance, if <img src="https://latex.codecogs.com/png.latex?Y"> is life expectancy, <img src="https://latex.codecogs.com/png.latex?X"> might measure physical exercise. Thus, life expectancy is a function of how much a person exercises.</p>
@@ -1464,21 +1504,36 @@ Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://
 <li><img src="https://latex.codecogs.com/png.latex?X_2"> might be teacher quality.</li>
 </ul>
 <p>Here <img src="https://latex.codecogs.com/png.latex?a_1"> and <img src="https://latex.codecogs.com/png.latex?a_2"> are the coefficients. These coefficients tell how important the variable is, so the bigger the coefficient, the more important the variable.</p>
-<p>Linear models can lead to big coefficient thinking, and if these are valid, then that will serve decision-makers better than rules of thumb, intuition, or experience. However, as time passes, reusing the main effect of an old model may be inadequate. There could be data drift, or alternatively, any improvement due to the main effect may have petered out due to diminishing returns. Over time, overhalling dysfunctional policies can require new and radical thinking. Approaches like revisiting old assumptions and rethinking out of the box can lead to something new, which we call new reality thinking. A problem with big coefficient thinking is that it only works in areas with specific data available. Over time, new data may even switch the size of the coefficients, leading to a loss of confidence in the model. Significant breakthroughs are often made by shifting to areas without data. A “new reality” will arise when the projections of big coefficients or even the assumptions behind them can be seen as inadequate, and decision-makers decide to rebuild a new model. ::: callout-warning ### Big Coefficient Warning:</p>
-<p>Regression and Linear models can have negative coefficients, interaction terms and so on, which, with one negative term, can render the “big coefficient.” approximation or decision wrong. :::</p>
-<p><img src="https://latex.codecogs.com/png.latex?%0AY%20=%206%20X_1%20+%206%20X_2%20-%208%20X_3%20%5C%5C%20%5Ctext%7Bsubject%20to%7D%20(X_3%20=%20max(%7BX_1,X_2%7D))%0A"></p>
+<p>Linear models can lead to big coefficient thinking, and if these are valid, then that will serve decision-makers better than rules of thumb, intuition, or experience. However, as time passes, reusing the main effect of an old model may be inadequate. There could be data drift, or alternatively, any improvement due to the main effect may have petered out due to diminishing returns. Over time, overhalling dysfunctional policies can require new and radical thinking. Approaches like revisiting old assumptions and rethinking out of the box can lead to something new, which we call new reality thinking. A problem with big coefficient thinking is that it only works in areas with specific data available. Over time, new data may even switch the size of the coefficients, leading to a loss of confidence in the model. Significant breakthroughs are often made by shifting to areas without data. A “new reality” will arise when the projections of big coefficients or even the assumptions behind them can be seen as inadequate, and decision-makers decide to rebuild a new model.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Big Coefficient Warning:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Regression and Linear models can have negative coefficients, interaction terms and so on, which, with one negative term, can render the “big coefficient.” approximation or decision wrong.</p>
+</div>
+</div>
+<p><span id="eq-big-coefficient"><img src="https://latex.codecogs.com/png.latex?%0AY%20=%206%20X_1%20+%206%20X_2%20-%208%20X_3%20%5C%5C%20%5Ctext%7Bsubject%20to%7D%20(X_3%20=%20max(%7BX_1,X_2%7D))%0A%5Ctag%7B1%7D"></span></p>
 <p>We want to increase <img src="https://latex.codecogs.com/png.latex?Y">. The big coefficient is <img src="https://latex.codecogs.com/png.latex?X_3">, but it reduces <img src="https://latex.codecogs.com/png.latex?Y">. Reducing <img src="https://latex.codecogs.com/png.latex?X_3"> will reduce <img src="https://latex.codecogs.com/png.latex?Y"> since it also reduces <img src="https://latex.codecogs.com/png.latex?X_1,%20X_2"> to increase. Increasing <img src="https://latex.codecogs.com/png.latex?Y">, we need to increase <img src="https://latex.codecogs.com/png.latex?X_1"> and <img src="https://latex.codecogs.com/png.latex?X_2"> together as increasing just one will increase <img src="https://latex.codecogs.com/png.latex?X_3"> and thus decrease <img src="https://latex.codecogs.com/png.latex?Y">. The bottom line is that under certain conditions not listed by Dr.&nbsp;Page, the big coefficient is a useful approximation, but this assumption is not generally true in regression models. Dr.&nbsp;Page introduces the concept of a <strong>“new reality”</strong> to counter the shortcomings of big coefficient thinking. Unfortunately, the new reality that was introduced seems to have arisen from a failure. Later, he makes a case that “new reality” is a policy based on some other effect. However, these new reality initiatives seem to have no evidence to back them up. So this seems like <strong>muddy thinking</strong> rather than <strong>Clear thinking</strong></p>
 </section>
 <section id="sec-categorical-models" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="sec-categorical-models">Categorical models</h2>
 <p>Categorical models allocate the data into different groups. Variation in and between groups can be capture much of the overall variation in variations in the data.</p>
 <div id="exm-amazon-stock" class="theorem example">
-<p><span class="theorem-title"><strong>Example 1</strong></span> e.g., at the time of the IPO of Amazon, most analysts catagorised it as a delivery service like DHL or FedEx, and because the delivery buiness was such a cut-throat bussiness companies in it have low-profit margins so they thought Amazon would be a bad investment. A few analysts thought Amazon would be a good investment because they saw Amazon as part of the new information economy. Differnt analysts put Amazon in a different boxes. Amazon did badly for over a decade then they started letting computers a totatly differnt business model and then they did very well, so which box we choose matters for our investment portfollio and also which story you choose to tell. :::: {callout-info} ### dot.com crash &amp; the information economy. <span class="emoji" data-emoji="poop">💩</span> <span class="emoji" data-emoji="poop">💩</span> <span class="emoji" data-emoji="poop">💩</span></p>
-<p>Any time I hear the concept of “the information economy” I am sad to recall how this “rethoric for a new economy” died with out when most of the dot.com companies burt through their VC/IPO money through incompetency or corrupt management caused a global recession. So I think Dr.&nbsp;Page is being disingenious by picking this example.</p>
-<p>I also recall Amazon had zero or negative profits for over a decade after the doc.com crash. It overhauled its bussines concept servral times before it became a “good” investment and is facing stiff competition in its primery market from chinese stores. Also over times there are many new stories coming out how Amazon is making profits by squeezing it workforce to work harder and for less that DHL and FedEx which are both partners and competitors.</p>
-<p>Finaly the question this example raises is: How can we find build a model that knows to place novel items accurately into new boxes without any other examples. Because model are supposed to better than analysts. In reality categorical model are not as resourceful as an analyst, they can’t invent new catergories. Event if is add some extra lables, without examples the model wont assign new items to these category.</p>
+<p><span class="theorem-title"><strong>Example 1</strong></span> e.g., at the time of the IPO of Amazon, most analysts categorized it as a delivery service like DHL or FedEx, and because the delivery business was such a cut-throat business companies in it have low-profit margins so they thought Amazon would be a bad investment. A few analysts thought Amazon would be a good investment because they saw Amazon as part of the new information economy. Different analysts put Amazon in a different boxes. Amazon did badly for over a decade then they started letting computers a totally different business model and then they did very well, so which box we choose matters for our investment portfolio and also which story you choose to tell.</p>
+<section id="dot.com-crash-the-information-economy." class="level3 {callout-info}">
+<h3 class="anchored" data-anchor-id="dot.com-crash-the-information-economy.">dot.com crash &amp; the information economy. <span class="emoji" data-emoji="poop">💩</span> <span class="emoji" data-emoji="poop">💩</span> <span class="emoji" data-emoji="poop">💩</span></h3>
+<p>Any time I hear the concept of “the information economy” I am sad to recall how this “rhetoric for a new economy” died with out when most of the dot.com companies burt through their VC/IPO money through incompetency or corrupt management caused a global recession. So I think Dr.&nbsp;Page is being disingenuous by picking this example.</p>
+<p>I also recall Amazon had zero or negative profits for over a decade after the doc.com crash. It overhauled its business concept serval times before it became a “good” investment and is facing stiff competition in its primer market from chinese stores. Also over times there are many new stories coming out how Amazon is making profits by squeezing it workforce to work harder and for less that DHL and FedEx which are both partners and competitors.</p>
+<p>Finally, the question this example raises is: How can we find build a model that knows to place novel items accurately into new boxes without any other examples. Because model are supposed to better than analysts. In reality categorical model are not as resourceful as an analyst, they can’t invent new categories. Event if is add some extra labels, without examples the model wont assign new items to these category.</p>
+</section>
 </div>
-<p>::: Lump to live means that we create categories to make sense of the world. For example, if we see a car, we do not say there goes a 2003 Volkswagen 1.6 GTI, but we say car. We model to decide, plan, and design. One reason we lump is to make faster decisions. For example, a child may have a rule not to eat green items. This helps the child avoid eating grasshoppers, which it does not like to eat. However, the rule is not optimal. The child might forego a juicy pear in this way.</p>
+<p>Lump to live means that we create categories to make sense of the world. For example, if we see a car, we do not say there goes a 2003 Volkswagen 1.6 GTI, but we say car. We model to decide, plan, and design. One reason we lump is to make faster decisions. For example, a child may have a rule not to eat green items. This helps the child avoid eating grasshoppers, which it does not like to eat. However, the rule is not optimal. The child might forego a juicy pear in this way.</p>
 
 <div class="no-row-height column-margin column-container"><div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -1497,7 +1552,7 @@ Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://
 <p>The obvious categorization is that pears, apples, and bananas are fruit, while cakes and pies are desserts. The fruit values are 90, 100, and 110, with a mean of 100 and a total variation of 200, while the dessert values are 250 and 350, with a mean of 300 and a total variation of 5,000.</p>
 <p>Total variation went down from 53,200 to 5,200. Hence, the categories substantially reduce the amount of variation. Variation can be seen as unexplained, so the categorization explained a lot.</p>
 <p>The total variation explained is</p>
-<p><span id="eq-r-2-calcualtion"><img src="https://latex.codecogs.com/png.latex?%0A(1%20-%205,200/53,200)*100%25%20=%2090.2%25%0A%5Ctag%7B1%7D"></span></p>
+<p><span id="eq-r-2-calcualtion"><img src="https://latex.codecogs.com/png.latex?%0A(1%20-%205,200/53,200)*100%25%20=%2090.2%25%0A%5Ctag%7B2%7D"></span></p>
 <p>This is called the <strong>R-squared</strong>.</p>
 <ul>
 <li>If the R-squared is near 1, the model explains a lot of the variance in the data</li>
@@ -1545,7 +1600,12 @@ Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://
 </figure>
 </div></div><p>So, how do we fit the best line?</p>
 <p>Assume the line to be <img src="https://latex.codecogs.com/png.latex?Y%20=%20mX%20+%20b">. Here <img src="https://latex.codecogs.com/png.latex?b"> is called the intercept, which is the value for <img src="https://latex.codecogs.com/png.latex?Y"> when <img src="https://latex.codecogs.com/png.latex?X%20=%200">. How big is the total variation? How far would that line be from the data? That is <img src="https://latex.codecogs.com/png.latex?(m%20+%20b%20-%201)%5E2%20+%20(2m%20+%20b%20-%205)%5E2%20+%20(4m%20+%20b%20-%209)%5E2%20=%2021m%5E2%20+%2014mb%20+%203b%5E2%20-%2094m%20-%2030b%20+%2081">. It is now possible to find the values for <img src="https://latex.codecogs.com/png.latex?b"> and <img src="https://latex.codecogs.com/png.latex?m"> to make the total variation the smallest.</p>
-<p>These values are: <img src="https://latex.codecogs.com/png.latex?b%20=%20-1"> and <img src="https://latex.codecogs.com/png.latex?m%20=%208/3"> so that <img src="https://latex.codecogs.com/png.latex?Y%20=%20-1%20+%20(8/3)m">. In this case, the total variation would be <img src="https://latex.codecogs.com/png.latex?(2/3)%5E2%20+%20(2/3)%5E2%20+%20(2/3)%5E2%20=%20(4/9)%5Ctimes3%20=%204/3">. This would explain <img src="https://latex.codecogs.com/png.latex?(1%20-%20(4/3)/32)"> of the variation, which is over 95%. The line is now even closer to the data.</p>
+<p>These values are:</p>
+<p><img src="https://latex.codecogs.com/png.latex?b%20=%20-1"> and <img src="https://latex.codecogs.com/png.latex?m%20=%208/3"> so that <img src="https://latex.codecogs.com/png.latex?Y%20=%20-1%20+%20(8/3)m">.</p>
+<p>In this case, the total variation would be</p>
+<p><img src="https://latex.codecogs.com/png.latex?(2/3)%5E2%20+%20(2/3)%5E2%20+%20(2/3)%5E2%20=%20(4/9)%5Ctimes3%20=%204/3">. This would explain</p>
+<p><img src="https://latex.codecogs.com/png.latex?(1%20-%20(4/3)/32)"></p>
+<p>of the variation, which is over 95%. The line is now even closer to the data.</p>
 <p>Suppose there are multiple variables. e.g., the test score <img src="https://latex.codecogs.com/png.latex?Y"> of kids might depend on their IQ <img src="https://latex.codecogs.com/png.latex?Q">, teacher quality <img src="https://latex.codecogs.com/png.latex?T"> and class size <img src="https://latex.codecogs.com/png.latex?Z"> in the following way: <img src="https://latex.codecogs.com/png.latex?Y%20=%20a%20+%20bQ%20+%20cT%20+%20dZ">. We expect the coefficient <img src="https://latex.codecogs.com/png.latex?d"> on class size to be negative and <img src="https://latex.codecogs.com/png.latex?b"> as well as <img src="https://latex.codecogs.com/png.latex?c"> to be positive.</p>
 <p>Of the 78 studies on class size, 4 showed a positive coefficient, 13 had a negative coefficient, and 61 showed no effect. Even though we think that class size matters, it appears not to matter much, at least within the range that has been studied. Research has shown that teacher quality matters far more.</p>
 <p>We can fit data in linear models. These models can often explain some percentage of the variation. The models also show us the sign and the magnitude of the coefficients. This shows whether the variable has a positive or a negative effect and how big that effect is, allowing us to make policy choices.</p>
@@ -1593,7 +1653,8 @@ Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://
 </section>
 <section id="the-big-coefficient-versus-the-new-reality" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="the-big-coefficient-versus-the-new-reality">The Big Coefficient versus the New Reality</h2>
-<p>If we have some model like <img src="https://latex.codecogs.com/png.latex?%0AY%20=%20m_1X_1%20+%20m_2X_2%20+%20b%0A"></p>
+<p>If we have some model like</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0AY%20=%20m_1X_1%20+%20m_2X_2%20+%20b%0A"></p>
 <p>Where:</p>
 <ul>
 <li><img src="https://latex.codecogs.com/png.latex?Y"> might be sales,</li>
@@ -1620,17 +1681,17 @@ Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://
 <li>Correlation is not causation.</li>
 <li>Linear models tell the sign and magnitude of changes in dependent variables within the data range. However, we need some understanding to tell whether the model will hold outside the data range.</li>
 </ol>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Critical Note:
+Critical Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>I am afraid I have to disagree with this mischaracterization of big data.</p>
+<p>I am afraid I have to disagree with this characterization of big data.</p>
 <p>Who are these people who can analyze big data without a model?</p>
 <p>Also, almost all the models in his book and in the course are not constructed using Causal methods, which is how we can discriminate correlation from causation and model them appropriately.</p>
 <p>Regression and other methods shown here are not except for this problem. If the effects are linear, a linear model should extrapolate. If the effects are nonlinear, then who can say it, and why use a linear approximation? Also, I only know mathematical methods for extrapolating how a model (linear or not) will behave outside the observed range. Probabilistically, by looking at higher moments of a distribution analytically by considering more terms in a <em>Taylor approximation</em>. Statistically, cross-validation and Structural modeling are used to determine the impact of various causes on each effect. Finally, if we have more data, lots of patterns we initially see can be due to random chance, and we may be able to capture much more subtle effects happening in the real world.</p>
@@ -1647,8 +1708,8 @@ Bonkers <span class="emoji" data-emoji="poop">💩</span> <span class="emoji" da
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>So the good old boys who tech Price theory at Chicago have many examples like this about the unintended consequence of some dentist’s intervention by adding flouride to the water makes people brush thier teeth less and having even more cavaties…. But they make a good case in explain this by saying the dentist missed the point – people’s prefernces wen’r to have perfect teeth, so they were happier to not have to brush thier teeth as much. That is a more honest explanation. Now milton friedman went on TV and discussed things like seatbelt in cars, better tires and explained that if the market wants safer cars people will pay for them and that regulation is usally the least economically efficent way to go about it.</p>
-<p>In the final anaysis if people paid for anti-lock brakes then these reduuced some accidents but not all accidents are caused by brakes locking and a car skidding. Head on collisions are a differnt story, burst tiers, falling asleep and many other reasons. I’m pretty sure that getting used to thier fancy brakes didn’t go to thier heads.</p>
+<p>So the good old boys who tech Price theory at Chicago have many examples like this about the unintended consequence of some dentist’s intervention by adding fluoride to the water makes people brush their teeth less and having even more cavities…. But they make a good case in explain this by saying the dentist missed the point – people’s preferences wen’r to have perfect teeth, so they were happier to not have to brush their teeth as much. That is a more honest explanation. Now milton friedman went on TV and discussed things like seatbelt in cars, better tires and explained that if the market wants safer cars people will pay for them and that regulation is usually the least economically efficient way to go about it.</p>
+<p>In the final analysis if people paid for anti-lock brakes then these reduced some accidents but not all accidents are caused by brakes locking and a car skidding. Head on collisions are a different story, burst tiers, falling asleep and many other reasons. I’m pretty sure that getting used to their fancy brakes didn’t go to their heads.</p>
 <p>Dr.&nbsp;Page gave many trivial models, but this one is brought with purely hand waving.</p>
 <p>A feedback mechanism can be positive or negative, but it is a nonlinear differential or difference equation.</p>
 <p>The example is ridiculous - a person is taught how to drive, what distance to keep, etc. For a person to adjust to the new minimal distance of better brakes, they would have to have crashed the car non-fatally, at different speeds before and after the new brakes are introduced, and then make an adjustment based on that feedback - this cannot be an example of feedback.</p>
@@ -1678,9 +1739,19 @@ Critical Note <span class="emoji" data-emoji="poop">💩</span>
 </div>
 <p><strong>The new reality</strong> means that we may want to try something big and new, so we consider non-marginal changes. If we have only data in a small range, this may not help we very much. The multiple peak problem is just one instance of this issue.</p>
 <p>Sometimes, big co-efficient thinking may be helpful, like taxing cigarettes to reduce healthcare costs and raise money to finance healthcare. A new reality might be implementing universal healthcare in the US. <sup>1</sup></p>
-<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;it might be but I prefer to view Universal healthcare and taxing cigatettes say to reduce lung cancer as two differnt issues and htus both likely to be perhaps run in parallel as happened during Barak Obama’s presidency and leter reversed by Donald Trump</p></div></div><p>The American Jobs Act is also an example of big coefficient thinking. A new reality was the US interstate highway system. In 1956, the US government allocated $25 billion, which is about $410 billion at today’s prices, for 41,000 miles of roads. This was creating something completely new, so it was difficult to calculate the employment effects. Big coefficient thinking can be good for minor changes but ignores new realities.</p>
-<div class="{callout-note}">
-<p>Sad to say that: The American Jobs Act is not an example of big coefficient thinking. There are just so many difernt tax cuts and clauses to make us think this is all based out of a big coeffinct in somebody’s regression model <span class="emoji" data-emoji="poop">💩</span> The construction of public works like roads is nothing new - following the great depression the government intiated a massive number of public works project. <span class="emoji" data-emoji="poop">💩</span> It pretty simple for the bean counters in the treasury deprtment to calculate how many jobs building 41,000 miles of road would create. <span class="emoji" data-emoji="poop">💩</span> Both are independent efforts tp solve differnt problems.</p>
+<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;it might be but I prefer to view Universal healthcare and taxing cigarettes say to reduce lung cancer as two different issues and thus both likely to be perhaps run in parallel as happened during Barak Obama’s presidency and later reversed by Donald Trump</p></div></div><p>The American Jobs Act is also an example of big coefficient thinking. A new reality was the US interstate highway system. In 1956, the US government allocated $25 billion, which is about $410 billion at today’s prices, for 41,000 miles of roads. This was creating something completely new, so it was difficult to calculate the employment effects. Big coefficient thinking can be good for minor changes but ignores new realities.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Sad to say that: The American Jobs Act is not an example of big coefficient thinking. There are just so many different tax cuts and clauses to make us think this is all based out of a big coefficient in somebody’s regression model <span class="emoji" data-emoji="poop">💩</span> The construction of public works like roads is nothing new - following the great depression the government initiated a massive number of public works project. <span class="emoji" data-emoji="poop">💩</span> It pretty simple for the bean counters in the treasury department to calculate how many jobs building 41,000 miles of road would create. <span class="emoji" data-emoji="poop">💩</span> Both are independent efforts tp solve different problems.</p>
+</div>
 </div>
 
 <div class="no-row-height column-margin column-container"><div class="quarto-figure quarto-figure-center">
@@ -1727,14 +1798,14 @@ Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://
 <span>“Lesson 6 - Categorical and Linear Models.”</span> 2023. August 6,
 2023. <a href="https://orenbochman.github.io/notes-model-thinking/posts/w06.html">https://orenbochman.github.io/notes-model-thinking/posts/w06.html</a>.
 </div></div></section></div> ]]></description>
-  <category>model thinking</category>
+  <category>Model thinking</category>
   <category>Linear model</category>
   <category>Multiple Regression</category>
   <category>Categorical Models</category>
   <category>Logistic Regression</category>
   <category>R-squared</category>
   <category>Big coefficient</category>
-  <category>new realities</category>
+  <category>Mew reality thinking</category>
   <guid>https://orenbochman.github.io/notes-model-thinking/posts/w06.html</guid>
   <pubDate>Sat, 05 Aug 2023 21:00:00 GMT</pubDate>
 </item>
@@ -1953,7 +2024,7 @@ Thaler, R. H., and C. R. Sunstein. 2012. <em>Nudge: The Final Edition</em>. Peng
 <span>“Lesson 5 - Thinking Electrons Modelling People.”</span> 2023.
 August 5, 2023. <a href="https://orenbochman.github.io/notes-model-thinking/posts/w05.html">https://orenbochman.github.io/notes-model-thinking/posts/w05.html</a>.
 </div></div></section></div> ]]></description>
-  <category>model thinking</category>
+  <category>Model thinking</category>
   <category>Rational Actor model</category>
   <category>Behavioral model</category>
   <category>Rule-based models</category>
@@ -2260,7 +2331,7 @@ Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://
 </code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-2023" class="csl-entry quarto-appendix-citeas">
 <span>“Lesson 4 - Decision Models.”</span> 2023. August 4, 2023. <a href="https://orenbochman.github.io/notes-model-thinking/posts/w04.html">https://orenbochman.github.io/notes-model-thinking/posts/w04.html</a>.
 </div></div></section></div> ]]></description>
-  <category>model thinking</category>
+  <category>Model thinking</category>
   <category>Decision Models</category>
   <category>Multi-criterion Decision-making</category>
   <category>Spatial choice models</category>
@@ -2521,7 +2592,7 @@ Figure&nbsp;4: Bell curve and empirical rule
 <p>We can now use this standard deviation to make statistical inferences. Airlines overbook to increase their profits, so they need to know the probability of someone not getting a seat. This allows them to estimate the expected cost of offering people a second ticket to take the next flight.</p>
 <div id="exm-plane-seats" class="theorem example">
 <p><span class="theorem-title"><strong>Example 5 (Flight Overbooking)</strong></span> &nbsp;</p>
-<div id="6734f640" class="cell" data-execution_count="1">
+<div id="a8c8da54" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> math</span>
@@ -3762,8 +3833,8 @@ font-style: inherit;">*</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1024</span>)</span></code></pre></div>
 <div class="cell-output cell-output-display">
-<table id="itables_71ef8495_3db7_48d8_862a_42094b0b7b1a" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><caption><p>Segregation in US cities with a population greater than 20k based on
-the 2020 census</p> {#4de9f5da}</caption>
+<table id="itables_ee70fafb_a708_472c_995d_56b4eb30313f" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><caption><p>Segregation in US cities with a population greater than 20k based on
+the 2020 census</p> {#b42cdad4}</caption>
 <thead>
     <tr style="text-align: right;">
       
@@ -3844,7 +3915,7 @@ Loading ITables v2.1.0 from the internet...
 <script type="module">
     import {DataTable, jQuery as $} from 'https://www.unpkg.com/dt_for_itables@2.0.7/dt_bundle.js';
 
-    document.querySelectorAll("#itables_71ef8495_3db7_48d8_862a_42094b0b7b1a:not(.dataTable)").forEach(table => {
+    document.querySelectorAll("#itables_ee70fafb_a708_472c_995d_56b4eb30313f:not(.dataTable)").forEach(table => {
         // Define the table data
         const data = [[1, "Detroit city, MI", 0.806, "High Segregation"], [2, "Newark city, NJ", 0.6806, "High Segregation"], [3, "Hialeah city, FL", 0.654, "High Segregation"], [4, "Chicago city, IL", 0.6223, "High Segregation"], [5, "Milwaukee city, WI", 0.5936, "High Segregation"], [6, "Cleveland city, OH", 0.5478, "High Segregation"], [7, "New York city, NY", 0.4379, "High Segregation"], [8, "Irving city, TX", 0.4082, "High Segregation"], [9, "Miami city, FL", 0.4074, "High Segregation"], [10, "St. Louis city, MO", 0.4069, "High Segregation"], [11, "Philadelphia city, P", 0.3974, "High Segregation"], [12, "Dallas city, TX", 0.3968, "High Segregation"], [13, "Irvine city, CA", 0.3876, "High Segregation"], [14, "Santa Ana city, CA", 0.3762, "High Segregation"], [15, "Atlanta city, GA", 0.363, "High Segregation"], [16, "Oakland city, CA", 0.3572, "High Segregation"], [17, "Memphis city, TN", 0.3453, "High Segregation"], [18, "Buffalo city, NY", 0.3362, "High Segregation"], [19, "Baltimore city, MD", 0.3335, "High Segregation"], [20, "Boston city, MA", 0.3333, "High Segregation"], [21, "Fremont city, CA", 0.3297, "High Segregation"], [22, "Washington city, DC", 0.3295, "High Segregation"], [23, "New Orleans city, LA", 0.3226, "High Segregation"], [24, "Houston city, TX", 0.3187, "High Segregation"], [25, "Los Angeles city, CA", 0.3088, "High Segregation"], [26, "Cincinnati city, OH", 0.3006, "High Segregation"], [27, "Jersey City city, NJ", 0.2953, "High Segregation"], [28, "St. Paul city, MN", 0.2949, "High Segregation"], [29, "Orlando city, FL", 0.2877, "High Segregation"], [30, "Baton Rouge city, LA", 0.2817, "High Segregation"], [31, "Little Rock city, AR", 0.2813, "High Segregation"], [32, "Richmond city, VA", 0.2794, "High Segregation"], [33, "Tampa city, FL", 0.2787, "High Segregation"], [34, "Kansas City city, MO", 0.2754, "High Segregation"], [35, "Frisco city, TX", 0.2743, "High Segregation"], [36, "Plano city, TX", 0.2689, "High Segregation"], [37, "Indianapolis city (b", 0.2538, "High Segregation"], [38, "Chula Vista city, CA", 0.2522, "High Segregation"], [39, "San Diego city, CA", 0.2514, "High Segregation"], [40, "Phoenix city, AZ", 0.2429, "High Segregation"], [41, "Charlotte city, NC", 0.2347, "High Segregation"], [42, "St. Petersburg city,", 0.2278, "High Segregation"], [43, "Scottsdale city, AZ", 0.2241, "High Segregation"], [44, "Fort Worth city, TX", 0.2232, "High Segregation"], [45, "Omaha city, NE", 0.2229, "High Segregation"], [46, "Yonkers city, NY", 0.2207, "High Segregation"], [47, "Huntsville city, AL", 0.2206, "High Segregation"], [48, "Minneapolis city, MN", 0.2206, "High Segregation"], [49, "Pittsburgh city, PA", 0.2195, "High Segregation"], [50, "Rochester city, NY", 0.2182, "High Segregation"], [51, "Montgomery city, AL", 0.2135, "High Segregation"], [52, "Oklahoma City city, ", 0.2119, "High Segregation"], [53, "Tulsa city, OK", 0.2118, "High Segregation"], [54, "Columbus city, OH", 0.2088, "High Segregation"], [55, "Long Beach city, CA", 0.2077, "High Segregation"], [56, "Greensboro city, NC", 0.2055, "High Segregation"], [57, "Nashville-Davidson m", 0.203, "High Segregation"], [58, "Denver city, CO", 0.1971, "High Segregation"], [59, "Columbus city, GA", 0.1893, "High Segregation"], [60, "North Las Vegas city", 0.1888, "High Segregation"], [61, "Raleigh city, NC", 0.1878, "High Segregation"], [62, "Norfolk city, VA", 0.1858, "High Segregation"], [63, "San Jose city, CA", 0.1852, "High Segregation"], [64, "Winston-Salem city, ", 0.1851, "High Segregation"], [65, "Garland city, TX", 0.1811, "High Segregation"], [66, "San Francisco city, ", 0.1797, "High Segregation"], [67, "Louisville/Jefferson", 0.1783, "High Segregation"], [68, "Aurora city, CO", 0.1756, "Low-Medium Segregation"], [69, "Sacramento city, CA", 0.1731, "Low-Medium Segregation"], [70, "Jacksonville city, F", 0.1705, "Low-Medium Segregation"], [71, "McKinney city, TX", 0.1698, "Low-Medium Segregation"], [72, "Durham city, NC", 0.1686, "Low-Medium Segregation"], [73, "Amarillo city, TX", 0.1678, "Low-Medium Segregation"], [74, "San Bernardino city,", 0.1673, "Low-Medium Segregation"], [75, "Toledo city, OH", 0.1661, "Low-Medium Segregation"], [76, "Austin city, TX", 0.1613, "Low-Medium Segregation"], [77, "Fort Wayne city, IN", 0.161, "Low-Medium Segregation"], [78, "Lubbock city, TX", 0.1572, "Low-Medium Segregation"], [79, "Fontana city, CA", 0.153, "Low-Medium Segregation"], [80, "Augusta-Richmond Cou", 0.151, "Low-Medium Segregation"], [81, "Arlington city, TX", 0.15, "Low-Medium Segregation"], [82, "Glendale city, AZ", 0.1487, "Low-Medium Segregation"], [83, "Virginia Beach city,", 0.1487, "Low-Medium Segregation"], [84, "Wichita city, KS", 0.1485, "Low-Medium Segregation"], [85, "Las Vegas city, NV", 0.144, "Low-Medium Segregation"], [86, "San Antonio city, TX", 0.1411, "Low-Medium Segregation"], [87, "Tucson city, AZ", 0.1406, "Low-Medium Segregation"], [88, "Stockton city, CA", 0.1402, "Low-Medium Segregation"], [89, "Anaheim city, CA", 0.14, "Low-Medium Segregation"], [90, "Bakersfield city, CA", 0.1318, "Low-Medium Segregation"], [91, "Fresno city, CA", 0.1289, "Low-Medium Segregation"], [92, "Des Moines city, IA", 0.1284, "Low-Medium Segregation"], [93, "Chandler city, AZ", 0.1276, "Low-Medium Segregation"], [94, "Moreno Valley city, ", 0.1253, "Low-Medium Segregation"], [95, "Chesapeake city, VA", 0.1181, "Low-Medium Segregation"], [96, "Lexington-Fayette ur", 0.1166, "Low-Medium Segregation"], [97, "Mesa city, AZ", 0.1146, "Low-Medium Segregation"], [98, "Tacoma city, WA", 0.1135, "Low-Medium Segregation"], [99, "Henderson city, NV", 0.1111, "Low-Medium Segregation"], [100, "Corpus Christi city,", 0.1075, "Low-Medium Segregation"], [101, "Seattle city, WA", 0.1043, "Low-Medium Segregation"], [102, "Worcester city, MA", 0.0999, "Low-Medium Segregation"], [103, "Riverside city, CA", 0.0967, "Low-Medium Segregation"], [104, "Albuquerque city, NM", 0.0966, "Low-Medium Segregation"], [105, "Reno city, NV", 0.0908, "Low-Medium Segregation"], [106, "Gilbert town, AZ", 0.0879, "Low-Medium Segregation"], [107, "Fayetteville city, N", 0.0853, "Low-Medium Segregation"], [108, "Modesto city, CA", 0.0812, "Low-Medium Segregation"], [109, "Madison city, WI", 0.0812, "Low-Medium Segregation"], [110, "Anchorage municipali", 0.0775, "Low-Medium Segregation"], [111, "Portland city, OR", 0.0683, "Low-Medium Segregation"], [112, "El Paso city, TX", 0.0644, "Low-Medium Segregation"], [114, "Lincoln city, NE", 0.0464, "Low-Medium Segregation"], [115, "Cape Coral city, FL", 0.0379, "Low-Medium Segregation"], [116, "Boise City city, ID", 0.0379, "Low-Medium Segregation"], [118, "Spokane city, WA", 0.0219, "Low-Medium Segregation"], [119, "Laredo city, TX", 0.0109, "Low-Medium Segregation"], [113, "Colorado Springs cit", 0.0531, "Integrated"], [117, "Port St. Lucie city,", 0.027, "Integrated"]];
 
@@ -4120,7 +4191,7 @@ Table&nbsp;4: another riots
 <ol type="1">
 <li></li>
 </ol>
-<div id="6fda29a6" class="cell" data-execution_count="2">
+<div id="bc1e5829" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> mesa</span>
@@ -4450,7 +4521,7 @@ background-color: null;
 font-style: inherit;">self</span>)</span></code></pre></div>
 </div>
 <p>Some code to visualize the state</p>
-<div id="4a0fb317" class="cell" data-execution_count="3">
+<div id="248bf7c1" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
@@ -4652,7 +4723,7 @@ background-color: null;
 font-style: inherit;">"</span>)</span>
 <span id="cb3-34">    plt.show()</span></code></pre></div>
 </div>
-<div id="17a4f0c0" class="cell" data-execution_count="4">
+<div id="184ff1da" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Create the model</span></span>
@@ -4706,7 +4777,7 @@ Figure&nbsp;1: Standing Ovation Model - Initial Grid State
 </div>
 </div>
 <p>Simulate the standing ovation model for 15 steps.</p>
-<div id="76b0bff7" class="cell" data-execution_count="6">
+<div id="acb67a0c" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Run the model for a certain number of steps</span></span>
@@ -4774,23 +4845,23 @@ font-style: inherit;">#so_model_df.Standing.plot()</span></span></code></pre></d
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">0</td>
-<td>84</td>
+<td>128</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">1</td>
-<td>115</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>158</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
 <td>200</td>
 </tr>
 <tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>254</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>302</td>
+</tr>
+<tr class="odd">
 <td data-quarto-table-cell-role="th">4</td>
-<td>233</td>
+<td>351</td>
 </tr>
 </tbody>
 </table>
@@ -4936,20 +5007,19 @@ Schelling, Thomas C. 1969. <span>“Models of Segregation.”</span> <em>The Ame
 <span>“Lesson 2 - Segregation and Peer Effects.”</span> 2023. August 2,
 2023. <a href="https://orenbochman.github.io/notes-model-thinking/posts/w02.html">https://orenbochman.github.io/notes-model-thinking/posts/w02.html</a>.
 </div></div></section></div> ]]></description>
-  <category>model thinking</category>
-  <category>sorting</category>
-  <category>peer effects</category>
-  <category>segregation</category>
-  <category>homophily</category>
+  <category>Model thinking</category>
+  <category>Sorting</category>
+  <category>Peer effects</category>
+  <category>Segregation</category>
+  <category>Homophily</category>
   <category>Schelling&#39;s Segregation Model</category>
   <category>Index of Dissimilarity</category>
   <category>Granovettor&#39;s Threshold Model</category>
   <category>Standing Ovation Model</category>
-  <category>the Identification Problem</category>
+  <category>Identification Problem</category>
   <category>Agent-Based Modelling</category>
   <guid>https://orenbochman.github.io/notes-model-thinking/posts/w02.html</guid>
   <pubDate>Tue, 01 Aug 2023 21:00:00 GMT</pubDate>
-  <media:content url="https://orenbochman.github.io/notes-model-thinking/images/nlp-brain-wordcloud.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Lesson 1 - Why Model?</title>
@@ -5198,7 +5268,7 @@ TLDR: Skip this lecture. <span class="emoji" data-emoji="poop">💩</span> <span
 <figcaption>Game theory model</figcaption>
 </figure>
 </div></div></section>
-<section id="thinking-more-clearly" class="level2 page-columns page-full">
+<section id="thinking-more-clearly" class="level2 callout-info">
 <h2 class="anchored" data-anchor-id="thinking-more-clearly">Thinking <span class="emoji" data-emoji="thinking">🤔</span> more clearly</h2>
 <blockquote class="blockquote">
 <p>A problem well-stated is a problem half-solved — <a href="https://en.wikipedia.org/wiki/Charles_F._Kettering">Charles Kettering</a>, head of research at GM</p>
@@ -5216,8 +5286,9 @@ TLDR: Skip this lecture. <span class="emoji" data-emoji="poop">💩</span> <span
 <ul>
 <li>in game theory model we consider the relationships between action by player 1, subsequent actions by player 2 and thier ultimate payoffs.</li>
 </ul></li>
-<li><strong>Work through the logic</strong>. :::</li>
+<li><strong>Work through the logic</strong>.</li>
 </ol>
+</section>
 <div id="exa-around-the-world">
 <p>Say we want to estimate the length of a rope needed to tie around the Earth at one meter above the surface. Let’s further assume the Earth’s circumference is 40,000 km. Since</p>
 <p><img src="https://latex.codecogs.com/png.latex?C%20=%20%CF%80D"></p>
@@ -5236,7 +5307,6 @@ TLDR: Skip this lecture. <span class="emoji" data-emoji="poop">💩</span> <span
 <p>For instance, the supply and demand for oil might increase in a relatively consistent pattern. The cost of oil is influenced by various factors, including reserves, market participants, political dynamics, etc., making its price complex and difficult to forecast, yet not entirely unpredictable.</p>
 <p><strong>Identify logical boundaries</strong>. Models help us determine what context is relevant and at what point it is no longer applicable.</p>
 <p><strong>Facilitate communication</strong>. Taking politics as an example: by evaluating how liberal or conservative both a candidate and a voter are, we can place them in a model to see which candidate aligns more closely with the voter’s preferences. This can be used to choose the best talking point for a call to that voter soliciting a campgn contribution.</p>
-</section>
 <section id="sec-using-and-understanding-data" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="sec-using-and-understanding-data">Using and understanding data</h2>
 <p>Another model type is the explicative model, which can be used to understand and understand data.</p>
