@@ -1,9 +1,28 @@
 subtitle: Model Thinking
 from: markdown+emoji
+author: "Oren Bochman"
+# Enable banner style title blocks
 title-block-banner: images/mt_seg_bg03.png
 categories: ["model thinking"]
-reference-location: margin
-format:
-  html:
-    page-layout: full
-    css: styles.css
+lightbox: true
+page-layout: article
+# Table of content settings
+toc: true
+toc-depth: 3
+toc-title: Table of contents
+toc-location: left
+
+code-annotations: hover
+freeze: true
+execute:
+  error: true
+# options specified here will apply to all posts in this folder
+
+# freeze computational output
+# (see https://quarto.org/docs/projects/code-execution.html#freeze)
+
+#comments: 
+#  utterances: 
+#    repo:  OrenBochman/blogComments 
+license: "CC SA BY-NC-ND"
+

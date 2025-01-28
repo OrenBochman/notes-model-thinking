@@ -1,7 +1,7 @@
 ---
 date: 2023-08-03
 title: Lesson 3  - Aggregation
-categories: ["model thinking", "Aggregation", "central limit theorem", "Six Sigma", "Conway's game of life", "Cellular automata", "Langton’s Lambda", "Condorcet paradox","Arrow Impossibility theorem"]
+categories: ["Model thinking", "Aggregation", "Central limit theorem", "Six Sigma", "Conway's game of life", "Cellular automata", "Langton’s Lambda", "Condorcet paradox","Arrow Impossibility theorem"]
 execute:
     cache: false
 draft: False
@@ -45,10 +45,14 @@ There may be different levels of aggregation possible for our model.
 Preferences and ordered relations can be challenging to aggregate in a way that maintains transitivity.
 However, it is relatively easy to aggregate demand patterns.
 
+{{< pagebreak >}}
+
 ## Aggregation {#sec-agg-introduction}
 
 ::: {#tip-aggregation-tldr .callout-tip}
-### :peanuts: Aggregation in a nutshell {.unlisted .unnumbered}
+### :peanuts: Aggregation in a nutshell {.unnumbered}
+
+![Aggregation in a nutshell](images/in_a_nutshell.jpg)
 
 1.  more is different
 2.  :bell: When small changes stack up, you are in the Central Limit Zone
@@ -71,7 +75,14 @@ So we are dealing with problematic definitions.
     Aren't other liquids like mercury also wet?
     :thinking: Once we figure that we are aggregate over h-bonds, we see this isn't a case of more is different but an ecological fallacy [:x:](https://en.wikipedia.org/wiki/Ecological_fallacy)
 
-![3D model hydrogen bonds in water [source](https://commons.wikimedia.org/wiki/File:3D_model_hydrogen_bonds_in_water.svg)](images/mt_hydrogen_bonds_in_water.png)
+
+::: {#fig-water .column-margin}
+
+![hydrogen bonds](images/mt_hydrogen_bonds_in_water.png)
+
+3D model hydrogen bonds in water [source](https://commons.wikimedia.org/wiki/File:3D_model_hydrogen_bonds_in_water.svg)
+:::
+
 
 ::: {#exm-agg-neuron}
 Can a single neuron explain consciousness, cognition, or individual characteristics?
@@ -86,15 +97,20 @@ Schelling's model exhibits segregation for fairly tolerant individuals and mixin
 💰💰
 :::
 
-![Gas at high temperature [source](https://commons.wikimedia.org/wiki/File:Gas-natural.jpg)](images/mt_gas.jpg)
+
+::: {#fig-gas .column-margin}
+
+![Gas at high temperature](images/mt_gas.jpg)
+
+Gas at high temperature [source](https://commons.wikimedia.org/wiki/File:Gas-natural.jpg)
+:::
 
 ::: {#exm-agg-temperature}
 Atoms of gas have variable kinetic energy, but temperature and pressure are statistical aggregates for these, and one molecule has little bearing on the aggregate.
 💰💰💰
 :::
 
-Cellular automata show how complexity can arise from very simple rules.
-[^5]
+Cellular automata show how complexity can arise from very simple rules.[^5]
 
 [^5]: This is surprising when you first learn about it :thinking:, not so much afterwards.
     After all this is a rehash of any number of ideas - like [the halting problem](https://en.wikipedia.org/wiki/Halting_problem), [inverse problems](https://en.wikipedia.org/wiki/Inverse_problem#:~:text=An%20inverse%20problem%20in%20science,measurements%20of%20its%20gravity%20field.), and the axiom of choice - proving existence of arbitrary functions - without giving access to the rule.
@@ -537,7 +553,7 @@ This idea is called [it from bit](https://historyofinformation.com/detail.php?id
 
 ## Langton's Lambda {#sec-agg-langton-lambda}
 
-![Christopher Langton](images/mt_langton.png){column-margin}
+![Christopher Langton](images/mt_langton.png){.column-margin}
 
 ![Behavior classes versus Lambda](images/mt_lambda_classes.jpg){.column-margin}
 
