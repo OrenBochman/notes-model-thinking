@@ -59,6 +59,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -120,6 +121,7 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 <style>
 
       .quarto-title-block .quarto-title-banner {
@@ -133,8 +135,22 @@ div.csl-indent {
 
 <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -241,7 +257,7 @@ window.Quarto = {
   </div>
     
   
-  <div class="quarto-title-meta">
+  <div class="quarto-title-meta column-body">
 
       
       <div>
@@ -255,7 +271,7 @@ window.Quarto = {
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -289,7 +305,7 @@ window.Quarto = {
 <div class="toc-actions"><ul><li><a href="https://github.com/OrenBochman/notes-model-thinking/edit/main/posts/w02.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OrenBochman/notes-model-thinking/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
+<main class="content quarto-banner-title-block page-columns page-full column-body" id="quarto-document-content">
 
 
 
@@ -378,8 +394,7 @@ TLDR: Schelling👍🏽, Granovettor,👍🏽 Standing Ovation 👍🏽
 <li>Which segregation level can we expect from an intolerance level of 1/3? <a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></li>
 <li>What happens to the convergence time if we increase the intolerance? And to the final segregation level? <a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></li>
 </ol>
-
-<div class="no-row-height column-margin column-container"><div class="">
+<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;in <span class="citation" data-cites="Mauro2022segregation">Nanni (<a href="#ref-Mauro2022segregation" role="doc-biblioref">2023</a>)</span></p></div><div id="fn2"><p><sup>2</sup>&nbsp;in <span class="citation" data-cites="Mauro2022segregation">Nanni (<a href="#ref-Mauro2022segregation" role="doc-biblioref">2023</a>)</span></p></div><div id="fn3"><p><sup>3</sup>&nbsp;in <span class="citation" data-cites="Mauro2022segregation">Nanni (<a href="#ref-Mauro2022segregation" role="doc-biblioref">2023</a>)</span></p></div><div id="fn4"><p><sup>4</sup>&nbsp;in <span class="citation" data-cites="Mauro2022segregation">Nanni (<a href="#ref-Mauro2022segregation" role="doc-biblioref">2023</a>)</span></p></div><div class="">
 <p><strong>Legend</strong></p>
 <ul>
 <li>Red is White,</li>
@@ -407,7 +422,8 @@ TLDR: Schelling👍🏽, Granovettor,👍🏽 Standing Ovation 👍🏽
 <figcaption>Race &amp; ethnicity: New York by <a href="https://www.flickr.com/photos/walkingsf/albums/72157624812674967/">Erica Fischer</a> CC-BY-SA</figcaption>
 </figure>
 </div>
-</div></div></section>
+</div></div>
+</section>
 <section id="sorting_and_peer_effects" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="sorting_and_peer_effects">Sorting and peer effects introduction</h2>
 <p>Why do individuals who study, reside, or spend time together often exhibit similarities in appearance, thought processes, and behaviors?</p>
@@ -459,7 +475,7 @@ TLDR: Schelling👍🏽, Granovettor,👍🏽 Standing Ovation 👍🏽
 </div></div><dl>
 <dt>Adverse Selection</dt>
 <dd>
-<p>When most sellers lack incentives to participate in a market, we end up with a homogenous market full of inferior products. This was investigated in the seminal paper <span class="citation" data-cites="Akerlof1970Lemons">[@Akerlof1970Lemons]</span> called the “Market for Lemons,” where the author discusses <strong>adverse selection</strong> in <em>economics</em></p>
+<p>When most sellers lack incentives to participate in a market, we end up with a homogenous market full of inferior products. This was investigated in the seminal paper <span class="citation" data-cites="Akerlof1970Lemons">(<a href="#ref-Akerlof1970Lemons" role="doc-biblioref">Akerlof 1970</a>)</span> called the “Market for Lemons,” where the author discusses <strong>adverse selection</strong> in <em>economics</em></p>
 </dd>
 </dl>
 <p>If you look at the map of Detroit, you see that people of different ethnicity tend to live together in segregated communities. Birds of a feather flock together, and people who look like each other tend to live together. Since people can not change their skin color, the mechanism for this is <strong>Sorting</strong>.</p>
@@ -535,7 +551,7 @@ TLDR: Schelling👍🏽, Granovettor,👍🏽 Standing Ovation 👍🏽
 
 
 
-<p>In research papers <span class="citation" data-cites="schelling1969models">[@schelling1969models]</span>, <span class="citation" data-cites="schelling1971dynamic">[@schelling1971dynamic]</span>, and later in <span class="citation" data-cites="schelling1978micromotives">[@schelling1978micromotives]</span>, his famous yet erudite opus Nobel Laureate in Economist and noted game theorist <a href="https://en.wikipedia.org/wiki/Thomas_Schelling">Thomas Schelling</a> outlines how he applied his unique brand of game theory to explore how ethnic and income-based segregation arises in a city. Schelling worked out his model by hand using a game board for a city and some pennies for his agents. He soon discovered that encoding homophily as an incentive for agents to relocate rapidly segregated his city.</p>
+<p>In research papers <span class="citation" data-cites="schelling1969models">(<a href="#ref-schelling1969models" role="doc-biblioref">Schelling 1969</a>)</span>, <span class="citation" data-cites="schelling1971dynamic">(<a href="#ref-schelling1971dynamic" role="doc-biblioref">Schelling 1971</a>)</span>, and later in <span class="citation" data-cites="schelling1978micromotives">(<a href="#ref-schelling1978micromotives" role="doc-biblioref">Schelling 1978</a>)</span>, his famous yet erudite opus Nobel Laureate in Economist and noted game theorist <a href="https://en.wikipedia.org/wiki/Thomas_Schelling">Thomas Schelling</a> outlines how he applied his unique brand of game theory to explore how ethnic and income-based segregation arises in a city. Schelling worked out his model by hand using a game board for a city and some pennies for his agents. He soon discovered that encoding homophily as an incentive for agents to relocate rapidly segregated his city.</p>
 <p>Today we can simulate using Agent Based Modeling (ABM) packages like <a href="https://www.netlogoweb.org/launch#http://ccl.northwestern.edu/netlogo/models/models/Sample%20Models/Social%20Science/Segregation.nlogo">Netlogo</a> or <a href="w02_schelling_mesa.html">Mesa</a> to implement Schelling’s model. with different thresholds.</p>
 <div id="tbl-segregation-simulations" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -604,8 +620,8 @@ Table&nbsp;1: outcomes for different thresholds
 <p>Unfortunately, the simulation I looked at in NetLogo and Mesa doesn’t show how to keep track of cascades and visualize them in real time. The <strong>tipping points</strong> in this model are the thresholds described above at which we will see large-scale segregation emerge, and the second one is where it stops, and we see permanent churn emerge. What are described below are cascades.</p>
 <p>Schelling’s model has a cascade phenomenon. For example, if one person moves, this may trigger another person to move, and so on.</p>
 <ul>
-<li><p>There is an <strong>Exodus cascade</strong>, which means that a person will leave if a similar person in the neighborhood leaves. The trigger for this cascade for <span class="math inline">\(X\)</span> is due to a like-me neighbor leaving and thus decrementing the numerator of the ‘threshold’ equation from <span class="math inline">\(N/D\)</span>, which is still happy, to <span class="math inline">\((N-1)/D\)</span>, which is no longer happy, thus triggering <span class="math inline">\(X\)</span>’s move. These exodus cascades will start with the most intolerant neighbor of <span class="math inline">\(X\)</span>, but others with lower thresholds may follow dropping.</p></li>
-<li><p>There is also a <strong>Genesis cascade</strong>, in which a person at <span class="math inline">\(X\)</span> could become unhappy if a “different” type of person moves into one of the vacant apartments in his neighborhood, <span class="math inline">\(Y\)</span>. This will happen if <span class="math inline">\(X\)</span>’s threshold is triggered by a denominator increase, i.e., <span class="math inline">\(X\)</span> was happy at <span class="math inline">\(N/D &lt; T\)</span>, but at <span class="math inline">\(N/(D+1) &gt;= T\)</span>, <span class="math inline">\(X\)</span> is no longer happy. Genesis events may cascade if more individuals like <span class="math inline">\(Y\)</span> move into the mixed neighborhood, occupying additional vacant apartments nearby. They can trigger an exodus cascade, creating more vacant lots and clearing the way for further genesis.</p></li>
+<li><p>There is an <strong>Exodus cascade</strong>, which means that a person will leave if a similar person in the neighborhood leaves. The trigger for this cascade for <span class="math inline">X</span> is due to a like-me neighbor leaving and thus decrementing the numerator of the ‘threshold’ equation from <span class="math inline">N/D</span>, which is still happy, to <span class="math inline">(N-1)/D</span>, which is no longer happy, thus triggering <span class="math inline">X</span>’s move. These exodus cascades will start with the most intolerant neighbor of <span class="math inline">X</span>, but others with lower thresholds may follow dropping.</p></li>
+<li><p>There is also a <strong>Genesis cascade</strong>, in which a person at <span class="math inline">X</span> could become unhappy if a “different” type of person moves into one of the vacant apartments in his neighborhood, <span class="math inline">Y</span>. This will happen if <span class="math inline">X</span>’s threshold is triggered by a denominator increase, i.e., <span class="math inline">X</span> was happy at <span class="math inline">N/D &lt; T</span>, but at <span class="math inline">N/(D+1) &gt;= T</span>, <span class="math inline">X</span> is no longer happy. Genesis events may cascade if more individuals like <span class="math inline">Y</span> move into the mixed neighborhood, occupying additional vacant apartments nearby. They can trigger an exodus cascade, creating more vacant lots and clearing the way for further genesis.</p></li>
 </ul>
 <p>In most major urban centers with individuals of diverse ethnic backgrounds, there exists a pronounced segregation along racial lines despite the prevalent desire among the populace to reside in ethnically mixed communities.</p>
 <p>Note:</p>
@@ -628,67 +644,67 @@ Table&nbsp;1: outcomes for different thresholds
 </div></div><p>In this lesson, we set our sights on the <strong>Index of Dissimilarity</strong> as a measure of segregation between two demographic groups living in the same metropolitan region. Its advantage is it’s easy to calculate. Its main shortcoming is that it cannot handle multiple groups, nor can it deal with a continuous variable like wealth. In this section, we consider wealth a dichotomous variable: people are either rich or poor.</p>
 <p>What I wanted from this section was to learn the logic for creating such statistics/metrics by myself. I guess that this is not so easy as it seems. However there are a number of other approaches for evaluating segregation and wealth in equality.</p>
 <p>Metrics follows</p>
-<p>The metric we developed for evaluating segregation called <strong>The index of dissimilarity</strong> was introduced in <span class="citation" data-cites="duncan1955methodological">[@duncan1955methodological]</span>.</p>
+<p>The metric we developed for evaluating segregation called <strong>The index of dissimilarity</strong> was introduced in <span class="citation" data-cites="duncan1955methodological">(<a href="#ref-duncan1955methodological" role="doc-biblioref">Duncan and Duncan 1955</a>)</span>.</p>
 <p>Let’s posit a scenario in which a mix of upper and lower class agent live in 24 residential tracts, each inhabited by 10 individuals. Within this configuration, 12 luxury tracts are priced exclusively for rich individuals, 6 tracts of public residential facilities cater only the poor while the remaining 6 tracts share a demographic mix of rich and poor in equal proportion.</p>
-<p>The aggregate count of the upper class is <span class="math display">\[
+<p>The aggregate count of the upper class is <span class="math display">
 12\times 10 + 6\times 5 = 150
-\]</span></p>
-<p>Whereas the total number of the lower class amounts to <span class="math display">\[
+</span></p>
+<p>Whereas the total number of the lower class amounts to <span class="math display">
 6\times 10 + 6\times 5 = 90
-\]</span></p>
+</span></p>
 <p>Let</p>
 <ul>
-<li><span class="math inline">\(b\)</span> be the quantity of a particular group within a tract,</li>
-<li><span class="math inline">\(B\)</span> be the aggregate quantity of that group (150),</li>
-<li><span class="math inline">\(y\)</span> be the quantity of the contrasting group within that tract,</li>
-<li><span class="math inline">\(Y\)</span> be the total number of the contrasting group (90),</li>
+<li><span class="math inline">b</span> be the quantity of a particular group within a tract,</li>
+<li><span class="math inline">B</span> be the aggregate quantity of that group (150),</li>
+<li><span class="math inline">y</span> be the quantity of the contrasting group within that tract,</li>
+<li><span class="math inline">Y</span> be the total number of the contrasting group (90),</li>
 </ul>
-<p>then the difference between the proportions <span class="math inline">\(\frac{b}{B}\)</span> and <span class="math inline">\(\frac{y}{Y}\)</span>, or</p>
-<p><span id="eq-dissimilarity-metric"><span class="math display">\[
+<p>then the difference between the proportions <span class="math inline">\frac{b}{B}</span> and <span class="math inline">\frac{y}{Y}</span>, or</p>
+<p><span id="eq-dissimilarity-metric"><span class="math display">
 \left | \frac{b}{B} - \frac{y}{Y} \right | \qquad
-\tag{1}\]</span></span></p>
+\tag{1}</span></span></p>
 <p>Serves as an indicator of the extent to which the distribution in the tract deviates from a state of diversity.</p>
 <p>Utilizing this metric, a perfectly homogenous tract would possess</p>
-<p><span class="math inline">\(|\frac{b}{B} - \frac{y}{Y}| = \frac{5}{150} - \frac{3}{90} | = 0.\)</span></p>
-<p>For the blue tracts: <span class="math display">\[ \left |\frac{b}{B} - \frac{y}{Y} \right | = \left | \frac{10}{150} - \frac{0}{90} \right | = \frac{1}{15}\]</span> For the yellow tracts: <span class="math display">\[\left | \frac{b}{B} - \frac{y}{Y} \right | = \left | \frac{0}{150} - \frac{10}{90} \right | = \frac{1}{9}\]</span></p>
-<p>For the green tracts: <span class="math display">\[ \left |\frac{b}{B} - \frac{y}{Y} \right | = \left | \frac{5}{150} - \frac{5}{90} \right | = \frac{1}{45}\]</span></p>
+<p><span class="math inline">|\frac{b}{B} - \frac{y}{Y}| = \frac{5}{150} - \frac{3}{90} | = 0.</span></p>
+<p>For the blue tracts: <span class="math display"> \left |\frac{b}{B} - \frac{y}{Y} \right | = \left | \frac{10}{150} - \frac{0}{90} \right | = \frac{1}{15}</span> For the yellow tracts: <span class="math display">\left | \frac{b}{B} - \frac{y}{Y} \right | = \left | \frac{0}{150} - \frac{10}{90} \right | = \frac{1}{9}</span></p>
+<p>For the green tracts: <span class="math display"> \left |\frac{b}{B} - \frac{y}{Y} \right | = \left | \frac{5}{150} - \frac{5}{90} \right | = \frac{1}{45}</span></p>
 <section id="sec-index-of-dissimilarity" class="level3">
 <h3 class="anchored" data-anchor-id="sec-index-of-dissimilarity">The Index of Dissimilarity</h3>
-<p><span id="eq-index-of-dissimilarity"><span class="math display">\[
+<p><span id="eq-index-of-dissimilarity"><span class="math display">
 (\frac{1}{2}\sum |\frac{b}{B} - \frac{y}{Y}|) \qquad
-\tag{2}\]</span></span></p>
+\tag{2}</span></span></p>
 <p>We sum the individual differences and then divide them by 2 to keep the range of the index between 0 and 1.</p>
 <ul>
 <li>0 indicates heterogeneity.</li>
 <li>1 indicates homogeneity.</li>
 </ul>
 <p>For the example above, you have</p>
-<p><span class="math display">\[\frac{1}{2} \left (\frac{12}{15} + \frac{6}{9} + \frac{6}{45} \right ) =\frac{72}{90} = 0.8\]</span></p>
+<p><span class="math display">\frac{1}{2} \left (\frac{12}{15} + \frac{6}{9} + \frac{6}{45} \right ) =\frac{72}{90} = 0.8</span></p>
 <p>Which is highly segregated.</p>
 </section>
 <section id="sec-gen-index-of-dissimilarity" class="level3">
 <h3 class="anchored" data-anchor-id="sec-gen-index-of-dissimilarity">A Generalized Index of Dissimilarity</h3>
-<p><span id="eq-gen-index-of-dissimilarity"><span class="math display">\[
+<p><span id="eq-gen-index-of-dissimilarity"><span class="math display">
 D_G = \frac{1}{2} \frac{\sum_j \sum_i \left | N_{ij}-E_{ij}\right |}{\sum NP_j(1-P_j)} \qquad
-\tag{3}\]</span></span></p>
+\tag{3}</span></span></p>
 <p>Where:</p>
 <ul>
-<li><span class="math inline">\(E_{ij} = \frac{N_i N_j}{N}\)</span></li>
-<li><span class="math inline">\(P_j = \frac{N_j}{N}\)</span></li>
+<li><span class="math inline">E_{ij} = \frac{N_i N_j}{N}</span></li>
+<li><span class="math inline">P_j = \frac{N_j}{N}</span></li>
 </ul>
 </section>
 <section id="morans-i" class="level3">
 <h3 class="anchored" data-anchor-id="morans-i">Moran’s I</h3>
-<p><strong>Moran’s I</strong> is a measure of spatial autocorrelation. The statistic for a spatial variable <span class="math inline">\(x_h\)</span> over the occupied cells follows <a href="#eq-moran-I" class="quarto-xref">Equation&nbsp;4</a>: <span id="eq-moran-I"><span class="math display">\[
+<p><strong>Moran’s I</strong> is a measure of spatial autocorrelation. The statistic for a spatial variable <span class="math inline">x_h</span> over the occupied cells follows <a href="#eq-moran-I" class="quarto-xref">Equation&nbsp;4</a>: <span id="eq-moran-I"><span class="math display">
 \text{Moran's I} = \frac{M\sum_i\sum_jw_{ij}(x_i-\bar x)(x_j-\bar x)}{\sum_i\sum_jw_{ij}\sum_i(x_i-\bar x)^2 \qquad}
-\tag{4}\]</span></span></p>
+\tag{4}</span></span></p>
 <p>Where:</p>
 <ul>
-<li><span class="math inline">\(x_h\)</span> is defined as <span class="math inline">\(x_h = 0\)</span> if <span class="math inline">\(h\)</span> is occupied by red agents and <span class="math inline">\(x_h = 1\)</span> if <span class="math inline">\(h\)</span> is occupied by yellow agents.</li>
-<li><span class="math inline">\(x_i, x_j\)</span> denote the values of <span class="math inline">\(x_h\)</span> in cells i, j;</li>
-<li><span class="math inline">\(M = Round((1-d)\times N^2)\)</span> is the overall number of occupied cells,</li>
-<li><span class="math inline">\(\bar x\)</span> is the mean value of <span class="math inline">\(x_h\)</span> over the occupied cells,</li>
-<li><span class="math inline">\(w_{ij} = \begin{cases} 1 &amp; \text{if } j \in U(i) \\ 0 &amp; \text{otherwise}\end{cases}\)</span></li>
+<li><span class="math inline">x_h</span> is defined as <span class="math inline">x_h = 0</span> if <span class="math inline">h</span> is occupied by red agents and <span class="math inline">x_h = 1</span> if <span class="math inline">h</span> is occupied by yellow agents.</li>
+<li><span class="math inline">x_i, x_j</span> denote the values of <span class="math inline">x_h</span> in cells i, j;</li>
+<li><span class="math inline">M = Round((1-d)\times N^2)</span> is the overall number of occupied cells,</li>
+<li><span class="math inline">\bar x</span> is the mean value of <span class="math inline">x_h</span> over the occupied cells,</li>
+<li><span class="math inline">w_{ij} = \begin{cases} 1 &amp; \text{if } j \in U(i) \\ 0 &amp; \text{otherwise}\end{cases}</span></li>
 </ul>
 <p>Interpretation of the statistic</p>
 <ul>
@@ -700,17 +716,17 @@ D_G = \frac{1}{2} \frac{\sum_j \sum_i \left | N_{ij}-E_{ij}\right |}{\sum NP_j(1
 <h3 class="anchored" data-anchor-id="sec-interaction-or-exposure-index">Interaction or Exposure Index (B)</h3>
 <p>The <strong>Interaction Index</strong>, also known as the <strong>Exposure Index</strong>, is a measure of potential contact or interaction between different groups in a geographic area. It measures the probability that a member of one group will come into contact with a member of another group.</p>
 <p>The formula for the Interaction Index (B) between group X and group Y is:</p>
-<p><span id="eq-interaction-index"><span class="math display">\[
+<p><span id="eq-interaction-index"><span class="math display">
 B(X, Y) = \sum_{i=1}^{n} \frac{x_i}{X} \frac{y_i}{T_i} \qquad
-\tag{5}\]</span></span></p>
+\tag{5}</span></span></p>
 <p>Where:</p>
 <ul>
-<li><span class="math inline">\(n\)</span> is the total number of tracts.</li>
-<li><span class="math inline">\(x_i\)</span> is the population of group <span class="math inline">\(X\)</span> in tract $<span class="math inline">\(i\)</span>.</li>
-<li><span class="math inline">\(X\)</span> is the total population of group <span class="math inline">\(X\)</span> in all tracts.</li>
-<li><span class="math inline">\(y_i\)</span> is the population of group Y in tracts <span class="math inline">\(i\)</span>.</li>
-<li><span class="math inline">\(T_i\)</span> is the total population in area <span class="math inline">\(i\)</span>.</li>
-<li>The sum is taken over all areas <span class="math inline">\(i\)</span>.</li>
+<li><span class="math inline">n</span> is the total number of tracts.</li>
+<li><span class="math inline">x_i</span> is the population of group <span class="math inline">X</span> in tract $<span class="math inline">i</span>.</li>
+<li><span class="math inline">X</span> is the total population of group <span class="math inline">X</span> in all tracts.</li>
+<li><span class="math inline">y_i</span> is the population of group Y in tracts <span class="math inline">i</span>.</li>
+<li><span class="math inline">T_i</span> is the total population in area <span class="math inline">i</span>.</li>
+<li>The sum is taken over all areas <span class="math inline">i</span>.</li>
 </ul>
 <p>Interpretation:</p>
 <ul>
@@ -723,16 +739,16 @@ B(X, Y) = \sum_{i=1}^{n} \frac{x_i}{X} \frac{y_i}{T_i} \qquad
 <h3 class="anchored" data-anchor-id="sec-segregation-in-multiple-categories-entropy-index">Segregation in Multiple Categories: Entropy Index</h3>
 <p>Both the Index of Dissimilarity and Interaction Index can only measure the segregation of two groups compared to each other.</p>
 <p>The <strong>Entropy Index</strong> is a measure of diversity that measures the spatial distribution of multiple groups simultaneously. It may be used to quantify segregation in a population across multiple groups. It is calculated as follows:</p>
-<p><span id="eq-entropy-index"><span class="math display">\[
+<p><span id="eq-entropy-index"><span class="math display">
 \text{{Entropy Index}} = -\sum_{i=1}^{n} p_{ij} \log(p_{ij}) \qquad
-\tag{6}\]</span></span></p>
+\tag{6}</span></span></p>
 <p>In this formula:</p>
 <ul>
-<li><span class="math inline">\(n\)</span> is the total number of groups.</li>
-<li><span class="math inline">\(p_{ij}= \frac{n_{ij}}{n_i}\)</span> is the ratio of group <span class="math inline">\(i\)</span> in cell <span class="math inline">\(j\)</span></li>
-<li><span class="math inline">\(n_{ij}\)</span> = number of population of <span class="math inline">\(j\)</span><sup>th</sup> ethnicity in cell <span class="math inline">\(i\)</span></li>
-<li><span class="math inline">\(n_{i}\)</span> =total population in cell <span class="math inline">\(i\)</span></li>
-<li>The sum is taken over all groups <span class="math inline">\(i\)</span> in each cell <span class="math inline">\(j\)</span>.</li>
+<li><span class="math inline">n</span> is the total number of groups.</li>
+<li><span class="math inline">p_{ij}= \frac{n_{ij}}{n_i}</span> is the ratio of group <span class="math inline">i</span> in cell <span class="math inline">j</span></li>
+<li><span class="math inline">n_{ij}</span> = number of population of <span class="math inline">j</span><sup>th</sup> ethnicity in cell <span class="math inline">i</span></li>
+<li><span class="math inline">n_{i}</span> =total population in cell <span class="math inline">i</span></li>
+<li>The sum is taken over all groups <span class="math inline">i</span> in each cell <span class="math inline">j</span>.</li>
 <li>The logarithm is typically base 2 or base <code>e</code> (natural logarithm), depending on the context.</li>
 </ul>
 <p>Interpretation: - The Entropy Index ranges from 0 (no diversity, all members belong to the same group) to <code>log(n)</code> (maximum diversity, members are evenly distributed across all groups). - In the context of segregation, a lower Entropy Index indicates higher segregation (less diversity within areas), while a higher Entropy Index indicates lower segregation (more diversity within areas).</p>
@@ -748,8 +764,8 @@ B(X, Y) = \sum_{i=1}^{n} \frac{x_i}{X} \frac{y_i}{T_i} \qquad
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'City'</span>] <span class="op">=</span> df[<span class="st">'City'</span>].<span class="bu">str</span>.<span class="bu">slice</span>(<span class="dv">0</span>,<span class="dv">20</span>)</span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>show(df,maxBytes <span class="op">=</span> <span class="dv">200</span> <span class="op">*</span> <span class="dv">1024</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<table id="itables_3ef6e48b_cd36_40cb_9bfe_1b2bb445bbbe" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><caption><p>Segregation in US cities with a population greater than 20k based on
-the 2020 census</p> {#a8ea5a89}</caption>
+<table id="itables_08f69864_8d18_4c3a_88fe_992ebdfebec6" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><caption><p>Segregation in US cities with a population greater than 20k based on
+the 2020 census</p> {#e76dfc69}</caption>
 <thead>
     <tr style="text-align: right;">
       
@@ -830,7 +846,7 @@ Loading ITables v2.1.0 from the internet...
 <script type="module">
     import {DataTable, jQuery as $} from 'https://www.unpkg.com/dt_for_itables@2.0.7/dt_bundle.js';
 
-    document.querySelectorAll("#itables_3ef6e48b_cd36_40cb_9bfe_1b2bb445bbbe:not(.dataTable)").forEach(table => {
+    document.querySelectorAll("#itables_08f69864_8d18_4c3a_88fe_992ebdfebec6:not(.dataTable)").forEach(table => {
         // Define the table data
         const data = [[1, "Detroit city, MI", 0.806, "High Segregation"], [2, "Newark city, NJ", 0.6806, "High Segregation"], [3, "Hialeah city, FL", 0.654, "High Segregation"], [4, "Chicago city, IL", 0.6223, "High Segregation"], [5, "Milwaukee city, WI", 0.5936, "High Segregation"], [6, "Cleveland city, OH", 0.5478, "High Segregation"], [7, "New York city, NY", 0.4379, "High Segregation"], [8, "Irving city, TX", 0.4082, "High Segregation"], [9, "Miami city, FL", 0.4074, "High Segregation"], [10, "St. Louis city, MO", 0.4069, "High Segregation"], [11, "Philadelphia city, P", 0.3974, "High Segregation"], [12, "Dallas city, TX", 0.3968, "High Segregation"], [13, "Irvine city, CA", 0.3876, "High Segregation"], [14, "Santa Ana city, CA", 0.3762, "High Segregation"], [15, "Atlanta city, GA", 0.363, "High Segregation"], [16, "Oakland city, CA", 0.3572, "High Segregation"], [17, "Memphis city, TN", 0.3453, "High Segregation"], [18, "Buffalo city, NY", 0.3362, "High Segregation"], [19, "Baltimore city, MD", 0.3335, "High Segregation"], [20, "Boston city, MA", 0.3333, "High Segregation"], [21, "Fremont city, CA", 0.3297, "High Segregation"], [22, "Washington city, DC", 0.3295, "High Segregation"], [23, "New Orleans city, LA", 0.3226, "High Segregation"], [24, "Houston city, TX", 0.3187, "High Segregation"], [25, "Los Angeles city, CA", 0.3088, "High Segregation"], [26, "Cincinnati city, OH", 0.3006, "High Segregation"], [27, "Jersey City city, NJ", 0.2953, "High Segregation"], [28, "St. Paul city, MN", 0.2949, "High Segregation"], [29, "Orlando city, FL", 0.2877, "High Segregation"], [30, "Baton Rouge city, LA", 0.2817, "High Segregation"], [31, "Little Rock city, AR", 0.2813, "High Segregation"], [32, "Richmond city, VA", 0.2794, "High Segregation"], [33, "Tampa city, FL", 0.2787, "High Segregation"], [34, "Kansas City city, MO", 0.2754, "High Segregation"], [35, "Frisco city, TX", 0.2743, "High Segregation"], [36, "Plano city, TX", 0.2689, "High Segregation"], [37, "Indianapolis city (b", 0.2538, "High Segregation"], [38, "Chula Vista city, CA", 0.2522, "High Segregation"], [39, "San Diego city, CA", 0.2514, "High Segregation"], [40, "Phoenix city, AZ", 0.2429, "High Segregation"], [41, "Charlotte city, NC", 0.2347, "High Segregation"], [42, "St. Petersburg city,", 0.2278, "High Segregation"], [43, "Scottsdale city, AZ", 0.2241, "High Segregation"], [44, "Fort Worth city, TX", 0.2232, "High Segregation"], [45, "Omaha city, NE", 0.2229, "High Segregation"], [46, "Yonkers city, NY", 0.2207, "High Segregation"], [47, "Huntsville city, AL", 0.2206, "High Segregation"], [48, "Minneapolis city, MN", 0.2206, "High Segregation"], [49, "Pittsburgh city, PA", 0.2195, "High Segregation"], [50, "Rochester city, NY", 0.2182, "High Segregation"], [51, "Montgomery city, AL", 0.2135, "High Segregation"], [52, "Oklahoma City city, ", 0.2119, "High Segregation"], [53, "Tulsa city, OK", 0.2118, "High Segregation"], [54, "Columbus city, OH", 0.2088, "High Segregation"], [55, "Long Beach city, CA", 0.2077, "High Segregation"], [56, "Greensboro city, NC", 0.2055, "High Segregation"], [57, "Nashville-Davidson m", 0.203, "High Segregation"], [58, "Denver city, CO", 0.1971, "High Segregation"], [59, "Columbus city, GA", 0.1893, "High Segregation"], [60, "North Las Vegas city", 0.1888, "High Segregation"], [61, "Raleigh city, NC", 0.1878, "High Segregation"], [62, "Norfolk city, VA", 0.1858, "High Segregation"], [63, "San Jose city, CA", 0.1852, "High Segregation"], [64, "Winston-Salem city, ", 0.1851, "High Segregation"], [65, "Garland city, TX", 0.1811, "High Segregation"], [66, "San Francisco city, ", 0.1797, "High Segregation"], [67, "Louisville/Jefferson", 0.1783, "High Segregation"], [68, "Aurora city, CO", 0.1756, "Low-Medium Segregation"], [69, "Sacramento city, CA", 0.1731, "Low-Medium Segregation"], [70, "Jacksonville city, F", 0.1705, "Low-Medium Segregation"], [71, "McKinney city, TX", 0.1698, "Low-Medium Segregation"], [72, "Durham city, NC", 0.1686, "Low-Medium Segregation"], [73, "Amarillo city, TX", 0.1678, "Low-Medium Segregation"], [74, "San Bernardino city,", 0.1673, "Low-Medium Segregation"], [75, "Toledo city, OH", 0.1661, "Low-Medium Segregation"], [76, "Austin city, TX", 0.1613, "Low-Medium Segregation"], [77, "Fort Wayne city, IN", 0.161, "Low-Medium Segregation"], [78, "Lubbock city, TX", 0.1572, "Low-Medium Segregation"], [79, "Fontana city, CA", 0.153, "Low-Medium Segregation"], [80, "Augusta-Richmond Cou", 0.151, "Low-Medium Segregation"], [81, "Arlington city, TX", 0.15, "Low-Medium Segregation"], [82, "Glendale city, AZ", 0.1487, "Low-Medium Segregation"], [83, "Virginia Beach city,", 0.1487, "Low-Medium Segregation"], [84, "Wichita city, KS", 0.1485, "Low-Medium Segregation"], [85, "Las Vegas city, NV", 0.144, "Low-Medium Segregation"], [86, "San Antonio city, TX", 0.1411, "Low-Medium Segregation"], [87, "Tucson city, AZ", 0.1406, "Low-Medium Segregation"], [88, "Stockton city, CA", 0.1402, "Low-Medium Segregation"], [89, "Anaheim city, CA", 0.14, "Low-Medium Segregation"], [90, "Bakersfield city, CA", 0.1318, "Low-Medium Segregation"], [91, "Fresno city, CA", 0.1289, "Low-Medium Segregation"], [92, "Des Moines city, IA", 0.1284, "Low-Medium Segregation"], [93, "Chandler city, AZ", 0.1276, "Low-Medium Segregation"], [94, "Moreno Valley city, ", 0.1253, "Low-Medium Segregation"], [95, "Chesapeake city, VA", 0.1181, "Low-Medium Segregation"], [96, "Lexington-Fayette ur", 0.1166, "Low-Medium Segregation"], [97, "Mesa city, AZ", 0.1146, "Low-Medium Segregation"], [98, "Tacoma city, WA", 0.1135, "Low-Medium Segregation"], [99, "Henderson city, NV", 0.1111, "Low-Medium Segregation"], [100, "Corpus Christi city,", 0.1075, "Low-Medium Segregation"], [101, "Seattle city, WA", 0.1043, "Low-Medium Segregation"], [102, "Worcester city, MA", 0.0999, "Low-Medium Segregation"], [103, "Riverside city, CA", 0.0967, "Low-Medium Segregation"], [104, "Albuquerque city, NM", 0.0966, "Low-Medium Segregation"], [105, "Reno city, NV", 0.0908, "Low-Medium Segregation"], [106, "Gilbert town, AZ", 0.0879, "Low-Medium Segregation"], [107, "Fayetteville city, N", 0.0853, "Low-Medium Segregation"], [108, "Modesto city, CA", 0.0812, "Low-Medium Segregation"], [109, "Madison city, WI", 0.0812, "Low-Medium Segregation"], [110, "Anchorage municipali", 0.0775, "Low-Medium Segregation"], [111, "Portland city, OR", 0.0683, "Low-Medium Segregation"], [112, "El Paso city, TX", 0.0644, "Low-Medium Segregation"], [114, "Lincoln city, NE", 0.0464, "Low-Medium Segregation"], [115, "Cape Coral city, FL", 0.0379, "Low-Medium Segregation"], [116, "Boise City city, ID", 0.0379, "Low-Medium Segregation"], [118, "Spokane city, WA", 0.0219, "Low-Medium Segregation"], [119, "Laredo city, TX", 0.0109, "Low-Medium Segregation"], [113, "Colorado Springs cit", 0.0531, "Integrated"], [117, "Port St. Lucie city,", 0.027, "Integrated"]];
 
@@ -845,7 +861,7 @@ Loading ITables v2.1.0 from the internet...
 </div>
 </div>
 <p>One more point to consider is, given all the simplifying assumptions, how useful is the scheduling model for modeling reality?</p>
-<p>In real life, residential real estate is usually bought through careful deliberation, and the key factors are price per square meter and the largest loan one can get. This seems to be a far cry from the Schelling model. This point is considered in great detail in <span class="citation" data-cites="Hatna2012Schelling">[@Hatna2012Schelling]</span>, which looks at segregation in two mixed cities in Israel.</p>
+<p>In real life, residential real estate is usually bought through careful deliberation, and the key factors are price per square meter and the largest loan one can get. This seems to be a far cry from the Schelling model. This point is considered in great detail in <span class="citation" data-cites="Hatna2012Schelling">(<a href="#ref-Hatna2012Schelling" role="doc-biblioref">Hatna and Benenson 2012</a>)</span>, which looks at segregation in two mixed cities in Israel.</p>
 </section>
 <section id="peer_effects" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="peer_effects">Peer Effects</h2>
@@ -865,10 +881,10 @@ Loading ITables v2.1.0 from the internet...
 <figcaption>Granovettor’s model can explain riots</figcaption>
 </figure>
 </div></div><p><strong>Peer effects</strong> can have a <strong>contagious mechanism</strong> a kin to the spread of diseases. Another aspect of peer effects is called “the tail is wagging the dog,” where a small minority sets the tone for the whole group. Situations where behavior in which the most extremist people at the tail end of the political distribution determine what will happen will always be challenging to predict, for instance, political uprisings like the fall of the <a href="https://en.wikipedia.org/wiki/Berlin_Wall">Berlin Wall</a> and more recently the <a href="https://en.wikipedia.org/wiki/Orange_Revolution">Orange Revolution</a> in Ukraine. In such cases, it is difficult to predict what will happen, and the Granovetter Model explains that it is a microcosm in which we can study why it is so challenging to predict such events.</p>
-<p>In <span class="citation" data-cites="granovetter1983threshold granovetter1986threshold granovetter1988threshold">[@granovetter1983threshold; @granovetter1986threshold; @granovetter1988threshold]</span> the authors discusses <strong>Granovettor’s Threshold Model</strong> which can be described by:</p>
+<p>In <span class="citation" data-cites="granovetter1983threshold granovetter1986threshold granovetter1988threshold">(<a href="#ref-granovetter1983threshold" role="doc-biblioref">Granovetter and Soong 1983</a>, <a href="#ref-granovetter1986threshold" role="doc-biblioref">1986</a>, <a href="#ref-granovetter1988threshold" role="doc-biblioref">1988</a>)</span> the authors discusses <strong>Granovettor’s Threshold Model</strong> which can be described by:</p>
 <ul>
-<li><span class="math inline">\(N\)</span> population size.</li>
-<li>Agent <em>j</em> has a participation threshold <span class="math inline">\(T_j\)</span> and will only participate if <span class="math inline">\(T_j\)</span> others individuals participate.</li>
+<li><span class="math inline">N</span> population size.</li>
+<li>Agent <em>j</em> has a participation threshold <span class="math inline">T_j</span> and will only participate if <span class="math inline">T_j</span> others individuals participate.</li>
 <li>An Agent with a threshold of 0 will always participate.</li>
 <li>An Agent with a threshold of 10 will wait till it sees 10 other agents participating.</li>
 </ul>
@@ -1003,34 +1019,34 @@ Table&nbsp;4: another riots
 </div></div>
 <p>Granovettor’s Threshold model can explain participation in risky activities where risks and rewards are tied to the number of peers participating.</p>
 <blockquote class="blockquote">
-<p>The basic SOP can be stated as follows: A brilliant economics lecture ends, and the audience begins to applaud. The applause builds, and tentatively, a few audience members may or may not decide to stand. Does a standing ovation ensue, or does the enthusiasm fizzle? — <span class="citation" data-cites="miller2004standing">[@miller2004standing]</span></p>
+<p>The basic SOP can be stated as follows: A brilliant economics lecture ends, and the audience begins to applaud. The applause builds, and tentatively, a few audience members may or may not decide to stand. Does a standing ovation ensue, or does the enthusiasm fizzle? — <span class="citation" data-cites="miller2004standing">(<a href="#ref-miller2004standing" role="doc-biblioref">Miller and Page 2004</a>)</span></p>
 </blockquote>
 <p>The Formal Model:</p>
 <ul>
-<li>Agents are seated in a rectangular auditorium with <span class="math inline">\(R\)</span> rows and <span class="math inline">\(C\)</span> seats per row.</li>
+<li>Agents are seated in a rectangular auditorium with <span class="math inline">R</span> rows and <span class="math inline">C</span> seats per row.</li>
 <li>At the conclusion of a performance, each agent makes an evaluation of the performance’s quality.</li>
-<li>Let <span class="math inline">\(q_{ij} ∈ Q_{ij} = [0, 1]\)</span> represent the quality signal received by the audience member seated in the <span class="math inline">\(i\)</span>th row and <span class="math inline">\(j\)</span>th seat.
+<li>Let <span class="math inline">q_{ij} ∈ Q_{ij} = [0, 1]</span> represent the quality signal received by the audience member seated in the <span class="math inline">i</span>th row and <span class="math inline">j</span>th seat.
 <ul>
-<li>Higher values of <span class="math inline">\(q_{ij}\)</span> represent greater perceived quality.</li>
+<li>Higher values of <span class="math inline">q_{ij}</span> represent greater perceived quality.</li>
 <li>For the moment, values may be thought of as either private or common with idiosyncratic noise, or some convex combination of the two.</li>
 </ul></li>
 <li>Each audience member possesses an exogenous threshold level in addition to his or her quality evaluation.
 <ul>
-<li>The threshold level for the agent in the <span class="math inline">\(i\)</span><sup>th</sup> row and <span class="math inline">\(j\)</span><sup>th</sup> seat, <span class="math inline">\(T_{ij}\)</span> , equals the minimal quality required for that agent to stand immediately.</li>
-<li>Thus, if an audience member’s private value weakly exceeds the threshold, that is if <span class="math inline">\(q_{ij} \ge T_{ij}\)</span> , she stands immediately. If not, she remains seated.</li>
+<li>The threshold level for the agent in the <span class="math inline">i</span><sup>th</sup> row and <span class="math inline">j</span><sup>th</sup> seat, <span class="math inline">T_{ij}</span> , equals the minimal quality required for that agent to stand immediately.</li>
+<li>Thus, if an audience member’s private value weakly exceeds the threshold, that is if <span class="math inline">q_{ij} \ge T_{ij}</span> , she stands immediately. If not, she remains seated.</li>
 </ul></li>
-<li>Let <span class="math inline">\(s^t_{ij} \in \{0, 1\}\)</span> denote whether or not the audience member is standing <span class="math inline">\((s^t_{ij}=1)\)</span> or sitting <span class="math inline">\((s^t_{ij}=0)\)</span> <span class="math inline">\(t\)</span> time periods after the completion of the performance, and let <span class="math inline">\(S^t\)</span> be the total number of audience members standing at time <span class="math inline">\(t\)</span>. Therefore,</li>
+<li>Let <span class="math inline">s^t_{ij} \in \{0, 1\}</span> denote whether or not the audience member is standing <span class="math inline">(s^t_{ij}=1)</span> or sitting <span class="math inline">(s^t_{ij}=0)</span> <span class="math inline">t</span> time periods after the completion of the performance, and let <span class="math inline">S^t</span> be the total number of audience members standing at time <span class="math inline">t</span>. Therefore,</li>
 </ul>
-<p><span class="math display">\[
+<p><span class="math display">
 S^0  = \sum ^C_{j=1}\sum ^R_{i=1} s^0_{ij}
-\]</span></p>
-<p>equals the number of agents standing immediately. In interesting cases, only a fraction <span class="math inline">\((0 &lt; S 0 &lt; R \cdot C)\)</span> of the audience stands immediately. With a portion of the audience standing, those who remain seated must decide whether to stand, and those audience members standing must decide whether to remain standing or to sit. Both decisions rely on local information—possibly the number of neighbors standing or the percentage of audience members within sight who are standing—as well as the initial quality appraisal of the individual.</p>
+</span></p>
+<p>equals the number of agents standing immediately. In interesting cases, only a fraction <span class="math inline">(0 &lt; S 0 &lt; R \cdot C)</span> of the audience stands immediately. With a portion of the audience standing, those who remain seated must decide whether to stand, and those audience members standing must decide whether to remain standing or to sit. Both decisions rely on local information—possibly the number of neighbors standing or the percentage of audience members within sight who are standing—as well as the initial quality appraisal of the individual.</p>
 <p>For example, someone seated surrounded entirely by people who are standing most likely will stand, unless she abhorred the performance. Similarly, unless she felt that the performance was stupendous, an isolated standing person may decide to sit if her neighbors do not join the standing ovation quickly.</p>
-<p>The behavior of an audience member at a particular point in time can be represented by a heuristic that maps her information and quality appraisal into an action, either sit or stand. Periods are considered as discrete units. The continuous time case shall be addressed later in the discussion of random asynchronous and endogenous asynchronous updating. Let <span class="math inline">\(K_{ij}\)</span> be the seat assignments visible to the audience member in the ith row and jth seat. Define a <em>behavioral rule</em> at time <span class="math inline">\(t &gt; 0 \text{ by } F^t : K^t × Q_{ij} \to \{0, 1\} \text{ for } t \ge 1\)</span>. Recall that in period 0, the decision to stand depends only on the agent’s threshold and <span class="math inline">\(q_{ij}\)</span>.</p>
+<p>The behavior of an audience member at a particular point in time can be represented by a heuristic that maps her information and quality appraisal into an action, either sit or stand. Periods are considered as discrete units. The continuous time case shall be addressed later in the discussion of random asynchronous and endogenous asynchronous updating. Let <span class="math inline">K_{ij}</span> be the seat assignments visible to the audience member in the ith row and jth seat. Define a <em>behavioral rule</em> at time <span class="math inline">t &gt; 0 \text{ by } F^t : K^t × Q_{ij} \to \{0, 1\} \text{ for } t \ge 1</span>. Recall that in period 0, the decision to stand depends only on the agent’s threshold and <span class="math inline">q_{ij}</span>.</p>
 <hr>
 <p>The authors discuss the math and internals of their models as form of noisy channel. Agents need to fuse a signal based on their private information with the information coming from their peers and arrive at a binary decision.</p>
 <p>The standing ovation model by Scott and Miller is intentionally presented in the most vague form according to their later publication. This is rather annoying as without a more formal spec it isn’t possible to reproduce any results. Also most people don’t actually seem to implement it as explained in the lesson or the paper.</p>
-<p>I found the paper <span class="citation" data-cites="miller2004standing">[@miller2004standing]</span> rather tiresome and had to have a few goes at it. The authors’ exhortation exaltation on the grandeur of their model is matched by the vagueness of its definitions — basically there are any number of variants and extensions of the standing ovation models. Criticism aside I noticed some point of interest in the paper:</p>
+<p>I found the paper <span class="citation" data-cites="miller2004standing">(<a href="#ref-miller2004standing" role="doc-biblioref">Miller and Page 2004</a>)</span> rather tiresome and had to have a few goes at it. The authors’ exhortation exaltation on the grandeur of their model is matched by the vagueness of its definitions — basically there are any number of variants and extensions of the standing ovation models. Criticism aside I noticed some point of interest in the paper:</p>
 <ol type="1">
 <li><strong>cascades</strong> I was a momentarily shocked to see many references to <a href="https://en.wikipedia.org/wiki/Information_cascade">information cascades</a> in the paper, which I mentioned above. It is evident the authors are well versed on this subject well begging the question, why it this not covered in the course but rather named tips etc.</li>
 <li><strong>ANTs</strong> (Active Nonlinear Tests) are another interesting idea - i.e.&nbsp;using them to break the model. This seems to be a from of fuzz testing. At this point though I was still more interested in demonstrating that the model actually works.</li>
@@ -1040,7 +1056,7 @@ S^0  = \sum ^C_{j=1}\sum ^R_{i=1} s^0_{ij}
 <p>Rather than go into great detail about the model, I coded it using Mesa. Coding this model required some customization of the framework and that makes more advanced but also more educational. Also I can say that the lesson explained the model rather poor and that only by implementing the model did I get to understand this model.</p>
 <ul>
 <li>Agents are initialized as either standing or not, as with no one is standing at the start the will be no standing ovation.</li>
-<li>At each time step, agents decide to stand based on a Signal &gt; Threshold where the signal is based on the Quality and an error. <span class="math inline">\(S=Q+\epsilon &gt; T\)</span></li>
+<li>At each time step, agents decide to stand based on a Signal &gt; Threshold where the signal is based on the Quality and an error. <span class="math inline">S=Q+\epsilon &gt; T</span></li>
 </ul>
 <p>Some variations they discuss are</p>
 <ol type="1">
@@ -1092,23 +1108,23 @@ S^0  = \sum ^C_{j=1}\sum ^R_{i=1} s^0_{ij}
 </ul></li>
 <li><p>do a run to test the paper’s suggested metrics</p></li>
 </ol>
-<p>The model has the following elements.</p>
+<div class="no-row-height column-margin column-container"><div id="fn5"><p><sup>5</sup>&nbsp;<span class="citation" data-cites="miller2004standing">Miller and Page (<a href="#ref-miller2004standing" role="doc-biblioref">2004</a>)</span></p></div><div id="fn6"><p><sup>6</sup>&nbsp;<span class="citation" data-cites="miller2004standing">Miller and Page (<a href="#ref-miller2004standing" role="doc-biblioref">2004</a>)</span></p></div><div id="fn7"><p><sup>7</sup>&nbsp;<span class="citation" data-cites="Cole2020SOM">Cole (<a href="#ref-Cole2020SOM" role="doc-biblioref">2020</a>)</span></p></div><div id="fn8"><p><sup>8</sup>&nbsp;<span class="citation" data-cites="Cole2020SOM">Cole (<a href="#ref-Cole2020SOM" role="doc-biblioref">2020</a>)</span></p></div><div id="fn9"><p><sup>9</sup>&nbsp;<span class="citation" data-cites="Cole2020SOM">Cole (<a href="#ref-Cole2020SOM" role="doc-biblioref">2020</a>)</span></p></div><div id="fn10"><p><sup>10</sup>&nbsp;<span class="citation" data-cites="Cole2020SOM">Cole (<a href="#ref-Cole2020SOM" role="doc-biblioref">2020</a>)</span></p></div></div><p>The model has the following elements.</p>
 <ul>
-<li><span class="math inline">\(Q \in [0,100]\)</span> is the quality of the show</li>
-<li><span class="math inline">\(\epsilon\)</span> is an error or diversity</li>
-<li><span class="math inline">\(S=Q+\epsilon\)</span> is the signal</li>
-<li><span class="math inline">\(T\)</span> is the personal threshold</li>
+<li><span class="math inline">Q \in [0,100]</span> is the quality of the show</li>
+<li><span class="math inline">\epsilon</span> is an error or diversity</li>
+<li><span class="math inline">S=Q+\epsilon</span> is the signal</li>
+<li><span class="math inline">T</span> is the personal threshold</li>
 <li>Trigger
 <ul>
-<li>initially <span class="math inline">\(Q&gt;T\)</span></li>
-<li>later <span class="math inline">\(S&gt;T\)</span></li>
+<li>initially <span class="math inline">Q&gt;T</span></li>
+<li>later <span class="math inline">S&gt;T</span></li>
 </ul></li>
 </ul>
 <p>Three metrics:</p>
 <ol type="1">
 <li></li>
 </ol>
-<div id="071b5751" class="cell" data-execution_count="2">
+<div id="e517e22f" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> mesa</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> AudienceMember(mesa.Agent):</span>
@@ -1176,7 +1192,7 @@ S^0  = \sum ^C_{j=1}\sum ^R_{i=1} s^0_{ij}
 <span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.datacollector.collect(<span class="va">self</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Some code to visualize the state</p>
-<div id="8dc35640" class="cell" data-execution_count="3">
+<div id="0fb1f740" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib.ticker <span class="im">import</span> MultipleLocator, FormatStrFormatter</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -1212,7 +1228,7 @@ S^0  = \sum ^C_{j=1}\sum ^R_{i=1} s^0_{ij}
 <span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>    plt.title(<span class="ss">f"</span><span class="sc">{</span>model_name<span class="sc">}</span><span class="ss"> - </span><span class="sc">{</span>state_name<span class="sc">}</span><span class="ss">"</span>)</span>
 <span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>    plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="df675c17" class="cell" data-execution_count="4">
+<div id="16a45b09" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the model</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>so_model <span class="op">=</span> StandingOvationModel(<span class="dv">20</span>, <span class="dv">20</span>, initial_standing<span class="op">=</span><span class="fl">0.1</span>, threshold<span class="op">=</span><span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
@@ -1242,7 +1258,7 @@ Figure&nbsp;1: Standing Ovation Model - Initial Grid State
 </div>
 </div>
 <p>Simulate the standing ovation model for 15 steps.</p>
-<div id="20630998" class="cell" data-execution_count="6">
+<div id="56da5a45" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Run the model for a certain number of steps</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">15</span>):</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    so_model.step()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1286,23 +1302,23 @@ Figure&nbsp;2: Standing Ovation Model - Final Grid State
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">0</td>
-<td>95</td>
+<td>106</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">1</td>
-<td>135</td>
+<td>154</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2</td>
-<td>173</td>
+<td>202</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">3</td>
-<td>204</td>
+<td>239</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">4</td>
-<td>232</td>
+<td>261</td>
 </tr>
 </tbody>
 </table>
@@ -1317,11 +1333,11 @@ Figure&nbsp;3: Standing Ovation Model - Growth Analysis
 </div>
 <p>The following results come from this model.</p>
 <ol type="1">
-<li>Higher <span class="math inline">\(Q\)</span> will result in bigger ovations.</li>
-<li>Lower <span class="math inline">\(T\)</span> will result in bigger ovations.</li>
-<li>A lower percentage of standing <span class="math inline">\(X\)</span> will cause more standing ovations. If <span class="math inline">\(X\)</span> is large, an agent won’t stand up despite many people standing up.</li>
-<li>If <span class="math inline">\(X\)</span> is small, people will jump on any bandwagon.</li>
-<li>For <span class="math inline">\(Q &lt; T\)</span>, greater variation in <span class="math inline">\(\epsilon\)</span> will help the standing ovation spread by increasing a contagion-like effect - as we saw in the previous model.</li>
+<li>Higher <span class="math inline">Q</span> will result in bigger ovations.</li>
+<li>Lower <span class="math inline">T</span> will result in bigger ovations.</li>
+<li>A lower percentage of standing <span class="math inline">X</span> will cause more standing ovations. If <span class="math inline">X</span> is large, an agent won’t stand up despite many people standing up.</li>
+<li>If <span class="math inline">X</span> is small, people will jump on any bandwagon.</li>
+<li>For <span class="math inline">Q &lt; T</span>, greater variation in <span class="math inline">\epsilon</span> will help the standing ovation spread by increasing a contagion-like effect - as we saw in the previous model.</li>
 </ol>
 
 <div class="no-row-height column-margin column-container"><div class="quarto-figure quarto-figure-center">
@@ -1364,19 +1380,72 @@ Figure&nbsp;3: Standing Ovation Model - Growth Analysis
 </div></div>
 <p>The challenge of distinguishing whether individuals associate with one another due to sorting (as discussed by Schelling) or peer influence (illustrated by the standing ovation example) varies in complexity. In specific scenarios, like Racial segregation, the distinction is straightforward.</p>
 <p>However, the situation becomes murkier in other instances. Consider the phenomenon of happy people gravitating towards other happy individuals and the same pattern is observed among those who are unhappy. In these cases, both sorting and peer effects could be at play, and often, it’s challenging to pinpoint which is the driving force since the end result appears the same for both mechanisms. Therefore, simply observing the outcome won’t provide clarity. Sorting, characterized by the physical movement of individuals, necessitates dynamic data for accurate identification.</p>
-<p>Author <a href="https://en.wikipedia.org/wiki/Bill_Bishop_(author)">Bill Bishop</a>, discusses sorting in <span class="citation" data-cites="bishop2009big">[@bishop2009big]</span> the. For example, in recent years, many counties in the USA have become more polarized. Bishop argues that this occurs due to sorting. However, gerrymandering is a more likely root cause.</p>
-<p><a href="https://en.wikipedia.org/wiki/Nicholas_Christakis">Nicholas A. Christakis</a> and <a href="https://en.wikipedia.org/wiki/James_H._Fowler">James H. Fowler</a>, discusses peer effects in <span class="citation" data-cites="christakis2009connected">[@christakis2009connected]</span>.</p>
+<p>Author <a href="https://en.wikipedia.org/wiki/Bill_Bishop_(author)">Bill Bishop</a>, discusses sorting in <span class="citation" data-cites="bishop2009big">(<a href="#ref-bishop2009big" role="doc-biblioref">Bishop 2009</a>)</span> the. For example, in recent years, many counties in the USA have become more polarized. Bishop argues that this occurs due to sorting. However, gerrymandering is a more likely root cause.</p>
+<p><a href="https://en.wikipedia.org/wiki/Nicholas_Christakis">Nicholas A. Christakis</a> and <a href="https://en.wikipedia.org/wiki/James_H._Fowler">James H. Fowler</a>, discusses peer effects in <span class="citation" data-cites="christakis2009connected">(<a href="#ref-christakis2009connected" role="doc-biblioref">Christakis and Fowler 2009</a>)</span>.</p>
 <p>With migration data, it’s simpler to establish whether like-mindedness is caused by sorting or peer effects.</p>
 <section id="references" class="level3">
 <h3 class="anchored" data-anchor-id="references">References</h3>
 <p>Note: this page is based on the following source:</p>
 <ul>
-<li><span class="citation" data-cites="page2017modelthinking">[@page2017modelthinking]</span> MOOC, Course material &amp; Transcripts.</li>
-<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">[@fisher2017modelthinking]</span>.</li>
-<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">[@kleinikink2016naturalmoney]</span> and <span class="citation" data-cites="groh2017model">[@groh2017model]</span>.</li>
+<li><span class="citation" data-cites="page2017modelthinking">(<a href="#ref-page2017modelthinking" role="doc-biblioref">Page 2014</a>)</span> MOOC, Course material &amp; Transcripts.</li>
+<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">(<a href="#ref-fisher2017modelthinking" role="doc-biblioref">Fisher 2014</a>)</span>.</li>
+<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">(<a href="#ref-kleinikink2016naturalmoney" role="doc-biblioref">Klein Ikink 2016</a>)</span> and <span class="citation" data-cites="groh2017model">(<a href="#ref-groh2017model" role="doc-biblioref">Groh 2017</a>)</span>.</li>
 </ul>
-<div id="refs" role="list">
-
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Akerlof1970Lemons" class="csl-entry" role="listitem">
+Akerlof, George A. 1970. <span>“The Market for "Lemons": Quality Uncertainty and the Market Mechanism.”</span> <em>The Quarterly Journal of Economics</em> 84 (3): 488–500.
+</div>
+<div id="ref-bishop2009big" class="csl-entry" role="listitem">
+Bishop, B. 2009. <em>The Big Sort: Why the Clustering of Like-Minded America Is Tearing Us Apart</em>. Houghton Mifflin Harcourt.
+</div>
+<div id="ref-christakis2009connected" class="csl-entry" role="listitem">
+Christakis, N. A., and J. H. Fowler. 2009. <em>Connected: The Surprising Power of Our Social Networks and How They Shape Our Lives</em>. Little, Brown.
+</div>
+<div id="ref-Cole2020SOM" class="csl-entry" role="listitem">
+Cole, Lewis. 2020. <span>“Standing Ovation Model.”</span> 2020. <a href="https://lewiscoleblog.com/standing-ovation">https://lewiscoleblog.com/standing-ovation</a>.
+</div>
+<div id="ref-duncan1955methodological" class="csl-entry" role="listitem">
+Duncan, Otis Dudley, and Beverly Duncan. 1955. <span>“A Methodological Analysis of Segregation Indexes.”</span> <em>American Sociological Review</em> 20 (2): 210–17.
+</div>
+<div id="ref-fisher2017modelthinking" class="csl-entry" role="listitem">
+Fisher, Steve. 2014. <span>“Model Thinking – TA Notes.”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
+<div id="ref-granovetter1983threshold" class="csl-entry" role="listitem">
+Granovetter, Mark, and Roland Soong. 1983. <span>“Threshold Models of Diffusion and Collective Behavior.”</span> <em>Journal of Mathematical Sociology</em>.
+</div>
+<div id="ref-granovetter1986threshold" class="csl-entry" role="listitem">
+———. 1986. <span>“Threshold Models of Interpersonal Effects in Consumer Demand.”</span> <em>Journal of Economic Behavior &amp; Organization</em> 7 (1): 83–99.
+</div>
+<div id="ref-granovetter1988threshold" class="csl-entry" role="listitem">
+———. 1988. <span>“Threshold Models of Diversity: Chinese Restaurants, Residential Segregation, and the Spiral of Silence.”</span> <em>Sociological Methodology</em>, 69–104.
+</div>
+<div id="ref-groh2017model" class="csl-entry" role="listitem">
+Groh, Rainer. 2017. <span>“Model Thinking - Course Notes by Rainer Groh.”</span> <a href="https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf" class="uri">https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf</a>. November 2017.
+</div>
+<div id="ref-Hatna2012Schelling" class="csl-entry" role="listitem">
+Hatna, Erez, and Itzhak Benenson. 2012. <span>“The Schelling Model of Ethnic Residential Dynamics: Beyond the Integrated - Segregated Dichotomy of Patterns.”</span> <em>J. Artificial Societies and Social Simulation</em> 15 (1). <a href="http://dblp.uni-trier.de/db/journals/jasss/jasss15.html#HatnaB12">http://dblp.uni-trier.de/db/journals/jasss/jasss15.html#HatnaB12</a>.
+</div>
+<div id="ref-kleinikink2016naturalmoney" class="csl-entry" role="listitem">
+Klein Ikink, Bart. 2016. <span>“Model Thinking.”</span> <a href="https://naturalmoney.org/modelthinking-01.html" class="uri">https://naturalmoney.org/modelthinking-01.html</a>. March 2016.
+</div>
+<div id="ref-miller2004standing" class="csl-entry" role="listitem">
+Miller, John H, and Scott E Page. 2004. <span>“The Standing Ovation Problem.”</span> <em>Complexity</em>. Wiley Subscription Services, Inc., A Wiley Company Hoboken.
+</div>
+<div id="ref-Mauro2022segregation" class="csl-entry" role="listitem">
+Nanni, Mirco. 2023. <span>“Segregation Models.”</span> 2023. <a href="http://didawiki.cli.di.unipi.it/lib/exe/fetch.php/geospatialanalytics/gsa/lesson_09_-_segregation.pdf">http://didawiki.cli.di.unipi.it/lib/exe/fetch.php/geospatialanalytics/gsa/lesson_09_-_segregation.pdf</a>.
+</div>
+<div id="ref-page2017modelthinking" class="csl-entry" role="listitem">
+Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
+<div id="ref-schelling1969models" class="csl-entry" role="listitem">
+Schelling, Thomas C. 1969. <span>“Models of Segregation.”</span> <em>The American Economic Review</em> 59 (2): 488–93.
+</div>
+<div id="ref-schelling1971dynamic" class="csl-entry" role="listitem">
+———. 1971. <span>“Dynamic Models of Segregation.”</span> <em>Journal of Mathematical Sociology</em> 1 (2): 143–86.
+</div>
+<div id="ref-schelling1978micromotives" class="csl-entry" role="listitem">
+———. 1978. <em>Micromotives and Macrobehavior</em>. Fels Lectures on Public Policy Analysis. Norton. <a href="https://www.google.com/books?id=4C5mQgAACAAJ">https://www.google.com/books?id=4C5mQgAACAAJ</a>.
+</div>
 </div>
 
 
@@ -1384,21 +1453,17 @@ Figure&nbsp;3: Standing Ovation Model - Growth Analysis
 </section>
 
 
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>in <span class="citation" data-cites="Mauro2022segregation">@Mauro2022segregation</span><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>in <span class="citation" data-cites="Mauro2022segregation">@Mauro2022segregation</span><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>in <span class="citation" data-cites="Mauro2022segregation">@Mauro2022segregation</span><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>in <span class="citation" data-cites="Mauro2022segregation">@Mauro2022segregation</span><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p><span class="citation" data-cites="miller2004standing">@miller2004standing</span><a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p><span class="citation" data-cites="miller2004standing">@miller2004standing</span><a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn7"><p><span class="citation" data-cites="Cole2020SOM">@Cole2020SOM</span><a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn8"><p><span class="citation" data-cites="Cole2020SOM">@Cole2020SOM</span><a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn9"><p><span class="citation" data-cites="Cole2020SOM">@Cole2020SOM</span><a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn10"><p><span class="citation" data-cites="Cole2020SOM">@Cole2020SOM</span><a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{2023,
+  author = {},
+  title = {Lesson 2 - {Segregation} and {Peer} {Effects}},
+  date = {2023-08-02},
+  url = {https://orenbochman.github.io/notes-model-thinking/posts/w02.html},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-2023" class="csl-entry quarto-appendix-citeas" role="listitem">
+<span>“Lesson 2 - Segregation and Peer Effects.”</span> 2023. August 2,
+2023. <a href="https://orenbochman.github.io/notes-model-thinking/posts/w02.html">https://orenbochman.github.io/notes-model-thinking/posts/w02.html</a>.
+</div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -1489,7 +1554,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/orenbochman\.github\.io\/notes-model-thinking\/");
+      var filterRegex = new RegExp("^(?:http:|https:)\/\/www\.quarto\.org\/custom");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -1503,6 +1568,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         if (link.dataset.originalHref !== undefined) {
           link.href = link.dataset.originalHref;
         }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+          // default icon
+          link.classList.add("external");
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -1834,4 +1906,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

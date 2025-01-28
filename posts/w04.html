@@ -25,6 +25,7 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -86,9 +87,30 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<style>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+      .quarto-title-block .quarto-title-banner {
+        background: images/banner_black_3.jpg;
+      }
+</style>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -123,7 +145,7 @@ window.Quarto = {
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -174,7 +196,38 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Lesson 4 - Decision Models</h1>
+            <p class="subtitle lead">Model Thinking</p>
+                                <div class="quarto-categories">
+                <div class="quarto-category">model thinking</div>
+                <div class="quarto-category">Decision Models</div>
+                <div class="quarto-category">Multi-criterion Decision-making</div>
+                <div class="quarto-category">Spatial choice models</div>
+                <div class="quarto-category">Decision trees</div>
+                <div class="quarto-category">Value of information</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta column-page-left">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">August 4, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -204,40 +257,10 @@ window.Quarto = {
 <div class="toc-actions"><ul><li><a href="https://github.com/OrenBochman/notes-model-thinking/edit/main/posts/w04.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OrenBochman/notes-model-thinking/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Lesson 4 - Decision Models</h1>
-<p class="subtitle lead">Model Thinking</p>
-  <div class="quarto-categories">
-    <div class="quarto-category">model thinking</div>
-    <div class="quarto-category">Decision Models</div>
-    <div class="quarto-category">Multi-criterion Decision-making</div>
-    <div class="quarto-category">Spatial choice models</div>
-    <div class="quarto-category">Decision trees</div>
-    <div class="quarto-category">Value of information</div>
-  </div>
-  </div>
+<main class="content quarto-banner-title-block page-columns page-full column-page-left" id="quarto-document-content">
 
 
 
-<div class="quarto-title-meta">
-
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">August 4, 2023</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-
-
-</header>
 
 
 <section id="sec-introduction-to-decision-making" class="level2">
@@ -294,7 +317,7 @@ window.Quarto = {
 <li>and so the absolute value of the difference is 0, 1, 0, 1, 0, 0</li>
 <li>adding up gives 2.</li>
 </ul>
-<p><span class="math inline">\(2&lt;5 \implies\)</span> we will decide to get a Whopper</p>
+<p><span class="math inline">2&lt;5 \implies</span> we will decide to get a Whopper</p>
 </div>
 <section id="probability-the-basics" class="level3">
 <h3 class="anchored" data-anchor-id="probability-the-basics">Probability: The basics</h3>
@@ -306,9 +329,9 @@ window.Quarto = {
 </ul>
 <p>The Frequentist approach is the most common followed by the Bayesian one. Probability is defined as the likelihood of some future event happening. There are three axioms of probability that are universally true:</p>
 <ul>
-<li><strong>P1</strong> <span class="math inline">\(P(A) \in [0,1]\)</span> if <span class="math inline">\(P(A)=1\)</span> we call it the impossible event, and is <span class="math inline">\(P(A)=1\)</span> we call it the certain event.</li>
-<li><strong>P2</strong> <span class="math inline">\(i \ne j \implies x_j \bigcap x_i = \emptyset \text{ and } P(\bigcup x_i) = \mathbb{1} \sum_{\omega \in \Omega} P(X=x_\omega)=1\)</span> i.e.&nbsp;sum of all the probabilities of all mutually exclusive outcomes of X is 1</li>
-<li><strong>P3</strong> <span class="math inline">\(\forall A \subset B \implies P(B)&gt;P(A)\)</span>.</li>
+<li><strong>P1</strong> <span class="math inline">P(A) \in [0,1]</span> if <span class="math inline">P(A)=1</span> we call it the impossible event, and is <span class="math inline">P(A)=1</span> we call it the certain event.</li>
+<li><strong>P2</strong> <span class="math inline">i \ne j \implies x_j \bigcap x_i = \emptyset \text{ and } P(\bigcup x_i) = \mathbb{1} \sum_{\omega \in \Omega} P(X=x_\omega)=1</span> i.e.&nbsp;sum of all the probabilities of all mutually exclusive outcomes of X is 1</li>
+<li><strong>P3</strong> <span class="math inline">\forall A \subset B \implies P(B)&gt;P(A)</span>.</li>
 </ul>
 </section>
 </section>
@@ -378,10 +401,10 @@ Tip
 <p>Alternatively, if we have data on the time/cost of writing previous scholarship essays, we can use a decision tree model to learn the probabilities from the data.</p>
 </div>
 </div>
-<p>In the final round, there’s a 10% chance of winning $4940 and a 90% chance of losing $60, resulting in a value of <span class="math inline">\(0.9 \times - 60 USD + 0.1 \times 4940 USD = 440 USD\)</span> The chance of reaching the final and potentially winning $440 is 5%, worth $22. There’s a 95% chance of losing $20, worth -$19. Therefore, the value of writing the first essay is $3 compared to $0 for not participating.</p>
+<p>In the final round, there’s a 10% chance of winning $4940 and a 90% chance of losing $60, resulting in a value of <span class="math inline">0.9 \times - 60 USD + 0.1 \times 4940 USD = 440 USD</span> The chance of reaching the final and potentially winning $440 is 5%, worth $22. There’s a 95% chance of losing $20, worth -$19. Therefore, the value of writing the first essay is $3 compared to $0 for not participating.</p>
 </div>
 <p>We can also use decision trees to infer what other people think about probabilities.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
-</section>
+<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;this is a useful ability for Bayesian games</p></div></div></section>
 <section id="insights-into-others-incentives" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="insights-into-others-incentives">Insights into others’ incentives</h3>
 <div id="exm-investment-tree" class="theorem example page-columns page-full">
@@ -402,9 +425,9 @@ Tip
 <p>We can try to work this out using a decision tree.</p>
 <p>Let us suppose:</p>
 <ul>
-<li><span class="math inline">\(P(I=success)=p\)</span></li>
-<li>thus by rule P2 <span class="math inline">\(P(I=failure)=1-p\)</span> .</li>
-<li>Her decision suggests that she thinks <span class="math inline">\(50p - 2(1-p) &gt; 0 \ge 52p &gt; 2 \ge p &gt; 1/26 \approx 4%\)</span>.</li>
+<li><span class="math inline">P(I=success)=p</span></li>
+<li>thus by rule P2 <span class="math inline">P(I=failure)=1-p</span> .</li>
+<li>Her decision suggests that she thinks <span class="math inline">50p - 2(1-p) &gt; 0 \ge 52p &gt; 2 \ge p &gt; 1/26 \approx 4%</span>.</li>
 <li>We can infer from her decision that she thinks that the chance of success is above 4%.</li>
 </ul>
 </div>
@@ -420,12 +443,12 @@ Tip
 <p><img src="images/mt_decision_tree_04.jpg" class="img-fluid figure-img"></p>
 <figcaption>Visiting Parents decision tree</figcaption>
 </figure>
-</div></div><p>Imagine having a standby ticket to visit your parents with a <span class="math inline">\(\frac{1}{3}\)</span> chance of getting on the flight.</p>
+</div></div><p>Imagine having a standby ticket to visit your parents with a <span class="math inline">\frac{1}{3}</span> chance of getting on the flight.</p>
 <p>The decision of whether to go to the airport or not can be analyzed using a decision tree to determine how much you <strong>value</strong> seeing your parents.</p>
 <p>Let V represent the value of seeing your parents and c represent the cost of going to the airport. Choosing not to go implies that</p>
-<p><span class="math display">\[
+<p><span class="math display">
 \frac{1}{3} (V - c) -\frac{2}{3} c &lt; 0 \implies \frac{1}{3}V &lt; c \implies V &lt; 3c
-\]</span></p>
+</span></p>
 <p>This means the value of seeing your parents is less than three times the cost of going to the airport.</p>
 <p>Conversely, going to the airport suggests the value is greater than three times the cost.</p>
 </div>
@@ -441,11 +464,11 @@ Tip
 </ol>
 <p>This is disarmingly simple except we will usually need the information in part 2, before we know if we should buy it.</p>
 <div id="exm-b-y-or-rent" class="theorem example">
-<p><span class="theorem-title"><strong>Example 8 (Roulette wheel)</strong></span> In the United States a <a href="https://en.wikipedia.org/wiki/Roulette">roulette wheel</a> has 38 different options, the numbers 1 through 36 plus two other spots. If we forecast a particular option, the odds of winning are <span class="math inline">\(\frac{1}{38}\)</span>. What is the value of information here?</p>
+<p><span class="theorem-title"><strong>Example 8 (Roulette wheel)</strong></span> In the United States a <a href="https://en.wikipedia.org/wiki/Roulette">roulette wheel</a> has 38 different options, the numbers 1 through 36 plus two other spots. If we forecast a particular option, the odds of winning are <span class="math inline">\frac{1}{38}</span>. What is the value of information here?</p>
 <ul>
-<li>Without information our expected winnings are <span class="math inline">\(\frac{100}/{38}\)</span> USD.</li>
-<li>With information our expected winnings are <span class="math inline">\(100\)</span> USD.</li>
-<li>Thus this information is worth <span class="math inline">\(100- \frac{100}/{38}\)</span> USD</li>
+<li>Without information our expected winnings are <span class="math inline">\frac{100}/{38}</span> USD.</li>
+<li>With information our expected winnings are <span class="math inline">100</span> USD.</li>
+<li>Thus this information is worth <span class="math inline">100- \frac{100}/{38}</span> USD</li>
 </ul>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -474,7 +497,7 @@ Tip
 <p>Now suppose we know someone at the auto company who can sell us this information, how much would it be worth to pay him?</p>
 <p>This is fairly easy to estimate with a decision tree.</p>
 <p>The choice is between renting or buying a car.</p>
-<p>We can see from the figure that - the value of renting without information is $0.4 <span class="math inline">\(\$500 + 0.6 \times -\$500 = -\$100\)</span>. - the value of the buying, is $0. - buying is best without information.</p>
+<p>We can see from the figure that - the value of renting without information is $0.4 <span class="math inline">\$500 + 0.6 \times -\$500 = -\$100</span>. - the value of the buying, is $0. - buying is best without information.</p>
 
 <div class="no-row-height column-margin column-container"><div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -488,7 +511,7 @@ Tip
 </figure>
 </div></div>
 <p>If you have the information we can estimate our new expected payoffs:</p>
-<p><span class="math inline">\(0.4 \times 500 \text{ USD } + 0.6 \times 0 \text{ USD } = 200 \text{ USD }\)</span></p>
+<p><span class="math inline">0.4 \times 500 \text{ USD } + 0.6 \times 0 \text{ USD } = 200 \text{ USD }</span></p>
 <p>Since before our best course had 0 USD expected payoff, this is also the value of the information.</p>
 </div>
 </section>
@@ -500,24 +523,39 @@ Tip
 <h2 class="anchored" data-anchor-id="references">References</h2>
 <p>Note: this page is based on the following source:</p>
 <ul>
-<li><span class="citation" data-cites="page2017modelthinking">[@page2017modelthinking]</span> MOOC, Course material &amp; Transcripts.</li>
-<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">[@fisher2017modelthinking]</span>.</li>
-<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">[@kleinikink2016naturalmoney]</span> and <span class="citation" data-cites="groh2017model">[@groh2017model]</span>.</li>
+<li><span class="citation" data-cites="page2017modelthinking">(<a href="#ref-page2017modelthinking" role="doc-biblioref">Page 2014</a>)</span> MOOC, Course material &amp; Transcripts.</li>
+<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">(<a href="#ref-fisher2017modelthinking" role="doc-biblioref">Fisher 2014</a>)</span>.</li>
+<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">(<a href="#ref-kleinikink2016naturalmoney" role="doc-biblioref">Klein Ikink 2016</a>)</span> and <span class="citation" data-cites="groh2017model">(<a href="#ref-groh2017model" role="doc-biblioref">Groh 2017</a>)</span>.</li>
 </ul>
-<div id="refs" role="list">
-
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-fisher2017modelthinking" class="csl-entry" role="listitem">
+Fisher, Steve. 2014. <span>“Model Thinking – TA Notes.”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
+<div id="ref-groh2017model" class="csl-entry" role="listitem">
+Groh, Rainer. 2017. <span>“Model Thinking - Course Notes by Rainer Groh.”</span> <a href="https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf" class="uri">https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf</a>. November 2017.
+</div>
+<div id="ref-kleinikink2016naturalmoney" class="csl-entry" role="listitem">
+Klein Ikink, Bart. 2016. <span>“Model Thinking.”</span> <a href="https://naturalmoney.org/modelthinking-01.html" class="uri">https://naturalmoney.org/modelthinking-01.html</a>. March 2016.
+</div>
+<div id="ref-page2017modelthinking" class="csl-entry" role="listitem">
+Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
 </div>
 
 
 </section>
 
 
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>this is a useful ability for Bayesian games<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{2023,
+  author = {},
+  title = {Lesson 4 - {Decision} {Models}},
+  date = {2023-08-04},
+  url = {https://orenbochman.github.io/notes-model-thinking/posts/w04.html},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-2023" class="csl-entry quarto-appendix-citeas" role="listitem">
+<span>“Lesson 4 - Decision Models.”</span> 2023. August 4, 2023. <a href="https://orenbochman.github.io/notes-model-thinking/posts/w04.html">https://orenbochman.github.io/notes-model-thinking/posts/w04.html</a>.
+</div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -608,7 +646,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/orenbochman\.github\.io\/notes-model-thinking\/");
+      var filterRegex = new RegExp("^(?:http:|https:)\/\/www\.quarto\.org\/custom");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -622,6 +660,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         if (link.dataset.originalHref !== undefined) {
           link.href = link.dataset.originalHref;
         }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+          // default icon
+          link.classList.add("external");
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -953,4 +998,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

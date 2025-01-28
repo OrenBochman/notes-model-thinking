@@ -25,6 +25,7 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -86,9 +87,30 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<style>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+      .quarto-title-block .quarto-title-banner {
+        background: images/banner_black_3.jpg;
+      }
+</style>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -123,7 +145,7 @@ window.Quarto = {
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -174,7 +196,36 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Lesson 5 - Thinking Electrons Modelling People</h1>
+            <p class="subtitle lead">Model Thinking</p>
+                                <div class="quarto-categories">
+                <div class="quarto-category">model thinking</div>
+                <div class="quarto-category">Rational Actor model</div>
+                <div class="quarto-category">Behavioral model</div>
+                <div class="quarto-category">Rule-based models</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta column-page-left">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">August 5, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -192,38 +243,10 @@ window.Quarto = {
 <div class="toc-actions"><ul><li><a href="https://github.com/OrenBochman/notes-model-thinking/edit/main/posts/w05.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OrenBochman/notes-model-thinking/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Lesson 5 - Thinking Electrons Modelling People</h1>
-<p class="subtitle lead">Model Thinking</p>
-  <div class="quarto-categories">
-    <div class="quarto-category">model thinking</div>
-    <div class="quarto-category">Rational Actor model</div>
-    <div class="quarto-category">Behavioral model</div>
-    <div class="quarto-category">Rule-based models</div>
-  </div>
-  </div>
+<main class="content quarto-banner-title-block page-columns page-full column-page-left" id="quarto-document-content">
 
 
 
-<div class="quarto-title-meta">
-
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">August 5, 2023</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-
-
-</header>
 
 
 <section id="sec-thinking-electrons-modelling-people" class="level2 page-columns page-full">
@@ -298,7 +321,7 @@ window.Quarto = {
 <li>In group decisions.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</li>
 <li>In simple settings.</li>
 </ul>
-<p><span class="marked">What are the merits of the rational actor model?</span></p>
+<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;disfuntional <a href="https://en.wikipedia.org/wiki/Groupthink">Groupthink</a> in the context of the <a href="https://en.wikipedia.org/wiki/Bay_of_Pigs_Invasion">Bay of Pigs</a> (the failed invasion of Castro’s Cuba in 1961) nearly lead to Armageddon</p></div></div><p><span class="marked">What are the merits of the rational actor model?</span></p>
 <ul>
 <li>It’s a <strong>benchmark</strong> to evaluate actual behavior</li>
 <li>Learning has a tendency to make people more rational</li>
@@ -327,8 +350,8 @@ window.Quarto = {
 </figure>
 </div></div>
 <p>Behavioral models are critical of the rational actor assumption based on evidence of actual behavior, neuroscience, and psychology. Experiments reveal systematic deviations from optimal choices, and neuroscience sheds light on how our brain structure, information processing, and thinking patterns lead us astray from rational actor predictions.</p>
-<p>In Thinking, Fast and Slow, <a href="https://en.wikipedia.org/wiki/Daniel_Kahneman">Daniel Kahneman</a> <span class="citation" data-cites="kahneman2011thinking">@kahneman2011thinking</span> proposes two systems of thought: fast processes driven by emotion and quick cues and slow processes that are more deliberate and rational. Fast thinking makes us susceptible to biases that the rational actor model ignores.</p>
-<p><a href="https://en.wikipedia.org/wiki/Cass_Sunstein">Cass Sunstein</a> and <a href="https://en.wikipedia.org/wiki/Richard_Thaler">Richard Thaler</a> <span class="citation" data-cites="thaler2012nudge">[@thaler2012nudge]</span> argue that these systematic errors in human judgment have significant implications for policy design.</p>
+<p>In Thinking, Fast and Slow, <a href="https://en.wikipedia.org/wiki/Daniel_Kahneman">Daniel Kahneman</a> <span class="citation" data-cites="kahneman2011thinking">Kahneman (<a href="#ref-kahneman2011thinking" role="doc-biblioref">2011</a>)</span> proposes two systems of thought: fast processes driven by emotion and quick cues and slow processes that are more deliberate and rational. Fast thinking makes us susceptible to biases that the rational actor model ignores.</p>
+<p><a href="https://en.wikipedia.org/wiki/Cass_Sunstein">Cass Sunstein</a> and <a href="https://en.wikipedia.org/wiki/Richard_Thaler">Richard Thaler</a> <span class="citation" data-cites="thaler2012nudge">(<a href="#ref-thaler2012nudge" role="doc-biblioref">Thaler and Sunstein 2012</a>)</span> argue that these systematic errors in human judgment have significant implications for policy design.</p>
 <p>Four types of well-documented biases cause behavior to deviate from rational behavior:</p>
 <ol type="1">
 <li><strong>Prospect theory</strong> is an agent’s bias to be risk averse for profits yet risk loving for losses.</li>
@@ -338,7 +361,7 @@ window.Quarto = {
 </ol>
 <p><strong>Prospect theory</strong> explains seemingly irrational gambling behavior. For example, people might choose a guaranteed $400 over a 50% chance of winning $1,000 but prefer a 50% chance of losing $1,000 over a guaranteed $400 loss.</p>
 <p>Kahneman came up with the following example.</p>
-<p>Suppose you have two options. You can get $400 for sure, or you get a 50% chance of winning $1,000 and a 50% chance of gaining $0. A lot of people would choose the $400 for sure. If the amounts get larger, people become more risk-averse in gains. However, when there is a choice between an inevitable loss of $400 or a loss of $1,000 at <span class="math inline">\(p(loss) = 0.5\)</span> or a loss of $0, people are more willing to take the gamble. Both behaviors are not rational.</p>
+<p>Suppose you have two options. You can get $400 for sure, or you get a 50% chance of winning $1,000 and a 50% chance of gaining $0. A lot of people would choose the $400 for sure. If the amounts get larger, people become more risk-averse in gains. However, when there is a choice between an inevitable loss of $400 or a loss of $1,000 at <span class="math inline">p(loss) = 0.5</span> or a loss of $0, people are more willing to take the gamble. Both behaviors are not rational.</p>
 <p><strong>Hyperbolic discounting</strong> explains our preference for immediate gratification. We might choose $1,000 today over $1,005 tomorrow but prefer $1,005 in a year and a day over $1,000 in a year. This leads to the “chocolate cake” dilemma – we might plan to resist temptation in the future but succumb when faced with immediate gratification.</p>
 <p>e.g., we tend to prefer $1000 now to $1005 tomorrow, but we tend to prefer $1005 over a year and a day to $1000 over a year. Immediate gratification matters a lot to humans. This often has what is called the chocolate cake implication. People want to be healthy, so if you are offered a chocolate cake a week from now, you are more likely to decline the offer, but if the chocolate cake is put in front of you, you are more likely to eat it. This is because fast thinking prevails.</p>
 
@@ -392,24 +415,46 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="references">References</h2>
 <p>Note: this page is based on the following source:</p>
 <ul>
-<li><span class="citation" data-cites="page2017modelthinking">[@page2017modelthinking]</span> MOOC, Course material &amp; Transcripts.</li>
-<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">[@fisher2017modelthinking]</span>.</li>
-<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">[@kleinikink2016naturalmoney]</span> and <span class="citation" data-cites="groh2017model">[@groh2017model]</span>.</li>
+<li><span class="citation" data-cites="page2017modelthinking">(<a href="#ref-page2017modelthinking" role="doc-biblioref">Page 2014</a>)</span> MOOC, Course material &amp; Transcripts.</li>
+<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">(<a href="#ref-fisher2017modelthinking" role="doc-biblioref">Fisher 2014</a>)</span>.</li>
+<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">(<a href="#ref-kleinikink2016naturalmoney" role="doc-biblioref">Klein Ikink 2016</a>)</span> and <span class="citation" data-cites="groh2017model">(<a href="#ref-groh2017model" role="doc-biblioref">Groh 2017</a>)</span>.</li>
 </ul>
-<div id="refs" role="list">
-
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-fisher2017modelthinking" class="csl-entry" role="listitem">
+Fisher, Steve. 2014. <span>“Model Thinking – TA Notes.”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
+<div id="ref-groh2017model" class="csl-entry" role="listitem">
+Groh, Rainer. 2017. <span>“Model Thinking - Course Notes by Rainer Groh.”</span> <a href="https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf" class="uri">https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf</a>. November 2017.
+</div>
+<div id="ref-kahneman2011thinking" class="csl-entry" role="listitem">
+Kahneman, Daniel. 2011. <em>Thinking, Fast and Slow</em>. Farrar, Straus; Giroux.
+</div>
+<div id="ref-kleinikink2016naturalmoney" class="csl-entry" role="listitem">
+Klein Ikink, Bart. 2016. <span>“Model Thinking.”</span> <a href="https://naturalmoney.org/modelthinking-01.html" class="uri">https://naturalmoney.org/modelthinking-01.html</a>. March 2016.
+</div>
+<div id="ref-page2017modelthinking" class="csl-entry" role="listitem">
+Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
+<div id="ref-thaler2012nudge" class="csl-entry" role="listitem">
+Thaler, R. H., and C. R. Sunstein. 2012. <em>Nudge: The Final Edition</em>. Penguin Books Limited.
+</div>
 </div>
 
 
 </section>
 
 
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>disfuntional <a href="https://en.wikipedia.org/wiki/Groupthink">Groupthink</a> in the context of the <a href="https://en.wikipedia.org/wiki/Bay_of_Pigs_Invasion">Bay of Pigs</a> (the failed invasion of Castro’s Cuba in 1961) nearly lead to Armageddon<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{2023,
+  author = {},
+  title = {Lesson 5 - {Thinking} {Electrons} {Modelling} {People}},
+  date = {2023-08-05},
+  url = {https://orenbochman.github.io/notes-model-thinking/posts/w05.html},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-2023" class="csl-entry quarto-appendix-citeas" role="listitem">
+<span>“Lesson 5 - Thinking Electrons Modelling People.”</span> 2023.
+August 5, 2023. <a href="https://orenbochman.github.io/notes-model-thinking/posts/w05.html">https://orenbochman.github.io/notes-model-thinking/posts/w05.html</a>.
+</div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -500,7 +545,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/orenbochman\.github\.io\/notes-model-thinking\/");
+      var filterRegex = new RegExp("^(?:http:|https:)\/\/www\.quarto\.org\/custom");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -514,6 +559,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         if (link.dataset.originalHref !== undefined) {
           link.href = link.dataset.originalHref;
         }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+          // default icon
+          link.classList.add("external");
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -845,4 +897,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

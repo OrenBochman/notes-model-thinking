@@ -25,6 +25,7 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -86,6 +87,7 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 <style>
 
       .quarto-title-block .quarto-title-banner {
@@ -94,8 +96,22 @@ background-size: cover;
       }
 </style>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -183,7 +199,7 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
+    <div class="quarto-title column-page-left">
       <h1 class="title">Lesson 8 - Economic Growth</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">model thinking</div>
@@ -202,7 +218,7 @@ window.Quarto = {
   </div>
     
   
-  <div class="quarto-title-meta">
+  <div class="quarto-title-meta column-page-left">
 
       
       <div>
@@ -216,7 +232,7 @@ window.Quarto = {
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -237,7 +253,7 @@ window.Quarto = {
 <div class="toc-actions"><ul><li><a href="https://github.com/OrenBochman/notes-model-thinking/edit/main/posts/w08.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OrenBochman/notes-model-thinking/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
+<main class="content quarto-banner-title-block page-columns page-full column-page-left" id="quarto-document-content">
 
 
 
@@ -252,7 +268,7 @@ window.Quarto = {
 <p><img src="images/mt_gdp_comparison.jpg" class="img-fluid figure-img"></p>
 <figcaption>Comparison Botswana versus Zimbabwe</figcaption>
 </figure>
-</div></div><p>The gross domestic product (GDP) is the market value of all goods and services produced in an economy. We want to know what causes growth. e.g., Botswana did much better than Zimbabwe. The economists <a href="https://en.wikipedia.org/wiki/Daron_Acemoglu">Daron Acemoglu</a> and <a href="https://en.wikipedia.org/wiki/James_A._Robinson">James Robinson</a> wrote a book named <span class="citation" data-cites="acemoglu2012nations">[@acemoglu2012nations]</span> Why Nations Fail that focuses on the question why some countries like Zimbabwe do so badly.</p>
+</div></div><p>The gross domestic product (GDP) is the market value of all goods and services produced in an economy. We want to know what causes growth. e.g., Botswana did much better than Zimbabwe. The economists <a href="https://en.wikipedia.org/wiki/Daron_Acemoglu">Daron Acemoglu</a> and <a href="https://en.wikipedia.org/wiki/James_A._Robinson">James Robinson</a> wrote a book named <span class="citation" data-cites="acemoglu2012nations">(<a href="#ref-acemoglu2012nations" role="doc-biblioref">Acemoglu and Robinson 2012</a>)</span> Why Nations Fail that focuses on the question why some countries like Zimbabwe do so badly.</p>
 <p>Economists often talk about real changes in GDP. Real means that inflation is taken into account. The economy is measured in currency, e.g.&nbsp;dollars. If the economy grows by 5% in dollars but the inflation is 3%, then this increased amount of dollars is worth less.</p>
 <p>An important question is whether or not super high levels of economic growth are sustainable. China has had growth rates of around 10% for 15 years. Japan had similar growth rates in the 1960s, and they remained high in the 1970s and 1980s. Japan’s growth rates fell after the country caught up with the rest of the world.</p>
 
@@ -274,14 +290,14 @@ window.Quarto = {
 <p><img src="images/mt_growth_rates.jpg" class="img-fluid figure-img"></p>
 <figcaption>Different growth rates</figcaption>
 </figure>
-</div></div><p>Exponential growth is simple and like the formula <span class="math inline">\(x(1 + r)t\)</span>. e.g., if you have $100 and 5% interest, you have $105 after one year. After two years it is $110.25. After ten years is is 100*(1 + 0.05)10. You can do the same with GDP. So, if you have a GDP of <em>G</em> and a growth rate of <span class="math inline">\(r%\)</span> then GDP after <span class="math inline">\(n\)</span> years will be <span class="math inline">\(G * (1 + r/100)n\)</span>.</p>
+</div></div><p>Exponential growth is simple and like the formula <span class="math inline">x(1 + r)t</span>. e.g., if you have $100 and 5% interest, you have $105 after one year. After two years it is $110.25. After ten years is is 100*(1 + 0.05)10. You can do the same with GDP. So, if you have a GDP of <em>G</em> and a growth rate of <span class="math inline">r%</span> then GDP after <span class="math inline">n</span> years will be <span class="math inline">G * (1 + r/100)n</span>.</p>
 <p>So, why are growth rates so important? That is because differences in the growth rate can have dramatic consequences in the long run. This is because this growth is exponential.</p>
 <p>The Rule of 72 means that dividing 72 by the growth rate approximately gives you the number of years in which the variable will double. For a growth rate of 2%, the Rule of 72 gives a number of years of 36. The exact number is 35. For 6% growth, the Rule of 72 gives a number of years of 12. So, in 36 years, 6% growth means doubling 3 times, or growing to 8 times the original GDP.</p>
-<p>Continuous compounding means that growth is constant and not just at intervals. The formula <span class="math inline">\(x(1 + r)t\)</span> is just a simplification as if growth only happens once a year. It is possible to calculate interest every day using a formula like <span class="math inline">\(x(1 + r/365)365\)</span>, but this doesn’t work for continuous compounding.</p>
-<p>For continuous compounding, the interval length approximates zero and the number of intervals approximates infinite. In that case the interest can be calculated using <span class="math display">\[
+<p>Continuous compounding means that growth is constant and not just at intervals. The formula <span class="math inline">x(1 + r)t</span> is just a simplification as if growth only happens once a year. It is possible to calculate interest every day using a formula like <span class="math inline">x(1 + r/365)365</span>, but this doesn’t work for continuous compounding.</p>
+<p>For continuous compounding, the interval length approximates zero and the number of intervals approximates infinite. In that case the interest can be calculated using <span class="math display">
 \lim_{n \to\infty} (1 + \frac{r}{n})^{n_t}  = e^{r_t}
-\]</span> where</p>
-<p><span class="math inline">\(e= 2.71828\)</span>.</p>
+</span> where</p>
+<p><span class="math inline">e= 2.71828</span>.</p>
 <p>This is a much simpler formula for growth.</p>
 
 <div class="no-row-height column-margin column-container"><div class="quarto-figure quarto-figure-center">
@@ -309,11 +325,11 @@ window.Quarto = {
 <section id="sec-solow-growth-model" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="sec-solow-growth-model">Solow growth model</h2>
 <p>Without innovation, growth will stop assuming that the amount of labour is fixed. In reality economies continue to grow. The Solow growth model adds another variable to include innovation. In this model <em>Lt</em> is labour at time <em>t</em>, <em>Kt</em> is capital at time <em>t</em>, <em>At</em> is technology at time <em>t</em>, and <em>Ot</em> is output at time <em>t</em>. The model then states that<br>
-<span class="math display">\[
+<span class="math display">
 O_t  = A_tK_t^{\beta}L_t^{1-\beta}
-\]</span></p>
+</span></p>
 <ul>
-<li>The variable <span class="math inline">\(A\)</span> just states how good the technology is.</li>
+<li>The variable <span class="math inline">A</span> just states how good the technology is.</li>
 <li>If <em>β = 1/2</em> then this is just a square root function as in the basic groth models above. If <em>β &gt; 1/2</em> then capital matters more. If <em>β &lt; 1/2</em> then capital matters less.</li>
 </ul>
 <p>In the previous example <em>O = 10√M</em>, <em>I = 3√M</em>, <em>I = M/4</em> and in equilibrium <em>M = 144</em>. If we now introduce an innovation, and the variable for technology <em>A = 2</em>, then <em>O = 20√M</em>, <em>I = 6√M</em>, <em>I = M/4</em> and in equilibrium <em>6√M = M/4</em>, so <em>M = 496</em> and <em>O = 2 * 10 * √496 = 480</em>. The model shows that when productivity doubles, long run GDP becomes 4 times as big. This is because two thing happen. First, the process is becoming more productive. Second, because the process is more productive, it makes sense to invest in more machines.</p>
@@ -337,8 +353,8 @@ O_t  = A_tK_t^{\beta}L_t^{1-\beta}
 </section>
 <section id="sec-why-do-some-countries-not-grow" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="sec-why-do-some-countries-not-grow">Why do some countries not grow?</h2>
-<p>The Solow growth model has labour, capital and technology that are combined to produce output. In this model things like equality and culture are left out. In the book <span class="citation" data-cites="acemoglu2012nations">@acemoglu2012nations</span> <a href="https://en.wikipedia.org/wiki/Daron_Acemoglu">Daron Acemoglu</a> and <a href="https://en.wikipedia.org/wiki/James_A._Robinson">James Robinson</a> look over hundreds of years to investigate why some countries are successful and why others are not. e.g., Botswana did very well while Zimbabwe didn’t. Why is that?</p>
-<p>Acemoglu and Robinson think that growth requires a <strong>strong central government</strong> to protect capital and investment but that can’t be controlled by a select few. If there is no strong central government to protect property rights, whether it is physical or intellectual property, there is less incentive for people to invest and innovate. And if you have less investment and innovation, you will have lower growth <span class="citation" data-cites="acemoglu2012nations">@acemoglu2012nations</span>.</p>
+<p>The Solow growth model has labour, capital and technology that are combined to produce output. In this model things like equality and culture are left out. In the book <span class="citation" data-cites="acemoglu2012nations">Acemoglu and Robinson (<a href="#ref-acemoglu2012nations" role="doc-biblioref">2012</a>)</span> <a href="https://en.wikipedia.org/wiki/Daron_Acemoglu">Daron Acemoglu</a> and <a href="https://en.wikipedia.org/wiki/James_A._Robinson">James Robinson</a> look over hundreds of years to investigate why some countries are successful and why others are not. e.g., Botswana did very well while Zimbabwe didn’t. Why is that?</p>
+<p>Acemoglu and Robinson think that growth requires a <strong>strong central government</strong> to protect capital and investment but that can’t be controlled by a select few. If there is no strong central government to protect property rights, whether it is physical or intellectual property, there is less incentive for people to invest and innovate. And if you have less investment and innovation, you will have lower growth <span class="citation" data-cites="acemoglu2012nations">Acemoglu and Robinson (<a href="#ref-acemoglu2012nations" role="doc-biblioref">2012</a>)</span>.</p>
 <p>On the other hand, the central government shouldn’t be controlled by a select few like in Zimbabwe. If that is the case then the people in control will extract resources from the economy, often in the form of bribery and corruption. <strong>Extraction</strong> limits growth by lowering investment in innovation and capital. Extraction causes less money to be available for investment as well as less incentive to invest. This has a similar effect as reducing the variable <em>A</em>, and if this variable is reduced to 1/3, output is only 1/9. Syphoning off money from the economy therefore has a multiplier effect 8.</p>
 
 <div class="no-row-height column-margin column-container"><div class="quarto-figure quarto-figure-center">
@@ -347,9 +363,9 @@ O_t  = A_tK_t^{\beta}L_t^{1-\beta}
 <figcaption>Creative destruction in music industry</figcaption>
 </figure>
 </div></div><p>When <em>A</em> increases, labour becomes more productive. As</p>
-<p><span class="math display">\[
+<p><span class="math display">
 O_t  = A_tK_t^βL_t^{1-β}
-\]</span></p>
+</span></p>
 <p>, increases in <em>A</em> mean that less labour is required. In a real economy, if less labour is required to produce the same output, this may result in unemployment. In the long run, this is labour is expected to go into producing more capital and innovation, so that there will be more growth and unemployment will disappear again.</p>
 <p>What we learn from the model is that growth requires creative destruction, which is a term invented by <a href="https://en.wikipedia.org/wiki/Joseph_Schumpeter">Joseph Schumpeter</a>. When <em>A</em> increases, whole industries may be wiped out. e.g., when the tractor was invented, blacksmiths were not needed any more.</p>
 
@@ -367,19 +383,42 @@ O_t  = A_tK_t^βL_t^{1-β}
 <h3 class="anchored" data-anchor-id="references">References</h3>
 <p>Note: this page is based on the following source:</p>
 <ul>
-<li><span class="citation" data-cites="page2017modelthinking">[@page2017modelthinking]</span> MOOC, Course material &amp; Transcripts.</li>
-<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">[@fisher2017modelthinking]</span>.</li>
-<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">[@kleinikink2016naturalmoney]</span> and <span class="citation" data-cites="groh2017model">[@groh2017model]</span>.</li>
+<li><span class="citation" data-cites="page2017modelthinking">(<a href="#ref-page2017modelthinking" role="doc-biblioref">Page 2014</a>)</span> MOOC, Course material &amp; Transcripts.</li>
+<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">(<a href="#ref-fisher2017modelthinking" role="doc-biblioref">Fisher 2014</a>)</span>.</li>
+<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">(<a href="#ref-kleinikink2016naturalmoney" role="doc-biblioref">Klein Ikink 2016</a>)</span> and <span class="citation" data-cites="groh2017model">(<a href="#ref-groh2017model" role="doc-biblioref">Groh 2017</a>)</span>.</li>
 </ul>
-<div id="refs" role="list">
-
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-acemoglu2012nations" class="csl-entry" role="listitem">
+Acemoglu, D., and J. A. Robinson. 2012. <em>Why Nations Fail: The Origins of Power, Prosperity and Poverty</em>. Profile.
+</div>
+<div id="ref-fisher2017modelthinking" class="csl-entry" role="listitem">
+Fisher, Steve. 2014. <span>“Model Thinking – TA Notes.”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
+<div id="ref-groh2017model" class="csl-entry" role="listitem">
+Groh, Rainer. 2017. <span>“Model Thinking - Course Notes by Rainer Groh.”</span> <a href="https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf" class="uri">https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf</a>. November 2017.
+</div>
+<div id="ref-kleinikink2016naturalmoney" class="csl-entry" role="listitem">
+Klein Ikink, Bart. 2016. <span>“Model Thinking.”</span> <a href="https://naturalmoney.org/modelthinking-01.html" class="uri">https://naturalmoney.org/modelthinking-01.html</a>. March 2016.
+</div>
+<div id="ref-page2017modelthinking" class="csl-entry" role="listitem">
+Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
 </div>
 
 
 </section>
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{2023,
+  author = {},
+  title = {Lesson 8 - {Economic} {Growth}},
+  date = {2023-08-08},
+  url = {https://orenbochman.github.io/notes-model-thinking/posts/w08.html},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-2023" class="csl-entry quarto-appendix-citeas" role="listitem">
+<span>“Lesson 8 - Economic Growth.”</span> 2023. August 8, 2023. <a href="https://orenbochman.github.io/notes-model-thinking/posts/w08.html">https://orenbochman.github.io/notes-model-thinking/posts/w08.html</a>.
+</div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -470,7 +509,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/orenbochman\.github\.io\/notes-model-thinking\/");
+      var filterRegex = new RegExp("^(?:http:|https:)\/\/www\.quarto\.org\/custom");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -484,6 +523,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         if (link.dataset.originalHref !== undefined) {
           link.href = link.dataset.originalHref;
         }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+          // default icon
+          link.classList.add("external");
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -815,4 +861,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

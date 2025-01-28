@@ -25,6 +25,7 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -86,6 +87,7 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 <style>
 
       .quarto-title-block .quarto-title-banner {
@@ -94,8 +96,22 @@ background-size: cover;
       }
 </style>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -183,7 +199,7 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
+    <div class="quarto-title column-page-left">
       <h1 class="title">Lesson 9 - Diversity and innovation</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">model thinking</div>
@@ -202,7 +218,7 @@ window.Quarto = {
   </div>
     
   
-  <div class="quarto-title-meta">
+  <div class="quarto-title-meta column-page-left">
 
       
       <div>
@@ -216,7 +232,7 @@ window.Quarto = {
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -236,7 +252,7 @@ window.Quarto = {
 <div class="toc-actions"><ul><li><a href="https://github.com/OrenBochman/notes-model-thinking/edit/main/posts/w09.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OrenBochman/notes-model-thinking/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
+<main class="content quarto-banner-title-block page-columns page-full column-page-left" id="quarto-document-content">
 
 
 
@@ -305,7 +321,7 @@ window.Quarto = {
 <p>This game can be seen in a different perspective using the magic square where every row, column and diagonal adds up to fifteen. Peter goes first, and takes the four. David goes next, and takes the five. Peter takes the six, which is an odd choice, because now he can’t win. David then takes the eight. Peter blocks him with the two. But now it turns out, either the nine or seven will let Peter win. What game is this? This is tic-tac-toe.</p>
 <p>Sum to fifteen is just tic-tac-toe, but on a different perspective. If you move the cards into the magic square, you create a Mount Fuji landscape. You make the problem really simple. So a lot of great breakthroughs, like the periodic table, Newton’s Theory of Gravity, are perspectives on problems that turned something really difficult to figure out into something that suddenly made a lot of sense.</p>
 <p>In his book The Difference, Professor Page discusses the Savant Existence Theorem, which states that for any problem, there exists some way to represent it, so that it can be turned into a Mount Fuji problem. All you have to do is, is to put the very best solution in the middle, put the worst ones at the end, and line up the solutions in such a way so that you turn it into a Mount Fuji. In order to make the Mount Fuji, you would have to know the solution already. This isn’t a good way to solve problems. But there is such a perspective, and if you change your perspective, you might find it, and in this way you might find the solution 9.</p>
-<p>There are a large amount of bad perspectives. With <span class="math inline">\(N\)</span> alternatives, you have <span class="math inline">\(N!\)</span> ways to create one dimensional landscapes. Suppose I have just ten alternatives and I want to order them. here’s ten things I could put first, nine things I could put second, eight things I could put third and so on. So there are <span class="math inline">\(10 × 9 × 8 × 7 × 6 × 5 × 4 × 3 × 2 × 1\)</span> perspectives. Most of those are not very good because they are not going to organise this set of solutions in any useful way. Only a few of them are going to create Mount Fujis. If we just think in random ways, we’re likely to get a landscape that’s so rugged that we’re going to get stuck just about everywhere.</p>
+<p>There are a large amount of bad perspectives. With <span class="math inline">N</span> alternatives, you have <span class="math inline">N!</span> ways to create one dimensional landscapes. Suppose I have just ten alternatives and I want to order them. here’s ten things I could put first, nine things I could put second, eight things I could put third and so on. So there are <span class="math inline">10 × 9 × 8 × 7 × 6 × 5 × 4 × 3 × 2 × 1</span> perspectives. Most of those are not very good because they are not going to organise this set of solutions in any useful way. Only a few of them are going to create Mount Fujis. If we just think in random ways, we’re likely to get a landscape that’s so rugged that we’re going to get stuck just about everywhere.</p>
 </section>
 <section id="sec-heuristics" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="sec-heuristics">Heuristics</h2>
@@ -326,7 +342,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="sec-teams-and-problem-solving">Teams and problem solving</h2>
 <p>Perspectives and heuristics can be used to show why teams of people often can find solutions to problems that individuals can’t. That’s why teams are better. The term teams is used in a very loose sense. e.g., some person invented the toaster. Then somebody else improved it. Then somebody come up with the crumb tray. Then somebody else came up with the automatic shut off. Others came up with further improvements</p>
 <p>Why are groups of people better than individuals? Think about the candy bar example. One perspective was based on calories. It had three local peaks. Let’s call them A, B and C. Another landscape based on masticity had five peaks. Let’s call these A, B, D, E and F. These peaks are different than the peaks for the caloric landscape, with the exception of A and B. A is the best possible point. The best possible point has to be a point in every landscape. Mr.&nbsp;Page doesn’t explain why this is so.</p>
-<p>The caloric landscape is better than the masticity landscape because it has fewer local optima. The heuristic is just hill climbing. The peaks where people get stuck are A, B, C, D, E, and F. We can assign a value to each of those peaks. Suppose A is the global optimum, and some of these other peaks aren’t so good. We can ask what’s the average value of a peak for the caloric problem solver? It is the average of A, B and C. <span class="math inline">\(A = 10, B = 8 and C = 6\)</span>, so the average is 8, which is the ability of the caloric problem solver. You can do the same for the masticity problem solver. If <span class="math inline">\(A = 10, B = 8, D = 6, E = 4, F = 2\)</span> then this ability is 6.</p>
+<p>The caloric landscape is better than the masticity landscape because it has fewer local optima. The heuristic is just hill climbing. The peaks where people get stuck are A, B, C, D, E, and F. We can assign a value to each of those peaks. Suppose A is the global optimum, and some of these other peaks aren’t so good. We can ask what’s the average value of a peak for the caloric problem solver? It is the average of A, B and C. <span class="math inline">A = 10, B = 8 and C = 6</span>, so the average is 8, which is the ability of the caloric problem solver. You can do the same for the masticity problem solver. If <span class="math inline">A = 10, B = 8, D = 6, E = 4, F = 2</span> then this ability is 6.</p>
 <p>The caloric problem solver had fewer local optima, but also a higher average, so this is another reason why the caloric problem solver is better. The caloric problem solver may get stuck at B, and then pass the problem on to the masticity problem solver. He will then say that B looks good. If the caloric problem solver gets stuck at C, this point doesn’t look good for the masticity problem solver. This person can get from C to some other local optima. If that is D, E, or F, then it doesn’t look good to the caloric problem solver. Consequently, the team will get stuck at A or B, which is a better outcome. The average is 9, so the ability of the team is 9.</p>
 <p>The ability of the team is higher than the ability of either person. This is because the team’s local optima is the intersection of the local optima for the individuals. This is why over time products get better, and why teams are innovative. The reason why a lot of science is done by teams is because the only place a team can get stuck is where everybody on the team can get stuck. This simple model of perspectives and heuristics can explain why teams are better than individuals and why, over time, we keep finding better and better solutions to problems.</p>
 <p>The big claim is that the team can only get stuck at a local optima for everyone on the team. That means the team is better than the people in it. Therefore it is better to have people with different local optima, diverse perspectives and diverse heuristics. And that diversity produces different local optima, and those different local optima will mean that the intersections are taken, so that we end up with better points.</p>
@@ -336,30 +352,54 @@ window.Quarto = {
 <section id="sec-recombination" class="level2">
 <h2 class="anchored" data-anchor-id="sec-recombination">Recombination</h2>
 <p>Until now we focused on individual problems and individual solutions. Recombination is combing a solution or a heuristic to come up with even more solutions or more heuristics. Recombination is an incredibly powerful tool for science, innovation and economic growth. If we have a few solutions or a few heuristics, then we can combine those to create more. The real driving force behind innovation in the economy is that when we come up with a solution and then recombine it with all sorts of other solutions.</p>
-<p>e.g., fill in the missing number. 1 2 3 5 _ 13, the missing number is 8, because you add those numbers up, or substract them if you go back. 1 4 _ 16 25 36, the missing number is 9 because it is the square of the next number, which is 3. 1 2 6 _ 1806, the missing number here is 42. The solution is harder to find because you have to combine the first two techniques. <span class="math inline">\(2 - 1 = 1 = 1², 6 - 2 = 4 = 2², 42 - 6 = 36 = 6², 1806 - 42 = 1764 = 42²\)</span>.</p>
+<p>e.g., fill in the missing number. 1 2 3 5 _ 13, the missing number is 8, because you add those numbers up, or substract them if you go back. 1 4 _ 16 25 36, the missing number is 9 because it is the square of the next number, which is 3. 1 2 6 _ 1806, the missing number here is 42. The solution is harder to find because you have to combine the first two techniques. <span class="math inline">2 - 1 = 1 = 1², 6 - 2 = 4 = 2², 42 - 6 = 36 = 6², 1806 - 42 = 1764 = 42²</span>.</p>
 <p>Recombining is a driver of economic growth and also of science because when a new solution can be combined with other solutions. This produces a geometric explosion in the number of possibilities. This may be the reason why it was possible to sustain economic growth by increasing the technology parameter <em>A</em>.</p>
 <p>To show how this works, let’s start with finding out how many ways there are to pick three objects from ten. There are 10 I can pick first, 9 I can pick second and 8 I can pick third. 10 * 9 * 8 is too much because picking A, B and C is the same as picking B, A and C. There are three things I can pick first, 2 I can pick second, and 1 I can pick last. Hence, the answer is (10 * 9 * 8) / (3 * 2 * 1) = 120. With far more than 10 solutions, the number is very big. e.g., if you have 52 cards, and you want to combine 20 of them, then the number of combinations becomes (52 * 51 * … * 33) / (20 * 19 * … * 1) ≈ 125,000,000,000,000.</p>
 <p>This idea of ideas building on ideas is the foundation of the theory of recombinant growth of Martin Weitzman. This theory states that ideas get generated all the time. e.g., the steam engine gets invented and developed, the gasoline engine gets developed, the microprocessor gets developed. And all these things get recombined into interesting combinations. And those combinations, in turn, get recombined to create ever more growth. e.g., many parts in the steam engine were solutions to previous problems. The same applies to the desk top computer.</p>
 <p>All those parts of the steam engine weren’t developed the steam engine in mind. They were developed for other purposes. This is an idea from biology called exaptation. The classic example of exaptation, is the feather. Birds developed feathers primarily to keep them warm, but eventually those same feathers allowed them to fly. Expectation means that some innovation for one reason, gets used in another context. Another example is the laser. The laser was not invented with the idea of laser printers in mind. So once something is developed, it gets used for all sorts of unexpected things through the power of recombination.</p>
 <p>This also applies to perspectives, e.g.&nbsp;the masticity perspective of a candy bar. Masticity can be a useful perspective for other problems, e.g.&nbsp;pasta or breakfast cereal. So even failed solutions for one problem may work well as a solution to other problems. e.g., the glue in the post it note was originally a failure because the glue didn’t stick very well. But it turned out to be useful for other sorts of problems, mainly making sticky notes.</p>
-<p>There is more to it than this. It’s not just the recombination of ideas, because for hundreds and thousands of years people had ideas. There had to be some way to communicate those ideas. In <span class="citation" data-cites="mokyr2011gifts">@mokyr2011gifts</span> the economist <a href="https://en.wikipedia.org/wiki/Joel_Mokyr">Joel Mokyr</a>, argues that the rise of modern universities, the printing press, and scientific communication allowed ideas to be transferred from one location and one person to another. The technological revolution was driven by the fact that people could share ideas and then recombine them.</p>
+<p>There is more to it than this. It’s not just the recombination of ideas, because for hundreds and thousands of years people had ideas. There had to be some way to communicate those ideas. In <span class="citation" data-cites="mokyr2011gifts">Mokyr (<a href="#ref-mokyr2011gifts" role="doc-biblioref">2011</a>)</span> the economist <a href="https://en.wikipedia.org/wiki/Joel_Mokyr">Joel Mokyr</a>, argues that the rise of modern universities, the printing press, and scientific communication allowed ideas to be transferred from one location and one person to another. The technological revolution was driven by the fact that people could share ideas and then recombine them.</p>
 <section id="references" class="level3">
 <h3 class="anchored" data-anchor-id="references">References</h3>
 <p>Note: this page is based on the following source:</p>
 <ul>
-<li><span class="citation" data-cites="page2017modelthinking">[@page2017modelthinking]</span> MOOC, Course material &amp; Transcripts.</li>
-<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">[@fisher2017modelthinking]</span>.</li>
-<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">[@kleinikink2016naturalmoney]</span> and <span class="citation" data-cites="groh2017model">[@groh2017model]</span>.</li>
+<li><span class="citation" data-cites="page2017modelthinking">(<a href="#ref-page2017modelthinking" role="doc-biblioref">Page 2014</a>)</span> MOOC, Course material &amp; Transcripts.</li>
+<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">(<a href="#ref-fisher2017modelthinking" role="doc-biblioref">Fisher 2014</a>)</span>.</li>
+<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">(<a href="#ref-kleinikink2016naturalmoney" role="doc-biblioref">Klein Ikink 2016</a>)</span> and <span class="citation" data-cites="groh2017model">(<a href="#ref-groh2017model" role="doc-biblioref">Groh 2017</a>)</span>.</li>
 </ul>
-<div id="refs" role="list">
-
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-fisher2017modelthinking" class="csl-entry" role="listitem">
+Fisher, Steve. 2014. <span>“Model Thinking – TA Notes.”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
+<div id="ref-groh2017model" class="csl-entry" role="listitem">
+Groh, Rainer. 2017. <span>“Model Thinking - Course Notes by Rainer Groh.”</span> <a href="https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf" class="uri">https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf</a>. November 2017.
+</div>
+<div id="ref-kleinikink2016naturalmoney" class="csl-entry" role="listitem">
+Klein Ikink, Bart. 2016. <span>“Model Thinking.”</span> <a href="https://naturalmoney.org/modelthinking-01.html" class="uri">https://naturalmoney.org/modelthinking-01.html</a>. March 2016.
+</div>
+<div id="ref-mokyr2011gifts" class="csl-entry" role="listitem">
+Mokyr, J. 2011. <em>The Gifts of Athena: Historical Origins of the Knowledge Economy</em>. Princeton University Press.
+</div>
+<div id="ref-page2017modelthinking" class="csl-entry" role="listitem">
+Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
 </div>
 
 
 </section>
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{2023,
+  author = {},
+  title = {Lesson 9 - {Diversity} and Innovation},
+  date = {2023-08-09},
+  url = {https://orenbochman.github.io/notes-model-thinking/posts/w09.html},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-2023" class="csl-entry quarto-appendix-citeas" role="listitem">
+<span>“Lesson 9 - Diversity and Innovation.”</span> 2023. August 9,
+2023. <a href="https://orenbochman.github.io/notes-model-thinking/posts/w09.html">https://orenbochman.github.io/notes-model-thinking/posts/w09.html</a>.
+</div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -450,7 +490,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/orenbochman\.github\.io\/notes-model-thinking\/");
+      var filterRegex = new RegExp("^(?:http:|https:)\/\/www\.quarto\.org\/custom");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -464,6 +504,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         if (link.dataset.originalHref !== undefined) {
           link.href = link.dataset.originalHref;
         }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+          // default icon
+          link.classList.add("external");
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -795,4 +842,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

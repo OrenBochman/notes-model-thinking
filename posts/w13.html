@@ -25,6 +25,7 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -86,6 +87,7 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 <style>
 
       .quarto-title-block .quarto-title-banner {
@@ -94,8 +96,22 @@ background-size: cover;
       }
 </style>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -183,7 +199,7 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
+    <div class="quarto-title column-page-left">
       <h1 class="title">Lesson 13 - Path dependence</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">model thinking</div>
@@ -198,7 +214,7 @@ window.Quarto = {
   </div>
     
   
-  <div class="quarto-title-meta">
+  <div class="quarto-title-meta column-page-left">
 
       
       <div>
@@ -212,7 +228,7 @@ window.Quarto = {
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -233,7 +249,7 @@ window.Quarto = {
 <div class="toc-actions"><ul><li><a href="https://github.com/OrenBochman/notes-model-thinking/edit/main/posts/w13.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OrenBochman/notes-model-thinking/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
+<main class="content quarto-banner-title-block page-columns page-full column-page-left" id="quarto-document-content">
 
 
 
@@ -241,7 +257,7 @@ window.Quarto = {
 
 <section id="sec-path-dependence" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="sec-path-dependence">Path dependence</h3>
-<p><strong>Path dependence</strong> means that what happens at time <span class="math inline">\(T\)</span> depends on all time steps <span class="math inline">\(t&lt;T\)</span>. Or put plainly that history matters.</p>
+<p><strong>Path dependence</strong> means that what happens at time <span class="math inline">T</span> depends on all time steps <span class="math inline">t&lt;T</span>. Or put plainly that history matters.</p>
 <p>This is clearly quite different from Markov process models where only the current state matters and history does not.</p>
 <p>Urn models can help to understand path dependence, and to distinguish between different types of path dependence. 1. deterministic outcome such as what happens today could be path dependent, 2. stochastic path dependence which is an equilibrium distribution over all possible outcomes of what happens in the long run could also be path dependent.</p>
 <div id="exm-path-QWERTY" class="theorem example">
@@ -310,8 +326,8 @@ window.Quarto = {
 <p>You first make a pick out of 2 balls. Then you make a pick out of 3 balls. If you make <em>N</em> picks, the denominator will be <em>N!</em>. If you make <em>N</em> picks and end up with <em>B</em> blue balls, you have to pick <em>N-B</em> red balls. For blue balls, you pick first out of 1, then out of 2. This continues until you pick out of <em>B</em>. For red balls, you pick first out of 1, then out of 2. This continues until you pick out of <em>N-B</em>. The numerator will then be <em>B!(N-B)!. So, for any N</em> picks with <em>B</em> blue balls, the probability is (B!(N-B)!)/N!.</p>
 <p>It is more difficult to prove that any probability of red balls is an equilibrium that is equally likely to happen. e.g., <em>P(BBBB) = (1/2)(2/3)(3/4)(4/5) = (12</em>3<em>4)/(2</em>3<em>4</em>5) = 1/5 and <em>P(BBBR) = (1/2)(2/3)(3/4)(1/5) = (12</em>3<em>1)/(2</em>3<em>4</em>5) = 1/20. Now, there are four ways in which one red ball could emerge, which are RBBB, BRBB, BBRB and BBBR. They are equally likely to happen, so <em>P(RBBB) + P(BRBB) + P(BBRB) + P(BBBR) = 1/20 + 1/20 + 1/20 + 1/20 = 1/5</em>.</p>
 <p>Now <em>P(50B) = P(50R) = (1/2)(2/3)(3/4)…(49/50)(50/51) = 1/51</em>. Now <em>P(49B 1R)</em> is a bit more complicated. The probability of picking 49 blue balls first and 1 red ball last is (1/50)*(1/51). There are 50 ways in which that one red ball could emerge, so <em>P(49B 1R) = P(1B 49R) = 50(1/50</em>51) = 1/51.</p>
-<p><em>P(47B 3R)</em> is even more complicated. Assume first that the three red balls are last. You first pick a blue ball with probability 1/2. Then a blue ball with probability 1/2. This goes on until you pick a blue ball with probability 47/48. Then you pick a red ball with probability 1/49, then another red ball with probability 1/50, and another red ball with probability 1/51. So you get a probability of <span class="math inline">\((\frac{1}{2})(\frac{2}{3})\ldots(\frac{47}{48})(\frac{1}{49})(\frac{2}{50})(\frac{3}{51}) = \frac{(47!)(3!)}{(51!)} = \frac{(1 \times 2 \times 3)}{(48 \times 49 \times 50 \times 51)}\)</span>.</p>
-<p>There are 3 red balls, so there are 50 places where the first one could have been, then 49 places for the second one, and 48 places for the third one. But picking red balls on places 12, 29, and 38 is the same as 29, 12 and 38 or 38, 12 and 29, so we have to take into account the different orders. Three balls can be in 3<em>2</em>1 = 3! = 6 different orders. Now the probability is <span class="math inline">\(\frac{(1 \times 2 \times 3)}{(48 \times 49 \times 50 \times 51)} \times \frac{(50 \times 49 \times 48)}{(3 \times 2 \times 1)} = \frac{1}{51}\)</span>. In this way it is possible to arrive at the conclusion that any probability of red balls is an equilibrium that is equally likely.</p>
+<p><em>P(47B 3R)</em> is even more complicated. Assume first that the three red balls are last. You first pick a blue ball with probability 1/2. Then a blue ball with probability 1/2. This goes on until you pick a blue ball with probability 47/48. Then you pick a red ball with probability 1/49, then another red ball with probability 1/50, and another red ball with probability 1/51. So you get a probability of <span class="math inline">(\frac{1}{2})(\frac{2}{3})\ldots(\frac{47}{48})(\frac{1}{49})(\frac{2}{50})(\frac{3}{51}) = \frac{(47!)(3!)}{(51!)} = \frac{(1 \times 2 \times 3)}{(48 \times 49 \times 50 \times 51)}</span>.</p>
+<p>There are 3 red balls, so there are 50 places where the first one could have been, then 49 places for the second one, and 48 places for the third one. But picking red balls on places 12, 29, and 38 is the same as 29, 12 and 38 or 38, 12 and 29, so we have to take into account the different orders. Three balls can be in 3<em>2</em>1 = 3! = 6 different orders. Now the probability is <span class="math inline">\frac{(1 \times 2 \times 3)}{(48 \times 49 \times 50 \times 51)} \times \frac{(50 \times 49 \times 48)}{(3 \times 2 \times 1)} = \frac{1}{51}</span>. In this way it is possible to arrive at the conclusion that any probability of red balls is an equilibrium that is equally likely.</p>
 </section>
 <section id="sec-path-dependence-and-chaos" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="sec-path-dependence-and-chaos">Path dependence and Chaos</h3>
@@ -392,19 +408,39 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="references">References</h3>
 <p>Note: this page is based on the following source:</p>
 <ul>
-<li><span class="citation" data-cites="page2017modelthinking">[@page2017modelthinking]</span> MOOC, Course material &amp; Transcripts.</li>
-<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">[@fisher2017modelthinking]</span>.</li>
-<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">[@kleinikink2016naturalmoney]</span> and <span class="citation" data-cites="groh2017model">[@groh2017model]</span>.</li>
+<li><span class="citation" data-cites="page2017modelthinking">(<a href="#ref-page2017modelthinking" role="doc-biblioref">Page 2014</a>)</span> MOOC, Course material &amp; Transcripts.</li>
+<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">(<a href="#ref-fisher2017modelthinking" role="doc-biblioref">Fisher 2014</a>)</span>.</li>
+<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">(<a href="#ref-kleinikink2016naturalmoney" role="doc-biblioref">Klein Ikink 2016</a>)</span> and <span class="citation" data-cites="groh2017model">(<a href="#ref-groh2017model" role="doc-biblioref">Groh 2017</a>)</span>.</li>
 </ul>
-<div id="refs" role="list">
-
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-fisher2017modelthinking" class="csl-entry" role="listitem">
+Fisher, Steve. 2014. <span>“Model Thinking – TA Notes.”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
+<div id="ref-groh2017model" class="csl-entry" role="listitem">
+Groh, Rainer. 2017. <span>“Model Thinking - Course Notes by Rainer Groh.”</span> <a href="https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf" class="uri">https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf</a>. November 2017.
+</div>
+<div id="ref-kleinikink2016naturalmoney" class="csl-entry" role="listitem">
+Klein Ikink, Bart. 2016. <span>“Model Thinking.”</span> <a href="https://naturalmoney.org/modelthinking-01.html" class="uri">https://naturalmoney.org/modelthinking-01.html</a>. March 2016.
+</div>
+<div id="ref-page2017modelthinking" class="csl-entry" role="listitem">
+Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
 </div>
 
 
 </section>
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{2023,
+  author = {},
+  title = {Lesson 13 - {Path} Dependence},
+  date = {2023-08-13},
+  url = {https://orenbochman.github.io/notes-model-thinking/posts/w13.html},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-2023" class="csl-entry quarto-appendix-citeas" role="listitem">
+<span>“Lesson 13 - Path Dependence.”</span> 2023. August 13, 2023. <a href="https://orenbochman.github.io/notes-model-thinking/posts/w13.html">https://orenbochman.github.io/notes-model-thinking/posts/w13.html</a>.
+</div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -495,7 +531,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/orenbochman\.github\.io\/notes-model-thinking\/");
+      var filterRegex = new RegExp("^(?:http:|https:)\/\/www\.quarto\.org\/custom");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -509,6 +545,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         if (link.dataset.originalHref !== undefined) {
           link.href = link.dataset.originalHref;
         }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+          // default icon
+          link.classList.add("external");
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -840,4 +883,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
