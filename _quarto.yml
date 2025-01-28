@@ -38,7 +38,6 @@ format:
     citation: true
     citation-location: document
     page-layout: full
-    css: styles.css
     ipynb-shell-interactivity: all 
     anchor-sections: true
     code-fold: false
@@ -47,9 +46,9 @@ format:
     link-external-newwindow: true
     link-external-filter: '^(?:http:|https:)\/\/www\.quarto\.org\/custom'
     smooth-scroll: true
-    image: nlp-brain-wordcloud.jpg
-    title-block-banner: banner_black_3.jpg
-    image-placeholder: /images/dnn_cover.png
+    image: images/nlp-brain-wordcloud.jpg
+    title-block-banner: images/banner_black_3.jpg
+    image-placeholder: images/dnn_cover.png
 
 
 bibliography: references.bib
