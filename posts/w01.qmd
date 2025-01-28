@@ -3,9 +3,6 @@ date: 2023-08-01
 title: Lesson 1 - Why Model?
 subtitle: Model Thinking
 categories: ["course introduction","model thinking"]
-from: markdown+emoji
-title-block-banner: images/banner_deep.jpg
-draft: False
 ---
 
 ::: column-margin
@@ -232,6 +229,7 @@ Scott stated that analysts who predicted the crash could have made a killing on 
 8. Some investment banks :bank: went under :man_facepalming: before they honored their contracts.
 
 A final point is that their :crystal_ball: models are not easy to find; they were probably not published.
+
 :::
 
 [^10]: :thought_balloon: so Models may make us complacent
@@ -250,6 +248,8 @@ The course is concerned primarily with agent based models. However, these are of
 
 ![Game theory model](images/mt_game_model.jpg){.column-margin}
 
+
+::: {.callout-info}
 ## Thinking :thinking: more clearly
 
 > A problem well-stated is a problem half-solved --- [Charles Kettering](https://en.wikipedia.org/wiki/Charles_F._Kettering), head of research at GM
@@ -267,6 +267,7 @@ Using models consists of the following steps:
     -   in game theory model we consider the relationships between action by player 1, subsequent actions by player 2 and thier ultimate payoffs.
 
 3.  **Work through the logic**.
+
 :::
 
 ::: {#exa-around-the-world}

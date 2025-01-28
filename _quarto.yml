@@ -47,8 +47,10 @@ format:
     link-external-filter: '^(?:http:|https:)\/\/www\.quarto\.org\/custom'
     smooth-scroll: true
     image: images/nlp-brain-wordcloud.jpg
-    title-block-banner: images/banner_black_3.jpg
+    #title-block-banner: images/banner_black_3.jpg
     image-placeholder: images/dnn_cover.png
+    title-block-banner: images/banner_deep.jpg
+
 
 
 bibliography: references.bib
