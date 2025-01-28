@@ -2,13 +2,12 @@
 date: 2023-08-13
 title: Lesson 13 - Path dependence
 categories: ["model thinking", "Path dependence","PHAT dependence", "Chaos","ESTIC", "Increasing Returns", "Urn Models"]
-from: markdown+emoji
-draft: false
 ---
 
 ### Path dependence {#sec-path-dependence}
 
-**Path dependence** means that what happens at time $T$ depends on all time steps $t<T$. Or put plainly that history matters.
+Path dependence
+: Is a property of the state of a complex system at time $T$ depends on all prior time steps $t<T$. More plainly that history matters.
 
 This is clearly quite different from Markov process models where only the current state matters and history does not.
 
@@ -18,16 +17,40 @@ Urn models can help to understand path dependence, and to distinguish between di
 One of the most famous examples of path dependence involves the standard typewriter keyboard configuration called QWERTY. Initially, there were lots of different keyboard configurations, but it turned out that in the path through which history played out, QWERTY ended up getting locked in due to a process of increasing returns. The more people had QWERTY, the more people wanted it, and the more typewriters that were built with it, and so it became locked in.
 :::
 
-**Path dependence** means that outcome probabilities depend on the sequence of previous outcomes, which is called the path.
+Path dependence
+: means that outcome probabilities depend on the sequence of previous outcomes, which is called the path.
 
-**Phat dependence** means that outcome probabilities depend on past outcomes but not on their order. The past impacts the outcome but it doesn't necessarily determine it.
+Phat dependence
+: means that outcome probabilities depend on past outcomes but not on their order. The past impacts the outcome but it doesn't necessarily determine it.
 
-::: {#exm-path-technology}
-With choices over technology such as keyboards, alternating current or direct current, or gasoline cars versus electric cars.
+::: {#fig-electic-chair .column-margin}
+
+![Danges of A.C.](mt-electric-chair.jpg)
+
+The execution of William Kemmler [Source](https://commons.wikimedia.org/wiki/File:Kemmler_ex%C3%A9cut%C3%A9_par_l%27%C3%A9lectricit%C3%A9.jpg)
+
+:::
+
+::: {#fig-edison-electic-chair .column-margin}
+
+![Eddison and The Electric Chair](mt-electric-chair.jpg)
+
+Popular science book on the rivalry between Edison and Tesla
+:::
+
+::: {#exm-currents}
+
+## Tesla v.s. Edison
+
+Alternating current or direct current. Edison was a proponent of direct current, while Tesla was a proponent of alternating current. Edison was the first to develop a power plant, and he developed it using direct current. Tesla developed alternating current, which was more efficient for transmitting electricity over long distances. Edison was a proponent of direct current, and he was also a proponent of the electric chair. He wanted to show that alternating current was dangerous, so he used it to power the electric chair. This was a very public demonstration of the dangers of alternating current. However, alternating current was more efficient for transmitting electricity over long distances, so it ended up winning out. This is an example of path dependence. The outcome probabilities depend on the sequence of previous outcomes. The path that history took mattered. If history had taken a different path, then the outcome would have been different.
 :::
 
 ::: {#exm-path-law}
+
+## The Common Law
+
 The law which evolves through precedent depends on earlier laws and their interpretation made by judges in the past.
+
 :::
 
 It also the case with institutional choices like having a single payer healthcare system or defined benefits pensions versus defined contributions. These choices can depend on previous institutional choices. Economic success can also depend on sequences of past outcomes. e.g., Ann Arbor had the largest public university while Jackson had the largest prison. Population in Ann Arbor increased from 10,000 in 1910 to 110,000 in 2000 while in Jackson it first increased and then declined and grew only from 31,000 in 1910 to 36,000 in 2000. The public university greatly helped Ann Arbor.
@@ -35,6 +58,7 @@ It also the case with institutional choices like having a single payer healthcar
 Path dependence often coincide with increasing returns. If you build a university then other educational institutions like hospitals, and law schools that weren't originally part of the university, could join in. Eventually, you grow through a virtuous cycle. Increasing returns means building success on top of success. Path dependence isn't the same as increasing returns.
 
 Chaos is often referred to as ESTIC, or **E**xtreme **S**ensitivity **T**o **I**nitial **C**onditions. Chaos means that, even when the starting points A and B are very close to each other, subsequent paths can diverge tremendously. Chaos deals with initial points while path dependence deals with the path. Path dependence in a *dynamic process* that has a state in each period differs from a Markov process. These path dependent processes violate the *fixed transition probabilities* assumption of the Markov Process. In Urn models transition probabilities change, and that is how history can matter.
+
 
 ![Urn model](images/mt_urn_model.jpg){.column-margin}
 
@@ -44,9 +68,13 @@ Chaos is often referred to as ESTIC, or **E**xtreme **S**ensitivity **T**o **I**
 
 An urn model is a container with blue and red balls. You pick balls out of the urn. The ball you pick is the outcome. There is a probability of picking out balls of different colors. The simplest urn model is the Bernoulli model where Outcomes are independent of previous outcomes. The number of balls in the urn is fixed,
 
-:::{#exm-path-Pólya-urn}{.column-margin}
 
-Three red balls and one blue ball. After picking a ball, you return it into the urn. The probability of picking up a red ball is constant and always 3/4.\
+::: {#exm-path-pólya-urn}
+
+## Pólya urn model
+
+Three red balls and one blue ball. After picking a ball, you return it into the urn. The probability of picking up a red ball is constant and always 3/4.
+
 :::
 
 The most famous path-dependent process is called the [Pólya process](https://en.wikipedia.org/wiki/P%C3%B3lya_urn_model). It works starts with an urn with two balls, one of them red and one of them blue. You pick a ball, and after you pick that ball, you put back the ball and add another ball of the same color you just picked. This can be repeated over and over again. Over time, probabilities change as more and more balls are added. This process is path-dependent as the probabilities depend on the path of previous choices.
