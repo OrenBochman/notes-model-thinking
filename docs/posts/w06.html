@@ -91,7 +91,7 @@ div.csl-indent {
 <style>
 
       .quarto-title-block .quarto-title-banner {
-        background-image: url(images/mt_seg_bg03.png);
+        background-image: url(../images/banner_black_3.jpg);
 background-size: cover;
       }
 </style>
@@ -259,10 +259,19 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="sec-introduction-to-categorical-linear-and-non-linear-models">Introduction to categorical, linear, and nonlinear models</h2>
 <p>Categorical models allocates the data into different boxes. For example, trying to understand why some people live longer than others, we could divide them into people who exercise and people who do not exercise. By looking at the variation and the mean values in those boxes, you might find out whether or not this categorization says something about how long people live.</p>
 
-<div class="no-row-height column-margin column-container"><div class="quarto-figure quarto-figure-center">
+<div class="no-row-height column-margin column-container"><div id="fig-linear-model" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-linear-model-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/mt_linear_data.jpg" class="img-fluid figure-img"></p>
-<figcaption>Constructing linear model from data</figcaption>
+<figcaption>Scatter Plot with regression line fitted</figcaption>
+</figure>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-linear-model-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Constructing linear model from data
+</figcaption>
 </figure>
 </div></div><p>Linear models assume that some variable <span class="math inline">Y</span> depends on variable <span class="math inline">X</span>, so <span class="math inline">Y</span> is a function of <span class="math inline">X</span> or <span class="math inline">Y = f(X)</span>.</p>
 <p>For instance, if <span class="math inline">Y</span> is life expectancy, <span class="math inline">X</span> might measure physical exercise. Thus, life expectancy is a function of how much a person exercises.</p>
@@ -278,23 +287,38 @@ Y = a_1X_1 + a_2X_2
 <li><span class="math inline">X_2</span> might be teacher quality.</li>
 </ul>
 <p>Here <span class="math inline">a_1</span> and <span class="math inline">a_2</span> are the coefficients. These coefficients tell how important the variable is, so the bigger the coefficient, the more important the variable.</p>
-<p>Linear models can lead to big coefficient thinking, and if these are valid, then that will serve decision-makers better than rules of thumb, intuition, or experience. However, as time passes, reusing the main effect of an old model may be inadequate. There could be data drift, or alternatively, any improvement due to the main effect may have petered out due to diminishing returns. Over time, overhalling dysfunctional policies can require new and radical thinking. Approaches like revisiting old assumptions and rethinking out of the box can lead to something new, which we call new reality thinking. A problem with big coefficient thinking is that it only works in areas with specific data available. Over time, new data may even switch the size of the coefficients, leading to a loss of confidence in the model. Significant breakthroughs are often made by shifting to areas without data. A “new reality” will arise when the projections of big coefficients or even the assumptions behind them can be seen as inadequate, and decision-makers decide to rebuild a new model. ::: callout-warning ### Big Coefficient Warning:</p>
-<p>Regression and Linear models can have negative coefficients, interaction terms and so on, which, with one negative term, can render the “big coefficient.” approximation or decision wrong. :::</p>
-<p><span class="math display">
+<p>Linear models can lead to big coefficient thinking, and if these are valid, then that will serve decision-makers better than rules of thumb, intuition, or experience. However, as time passes, reusing the main effect of an old model may be inadequate. There could be data drift, or alternatively, any improvement due to the main effect may have petered out due to diminishing returns. Over time, overhalling dysfunctional policies can require new and radical thinking. Approaches like revisiting old assumptions and rethinking out of the box can lead to something new, which we call new reality thinking. A problem with big coefficient thinking is that it only works in areas with specific data available. Over time, new data may even switch the size of the coefficients, leading to a loss of confidence in the model. Significant breakthroughs are often made by shifting to areas without data. A “new reality” will arise when the projections of big coefficients or even the assumptions behind them can be seen as inadequate, and decision-makers decide to rebuild a new model.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Big Coefficient Warning:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Regression and Linear models can have negative coefficients, interaction terms and so on, which, with one negative term, can render the “big coefficient.” approximation or decision wrong.</p>
+</div>
+</div>
+<p><span id="eq-big-coefficient"><span class="math display">
 Y = 6 X_1 + 6 X_2 - 8 X_3 \\ \text{subject to} (X_3 = max({X_1,X_2}))
-</span></p>
+\tag{1}</span></span></p>
 <p>We want to increase <span class="math inline">Y</span>. The big coefficient is <span class="math inline">X_3</span>, but it reduces <span class="math inline">Y</span>. Reducing <span class="math inline">X_3</span> will reduce <span class="math inline">Y</span> since it also reduces <span class="math inline">X_1, X_2</span> to increase. Increasing <span class="math inline">Y</span>, we need to increase <span class="math inline">X_1</span> and <span class="math inline">X_2</span> together as increasing just one will increase <span class="math inline">X_3</span> and thus decrease <span class="math inline">Y</span>. The bottom line is that under certain conditions not listed by Dr.&nbsp;Page, the big coefficient is a useful approximation, but this assumption is not generally true in regression models. Dr.&nbsp;Page introduces the concept of a <strong>“new reality”</strong> to counter the shortcomings of big coefficient thinking. Unfortunately, the new reality that was introduced seems to have arisen from a failure. Later, he makes a case that “new reality” is a policy based on some other effect. However, these new reality initiatives seem to have no evidence to back them up. So this seems like <strong>muddy thinking</strong> rather than <strong>Clear thinking</strong></p>
 </section>
 <section id="sec-categorical-models" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="sec-categorical-models">Categorical models</h2>
 <p>Categorical models allocate the data into different groups. Variation in and between groups can be capture much of the overall variation in variations in the data.</p>
 <div id="exm-amazon-stock" class="theorem example">
-<p><span class="theorem-title"><strong>Example 1</strong></span> e.g., at the time of the IPO of Amazon, most analysts catagorised it as a delivery service like DHL or FedEx, and because the delivery buiness was such a cut-throat bussiness companies in it have low-profit margins so they thought Amazon would be a bad investment. A few analysts thought Amazon would be a good investment because they saw Amazon as part of the new information economy. Differnt analysts put Amazon in a different boxes. Amazon did badly for over a decade then they started letting computers a totatly differnt business model and then they did very well, so which box we choose matters for our investment portfollio and also which story you choose to tell. :::: {callout-info} ### dot.com crash &amp; the information economy. <span class="emoji" data-emoji="poop">💩</span> <span class="emoji" data-emoji="poop">💩</span> <span class="emoji" data-emoji="poop">💩</span></p>
+<p><span class="theorem-title"><strong>Example 1</strong></span> e.g., at the time of the IPO of Amazon, most analysts catagorised it as a delivery service like DHL or FedEx, and because the delivery buiness was such a cut-throat bussiness companies in it have low-profit margins so they thought Amazon would be a bad investment. A few analysts thought Amazon would be a good investment because they saw Amazon as part of the new information economy. Differnt analysts put Amazon in a different boxes. Amazon did badly for over a decade then they started letting computers a totatly differnt business model and then they did very well, so which box we choose matters for our investment portfollio and also which story you choose to tell.</p>
+<section id="dot.com-crash-the-information-economy." class="level3 {callout-info}">
+<h3 class="anchored" data-anchor-id="dot.com-crash-the-information-economy.">dot.com crash &amp; the information economy. <span class="emoji" data-emoji="poop">💩</span> <span class="emoji" data-emoji="poop">💩</span> <span class="emoji" data-emoji="poop">💩</span></h3>
 <p>Any time I hear the concept of “the information economy” I am sad to recall how this “rethoric for a new economy” died with out when most of the dot.com companies burt through their VC/IPO money through incompetency or corrupt management caused a global recession. So I think Dr.&nbsp;Page is being disingenious by picking this example.</p>
 <p>I also recall Amazon had zero or negative profits for over a decade after the doc.com crash. It overhauled its bussines concept servral times before it became a “good” investment and is facing stiff competition in its primery market from chinese stores. Also over times there are many new stories coming out how Amazon is making profits by squeezing it workforce to work harder and for less that DHL and FedEx which are both partners and competitors.</p>
 <p>Finaly the question this example raises is: How can we find build a model that knows to place novel items accurately into new boxes without any other examples. Because model are supposed to better than analysts. In reality categorical model are not as resourceful as an analyst, they can’t invent new catergories. Event if is add some extra lables, without examples the model wont assign new items to these category.</p>
+</section>
 </div>
-<p>::: Lump to live means that we create categories to make sense of the world. For example, if we see a car, we do not say there goes a 2003 Volkswagen 1.6 GTI, but we say car. We model to decide, plan, and design. One reason we lump is to make faster decisions. For example, a child may have a rule not to eat green items. This helps the child avoid eating grasshoppers, which it does not like to eat. However, the rule is not optimal. The child might forego a juicy pear in this way.</p>
+<p>Lump to live means that we create categories to make sense of the world. For example, if we see a car, we do not say there goes a 2003 Volkswagen 1.6 GTI, but we say car. We model to decide, plan, and design. One reason we lump is to make faster decisions. For example, a child may have a rule not to eat green items. This helps the child avoid eating grasshoppers, which it does not like to eat. However, the rule is not optimal. The child might forego a juicy pear in this way.</p>
 
 <div class="no-row-height column-margin column-container"><div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -316,7 +340,7 @@ Y = 6 X_1 + 6 X_2 - 8 X_3 \\ \text{subject to} (X_3 = max({X_1,X_2}))
 <p>The total variation explained is</p>
 <p><span id="eq-r-2-calcualtion"><span class="math display">
 (1 - 5,200/53,200)*100% = 90.2%
-\tag{1}</span></span></p>
+\tag{2}</span></span></p>
 <p>This is called the <strong>R-squared</strong>.</p>
 <ul>
 <li>If the R-squared is near 1, the model explains a lot of the variance in the data</li>

@@ -2,7 +2,6 @@ subtitle: Model Thinking
 from: markdown+emoji
 author: "Oren Bochman"
 # Enable banner style title blocks
-title-block-banner: images/mt_seg_bg03.png
 categories: ["model thinking"]
 lightbox: true
 page-layout: article
