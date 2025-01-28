@@ -1,7 +1,7 @@
 ---
 date: 2023-08-01
 title: Lesson 1 - Why Model?
-categories: ["course introduction","model thinking"]
+categories: ["Course introduction","Model thinking"]
 ---
 
 ::: column-margin

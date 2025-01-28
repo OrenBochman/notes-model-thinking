@@ -1,7 +1,7 @@
 ---
 date: 2023-08-11
 title: Lesson 11 - Lyapunov Functions
-categories: ["Model thinking", "Lyapunov Functions", "Collatz problem"]
+categories: ["Model thinking", "Lyapunov functions", "Collatz problem"]
 ---
 
 ## Lyapunov Functions {#sec-lyapunov-functions}

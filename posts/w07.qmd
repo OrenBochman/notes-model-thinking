@@ -1,7 +1,7 @@
 ---
 date: 2023-08-07
 title: Lesson 7 - Tipping Points
-categories: ["Model thinking", "Tipping points", "Percolation models", "Contagion models","diffusion","SIS model","R0", "SIR model","Herd Immunity","Entropy","Diversity index"]
+categories: ["Model thinking", "Tipping points", "Percolation models", "Contagion models","Diffusion","SIS model","R0", "SIR model","Herd Immunity","Entropy","Diversity index"]
 ---
 
 ## Tipping points {#sec-tipping-points}
