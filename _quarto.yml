@@ -1,6 +1,8 @@
 project:
   type: website
-
+  output-dir: docs
+  preview:
+    port: 7780
 website:
   title: "notes-model-thinking"
   navbar:
@@ -8,12 +10,29 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/
+      - icon: twitter
+        href: https://twitter.com
+      - icon: rss
+        href: index.xml
+  site-url: https://orenbochman.github.io/notes-model-thinking/
+  description: Personal website, portfolio and blog
+  repo-url: https://github.com/OrenBochman/notes-model-thinking
+  repo-actions: [edit, issue]
+  #favicon: favicon.ico
+  page-footer:
+    right: "This page is built with 💛 and [Quarto](https://quarto.org/)."
+    left: "&copy; Copyright 2023-2025, Oren Bochman"
+    background: "#AB0520" # AZ Red
 
 format:
   html:
     theme: cosmo
     css: styles.css
     toc: true
-
+    from: "markdown+emoji"
 
 
