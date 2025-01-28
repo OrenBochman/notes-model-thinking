@@ -121,9 +121,31 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<style>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+      .quarto-title-block .quarto-title-banner {
+        background-image: url(../images/banner_black_3.jpg);
+background-size: cover;
+      }
+</style>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -158,7 +180,7 @@ window.Quarto = {
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -209,7 +231,40 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Lesson 3 - Aggregation</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Model thinking</div>
+                <div class="quarto-category">Aggregation</div>
+                <div class="quarto-category">Central limit theorem</div>
+                <div class="quarto-category">Six Sigma</div>
+                <div class="quarto-category">Conway's game of life</div>
+                <div class="quarto-category">Cellular automata</div>
+                <div class="quarto-category">Langton’s Lambda</div>
+                <div class="quarto-category">Condorcet paradox</div>
+                <div class="quarto-category">Arrow Impossibility theorem</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta column-page-left">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">August 3, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -221,7 +276,7 @@ window.Quarto = {
   <li><a href="#sec-agg-central-limit-theorem" id="toc-sec-agg-central-limit-theorem" class="nav-link" data-scroll-target="#sec-agg-central-limit-theorem">Central limit theorem</a></li>
   <li><a href="#sec-agg-empirical-rule" id="toc-sec-agg-empirical-rule" class="nav-link" data-scroll-target="#sec-agg-empirical-rule">The Empirical Rule</a></li>
   <li><a href="#sec-agg-six-sigma" id="toc-sec-agg-six-sigma" class="nav-link" data-scroll-target="#sec-agg-six-sigma">Six sigma</a></li>
-  <li><a href="#sigma-models-and-methods" id="toc-sigma-models-and-methods" class="nav-link" data-scroll-target="#sigma-models-and-methods"><span class="math inline">\(6\sigma\)</span> Models and Methods :</a></li>
+  <li><a href="#sigma-models-and-methods" id="toc-sigma-models-and-methods" class="nav-link" data-scroll-target="#sigma-models-and-methods"><span class="math inline">6\sigma</span> Models and Methods :</a></li>
   <li><a href="#sec-game-of-life" id="toc-sec-game-of-life" class="nav-link" data-scroll-target="#sec-game-of-life">Game of life</a></li>
   <li><a href="#sec-cellular-automata" id="toc-sec-cellular-automata" class="nav-link" data-scroll-target="#sec-cellular-automata">Cellular automata</a></li>
   <li><a href="#sec-agg-langton-lambda" id="toc-sec-agg-langton-lambda" class="nav-link" data-scroll-target="#sec-agg-langton-lambda">Langton’s Lambda</a></li>
@@ -233,42 +288,10 @@ window.Quarto = {
 <div class="toc-actions"><ul><li><a href="https://github.com/OrenBochman/notes-model-thinking/edit/main/posts/w03.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OrenBochman/notes-model-thinking/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Lesson 3 - Aggregation</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">Model thinking</div>
-    <div class="quarto-category">Aggregation</div>
-    <div class="quarto-category">Central limit theorem</div>
-    <div class="quarto-category">Six Sigma</div>
-    <div class="quarto-category">Conway's game of life</div>
-    <div class="quarto-category">Cellular automata</div>
-    <div class="quarto-category">Langton’s Lambda</div>
-    <div class="quarto-category">Condorcet paradox</div>
-    <div class="quarto-category">Arrow Impossibility theorem</div>
-  </div>
-  </div>
+<main class="content quarto-banner-title-block page-columns page-full column-page-left" id="quarto-document-content">
 
 
 
-<div class="quarto-title-meta">
-
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">August 3, 2023</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-
-
-</header>
 
 
 <blockquote class="blockquote">
@@ -403,7 +426,7 @@ Figure&nbsp;3: Cellular Automata: A period 16 oscillator <a href="https://common
 <section id="sec-agg-central-limit-theorem" class="level2">
 <h2 class="anchored" data-anchor-id="sec-agg-central-limit-theorem">Central limit theorem</h2>
 <p>A <strong>Probability Distribution</strong> lists a variable’s different outcomes, each with its likelihood of occurring.</p>
-<p>The <strong>Central Limit Theorem</strong> states that if we add up a large enough series of independent variables, the distribution will follow a normal distribution characterized by a bell–shaped curve. The most likely outcome, the mean <span class="math inline">\(μ\)</span>, is in the middle of the curve.</p>
+<p>The <strong>Central Limit Theorem</strong> states that if we add up a large enough series of independent variables, the distribution will follow a normal distribution characterized by a bell–shaped curve. The most likely outcome, the mean <span class="math inline">μ</span>, is in the middle of the curve.</p>
 <p>We can simulate this process by flipping coins a large number of times.</p>
 <div id="exa-counting-heads">
 <p>When we toss a fair coin two times, how many heads will we see, and at what likelihood?</p>
@@ -418,15 +441,15 @@ Figure&nbsp;3: Cellular Automata: A period 16 oscillator <a href="https://common
 <tbody>
 <tr class="odd">
 <td>2H</td>
-<td><span class="math inline">\(1/4\)</span></td>
+<td><span class="math inline">1/4</span></td>
 </tr>
 <tr class="even">
 <td>1H</td>
-<td><span class="math inline">\(1/2\)</span></td>
+<td><span class="math inline">1/2</span></td>
 </tr>
 <tr class="odd">
 <td>0H</td>
-<td><span class="math inline">\(1/4\)</span></td>
+<td><span class="math inline">1/4</span></td>
 </tr>
 </tbody>
 </table>
@@ -441,40 +464,40 @@ Figure&nbsp;3: Cellular Automata: A period 16 oscillator <a href="https://common
 <tbody>
 <tr class="odd">
 <td>4H</td>
-<td><span class="math inline">\(1/16\)</span></td>
+<td><span class="math inline">1/16</span></td>
 </tr>
 <tr class="even">
 <td>3H</td>
-<td><span class="math inline">\(4/16\)</span></td>
+<td><span class="math inline">4/16</span></td>
 </tr>
 <tr class="odd">
 <td>2H</td>
-<td><span class="math inline">\(6/16\)</span></td>
+<td><span class="math inline">6/16</span></td>
 </tr>
 <tr class="even">
 <td>1H</td>
-<td><span class="math inline">\(4/16\)</span></td>
+<td><span class="math inline">4/16</span></td>
 </tr>
 <tr class="odd">
 <td>0H</td>
-<td><span class="math inline">\(1/16\)</span></td>
+<td><span class="math inline">1/16</span></td>
 </tr>
 </tbody>
 </table>
 <p>And when we flip a coin N times:</p>
 <p>For N coin flips:</p>
-<p><span id="eq-binomial-distribution"><span class="math display">\[
+<p><span id="eq-binomial-distribution"><span class="math display">
 P(X=k)={n \choose k} p^k(1-p)^{n-k}\qquad
-\tag{1}\]</span></span></p>
+\tag{1}</span></span></p>
 <p>Success in N coin flips follows a Binomial distribution.</p>
-<p><span id="eq-binomial-mean"><span class="math display">\[
+<p><span id="eq-binomial-mean"><span class="math display">
 \mu=pN \qquad
-\tag{2}\]</span></span></p>
-<p><span id="eq-binomial-sigma"><span class="math display">\[
+\tag{2}</span></span></p>
+<p><span id="eq-binomial-sigma"><span class="math display">
 \sigma = p \times (1-p) \times n \qquad
-\tag{3}\]</span></span></p>
+\tag{3}</span></span></p>
 </div>
-<p>For <span class="math inline">\(N&gt;&gt;20\)</span>, the Binomial distribution becomes more like the Normal distribution.</p>
+<p>For <span class="math inline">N&gt;&gt;20</span>, the Binomial distribution becomes more like the Normal distribution.</p>
 </section>
 <section id="sec-agg-empirical-rule" class="level2">
 <h2 class="anchored" data-anchor-id="sec-agg-empirical-rule">The Empirical Rule</h2>
@@ -488,7 +511,7 @@ Figure&nbsp;4: Bell curve and empirical rule
 </figcaption>
 </figure>
 </div>
-<p>The standard deviation <span class="math inline">\(\sigma\)</span> parameter determines how the normal distribution curve is spread. We can use these values to build confidence intervals:</p>
+<p>The standard deviation <span class="math inline">\sigma</span> parameter determines how the normal distribution curve is spread. We can use these values to build confidence intervals:</p>
 <table class="caption-top table">
 <caption>The Empirical Rule</caption>
 <thead>
@@ -499,32 +522,32 @@ Figure&nbsp;4: Bell curve and empirical rule
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math inline">\(\sigma\)</span></td>
+<td><span class="math inline">\sigma</span></td>
 <td>68</td>
 </tr>
 <tr class="even">
-<td><span class="math inline">\(2\sigma\)</span></td>
+<td><span class="math inline">2\sigma</span></td>
 <td>95</td>
 </tr>
 <tr class="odd">
-<td><span class="math inline">\(3\sigma\)</span></td>
+<td><span class="math inline">3\sigma</span></td>
 <td>99.7</td>
 </tr>
 </tbody>
 </table>
-<p>e.g., set the mean <span class="math inline">\(\mu\)</span> to 100, and the standard deviation <span class="math inline">\(\sigma\)</span> to 3, then for 95% of all cases, the outcome will fall in [94, 106].</p>
-<p>In a Binomial distribution where <span class="math inline">\(p = 1/2\)</span> like flipping coins, <span class="math inline">\(\sigma = (\sqrt{N})/2\)</span>, thus when <span class="math inline">\(N = 100\)</span>, the mean is <span class="math inline">\(100/2 = 50\)</span>, and the standard deviation <span class="math inline">\(\sigma=√100/2 = 5\)</span>.</p>
+<p>e.g., set the mean <span class="math inline">\mu</span> to 100, and the standard deviation <span class="math inline">\sigma</span> to 3, then for 95% of all cases, the outcome will fall in [94, 106].</p>
+<p>In a Binomial distribution where <span class="math inline">p = 1/2</span> like flipping coins, <span class="math inline">\sigma = (\sqrt{N})/2</span>, thus when <span class="math inline">N = 100</span>, the mean is <span class="math inline">100/2 = 50</span>, and the standard deviation <span class="math inline">\sigma=√100/2 = 5</span>.</p>
 <p>In general, Binomial distributions have a standard deviation of success for N trials:</p>
-<p><span class="math display">\[
+<p><span class="math display">
 \sigma = \sqrt{(p(1-p)N)}
-\]</span> {eq-binom-sd}</p>
-<p>When <span class="math inline">\(p = \frac{1}{2}\)</span> then this simplifies to: <span class="math display">\[
+</span> {eq-binom-sd}</p>
+<p>When <span class="math inline">p = \frac{1}{2}</span> then this simplifies to: <span class="math display">
 \sigma =  \frac{\sqrt{N}}{2}
-\]</span> {eq-binom-sd-std}</p>
+</span> {eq-binom-sd-std}</p>
 <p>We can now use this standard deviation to make statistical inferences. Airlines overbook to increase their profits, so they need to know the probability of someone not getting a seat. This allows them to estimate the expected cost of offering people a second ticket to take the next flight.</p>
 <div id="exm-plane-seats" class="theorem example">
 <p><span class="theorem-title"><strong>Example 5 (Flight Overbooking)</strong></span> &nbsp;</p>
-<div id="7829c75e" class="cell" data-execution_count="1">
+<div id="5b2bbdc4" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>p<span class="op">=</span><span class="fl">0.9</span>           <span class="co"># show up rate</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>seats <span class="op">=</span> <span class="dv">380</span>     <span class="co"># seat on plane</span></span>
@@ -542,9 +565,9 @@ Figure&nbsp;4: Bell curve and empirical rule
 <li>A Boeing 747 has 380 seats</li>
 <li>There is a 0.9 show-up rate,</li>
 <li>let’s assume people show up independently of each other.</li>
-<li>400 tickets were sold. i.e.&nbsp;<span class="math inline">\(N = 400\)</span>,</li>
-<li>The mean <span class="math inline">\(μ = 360\)</span></li>
-<li>The standard deviation is <span class="math inline">\(\sigma = \sqrt{(0.9\times(1-0.9)\times 400)} = \sqrt{36} = 6\)</span>. we can now use the <a href="">Empircal rule</a> to estimate a 99.7 confidence interval:</li>
+<li>400 tickets were sold. i.e.&nbsp;<span class="math inline">N = 400</span>,</li>
+<li>The mean <span class="math inline">μ = 360</span></li>
+<li>The standard deviation is <span class="math inline">\sigma = \sqrt{(0.9\times(1-0.9)\times 400)} = \sqrt{36} = 6</span>. we can now use the <a href="">Empircal rule</a> to estimate a 99.7 confidence interval:</li>
 <li>in 99.75% of cases, the number of passengers will be in [342, 378].</li>
 </ul>
 </div>
@@ -629,7 +652,7 @@ Caution&nbsp;2: Six sigma In a nutshell
 </div>
 <p>When I asked friends who worked at Motorola, they said that one department used it to win prizes in the company. Still, it never really caught on to become the ubiquitous management technique its proponents have touted.</p>
 <p>Even with extensive training, statistics can be challenging in most business scenarios. Recall that Ronald Fischer’s influential works were prescriptive how-to manuals that did little to impart their authors’ depth of knowledge. That said, even a little statistics can go a long way.</p>
-<p><a href="https://en.wikipedia.org/wiki/Six_Sigma">Six Sigma</a> is a quality control or process improvement methodology developed by engineer <a href="https://en.wikipedia.org/wiki/Bill_Smith_(Motorola_engineer)">Bill Smith</a> at Motorola. <span class="math inline">\(6\sigma\)</span> is applied within each of <a href="https://en.wikipedia.org/wiki/DMAIC">DMAIC</a> five steps for improving existing projects, and for planning new projects, <span class="math inline">\(6\sigma\)</span> <a href="https://en.wikipedia.org/wiki/Six_Sigma#DMADV">DMADV</a> is used.</p>
+<p><a href="https://en.wikipedia.org/wiki/Six_Sigma">Six Sigma</a> is a quality control or process improvement methodology developed by engineer <a href="https://en.wikipedia.org/wiki/Bill_Smith_(Motorola_engineer)">Bill Smith</a> at Motorola. <span class="math inline">6\sigma</span> is applied within each of <a href="https://en.wikipedia.org/wiki/DMAIC">DMAIC</a> five steps for improving existing projects, and for planning new projects, <span class="math inline">6\sigma</span> <a href="https://en.wikipedia.org/wiki/Six_Sigma#DMADV">DMADV</a> is used.</p>
 <div id="tip-MINTO" class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -671,16 +694,16 @@ Important&nbsp;2: DMAIC v.s. Minto Pyramid with SCQA &amp; MECE tools
 </table>
 </div>
 </div>
-<p><span class="math inline">\(6\sigma\)</span> assigns roles to practitioners:</p>
+<p><span class="math inline">6\sigma</span> assigns roles to practitioners:</p>
 <ul>
-<li><strong>Master Black Belts</strong>, are identified by the champions to act as Six Sigma mentors. They are expected to devote all their full time to Six Sigma, assisting the champions and guiding Black Belts and Green Belts. In addition to statistical tasks, they should ensure that Six Sigma is applied consistently across departments. <strong>Black Belts</strong> work under the Master Black Belt to apply <span class="math inline">\(6\sigma\)</span> to specific projects. Their responsibility is running <span class="math inline">\(6sigma\)</span> projects. Champions and Master Black Belts are tasked with identifying projects for <span class="math inline">\(6\sigma\)</span>. <strong>Green Belts</strong> are employees tasked with implementing Six Sigma alongside their other responsibilities. They operate under the supervision of Black Belts..</li>
+<li><strong>Master Black Belts</strong>, are identified by the champions to act as Six Sigma mentors. They are expected to devote all their full time to Six Sigma, assisting the champions and guiding Black Belts and Green Belts. In addition to statistical tasks, they should ensure that Six Sigma is applied consistently across departments. <strong>Black Belts</strong> work under the Master Black Belt to apply <span class="math inline">6\sigma</span> to specific projects. Their responsibility is running <span class="math inline">6sigma</span> projects. Champions and Master Black Belts are tasked with identifying projects for <span class="math inline">6\sigma</span>. <strong>Green Belts</strong> are employees tasked with implementing Six Sigma alongside their other responsibilities. They operate under the supervision of Black Belts..</li>
 </ul>
 <p>The main idea is to control the process to reduce the defects to below 3.4 per million opportunities or six standard deviations.</p>
 <div id="exm-agg-six-sigma-bananas" class="theorem example">
 <p><span class="theorem-title"><strong>Example 6 (the 6 sigma banana store)</strong></span> &nbsp;</p>
 <ul>
-<li>Let the mean banana sales be <span class="math inline">\(\mu= 500 kg\)</span>,</li>
-<li>and the sd of <span class="math inline">\(\sigma= 10 kg\)</span>,</li>
+<li>Let the mean banana sales be <span class="math inline">\mu= 500 kg</span>,</li>
+<li>and the sd of <span class="math inline">\sigma= 10 kg</span>,</li>
 <li>How much stock of bananas is required to cope with a Six Sigma event?</li>
 </ul>
 <p>Six Sigma is 60 kg, so 560 kg of bananas are required.</p>
@@ -688,25 +711,25 @@ Important&nbsp;2: DMAIC v.s. Minto Pyramid with SCQA &amp; MECE tools
 <p>Remember, we are talking about a 2-in-a-billion frequency for these defects. They will only manifest in huge-scale situations, like big factories.</p>
 <div id="exm-agg-six-sigma-washers" class="theorem example">
 <p><span class="theorem-title"><strong>Example 7 (washers)</strong></span> The required metal thickness is between 500 and 560 mm in production. Assuming the outcome is normally distributed, then:</p>
-<p><span class="math display">\[
+<p><span class="math display">
 \mu=530
-\]</span></p>
-<p>Then <span class="math inline">\(\sigma\)</span> should be 5 or less. <span class="math display">\[
+</span></p>
+<p>Then <span class="math inline">\sigma</span> should be 5 or less. <span class="math display">
 \sigma = 560-500/2=30 \implies tolerance = 30/6 = 5 mm.
-\]</span></p>
+</span></p>
 </div>
 <div id="exm-agg-six-sigma-tires" class="theorem example">
 <p><span class="theorem-title"><strong>Example 8 (tires)</strong></span> A production process creates tires with:</p>
 <ul>
-<li>an average diameter of <span class="math inline">\(\mu=20\)</span> inches and</li>
-<li>a standard deviation of <span class="math inline">\(sd=0.1\)</span> inch.</li>
+<li>an average diameter of <span class="math inline">\mu=20</span> inches and</li>
+<li>a standard deviation of <span class="math inline">sd=0.1</span> inch.</li>
 <li>What is the Six Sigma range?</li>
 </ul>
-<p><span class="math inline">\(20 \pm 6\times 0.1= [19.4,20.6]\)</span></p>
+<p><span class="math inline">20 \pm 6\times 0.1= [19.4,20.6]</span></p>
 </div>
 </section>
 <section id="sigma-models-and-methods" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="sigma-models-and-methods"><span class="math inline">\(6\sigma\)</span> Models and Methods :</h2>
+<h2 class="anchored" data-anchor-id="sigma-models-and-methods"><span class="math inline">6\sigma</span> Models and Methods :</h2>
 <div id="nte-agg-six-sigma-extra" class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1033,13 +1056,13 @@ Figure&nbsp;9: Additional Patterns
 <figcaption>Behavior classes versus Lambda</figcaption>
 </figure>
 </div></div>
-<p>Langton’s Lambda <span class="math inline">\(\lambda\)</span> can tell what the outcomes look like. <mark>Langton asked a much simpler question: How many things go on?</mark> e.g., in rule 30, four cells out of eight switch on. Lambda is the percentage of cells that go on; in this case, <span class="math inline">\(\lambda = 4/8 = 1/2\)</span>. For rule 110, <span class="math inline">\(\lambda = 5/8\)</span>.</p>
+<p>Langton’s Lambda <span class="math inline">\lambda</span> can tell what the outcomes look like. <mark>Langton asked a much simpler question: How many things go on?</mark> e.g., in rule 30, four cells out of eight switch on. Lambda is the percentage of cells that go on; in this case, <span class="math inline">\lambda = 4/8 = 1/2</span>. For rule 110, <span class="math inline">\lambda = 5/8</span>.</p>
 <p>Based on the Lambdas values, we will see differnt behavior:</p>
 <ul>
-<li>if <span class="math inline">\(\lambda = 0\)</span> then all cells die off;</li>
-<li>if <span class="math inline">\(\lambda = 1/8\)</span> then the system blinks;</li>
-<li>if <span class="math inline">\(\lambda = 1\)</span> then all cells switch on;</li>
-<li>if <span class="math inline">\(\lambda\)</span> is in [3/8, 5/8], most of the complex or random patterns will appear.</li>
+<li>if <span class="math inline">\lambda = 0</span> then all cells die off;</li>
+<li>if <span class="math inline">\lambda = 1/8</span> then the system blinks;</li>
+<li>if <span class="math inline">\lambda = 1</span> then all cells switch on;</li>
+<li>if <span class="math inline">\lambda</span> is in [3/8, 5/8], most of the complex or random patterns will appear.</li>
 </ul>
 <p>Thus intermediate levels of codependence tend to create complexity and randomness. Pattern trading is an idea of tracking such intermediate levels of interdependence in markets, which present to complex patterns.</p>
 </section>
@@ -1058,17 +1081,17 @@ Table&nbsp;1: irrational fruit preferences
 <tbody>
 <tr class="odd">
 <td><span class="emoji" data-emoji="apple">🍎</span></td>
-<td><span class="math inline">\(&gt;\)</span></td>
+<td><span class="math inline">&gt;</span></td>
 <td><span class="emoji" data-emoji="banana">🍌</span></td>
 </tr>
 <tr class="even">
 <td><span class="emoji" data-emoji="banana">🍌</span></td>
-<td><span class="math inline">\(&gt;\)</span></td>
+<td><span class="math inline">&gt;</span></td>
 <td><span class="emoji" data-emoji="kiwi_fruit">🥝</span></td>
 </tr>
 <tr class="odd">
 <td><span class="emoji" data-emoji="apple">🍎</span></td>
-<td><span class="math inline">\(&lt;\)</span></td>
+<td><span class="math inline">&lt;</span></td>
 <td><span class="emoji" data-emoji="kiwi_fruit">🥝</span></td>
 </tr>
 </tbody>
@@ -1076,14 +1099,14 @@ Table&nbsp;1: irrational fruit preferences
 </div>
 </figure>
 </div></div><p>How many preference orderings are there? If you have three options, e.g., apples, bananas, and kiwi fruit, there are eight options $$, but not all are rational. If you prefer A to B, and B to C, then you also prefer A to C. In this case preferring C to A is not rational. We consider a preference ordering rational if it is <strong>transitive</strong>.</p>
-<p>If you have three options, there are <span class="math inline">\(3 \times 2 \times 1 = 6\)</span> rational preference orderings, as follows :</p>
+<p>If you have three options, there are <span class="math inline">3 \times 2 \times 1 = 6</span> rational preference orderings, as follows :</p>
 <ul>
-<li><span class="math inline">\(A &gt; B &gt; C\)</span></li>
-<li><span class="math inline">\(A &gt; C &gt; B\)</span></li>
-<li><span class="math inline">\(B &gt; A &gt; C\)</span></li>
-<li><span class="math inline">\(B &gt; C &gt; A\)</span></li>
-<li><span class="math inline">\(C &gt; A &gt; B\)</span></li>
-<li><span class="math inline">\(C &gt; B &gt; A\)</span>.</li>
+<li><span class="math inline">A &gt; B &gt; C</span></li>
+<li><span class="math inline">A &gt; C &gt; B</span></li>
+<li><span class="math inline">B &gt; A &gt; C</span></li>
+<li><span class="math inline">B &gt; C &gt; A</span></li>
+<li><span class="math inline">C &gt; A &gt; B</span></li>
+<li><span class="math inline">C &gt; B &gt; A</span>.</li>
 </ul>
 
 <div class="no-row-height column-margin column-container"><div id="tbl-prefernce-ordering" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -1096,25 +1119,25 @@ Table&nbsp;2: Preference ordering
 <tbody>
 <tr class="odd">
 <td><span class="emoji" data-emoji="apple">🍎</span></td>
-<td><span class="math inline">\(&gt;\)</span></td>
+<td><span class="math inline">&gt;</span></td>
 <td><span class="emoji" data-emoji="banana">🍌</span></td>
-<td><span class="math inline">\(&gt;\)</span></td>
+<td><span class="math inline">&gt;</span></td>
 <td><span class="emoji" data-emoji="kiwi_fruit">🥝</span></td>
 <td></td>
 </tr>
 <tr class="even">
 <td><span class="emoji" data-emoji="banana">🍌</span></td>
-<td><span class="math inline">\(&gt;\)</span></td>
+<td><span class="math inline">&gt;</span></td>
 <td><span class="emoji" data-emoji="kiwi_fruit">🥝</span></td>
-<td><span class="math inline">\(&gt;\)</span></td>
+<td><span class="math inline">&gt;</span></td>
 <td><span class="emoji" data-emoji="apple">🍎</span></td>
 <td></td>
 </tr>
 <tr class="odd">
 <td><span class="emoji" data-emoji="kiwi_fruit">🥝</span></td>
-<td><span class="math inline">\(&gt;\)</span></td>
+<td><span class="math inline">&gt;</span></td>
 <td><span class="emoji" data-emoji="apple">🍎</span></td>
-<td><span class="math inline">\(&gt;\)</span></td>
+<td><span class="math inline">&gt;</span></td>
 <td><span class="emoji" data-emoji="banana">🍌</span></td>
 <td></td>
 </tr>
@@ -1123,19 +1146,19 @@ Table&nbsp;2: Preference ordering
 </div>
 </figure>
 </div></div><p>The <a href="https://en.wikipedia.org/wiki/Condorcet_paradox">Condorcet Paradox</a> of aggregation states that if you aggregate individual preferences, you might get irrational preference orderings, even when individual preferences are rational.</p>
-<p>e.g.&nbsp;<span class="math inline">\(C &gt; B &gt; A &gt; C\)</span>,</p>
+<p>e.g.&nbsp;<span class="math inline">C &gt; B &gt; A &gt; C</span>,</p>
 <p>even when individual preferences are rational. This can happen when people have different preferences.</p>
 <p>e.g., person 1 has preference</p>
 <ul>
-<li><span class="math inline">\(A &gt; B &gt; C\)</span>, person 2 has a preference</li>
-<li><span class="math inline">\(B &gt; C &gt; A\)</span> and person 3 has a preference ordering</li>
-<li><span class="math inline">\(C &gt; A &gt; B\)</span>.</li>
+<li><span class="math inline">A &gt; B &gt; C</span>, person 2 has a preference</li>
+<li><span class="math inline">B &gt; C &gt; A</span> and person 3 has a preference ordering</li>
+<li><span class="math inline">C &gt; A &gt; B</span>.</li>
 </ul>
-<p>In such a situation, the aggregate preference ordering is not apparent. A possible solution is to order the preferences pairwise. Persons 2 and 3 prefer kiwi fruit to apples, so the aggregate preference is <span class="math inline">\(C &gt; A\)</span>. Other aggregate preference are</p>
+<p>In such a situation, the aggregate preference ordering is not apparent. A possible solution is to order the preferences pairwise. Persons 2 and 3 prefer kiwi fruit to apples, so the aggregate preference is <span class="math inline">C &gt; A</span>. Other aggregate preference are</p>
 <ul>
-<li><span class="math inline">\(B &gt; C\)</span> and</li>
-<li><span class="math inline">\(A &gt; B\)</span>. So we get</li>
-<li><span class="math inline">\(C &gt; A &gt; B &gt; C\)</span></li>
+<li><span class="math inline">B &gt; C</span> and</li>
+<li><span class="math inline">A &gt; B</span>. So we get</li>
+<li><span class="math inline">C &gt; A &gt; B &gt; C</span></li>
 </ul>
 <p>This may have consequences, when we want to aggregate votes. Even when individuals vote rationally, there is no guarantee that the collective outcome is rational. This surprising outcome introduced in <span class="citation" data-cites="arrow1950figgiculty">(<a href="#ref-arrow1950figgiculty" role="doc-biblioref">Arrow 1950</a>)</span> by Economics Nobel Laureate <a href="https://en.wikipedia.org/wiki/Kenneth_Arrow">Kenneth Arrow</a> is called the <a href="https://en.wikipedia.org/wiki/Arrow's_impossibility_theorem">Arrow Impossibility theorem</a> in Game theory and Economics of social welfare.</p>
 <p>Since collective outcomes may not be rational, people may vote strategically, or there may be all kinds of political games where voters try to manipulate the outcome of an election into the desired result by misrepresenting their preferences.</p>
@@ -1285,7 +1308,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/orenbochman\.github\.io\/notes-model-thinking\/");
+      var filterRegex = new RegExp("^(?:http:|https:)\/\/www\.quarto\.org\/custom");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -1299,6 +1322,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         if (link.dataset.originalHref !== undefined) {
           link.href = link.dataset.originalHref;
         }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+          // default icon
+          link.classList.add("external");
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -1630,4 +1660,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

@@ -25,6 +25,7 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -86,6 +87,7 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 <style>
 
       .quarto-title-block .quarto-title-banner {
@@ -94,8 +96,22 @@ background-size: cover;
       }
 </style>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -183,7 +199,7 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
+    <div class="quarto-title column-page-left">
       <h1 class="title">Lesson 6 - Categorical and Linear Models</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">model thinking</div>
@@ -199,7 +215,7 @@ window.Quarto = {
   </div>
     
   
-  <div class="quarto-title-meta">
+  <div class="quarto-title-meta column-page-left">
 
       
       <div>
@@ -213,7 +229,7 @@ window.Quarto = {
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -233,7 +249,7 @@ window.Quarto = {
 <div class="toc-actions"><ul><li><a href="https://github.com/OrenBochman/notes-model-thinking/edit/main/posts/w06.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OrenBochman/notes-model-thinking/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
+<main class="content quarto-banner-title-block page-columns page-full column-page-left" id="quarto-document-content">
 
 
 
@@ -248,26 +264,26 @@ window.Quarto = {
 <p><img src="images/mt_linear_data.jpg" class="img-fluid figure-img"></p>
 <figcaption>Constructing linear model from data</figcaption>
 </figure>
-</div></div><p>Linear models assume that some variable <span class="math inline">\(Y\)</span> depends on variable <span class="math inline">\(X\)</span>, so <span class="math inline">\(Y\)</span> is a function of <span class="math inline">\(X\)</span> or <span class="math inline">\(Y = f(X)\)</span>.</p>
-<p>For instance, if <span class="math inline">\(Y\)</span> is life expectancy, <span class="math inline">\(X\)</span> might measure physical exercise. Thus, life expectancy is a function of how much a person exercises.</p>
+</div></div><p>Linear models assume that some variable <span class="math inline">Y</span> depends on variable <span class="math inline">X</span>, so <span class="math inline">Y</span> is a function of <span class="math inline">X</span> or <span class="math inline">Y = f(X)</span>.</p>
+<p>For instance, if <span class="math inline">Y</span> is life expectancy, <span class="math inline">X</span> might measure physical exercise. Thus, life expectancy is a function of how much a person exercises.</p>
 <p>An important question is how we produce the linear model from the data. The line in the graph must represent the data as well as possible.</p>
 <p>Nonlinear models could be represented by functions that do not produce a straight line, e.g., exponential growth functions. The diversity of nonlinear functions are enormous.</p>
 <p><strong>The big coefficient</strong> refers to using the coefficient corresponding to the main effect size to make decisions. e.g., a function of school quality might be</p>
-<p><span class="math display">\[
+<p><span class="math display">
 Y = a_1X_1 + a_2X_2
-\]</span></p>
+</span></p>
 <p>Where:</p>
 <ul>
-<li><span class="math inline">\(X_1\)</span> might be the class size and</li>
-<li><span class="math inline">\(X_2\)</span> might be teacher quality.</li>
+<li><span class="math inline">X_1</span> might be the class size and</li>
+<li><span class="math inline">X_2</span> might be teacher quality.</li>
 </ul>
-<p>Here <span class="math inline">\(a_1\)</span> and <span class="math inline">\(a_2\)</span> are the coefficients. These coefficients tell how important the variable is, so the bigger the coefficient, the more important the variable.</p>
+<p>Here <span class="math inline">a_1</span> and <span class="math inline">a_2</span> are the coefficients. These coefficients tell how important the variable is, so the bigger the coefficient, the more important the variable.</p>
 <p>Linear models can lead to big coefficient thinking, and if these are valid, then that will serve decision-makers better than rules of thumb, intuition, or experience. However, as time passes, reusing the main effect of an old model may be inadequate. There could be data drift, or alternatively, any improvement due to the main effect may have petered out due to diminishing returns. Over time, overhalling dysfunctional policies can require new and radical thinking. Approaches like revisiting old assumptions and rethinking out of the box can lead to something new, which we call new reality thinking. A problem with big coefficient thinking is that it only works in areas with specific data available. Over time, new data may even switch the size of the coefficients, leading to a loss of confidence in the model. Significant breakthroughs are often made by shifting to areas without data. A “new reality” will arise when the projections of big coefficients or even the assumptions behind them can be seen as inadequate, and decision-makers decide to rebuild a new model. ::: callout-warning ### Big Coefficient Warning:</p>
 <p>Regression and Linear models can have negative coefficients, interaction terms and so on, which, with one negative term, can render the “big coefficient.” approximation or decision wrong. :::</p>
-<p><span class="math display">\[
+<p><span class="math display">
 Y = 6 X_1 + 6 X_2 - 8 X_3 \\ \text{subject to} (X_3 = max({X_1,X_2}))
-\]</span></p>
-<p>We want to increase <span class="math inline">\(Y\)</span>. The big coefficient is <span class="math inline">\(X_3\)</span>, but it reduces <span class="math inline">\(Y\)</span>. Reducing <span class="math inline">\(X_3\)</span> will reduce <span class="math inline">\(Y\)</span> since it also reduces <span class="math inline">\(X_1, X_2\)</span> to increase. Increasing <span class="math inline">\(Y\)</span>, we need to increase <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> together as increasing just one will increase <span class="math inline">\(X_3\)</span> and thus decrease <span class="math inline">\(Y\)</span>. The bottom line is that under certain conditions not listed by Dr.&nbsp;Page, the big coefficient is a useful approximation, but this assumption is not generally true in regression models. Dr.&nbsp;Page introduces the concept of a <strong>“new reality”</strong> to counter the shortcomings of big coefficient thinking. Unfortunately, the new reality that was introduced seems to have arisen from a failure. Later, he makes a case that “new reality” is a policy based on some other effect. However, these new reality initiatives seem to have no evidence to back them up. So this seems like <strong>muddy thinking</strong> rather than <strong>Clear thinking</strong></p>
+</span></p>
+<p>We want to increase <span class="math inline">Y</span>. The big coefficient is <span class="math inline">X_3</span>, but it reduces <span class="math inline">Y</span>. Reducing <span class="math inline">X_3</span> will reduce <span class="math inline">Y</span> since it also reduces <span class="math inline">X_1, X_2</span> to increase. Increasing <span class="math inline">Y</span>, we need to increase <span class="math inline">X_1</span> and <span class="math inline">X_2</span> together as increasing just one will increase <span class="math inline">X_3</span> and thus decrease <span class="math inline">Y</span>. The bottom line is that under certain conditions not listed by Dr.&nbsp;Page, the big coefficient is a useful approximation, but this assumption is not generally true in regression models. Dr.&nbsp;Page introduces the concept of a <strong>“new reality”</strong> to counter the shortcomings of big coefficient thinking. Unfortunately, the new reality that was introduced seems to have arisen from a failure. Later, he makes a case that “new reality” is a policy based on some other effect. However, these new reality initiatives seem to have no evidence to back them up. So this seems like <strong>muddy thinking</strong> rather than <strong>Clear thinking</strong></p>
 </section>
 <section id="sec-categorical-models" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="sec-categorical-models">Categorical models</h2>
@@ -285,22 +301,22 @@ Y = 6 X_1 + 6 X_2 - 8 X_3 \\ \text{subject to} (X_3 = max({X_1,X_2}))
 <p><img src="images/mt_calories.jpg" class="img-fluid figure-img"></p>
 <figcaption>Calories per food item</figcaption>
 </figure>
-</div></div><p>For example, you may have a list of calories per food item. We want to make sense of why some of these items have many calories and why others have not. The first thing we want to figure out is the average value . How much variation is there in the data? The mean is <span class="math inline">\((100 + 250
-+90 + 110 + 350) / 5 = 180\)</span> calories.</p>
-<p>One way of determining the variation is the difference between every value and the mean. We take absolute values because these differences cancel each other out. Hence, the total difference from the mean is <span class="math inline">\(80 + 70 +90 + 70 + 170 = 480.\)</span></p>
+</div></div><p>For example, you may have a list of calories per food item. We want to make sense of why some of these items have many calories and why others have not. The first thing we want to figure out is the average value . How much variation is there in the data? The mean is <span class="math inline">(100 + 250
++90 + 110 + 350) / 5 = 180</span> calories.</p>
+<p>One way of determining the variation is the difference between every value and the mean. We take absolute values because these differences cancel each other out. Hence, the total difference from the mean is <span class="math inline">80 + 70 +90 + 70 + 170 = 480.</span></p>
 
 <div class="no-row-height column-margin column-container"><div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/mt_squares.jpg" class="img-fluid figure-img"></p>
 <figcaption>Square differences</figcaption>
 </figure>
-</div></div><p>In statistics, the differences are squared to make every value positive and to amplify more significant deviations. e.g., for the pear we get <span class="math inline">\((100 - 180)^2 = 6,400\)</span>, and for the pie we get 28,900. It shows that substantial deviations from the mean greatly impact the total variation.</p>
+</div></div><p>In statistics, the differences are squared to make every value positive and to amplify more significant deviations. e.g., for the pear we get <span class="math inline">(100 - 180)^2 = 6,400</span>, and for the pie we get 28,900. It shows that substantial deviations from the mean greatly impact the total variation.</p>
 <p>The obvious categorization is that pears, apples, and bananas are fruit, while cakes and pies are desserts. The fruit values are 90, 100, and 110, with a mean of 100 and a total variation of 200, while the dessert values are 250 and 350, with a mean of 300 and a total variation of 5,000.</p>
 <p>Total variation went down from 53,200 to 5,200. Hence, the categories substantially reduce the amount of variation. Variation can be seen as unexplained, so the categorization explained a lot.</p>
 <p>The total variation explained is</p>
-<p><span id="eq-r-2-calcualtion"><span class="math display">\[
+<p><span id="eq-r-2-calcualtion"><span class="math display">
 (1 - 5,200/53,200)*100% = 90.2%
-\tag{1}\]</span></span></p>
+\tag{1}</span></span></p>
 <p>This is called the <strong>R-squared</strong>.</p>
 <ul>
 <li>If the R-squared is near 1, the model explains a lot of the variance in the data</li>
@@ -318,8 +334,8 @@ Y = 6 X_1 + 6 X_2 - 8 X_3 \\ \text{subject to} (X_3 = max({X_1,X_2}))
 </div></div></section>
 <section id="sec-linear-models" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="sec-linear-models">Linear models</h2>
-<p>Linear models assume that there is some independent variable <em>X</em> and a dependent variable <em>Y</em> that is a function of <em>X</em> where <span class="math inline">\(Y = mX + b\)</span>. This can be plotted in a graph. The value of <em>m</em> determines the slope. There are two questions: 1. sign of the coefficient: does <em>Y</em> increase or decrease with <em>X</em>? 2. magnitude of the coefficient: how much does <em>Y</em> increase for each unit increase in <em>X</em>?</p>
-<p>Models are used to predict and to understand data. Assume we have a linear model for the price of a television: <span class="math inline">\(cost = \$15 \times length + \$100\)</span>. So suppose we want to buy a 30-inch TV, then we can predict that it will cost $550. In this fashion, we can also try to predict the prices of counterfactual products, like a 100-inch TV.</p>
+<p>Linear models assume that there is some independent variable <em>X</em> and a dependent variable <em>Y</em> that is a function of <em>X</em> where <span class="math inline">Y = mX + b</span>. This can be plotted in a graph. The value of <em>m</em> determines the slope. There are two questions: 1. sign of the coefficient: does <em>Y</em> increase or decrease with <em>X</em>? 2. magnitude of the coefficient: how much does <em>Y</em> increase for each unit increase in <em>X</em>?</p>
+<p>Models are used to predict and to understand data. Assume we have a linear model for the price of a television: <span class="math inline">cost = \$15 \times length + \$100</span>. So suppose we want to buy a 30-inch TV, then we can predict that it will cost $550. In this fashion, we can also try to predict the prices of counterfactual products, like a 100-inch TV.</p>
 
 <div class="no-row-height column-margin column-container"><div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -338,8 +354,8 @@ Y = 6 X_1 + 6 X_2 - 8 X_3 \\ \text{subject to} (X_3 = max({X_1,X_2}))
 <p><img src="images/mt_shoe_size_01.jpg" class="img-fluid figure-img"></p>
 <figcaption>Linear model</figcaption>
 </figure>
-</div></div><p>Let us do a simple example. Suppose we have three kids, and we want to figure out how much their grade explains their shoe size. We can see shoe size as a function of grade. The values for grade and shoe size for the three kids are (1,1), (2,5) and (4,9). The total variation from the mean 5 is: <span class="math inline">\((5-1)^2 + 0 + (1-5)^2 = 32\)</span>.</p>
-<p>The goal is to make a linear model that explains as much of the variation as possible. Try $Y = 2X <span class="math inline">\(. The variation would be\)</span>(1-2)^2 + (4-5)^3 + (9-8)^2 = 3$. In this way, <span class="math inline">\((1 - 3/32) = 29/32\)</span> of the variation would be explained, which is over 90%. Nevertheless, this is just a guess.</p>
+</div></div><p>Let us do a simple example. Suppose we have three kids, and we want to figure out how much their grade explains their shoe size. We can see shoe size as a function of grade. The values for grade and shoe size for the three kids are (1,1), (2,5) and (4,9). The total variation from the mean 5 is: <span class="math inline">(5-1)^2 + 0 + (1-5)^2 = 32</span>.</p>
+<p>The goal is to make a linear model that explains as much of the variation as possible. Try $Y = 2X <span class="math inline">. The variation would be</span>(1-2)^2 + (4-5)^3 + (9-8)^2 = 3$. In this way, <span class="math inline">(1 - 3/32) = 29/32</span> of the variation would be explained, which is over 90%. Nevertheless, this is just a guess.</p>
 
 <div class="no-row-height column-margin column-container"><div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -347,9 +363,9 @@ Y = 6 X_1 + 6 X_2 - 8 X_3 \\ \text{subject to} (X_3 = max({X_1,X_2}))
 <figcaption>Linear model</figcaption>
 </figure>
 </div></div><p>So, how do we fit the best line?</p>
-<p>Assume the line to be <span class="math inline">\(Y = mX + b\)</span>. Here <span class="math inline">\(b\)</span> is called the intercept, which is the value for <span class="math inline">\(Y\)</span> when <span class="math inline">\(X = 0\)</span>. How big is the total variation? How far would that line be from the data? That is <span class="math inline">\((m + b - 1)^2 + (2m + b - 5)^2 + (4m + b - 9)^2 = 21m^2 + 14mb + 3b^2 - 94m - 30b + 81\)</span>. It is now possible to find the values for <span class="math inline">\(b\)</span> and <span class="math inline">\(m\)</span> to make the total variation the smallest.</p>
-<p>These values are: <span class="math inline">\(b = -1\)</span> and <span class="math inline">\(m = 8/3\)</span> so that <span class="math inline">\(Y = -1 + (8/3)m\)</span>. In this case, the total variation would be <span class="math inline">\((2/3)^2 + (2/3)^2 + (2/3)^2 = (4/9)\times3 = 4/3\)</span>. This would explain <span class="math inline">\((1 - (4/3)/32)\)</span> of the variation, which is over 95%. The line is now even closer to the data.</p>
-<p>Suppose there are multiple variables. e.g., the test score <span class="math inline">\(Y\)</span> of kids might depend on their IQ <span class="math inline">\(Q\)</span>, teacher quality <span class="math inline">\(T\)</span> and class size <span class="math inline">\(Z\)</span> in the following way: <span class="math inline">\(Y = a + bQ + cT + dZ\)</span>. We expect the coefficient <span class="math inline">\(d\)</span> on class size to be negative and <span class="math inline">\(b\)</span> as well as <span class="math inline">\(c\)</span> to be positive.</p>
+<p>Assume the line to be <span class="math inline">Y = mX + b</span>. Here <span class="math inline">b</span> is called the intercept, which is the value for <span class="math inline">Y</span> when <span class="math inline">X = 0</span>. How big is the total variation? How far would that line be from the data? That is <span class="math inline">(m + b - 1)^2 + (2m + b - 5)^2 + (4m + b - 9)^2 = 21m^2 + 14mb + 3b^2 - 94m - 30b + 81</span>. It is now possible to find the values for <span class="math inline">b</span> and <span class="math inline">m</span> to make the total variation the smallest.</p>
+<p>These values are: <span class="math inline">b = -1</span> and <span class="math inline">m = 8/3</span> so that <span class="math inline">Y = -1 + (8/3)m</span>. In this case, the total variation would be <span class="math inline">(2/3)^2 + (2/3)^2 + (2/3)^2 = (4/9)\times3 = 4/3</span>. This would explain <span class="math inline">(1 - (4/3)/32)</span> of the variation, which is over 95%. The line is now even closer to the data.</p>
+<p>Suppose there are multiple variables. e.g., the test score <span class="math inline">Y</span> of kids might depend on their IQ <span class="math inline">Q</span>, teacher quality <span class="math inline">T</span> and class size <span class="math inline">Z</span> in the following way: <span class="math inline">Y = a + bQ + cT + dZ</span>. We expect the coefficient <span class="math inline">d</span> on class size to be negative and <span class="math inline">b</span> as well as <span class="math inline">c</span> to be positive.</p>
 <p>Of the 78 studies on class size, 4 showed a positive coefficient, 13 had a negative coefficient, and 61 showed no effect. Even though we think that class size matters, it appears not to matter much, at least within the range that has been studied. Research has shown that teacher quality matters far more.</p>
 <p>We can fit data in linear models. These models can often explain some percentage of the variation. The models also show us the sign and the magnitude of the coefficients. This shows whether the variable has a positive or a negative effect and how big that effect is, allowing us to make policy choices.</p>
 
@@ -362,14 +378,14 @@ Y = 6 X_1 + 6 X_2 - 8 X_3 \\ \text{subject to} (X_3 = max({X_1,X_2}))
 <section id="sec-reading-regression-output" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="sec-reading-regression-output">Reading regression output</h2>
 <p>Somebody may give we some regression output, and we may have to make sense of this. When we see regression output, then we deal with a linear model based on multiple variables and functions like</p>
-<p><span class="math display">\[
+<p><span class="math display">
 Y = m_1X_1 + m_2X_2 + \ldots + m_nX_n + b.
-\]</span></p>
-<p>With multiple regression output, there is more than one <span class="math inline">\(X\)</span> variable.</p>
-<p>e.g., <span class="math inline">\(Y\)</span> could be a test score depending on teacher quality <span class="math inline">\(T\)</span> and class size <span class="math inline">\(Z\)</span> so that the model function could be <span class="math inline">\(Y = cT + dZ + b\)</span>. We could expect that better teachers lead to better results so that <span class="math inline">\(c &gt; 0\)</span> and bigger classes lead to poorer results so that <span class="math inline">\(d &lt; 0\)</span>.</p>
-<p>In the regression output, the standard error is 24.21, which tells us, on average, how much the values differ from the mean. The value of <span class="math inline">\(R^2 = 0.72\)</span>, i.e., 72% of the variation, is explained by the linear model. There were 50 data points. The coefficient column tells us that the model is <span class="math inline">\(Y = 20X_1 + 10X_2 + 25\)</span>.</p>
-<p>If <span class="math inline">\(X_1\)</span> is teacher quality and <span class="math inline">\(X_2\)</span> is class size, then the positive value for the class size coefficient raises some questions. Maybe the data is wrong, or maybe our intuition is wrong. So, we have to dig a little deeper. The first issue is that we have only 50 observations, so the coefficient may not be correct. The standard error (SE) column gives the error in the coefficients.</p>
-<p>For the intercept, the coefficient is 25, and the standard error is 2, so 68% of the values are expected to be between 23 and 27. Hence, we could be really sure that the coefficient is between 19 and 31. Similarly, we could be really sure that <span class="math inline">\(X_1\)</span> is between 17 and 23, and <span class="math inline">\(X_2\)</span> is between -2 and 22. The p-value gives the probability that the sign of the coefficient is wrong. We should not be so sure about the positive impact of class size on school performance.</p>
+</span></p>
+<p>With multiple regression output, there is more than one <span class="math inline">X</span> variable.</p>
+<p>e.g., <span class="math inline">Y</span> could be a test score depending on teacher quality <span class="math inline">T</span> and class size <span class="math inline">Z</span> so that the model function could be <span class="math inline">Y = cT + dZ + b</span>. We could expect that better teachers lead to better results so that <span class="math inline">c &gt; 0</span> and bigger classes lead to poorer results so that <span class="math inline">d &lt; 0</span>.</p>
+<p>In the regression output, the standard error is 24.21, which tells us, on average, how much the values differ from the mean. The value of <span class="math inline">R^2 = 0.72</span>, i.e., 72% of the variation, is explained by the linear model. There were 50 data points. The coefficient column tells us that the model is <span class="math inline">Y = 20X_1 + 10X_2 + 25</span>.</p>
+<p>If <span class="math inline">X_1</span> is teacher quality and <span class="math inline">X_2</span> is class size, then the positive value for the class size coefficient raises some questions. Maybe the data is wrong, or maybe our intuition is wrong. So, we have to dig a little deeper. The first issue is that we have only 50 observations, so the coefficient may not be correct. The standard error (SE) column gives the error in the coefficients.</p>
+<p>For the intercept, the coefficient is 25, and the standard error is 2, so 68% of the values are expected to be between 23 and 27. Hence, we could be really sure that the coefficient is between 19 and 31. Similarly, we could be really sure that <span class="math inline">X_1</span> is between 17 and 23, and <span class="math inline">X_2</span> is between -2 and 22. The p-value gives the probability that the sign of the coefficient is wrong. We should not be so sure about the positive impact of class size on school performance.</p>
 <p>The important issues to deal with are the following:</p>
 <ol type="1">
 <li>How good is the model? How much of the variation does it explain?</li>
@@ -394,22 +410,22 @@ Y = m_1X_1 + m_2X_2 + \ldots + m_nX_n + b.
 <li><p>break up the data into different quadrants: we can draw lines in each quadrant that match the data as closely as possible, and to make the line continuous, we may have to forego drawing an optimal line for each quadrant separately.</p></li>
 <li><p>include onlinear terms, e.g.</p></li>
 </ol>
-<p><span class="math display">\[
+<p><span class="math display">
 Y = m\sqrt{X} + b. \qquad
-\]</span></p>
+</span></p>
 </section>
 <section id="the-big-coefficient-versus-the-new-reality" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="the-big-coefficient-versus-the-new-reality">The Big Coefficient versus the New Reality</h2>
-<p>If we have some model like <span class="math display">\[
+<p>If we have some model like <span class="math display">
 Y = m_1X_1 + m_2X_2 + b
-\]</span></p>
+</span></p>
 <p>Where:</p>
 <ul>
-<li><span class="math inline">\(Y\)</span> might be sales,</li>
-<li><span class="math inline">\(X_1\)</span> might be web advertising, and</li>
-<li><span class="math inline">\(X_2\)</span> might be print advertising.</li>
+<li><span class="math inline">Y</span> might be sales,</li>
+<li><span class="math inline">X_1</span> might be web advertising, and</li>
+<li><span class="math inline">X_2</span> might be print advertising.</li>
 </ul>
-<p>If the coefficient is <span class="math inline">\(m_1 &gt; m_2\)</span>, then we should advertise on the web rather than print. The coefficient is an evidence-based rank, and it is applied, for instance, in medicine, philanthropy, education, and management. Linear models based on evidence are better than guessing.</p>
+<p>If the coefficient is <span class="math inline">m_1 &gt; m_2</span>, then we should advertise on the web rather than print. The coefficient is an evidence-based rank, and it is applied, for instance, in medicine, philanthropy, education, and management. Linear models based on evidence are better than guessing.</p>
 <p>Evidence-based thinking with models works as follows:</p>
 <ol type="1">
 <li>construct a model;</li>
@@ -487,7 +503,7 @@ Critical Note <span class="emoji" data-emoji="poop">💩</span>
 </div>
 <p><strong>The new reality</strong> means that we may want to try something big and new, so we consider non-marginal changes. If we have only data in a small range, this may not help we very much. The multiple peak problem is just one instance of this issue.</p>
 <p>Sometimes, big co-efficient thinking may be helpful, like taxing cigarettes to reduce healthcare costs and raise money to finance healthcare. A new reality might be implementing universal healthcare in the US. <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-<p>The American Jobs Act is also an example of big coefficient thinking. A new reality was the US interstate highway system. In 1956, the US government allocated $25 billion, which is about $410 billion at today’s prices, for 41,000 miles of roads. This was creating something completely new, so it was difficult to calculate the employment effects. Big coefficient thinking can be good for minor changes but ignores new realities.</p>
+<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;it might be but I prefer to view Universal healthcare and taxing cigatettes say to reduce lung cancer as two differnt issues and htus both likely to be perhaps run in parallel as happened during Barak Obama’s presidency and leter reversed by Donald Trump</p></div></div><p>The American Jobs Act is also an example of big coefficient thinking. A new reality was the US interstate highway system. In 1956, the US government allocated $25 billion, which is about $410 billion at today’s prices, for 41,000 miles of roads. This was creating something completely new, so it was difficult to calculate the employment effects. Big coefficient thinking can be good for minor changes but ignores new realities.</p>
 <div class="{callout-note}">
 <p>Sad to say that: The American Jobs Act is not an example of big coefficient thinking. There are just so many difernt tax cuts and clauses to make us think this is all based out of a big coeffinct in somebody’s regression model <span class="emoji" data-emoji="poop">💩</span> The construction of public works like roads is nothing new - following the great depression the government intiated a massive number of public works project. <span class="emoji" data-emoji="poop">💩</span> It pretty simple for the bean counters in the treasury deprtment to calculate how many jobs building 41,000 miles of road would create. <span class="emoji" data-emoji="poop">💩</span> Both are independent efforts tp solve differnt problems.</p>
 </div>
@@ -502,24 +518,40 @@ Critical Note <span class="emoji" data-emoji="poop">💩</span>
 <h2 class="anchored" data-anchor-id="references">References</h2>
 <p>Note: this page is based on the following source:</p>
 <ul>
-<li><span class="citation" data-cites="page2017modelthinking">[@page2017modelthinking]</span> MOOC, Course material &amp; Transcripts.</li>
-<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">[@fisher2017modelthinking]</span>.</li>
-<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">[@kleinikink2016naturalmoney]</span> and <span class="citation" data-cites="groh2017model">[@groh2017model]</span>.</li>
+<li><span class="citation" data-cites="page2017modelthinking">(<a href="#ref-page2017modelthinking" role="doc-biblioref">Page 2014</a>)</span> MOOC, Course material &amp; Transcripts.</li>
+<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">(<a href="#ref-fisher2017modelthinking" role="doc-biblioref">Fisher 2014</a>)</span>.</li>
+<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">(<a href="#ref-kleinikink2016naturalmoney" role="doc-biblioref">Klein Ikink 2016</a>)</span> and <span class="citation" data-cites="groh2017model">(<a href="#ref-groh2017model" role="doc-biblioref">Groh 2017</a>)</span>.</li>
 </ul>
-<div id="refs" role="list">
-
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-fisher2017modelthinking" class="csl-entry" role="listitem">
+Fisher, Steve. 2014. <span>“Model Thinking – TA Notes.”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
+<div id="ref-groh2017model" class="csl-entry" role="listitem">
+Groh, Rainer. 2017. <span>“Model Thinking - Course Notes by Rainer Groh.”</span> <a href="https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf" class="uri">https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf</a>. November 2017.
+</div>
+<div id="ref-kleinikink2016naturalmoney" class="csl-entry" role="listitem">
+Klein Ikink, Bart. 2016. <span>“Model Thinking.”</span> <a href="https://naturalmoney.org/modelthinking-01.html" class="uri">https://naturalmoney.org/modelthinking-01.html</a>. March 2016.
+</div>
+<div id="ref-page2017modelthinking" class="csl-entry" role="listitem">
+Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
 </div>
 
 
 </section>
 
 
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>it might be but I prefer to view Universal healthcare and taxing cigatettes say to reduce lung cancer as two differnt issues and htus both likely to be perhaps run in parallel as happened during Barak Obama’s presidency and leter reversed by Donald Trump<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{2023,
+  author = {},
+  title = {Lesson 6 - {Categorical} and {Linear} {Models}},
+  date = {2023-08-06},
+  url = {https://orenbochman.github.io/notes-model-thinking/posts/w06.html},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-2023" class="csl-entry quarto-appendix-citeas" role="listitem">
+<span>“Lesson 6 - Categorical and Linear Models.”</span> 2023. August 6,
+2023. <a href="https://orenbochman.github.io/notes-model-thinking/posts/w06.html">https://orenbochman.github.io/notes-model-thinking/posts/w06.html</a>.
+</div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -610,7 +642,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/orenbochman\.github\.io\/notes-model-thinking\/");
+      var filterRegex = new RegExp("^(?:http:|https:)\/\/www\.quarto\.org\/custom");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -624,6 +656,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         if (link.dataset.originalHref !== undefined) {
           link.href = link.dataset.originalHref;
         }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+          // default icon
+          link.classList.add("external");
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -955,4 +994,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

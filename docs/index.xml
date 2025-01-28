@@ -178,19 +178,39 @@
 <h3 class="anchored" data-anchor-id="references">References</h3>
 <p>Note: this page is based on the following source:</p>
 <ul>
-<li><span class="citation" data-cites="page2017modelthinking">[@page2017modelthinking]</span> MOOC, Course material &amp; Transcripts.</li>
-<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">[@fisher2017modelthinking]</span>.</li>
-<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">[@kleinikink2016naturalmoney]</span> and <span class="citation" data-cites="groh2017model">[@groh2017model]</span>.</li>
+<li><span class="citation" data-cites="page2017modelthinking">(Page 2014)</span> MOOC, Course material &amp; Transcripts.</li>
+<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">(Fisher 2014)</span>.</li>
+<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">(Klein Ikink 2016)</span> and <span class="citation" data-cites="groh2017model">(Groh 2017)</span>.</li>
 </ul>
-<div id="refs">
-
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-fisher2017modelthinking" class="csl-entry">
+Fisher, Steve. 2014. <span>“Model Thinking – TA Notes.”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
+<div id="ref-groh2017model" class="csl-entry">
+Groh, Rainer. 2017. <span>“Model Thinking - Course Notes by Rainer Groh.”</span> <a href="https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf" class="uri">https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf</a>. November 2017.
+</div>
+<div id="ref-kleinikink2016naturalmoney" class="csl-entry">
+Klein Ikink, Bart. 2016. <span>“Model Thinking.”</span> <a href="https://naturalmoney.org/modelthinking-01.html" class="uri">https://naturalmoney.org/modelthinking-01.html</a>. March 2016.
+</div>
+<div id="ref-page2017modelthinking" class="csl-entry">
+Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
 </div>
 
 
 </section>
 </section>
 
- ]]></description>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{2023,
+  author = {},
+  title = {Lesson 13 - {Path} Dependence},
+  date = {2023-08-13},
+  url = {https://orenbochman.github.io/notes-model-thinking/posts/w13.html},
+  langid = {en}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-2023" class="csl-entry quarto-appendix-citeas">
+<span>“Lesson 13 - Path Dependence.”</span> 2023. August 13, 2023. <a href="https://orenbochman.github.io/notes-model-thinking/posts/w13.html">https://orenbochman.github.io/notes-model-thinking/posts/w13.html</a>.
+</div></div></section></div> ]]></description>
   <category>model thinking</category>
   <category>Path dependence</category>
   <category>PHAT dependence</category>
@@ -319,7 +339,7 @@
 <p><img src="https://orenbochman.github.io/notes-model-thinking/posts/images/mt_axelrod.jpg" class="img-fluid figure-img"></p>
 <figcaption>Axelrod’s definitions</figcaption>
 </figure>
-</div></div><p><a href="https://en.wikipedia.org/wiki/Robert_Axelrod">Robert Axelrod’s</a> culture model <span class="citation" data-cites="Axelrod1997DisseminationofCulture">[@Axelrod1997DisseminationofCulture]</span> explains how cultures emerge, and why there are boundaries between cultures. Axelrod defines a set of features which are coordination games like whether you read the newspaper at the table or talk. Traits define what action you take on that feature, e.g.&nbsp;talk. There could be multiple options. A person is a vector of traits on features. For instance, person A wears shoes in the house, stores ketchup in the fridge, and reads the newspaper at the table.</p>
+</div></div><p><a href="https://en.wikipedia.org/wiki/Robert_Axelrod">Robert Axelrod’s</a> culture model <span class="citation" data-cites="Axelrod1997DisseminationofCulture">(Axelrod 1997)</span> explains how cultures emerge, and why there are boundaries between cultures. Axelrod defines a set of features which are coordination games like whether you read the newspaper at the table or talk. Traits define what action you take on that feature, e.g.&nbsp;talk. There could be multiple options. A person is a vector of traits on features. For instance, person A wears shoes in the house, stores ketchup in the fridge, and reads the newspaper at the table.</p>
 
 <div class="no-row-height column-margin column-container"><div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -439,19 +459,43 @@
 <h3 class="anchored" data-anchor-id="references">References</h3>
 <p>Note: this page is based on the following source:</p>
 <ul>
-<li><span class="citation" data-cites="page2017modelthinking">[@page2017modelthinking]</span> MOOC, Course material &amp; Transcripts.</li>
-<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">[@fisher2017modelthinking]</span>.</li>
-<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">[@kleinikink2016naturalmoney]</span> and <span class="citation" data-cites="groh2017model">[@groh2017model]</span>.</li>
+<li><span class="citation" data-cites="page2017modelthinking">(Page 2014)</span> MOOC, Course material &amp; Transcripts.</li>
+<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">(Fisher 2014)</span>.</li>
+<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">(Klein Ikink 2016)</span> and <span class="citation" data-cites="groh2017model">(Groh 2017)</span>.</li>
 </ul>
-<div id="refs">
-
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-Axelrod1997DisseminationofCulture" class="csl-entry">
+Axelrod, Robert. 1997. <span>“The Dissemination of Culture: A Model with Local Convergence and Global Polarization.”</span> <em>Journal of Conflict Resolution</em> 41 (2): 203–26. <a href="https://doi.org/10.1177/0022002797041002001">https://doi.org/10.1177/0022002797041002001</a>.
+</div>
+<div id="ref-fisher2017modelthinking" class="csl-entry">
+Fisher, Steve. 2014. <span>“Model Thinking – TA Notes.”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
+<div id="ref-groh2017model" class="csl-entry">
+Groh, Rainer. 2017. <span>“Model Thinking - Course Notes by Rainer Groh.”</span> <a href="https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf" class="uri">https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf</a>. November 2017.
+</div>
+<div id="ref-kleinikink2016naturalmoney" class="csl-entry">
+Klein Ikink, Bart. 2016. <span>“Model Thinking.”</span> <a href="https://naturalmoney.org/modelthinking-01.html" class="uri">https://naturalmoney.org/modelthinking-01.html</a>. March 2016.
+</div>
+<div id="ref-page2017modelthinking" class="csl-entry">
+Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
 </div>
 
 
 </section>
 </section>
 
- ]]></description>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{2023,
+  author = {},
+  title = {Lesson 12 - {Coordination} and {Culture}},
+  date = {2023-08-12},
+  url = {https://orenbochman.github.io/notes-model-thinking/posts/w12.html},
+  langid = {en}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-2023" class="csl-entry quarto-appendix-citeas">
+<span>“Lesson 12 - Coordination and Culture.”</span> 2023. August 12,
+2023. <a href="https://orenbochman.github.io/notes-model-thinking/posts/w12.html">https://orenbochman.github.io/notes-model-thinking/posts/w12.html</a>.
+</div></div></section></div> ]]></description>
   <category>model thinking</category>
   <category>Coordination</category>
   <category>Culture</category>
@@ -557,19 +601,39 @@
 <h3 class="anchored" data-anchor-id="references">References</h3>
 <p>Note: this page is based on the following source:</p>
 <ul>
-<li><span class="citation" data-cites="page2017modelthinking">[@page2017modelthinking]</span> MOOC, Course material &amp; Transcripts.</li>
-<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">[@fisher2017modelthinking]</span>.</li>
-<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">[@kleinikink2016naturalmoney]</span> and <span class="citation" data-cites="groh2017model">[@groh2017model]</span>.</li>
+<li><span class="citation" data-cites="page2017modelthinking">(Page 2014)</span> MOOC, Course material &amp; Transcripts.</li>
+<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">(Fisher 2014)</span>.</li>
+<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">(Klein Ikink 2016)</span> and <span class="citation" data-cites="groh2017model">(Groh 2017)</span>.</li>
 </ul>
-<div id="refs">
-
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-fisher2017modelthinking" class="csl-entry">
+Fisher, Steve. 2014. <span>“Model Thinking – TA Notes.”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
+<div id="ref-groh2017model" class="csl-entry">
+Groh, Rainer. 2017. <span>“Model Thinking - Course Notes by Rainer Groh.”</span> <a href="https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf" class="uri">https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf</a>. November 2017.
+</div>
+<div id="ref-kleinikink2016naturalmoney" class="csl-entry">
+Klein Ikink, Bart. 2016. <span>“Model Thinking.”</span> <a href="https://naturalmoney.org/modelthinking-01.html" class="uri">https://naturalmoney.org/modelthinking-01.html</a>. March 2016.
+</div>
+<div id="ref-page2017modelthinking" class="csl-entry">
+Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
 </div>
 
 
 </section>
 </section>
 
- ]]></description>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{2023,
+  author = {},
+  title = {Lesson 11 - {Lyapunov} {Functions}},
+  date = {2023-08-11},
+  url = {https://orenbochman.github.io/notes-model-thinking/posts/w11.html},
+  langid = {en}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-2023" class="csl-entry quarto-appendix-citeas">
+<span>“Lesson 11 - Lyapunov Functions.”</span> 2023. August 11, 2023. <a href="https://orenbochman.github.io/notes-model-thinking/posts/w11.html">https://orenbochman.github.io/notes-model-thinking/posts/w11.html</a>.
+</div></div></section></div> ]]></description>
   <category>model thinking</category>
   <category>Lyapunov Functions</category>
   <category>Collatz problem</category>
@@ -693,18 +757,38 @@
 <h2 class="anchored" data-anchor-id="references">References</h2>
 <p>Note: this page is based on the following source:</p>
 <ul>
-<li><span class="citation" data-cites="page2017modelthinking">[@page2017modelthinking]</span> MOOC, Course material &amp; Transcripts.</li>
-<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">[@fisher2017modelthinking]</span>.</li>
-<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">[@kleinikink2016naturalmoney]</span> and <span class="citation" data-cites="groh2017model">[@groh2017model]</span>.</li>
+<li><span class="citation" data-cites="page2017modelthinking">(Page 2014)</span> MOOC, Course material &amp; Transcripts.</li>
+<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">(Fisher 2014)</span>.</li>
+<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">(Klein Ikink 2016)</span> and <span class="citation" data-cites="groh2017model">(Groh 2017)</span>.</li>
 </ul>
-<div id="refs">
-
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-fisher2017modelthinking" class="csl-entry">
+Fisher, Steve. 2014. <span>“Model Thinking – TA Notes.”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
+<div id="ref-groh2017model" class="csl-entry">
+Groh, Rainer. 2017. <span>“Model Thinking - Course Notes by Rainer Groh.”</span> <a href="https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf" class="uri">https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf</a>. November 2017.
+</div>
+<div id="ref-kleinikink2016naturalmoney" class="csl-entry">
+Klein Ikink, Bart. 2016. <span>“Model Thinking.”</span> <a href="https://naturalmoney.org/modelthinking-01.html" class="uri">https://naturalmoney.org/modelthinking-01.html</a>. March 2016.
+</div>
+<div id="ref-page2017modelthinking" class="csl-entry">
+Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
 </div>
 
 
 </section>
 
- ]]></description>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{2023,
+  author = {},
+  title = {Lesson 10 - {Markov} {Processes}},
+  date = {2023-08-10},
+  url = {https://orenbochman.github.io/notes-model-thinking/posts/w10.html},
+  langid = {en}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-2023" class="csl-entry quarto-appendix-citeas">
+<span>“Lesson 10 - Markov Processes.”</span> 2023. August 10, 2023. <a href="https://orenbochman.github.io/notes-model-thinking/posts/w10.html">https://orenbochman.github.io/notes-model-thinking/posts/w10.html</a>.
+</div></div></section></div> ]]></description>
   <category>model thinking</category>
   <category>Markov Processes</category>
   <category>Markov Chain</category>
@@ -828,24 +912,48 @@
 <p>This idea of ideas building on ideas is the foundation of the theory of recombinant growth of Martin Weitzman. This theory states that ideas get generated all the time. e.g., the steam engine gets invented and developed, the gasoline engine gets developed, the microprocessor gets developed. And all these things get recombined into interesting combinations. And those combinations, in turn, get recombined to create ever more growth. e.g., many parts in the steam engine were solutions to previous problems. The same applies to the desk top computer.</p>
 <p>All those parts of the steam engine weren’t developed the steam engine in mind. They were developed for other purposes. This is an idea from biology called exaptation. The classic example of exaptation, is the feather. Birds developed feathers primarily to keep them warm, but eventually those same feathers allowed them to fly. Expectation means that some innovation for one reason, gets used in another context. Another example is the laser. The laser was not invented with the idea of laser printers in mind. So once something is developed, it gets used for all sorts of unexpected things through the power of recombination.</p>
 <p>This also applies to perspectives, e.g.&nbsp;the masticity perspective of a candy bar. Masticity can be a useful perspective for other problems, e.g.&nbsp;pasta or breakfast cereal. So even failed solutions for one problem may work well as a solution to other problems. e.g., the glue in the post it note was originally a failure because the glue didn’t stick very well. But it turned out to be useful for other sorts of problems, mainly making sticky notes.</p>
-<p>There is more to it than this. It’s not just the recombination of ideas, because for hundreds and thousands of years people had ideas. There had to be some way to communicate those ideas. In <span class="citation" data-cites="mokyr2011gifts">@mokyr2011gifts</span> the economist <a href="https://en.wikipedia.org/wiki/Joel_Mokyr">Joel Mokyr</a>, argues that the rise of modern universities, the printing press, and scientific communication allowed ideas to be transferred from one location and one person to another. The technological revolution was driven by the fact that people could share ideas and then recombine them.</p>
+<p>There is more to it than this. It’s not just the recombination of ideas, because for hundreds and thousands of years people had ideas. There had to be some way to communicate those ideas. In <span class="citation" data-cites="mokyr2011gifts">Mokyr (2011)</span> the economist <a href="https://en.wikipedia.org/wiki/Joel_Mokyr">Joel Mokyr</a>, argues that the rise of modern universities, the printing press, and scientific communication allowed ideas to be transferred from one location and one person to another. The technological revolution was driven by the fact that people could share ideas and then recombine them.</p>
 <section id="references" class="level3">
 <h3 class="anchored" data-anchor-id="references">References</h3>
 <p>Note: this page is based on the following source:</p>
 <ul>
-<li><span class="citation" data-cites="page2017modelthinking">[@page2017modelthinking]</span> MOOC, Course material &amp; Transcripts.</li>
-<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">[@fisher2017modelthinking]</span>.</li>
-<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">[@kleinikink2016naturalmoney]</span> and <span class="citation" data-cites="groh2017model">[@groh2017model]</span>.</li>
+<li><span class="citation" data-cites="page2017modelthinking">(Page 2014)</span> MOOC, Course material &amp; Transcripts.</li>
+<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">(Fisher 2014)</span>.</li>
+<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">(Klein Ikink 2016)</span> and <span class="citation" data-cites="groh2017model">(Groh 2017)</span>.</li>
 </ul>
-<div id="refs">
-
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-fisher2017modelthinking" class="csl-entry">
+Fisher, Steve. 2014. <span>“Model Thinking – TA Notes.”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
+<div id="ref-groh2017model" class="csl-entry">
+Groh, Rainer. 2017. <span>“Model Thinking - Course Notes by Rainer Groh.”</span> <a href="https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf" class="uri">https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf</a>. November 2017.
+</div>
+<div id="ref-kleinikink2016naturalmoney" class="csl-entry">
+Klein Ikink, Bart. 2016. <span>“Model Thinking.”</span> <a href="https://naturalmoney.org/modelthinking-01.html" class="uri">https://naturalmoney.org/modelthinking-01.html</a>. March 2016.
+</div>
+<div id="ref-mokyr2011gifts" class="csl-entry">
+Mokyr, J. 2011. <em>The Gifts of Athena: Historical Origins of the Knowledge Economy</em>. Princeton University Press.
+</div>
+<div id="ref-page2017modelthinking" class="csl-entry">
+Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
 </div>
 
 
 </section>
 </section>
 
- ]]></description>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{2023,
+  author = {},
+  title = {Lesson 9 - {Diversity} and Innovation},
+  date = {2023-08-09},
+  url = {https://orenbochman.github.io/notes-model-thinking/posts/w09.html},
+  langid = {en}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-2023" class="csl-entry quarto-appendix-citeas">
+<span>“Lesson 9 - Diversity and Innovation.”</span> 2023. August 9,
+2023. <a href="https://orenbochman.github.io/notes-model-thinking/posts/w09.html">https://orenbochman.github.io/notes-model-thinking/posts/w09.html</a>.
+</div></div></section></div> ]]></description>
   <category>model thinking</category>
   <category>Tipping points</category>
   <category>Percolation models</category>
@@ -878,7 +986,7 @@
 <p><img src="https://orenbochman.github.io/notes-model-thinking/posts/images/mt_gdp_comparison.jpg" class="img-fluid figure-img"></p>
 <figcaption>Comparison Botswana versus Zimbabwe</figcaption>
 </figure>
-</div></div><p>The gross domestic product (GDP) is the market value of all goods and services produced in an economy. We want to know what causes growth. e.g., Botswana did much better than Zimbabwe. The economists <a href="https://en.wikipedia.org/wiki/Daron_Acemoglu">Daron Acemoglu</a> and <a href="https://en.wikipedia.org/wiki/James_A._Robinson">James Robinson</a> wrote a book named <span class="citation" data-cites="acemoglu2012nations">[@acemoglu2012nations]</span> Why Nations Fail that focuses on the question why some countries like Zimbabwe do so badly.</p>
+</div></div><p>The gross domestic product (GDP) is the market value of all goods and services produced in an economy. We want to know what causes growth. e.g., Botswana did much better than Zimbabwe. The economists <a href="https://en.wikipedia.org/wiki/Daron_Acemoglu">Daron Acemoglu</a> and <a href="https://en.wikipedia.org/wiki/James_A._Robinson">James Robinson</a> wrote a book named <span class="citation" data-cites="acemoglu2012nations">(Acemoglu and Robinson 2012)</span> Why Nations Fail that focuses on the question why some countries like Zimbabwe do so badly.</p>
 <p>Economists often talk about real changes in GDP. Real means that inflation is taken into account. The economy is measured in currency, e.g.&nbsp;dollars. If the economy grows by 5% in dollars but the inflation is 3%, then this increased amount of dollars is worth less.</p>
 <p>An important question is whether or not super high levels of economic growth are sustainable. China has had growth rates of around 10% for 15 years. Japan had similar growth rates in the 1960s, and they remained high in the 1970s and 1980s. Japan’s growth rates fell after the country caught up with the rest of the world.</p>
 
@@ -959,8 +1067,8 @@
 </section>
 <section id="sec-why-do-some-countries-not-grow" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="sec-why-do-some-countries-not-grow">Why do some countries not grow?</h2>
-<p>The Solow growth model has labour, capital and technology that are combined to produce output. In this model things like equality and culture are left out. In the book <span class="citation" data-cites="acemoglu2012nations">@acemoglu2012nations</span> <a href="https://en.wikipedia.org/wiki/Daron_Acemoglu">Daron Acemoglu</a> and <a href="https://en.wikipedia.org/wiki/James_A._Robinson">James Robinson</a> look over hundreds of years to investigate why some countries are successful and why others are not. e.g., Botswana did very well while Zimbabwe didn’t. Why is that?</p>
-<p>Acemoglu and Robinson think that growth requires a <strong>strong central government</strong> to protect capital and investment but that can’t be controlled by a select few. If there is no strong central government to protect property rights, whether it is physical or intellectual property, there is less incentive for people to invest and innovate. And if you have less investment and innovation, you will have lower growth <span class="citation" data-cites="acemoglu2012nations">@acemoglu2012nations</span>.</p>
+<p>The Solow growth model has labour, capital and technology that are combined to produce output. In this model things like equality and culture are left out. In the book <span class="citation" data-cites="acemoglu2012nations">Acemoglu and Robinson (2012)</span> <a href="https://en.wikipedia.org/wiki/Daron_Acemoglu">Daron Acemoglu</a> and <a href="https://en.wikipedia.org/wiki/James_A._Robinson">James Robinson</a> look over hundreds of years to investigate why some countries are successful and why others are not. e.g., Botswana did very well while Zimbabwe didn’t. Why is that?</p>
+<p>Acemoglu and Robinson think that growth requires a <strong>strong central government</strong> to protect capital and investment but that can’t be controlled by a select few. If there is no strong central government to protect property rights, whether it is physical or intellectual property, there is less incentive for people to invest and innovate. And if you have less investment and innovation, you will have lower growth <span class="citation" data-cites="acemoglu2012nations">Acemoglu and Robinson (2012)</span>.</p>
 <p>On the other hand, the central government shouldn’t be controlled by a select few like in Zimbabwe. If that is the case then the people in control will extract resources from the economy, often in the form of bribery and corruption. <strong>Extraction</strong> limits growth by lowering investment in innovation and capital. Extraction causes less money to be available for investment as well as less incentive to invest. This has a similar effect as reducing the variable <em>A</em>, and if this variable is reduced to 1/3, output is only 1/9. Syphoning off money from the economy therefore has a multiplier effect 8.</p>
 
 <div class="no-row-height column-margin column-container"><div class="quarto-figure quarto-figure-center">
@@ -987,19 +1095,42 @@
 <h3 class="anchored" data-anchor-id="references">References</h3>
 <p>Note: this page is based on the following source:</p>
 <ul>
-<li><span class="citation" data-cites="page2017modelthinking">[@page2017modelthinking]</span> MOOC, Course material &amp; Transcripts.</li>
-<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">[@fisher2017modelthinking]</span>.</li>
-<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">[@kleinikink2016naturalmoney]</span> and <span class="citation" data-cites="groh2017model">[@groh2017model]</span>.</li>
+<li><span class="citation" data-cites="page2017modelthinking">(Page 2014)</span> MOOC, Course material &amp; Transcripts.</li>
+<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">(Fisher 2014)</span>.</li>
+<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">(Klein Ikink 2016)</span> and <span class="citation" data-cites="groh2017model">(Groh 2017)</span>.</li>
 </ul>
-<div id="refs">
-
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-acemoglu2012nations" class="csl-entry">
+Acemoglu, D., and J. A. Robinson. 2012. <em>Why Nations Fail: The Origins of Power, Prosperity and Poverty</em>. Profile.
+</div>
+<div id="ref-fisher2017modelthinking" class="csl-entry">
+Fisher, Steve. 2014. <span>“Model Thinking – TA Notes.”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
+<div id="ref-groh2017model" class="csl-entry">
+Groh, Rainer. 2017. <span>“Model Thinking - Course Notes by Rainer Groh.”</span> <a href="https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf" class="uri">https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf</a>. November 2017.
+</div>
+<div id="ref-kleinikink2016naturalmoney" class="csl-entry">
+Klein Ikink, Bart. 2016. <span>“Model Thinking.”</span> <a href="https://naturalmoney.org/modelthinking-01.html" class="uri">https://naturalmoney.org/modelthinking-01.html</a>. March 2016.
+</div>
+<div id="ref-page2017modelthinking" class="csl-entry">
+Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
 </div>
 
 
 </section>
 </section>
 
- ]]></description>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{2023,
+  author = {},
+  title = {Lesson 8 - {Economic} {Growth}},
+  date = {2023-08-08},
+  url = {https://orenbochman.github.io/notes-model-thinking/posts/w08.html},
+  langid = {en}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-2023" class="csl-entry quarto-appendix-citeas">
+<span>“Lesson 8 - Economic Growth.”</span> 2023. August 8, 2023. <a href="https://orenbochman.github.io/notes-model-thinking/posts/w08.html">https://orenbochman.github.io/notes-model-thinking/posts/w08.html</a>.
+</div></div></section></div> ]]></description>
   <category>model thinking</category>
   <category>Tipping points</category>
   <category>Percolation models</category>
@@ -1056,9 +1187,9 @@ Critical Note
 <ol type="1">
 <li>The drop in crime rate in New York is claimed by Malcom Gladwell to be an example of a tipping point. He suggested that “Broken Windows Theory” was what tipped crime rates in 1984 which was a policy of increasing the police force and getting them to crack down hard on misdemeanors like graffiti, jay-walking and free riding in the subway. Did this pretext of harassing minorities really motivated criminals to abandon crime, stop selling drugs, or emigrate to other cities with smaller police forces ?</li>
 </ol>
-<p>In <span class="citation" data-cites="donohue2001impact">@donohue2001impact</span> a more convicting hypothesis for the decline of crime is presented. The economists also looked at other cities in the US that experienced similar dramatic drops in crime. What they report is that drops in crime rate took place in both rich cities that boosted trier police force and in poor cities that could not afford to. The point out that crimes follow a Pareto-distribution were 95% of all violent crime in big cities is due to a very small population of career criminals. They suggest that the drop was due to Roe Vs Wade passing about 18 years with the outcome that teen-agers and single mothers were able to avoid having children they could not support. The data required lots of massaging (murders are solved long after they are reported, there was a crack epidemic, some place had easier access to abortion etc,) And while this effect seems to occur globally in different localities after an 18 year lag this analysis has been challenged by others researchers several times. See also <a href="https://en.wikipedia.org/wiki/Legalized_abortion_and_crime_effect#cite_note-7">Legalized abortion and crime effect</a></p>
+<p>In <span class="citation" data-cites="donohue2001impact">Donohue III and Levitt (2001)</span> a more convicting hypothesis for the decline of crime is presented. The economists also looked at other cities in the US that experienced similar dramatic drops in crime. What they report is that drops in crime rate took place in both rich cities that boosted trier police force and in poor cities that could not afford to. The point out that crimes follow a Pareto-distribution were 95% of all violent crime in big cities is due to a very small population of career criminals. They suggest that the drop was due to Roe Vs Wade passing about 18 years with the outcome that teen-agers and single mothers were able to avoid having children they could not support. The data required lots of massaging (murders are solved long after they are reported, there was a crack epidemic, some place had easier access to abortion etc,) And while this effect seems to occur globally in different localities after an 18 year lag this analysis has been challenged by others researchers several times. See also <a href="https://en.wikipedia.org/wiki/Legalized_abortion_and_crime_effect#cite_note-7">Legalized abortion and crime effect</a></p>
 <p>A third hypothesis is that the crime levels are correlated with the use of leaded gasoline. Lead is highly toxic to the human brain.</p>
-<p>Often when people think about tipping points, they think of kinks in curves. Sometimes a kink in a curve reflects a tipping point, but not always. In many cases these kinks are just exponential growth, because with exponential growth you have a curve that takes off at some point. A book about tipping points <span class="citation" data-cites="gladwell2006tipping">[@gladwell2006tipping]</span>, written by <a href="https://en.wikipedia.org/wiki/Malcolm_Gladwell">Malcolm Gladwell</a>.</p>
+<p>Often when people think about tipping points, they think of kinks in curves. Sometimes a kink in a curve reflects a tipping point, but not always. In many cases these kinks are just exponential growth, because with exponential growth you have a curve that takes off at some point. A book about tipping points <span class="citation" data-cites="gladwell2006tipping">(Gladwell 2006)</span>, written by <a href="https://en.wikipedia.org/wiki/Malcolm_Gladwell">Malcolm Gladwell</a>.</p>
 <p>It is important to see what is a tip and what is not, and also what kind of models produce tips. Two famous models are the percolation model from physics and SIS model from epidemiology. Percolation refers to the question whether or not water can make its way through a certain layer, e.g.&nbsp;the ground or a coffee filter. <strong>SIS</strong> stands for susceptible, infected and susceptible again, which is a simple model for diseases.</p>
 <p>There is a distinction between types of tips. There are direct tips and contextual tips. With a direct tip or active tip, a variable itself changes, which causes it to tip. e.g., a battle might tip a war. With a contextual tip something changes in the environment that makes it possible for the system to move from one state to another. e.g., the density of the trees could tip the spread of a forest fire.</p>
 <p>A system can be stable (in equilibrium), periodic, random or complex. A system can tip from one state to another but there are also tips within classes. e.g., a system might tip from one equilibrium to another equilibrium.</p>
@@ -1250,19 +1381,45 @@ Critical Note
 <h3 class="anchored" data-anchor-id="references">References</h3>
 <p>Note: this page is based on the following source:</p>
 <ul>
-<li><span class="citation" data-cites="page2017modelthinking">[@page2017modelthinking]</span> MOOC, Course material &amp; Transcripts.</li>
-<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">[@fisher2017modelthinking]</span>.</li>
-<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">[@kleinikink2016naturalmoney]</span> and <span class="citation" data-cites="groh2017model">[@groh2017model]</span>.</li>
+<li><span class="citation" data-cites="page2017modelthinking">(Page 2014)</span> MOOC, Course material &amp; Transcripts.</li>
+<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">(Fisher 2014)</span>.</li>
+<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">(Klein Ikink 2016)</span> and <span class="citation" data-cites="groh2017model">(Groh 2017)</span>.</li>
 </ul>
-<div id="refs">
-
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-donohue2001impact" class="csl-entry">
+Donohue III, John J, and Steven D Levitt. 2001. <span>“The Impact of Legalized Abortion on Crime.”</span> <em>The Quarterly Journal of Economics</em> 116 (2): 379–420. <a href="https://pricetheory.uchicago.edu/levitt/Papers/DonohueLevittTheImpactOfLegalized2001.pdf">https://pricetheory.uchicago.edu/levitt/Papers/DonohueLevittTheImpactOfLegalized2001.pdf</a>.
+</div>
+<div id="ref-fisher2017modelthinking" class="csl-entry">
+Fisher, Steve. 2014. <span>“Model Thinking – TA Notes.”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
+<div id="ref-gladwell2006tipping" class="csl-entry">
+Gladwell, M. 2006. <em>The Tipping Point: How Little Things Can Make a Big Difference</em>. Little, Brown.
+</div>
+<div id="ref-groh2017model" class="csl-entry">
+Groh, Rainer. 2017. <span>“Model Thinking - Course Notes by Rainer Groh.”</span> <a href="https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf" class="uri">https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf</a>. November 2017.
+</div>
+<div id="ref-kleinikink2016naturalmoney" class="csl-entry">
+Klein Ikink, Bart. 2016. <span>“Model Thinking.”</span> <a href="https://naturalmoney.org/modelthinking-01.html" class="uri">https://naturalmoney.org/modelthinking-01.html</a>. March 2016.
+</div>
+<div id="ref-page2017modelthinking" class="csl-entry">
+Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
 </div>
 
 
 </section>
 </section>
 
- ]]></description>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{2023,
+  author = {},
+  title = {Lesson 7 - {Tipping} {Points}},
+  date = {2023-08-07},
+  url = {https://orenbochman.github.io/notes-model-thinking/posts/w07.html},
+  langid = {en}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-2023" class="csl-entry quarto-appendix-citeas">
+<span>“Lesson 7 - Tipping Points.”</span> 2023. August 7, 2023. <a href="https://orenbochman.github.io/notes-model-thinking/posts/w07.html">https://orenbochman.github.io/notes-model-thinking/posts/w07.html</a>.
+</div></div></section></div> ]]></description>
   <category>model thinking</category>
   <category>Tipping points</category>
   <category>Percolation models</category>
@@ -1521,7 +1678,7 @@ Critical Note <span class="emoji" data-emoji="poop">💩</span>
 </div>
 <p><strong>The new reality</strong> means that we may want to try something big and new, so we consider non-marginal changes. If we have only data in a small range, this may not help we very much. The multiple peak problem is just one instance of this issue.</p>
 <p>Sometimes, big co-efficient thinking may be helpful, like taxing cigarettes to reduce healthcare costs and raise money to finance healthcare. A new reality might be implementing universal healthcare in the US. <sup>1</sup></p>
-<p>The American Jobs Act is also an example of big coefficient thinking. A new reality was the US interstate highway system. In 1956, the US government allocated $25 billion, which is about $410 billion at today’s prices, for 41,000 miles of roads. This was creating something completely new, so it was difficult to calculate the employment effects. Big coefficient thinking can be good for minor changes but ignores new realities.</p>
+<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;it might be but I prefer to view Universal healthcare and taxing cigatettes say to reduce lung cancer as two differnt issues and htus both likely to be perhaps run in parallel as happened during Barak Obama’s presidency and leter reversed by Donald Trump</p></div></div><p>The American Jobs Act is also an example of big coefficient thinking. A new reality was the US interstate highway system. In 1956, the US government allocated $25 billion, which is about $410 billion at today’s prices, for 41,000 miles of roads. This was creating something completely new, so it was difficult to calculate the employment effects. Big coefficient thinking can be good for minor changes but ignores new realities.</p>
 <div class="{callout-note}">
 <p>Sad to say that: The American Jobs Act is not an example of big coefficient thinking. There are just so many difernt tax cuts and clauses to make us think this is all based out of a big coeffinct in somebody’s regression model <span class="emoji" data-emoji="poop">💩</span> The construction of public works like roads is nothing new - following the great depression the government intiated a massive number of public works project. <span class="emoji" data-emoji="poop">💩</span> It pretty simple for the bean counters in the treasury deprtment to calculate how many jobs building 41,000 miles of road would create. <span class="emoji" data-emoji="poop">💩</span> Both are independent efforts tp solve differnt problems.</p>
 </div>
@@ -1536,24 +1693,40 @@ Critical Note <span class="emoji" data-emoji="poop">💩</span>
 <h2 class="anchored" data-anchor-id="references">References</h2>
 <p>Note: this page is based on the following source:</p>
 <ul>
-<li><span class="citation" data-cites="page2017modelthinking">[@page2017modelthinking]</span> MOOC, Course material &amp; Transcripts.</li>
-<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">[@fisher2017modelthinking]</span>.</li>
-<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">[@kleinikink2016naturalmoney]</span> and <span class="citation" data-cites="groh2017model">[@groh2017model]</span>.</li>
+<li><span class="citation" data-cites="page2017modelthinking">(Page 2014)</span> MOOC, Course material &amp; Transcripts.</li>
+<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">(Fisher 2014)</span>.</li>
+<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">(Klein Ikink 2016)</span> and <span class="citation" data-cites="groh2017model">(Groh 2017)</span>.</li>
 </ul>
-<div id="refs">
-
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-fisher2017modelthinking" class="csl-entry">
+Fisher, Steve. 2014. <span>“Model Thinking – TA Notes.”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
+<div id="ref-groh2017model" class="csl-entry">
+Groh, Rainer. 2017. <span>“Model Thinking - Course Notes by Rainer Groh.”</span> <a href="https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf" class="uri">https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf</a>. November 2017.
+</div>
+<div id="ref-kleinikink2016naturalmoney" class="csl-entry">
+Klein Ikink, Bart. 2016. <span>“Model Thinking.”</span> <a href="https://naturalmoney.org/modelthinking-01.html" class="uri">https://naturalmoney.org/modelthinking-01.html</a>. March 2016.
+</div>
+<div id="ref-page2017modelthinking" class="csl-entry">
+Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
 </div>
 
 
 </section>
 
 
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>it might be but I prefer to view Universal healthcare and taxing cigatettes say to reduce lung cancer as two differnt issues and htus both likely to be perhaps run in parallel as happened during Barak Obama’s presidency and leter reversed by Donald Trump↩︎</p></li>
-</ol>
-</section></div> ]]></description>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{2023,
+  author = {},
+  title = {Lesson 6 - {Categorical} and {Linear} {Models}},
+  date = {2023-08-06},
+  url = {https://orenbochman.github.io/notes-model-thinking/posts/w06.html},
+  langid = {en}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-2023" class="csl-entry quarto-appendix-citeas">
+<span>“Lesson 6 - Categorical and Linear Models.”</span> 2023. August 6,
+2023. <a href="https://orenbochman.github.io/notes-model-thinking/posts/w06.html">https://orenbochman.github.io/notes-model-thinking/posts/w06.html</a>.
+</div></div></section></div> ]]></description>
   <category>model thinking</category>
   <category>Linear model</category>
   <category>Multiple Regression</category>
@@ -1569,6 +1742,7 @@ Critical Note <span class="emoji" data-emoji="poop">💩</span>
   <title>Lesson 5 - Thinking Electrons Modelling People</title>
   <link>https://orenbochman.github.io/notes-model-thinking/posts/w05.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1645,7 +1819,7 @@ Critical Note <span class="emoji" data-emoji="poop">💩</span>
 <li>In group decisions.<sup>1</sup>.</li>
 <li>In simple settings.</li>
 </ul>
-<p><span class="marked">What are the merits of the rational actor model?</span></p>
+<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;disfuntional <a href="https://en.wikipedia.org/wiki/Groupthink">Groupthink</a> in the context of the <a href="https://en.wikipedia.org/wiki/Bay_of_Pigs_Invasion">Bay of Pigs</a> (the failed invasion of Castro’s Cuba in 1961) nearly lead to Armageddon</p></div></div><p><span class="marked">What are the merits of the rational actor model?</span></p>
 <ul>
 <li>It’s a <strong>benchmark</strong> to evaluate actual behavior</li>
 <li>Learning has a tendency to make people more rational</li>
@@ -1674,8 +1848,8 @@ Critical Note <span class="emoji" data-emoji="poop">💩</span>
 </figure>
 </div></div>
 <p>Behavioral models are critical of the rational actor assumption based on evidence of actual behavior, neuroscience, and psychology. Experiments reveal systematic deviations from optimal choices, and neuroscience sheds light on how our brain structure, information processing, and thinking patterns lead us astray from rational actor predictions.</p>
-<p>In Thinking, Fast and Slow, <a href="https://en.wikipedia.org/wiki/Daniel_Kahneman">Daniel Kahneman</a> <span class="citation" data-cites="kahneman2011thinking">@kahneman2011thinking</span> proposes two systems of thought: fast processes driven by emotion and quick cues and slow processes that are more deliberate and rational. Fast thinking makes us susceptible to biases that the rational actor model ignores.</p>
-<p><a href="https://en.wikipedia.org/wiki/Cass_Sunstein">Cass Sunstein</a> and <a href="https://en.wikipedia.org/wiki/Richard_Thaler">Richard Thaler</a> <span class="citation" data-cites="thaler2012nudge">[@thaler2012nudge]</span> argue that these systematic errors in human judgment have significant implications for policy design.</p>
+<p>In Thinking, Fast and Slow, <a href="https://en.wikipedia.org/wiki/Daniel_Kahneman">Daniel Kahneman</a> <span class="citation" data-cites="kahneman2011thinking">Kahneman (2011)</span> proposes two systems of thought: fast processes driven by emotion and quick cues and slow processes that are more deliberate and rational. Fast thinking makes us susceptible to biases that the rational actor model ignores.</p>
+<p><a href="https://en.wikipedia.org/wiki/Cass_Sunstein">Cass Sunstein</a> and <a href="https://en.wikipedia.org/wiki/Richard_Thaler">Richard Thaler</a> <span class="citation" data-cites="thaler2012nudge">(Thaler and Sunstein 2012)</span> argue that these systematic errors in human judgment have significant implications for policy design.</p>
 <p>Four types of well-documented biases cause behavior to deviate from rational behavior:</p>
 <ol type="1">
 <li><strong>Prospect theory</strong> is an agent’s bias to be risk averse for profits yet risk loving for losses.</li>
@@ -1739,24 +1913,46 @@ Critical Note <span class="emoji" data-emoji="poop">💩</span>
 <h2 class="anchored" data-anchor-id="references">References</h2>
 <p>Note: this page is based on the following source:</p>
 <ul>
-<li><span class="citation" data-cites="page2017modelthinking">[@page2017modelthinking]</span> MOOC, Course material &amp; Transcripts.</li>
-<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">[@fisher2017modelthinking]</span>.</li>
-<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">[@kleinikink2016naturalmoney]</span> and <span class="citation" data-cites="groh2017model">[@groh2017model]</span>.</li>
+<li><span class="citation" data-cites="page2017modelthinking">(Page 2014)</span> MOOC, Course material &amp; Transcripts.</li>
+<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">(Fisher 2014)</span>.</li>
+<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">(Klein Ikink 2016)</span> and <span class="citation" data-cites="groh2017model">(Groh 2017)</span>.</li>
 </ul>
-<div id="refs">
-
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-fisher2017modelthinking" class="csl-entry">
+Fisher, Steve. 2014. <span>“Model Thinking – TA Notes.”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
+<div id="ref-groh2017model" class="csl-entry">
+Groh, Rainer. 2017. <span>“Model Thinking - Course Notes by Rainer Groh.”</span> <a href="https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf" class="uri">https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf</a>. November 2017.
+</div>
+<div id="ref-kahneman2011thinking" class="csl-entry">
+Kahneman, Daniel. 2011. <em>Thinking, Fast and Slow</em>. Farrar, Straus; Giroux.
+</div>
+<div id="ref-kleinikink2016naturalmoney" class="csl-entry">
+Klein Ikink, Bart. 2016. <span>“Model Thinking.”</span> <a href="https://naturalmoney.org/modelthinking-01.html" class="uri">https://naturalmoney.org/modelthinking-01.html</a>. March 2016.
+</div>
+<div id="ref-page2017modelthinking" class="csl-entry">
+Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
+<div id="ref-thaler2012nudge" class="csl-entry">
+Thaler, R. H., and C. R. Sunstein. 2012. <em>Nudge: The Final Edition</em>. Penguin Books Limited.
+</div>
 </div>
 
 
 </section>
 
 
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>disfuntional <a href="https://en.wikipedia.org/wiki/Groupthink">Groupthink</a> in the context of the <a href="https://en.wikipedia.org/wiki/Bay_of_Pigs_Invasion">Bay of Pigs</a> (the failed invasion of Castro’s Cuba in 1961) nearly lead to Armageddon↩︎</p></li>
-</ol>
-</section></div> ]]></description>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{2023,
+  author = {},
+  title = {Lesson 5 - {Thinking} {Electrons} {Modelling} {People}},
+  date = {2023-08-05},
+  url = {https://orenbochman.github.io/notes-model-thinking/posts/w05.html},
+  langid = {en}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-2023" class="csl-entry quarto-appendix-citeas">
+<span>“Lesson 5 - Thinking Electrons Modelling People.”</span> 2023.
+August 5, 2023. <a href="https://orenbochman.github.io/notes-model-thinking/posts/w05.html">https://orenbochman.github.io/notes-model-thinking/posts/w05.html</a>.
+</div></div></section></div> ]]></description>
   <category>model thinking</category>
   <category>Rational Actor model</category>
   <category>Behavioral model</category>
@@ -1768,6 +1964,7 @@ Critical Note <span class="emoji" data-emoji="poop">💩</span>
   <title>Lesson 4 - Decision Models</title>
   <link>https://orenbochman.github.io/notes-model-thinking/posts/w04.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1913,7 +2110,7 @@ Tip
 <p>In the final round, there’s a 10% chance of winning $4940 and a 90% chance of losing $60, resulting in a value of <img src="https://latex.codecogs.com/png.latex?0.9%20%5Ctimes%20-%2060%20USD%20+%200.1%20%5Ctimes%204940%20USD%20=%20440%20USD"> The chance of reaching the final and potentially winning $440 is 5%, worth $22. There’s a 95% chance of losing $20, worth -$19. Therefore, the value of writing the first essay is $3 compared to $0 for not participating.</p>
 </div>
 <p>We can also use decision trees to infer what other people think about probabilities.<sup>1</sup>.</p>
-</section>
+<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;this is a useful ability for Bayesian games</p></div></div></section>
 <section id="insights-into-others-incentives" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="insights-into-others-incentives">Insights into others’ incentives</h3>
 <div id="exm-investment-tree" class="theorem example page-columns page-full">
@@ -2030,24 +2227,39 @@ Tip
 <h2 class="anchored" data-anchor-id="references">References</h2>
 <p>Note: this page is based on the following source:</p>
 <ul>
-<li><span class="citation" data-cites="page2017modelthinking">[@page2017modelthinking]</span> MOOC, Course material &amp; Transcripts.</li>
-<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">[@fisher2017modelthinking]</span>.</li>
-<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">[@kleinikink2016naturalmoney]</span> and <span class="citation" data-cites="groh2017model">[@groh2017model]</span>.</li>
+<li><span class="citation" data-cites="page2017modelthinking">(Page 2014)</span> MOOC, Course material &amp; Transcripts.</li>
+<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">(Fisher 2014)</span>.</li>
+<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">(Klein Ikink 2016)</span> and <span class="citation" data-cites="groh2017model">(Groh 2017)</span>.</li>
 </ul>
-<div id="refs">
-
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-fisher2017modelthinking" class="csl-entry">
+Fisher, Steve. 2014. <span>“Model Thinking – TA Notes.”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
+<div id="ref-groh2017model" class="csl-entry">
+Groh, Rainer. 2017. <span>“Model Thinking - Course Notes by Rainer Groh.”</span> <a href="https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf" class="uri">https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf</a>. November 2017.
+</div>
+<div id="ref-kleinikink2016naturalmoney" class="csl-entry">
+Klein Ikink, Bart. 2016. <span>“Model Thinking.”</span> <a href="https://naturalmoney.org/modelthinking-01.html" class="uri">https://naturalmoney.org/modelthinking-01.html</a>. March 2016.
+</div>
+<div id="ref-page2017modelthinking" class="csl-entry">
+Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
 </div>
 
 
 </section>
 
 
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>this is a useful ability for Bayesian games↩︎</p></li>
-</ol>
-</section></div> ]]></description>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{2023,
+  author = {},
+  title = {Lesson 4 - {Decision} {Models}},
+  date = {2023-08-04},
+  url = {https://orenbochman.github.io/notes-model-thinking/posts/w04.html},
+  langid = {en}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-2023" class="csl-entry quarto-appendix-citeas">
+<span>“Lesson 4 - Decision Models.”</span> 2023. August 4, 2023. <a href="https://orenbochman.github.io/notes-model-thinking/posts/w04.html">https://orenbochman.github.io/notes-model-thinking/posts/w04.html</a>.
+</div></div></section></div> ]]></description>
   <category>model thinking</category>
   <category>Decision Models</category>
   <category>Multi-criterion Decision-making</category>
@@ -2061,6 +2273,7 @@ Tip
   <title>Lesson 3 - Aggregation</title>
   <link>https://orenbochman.github.io/notes-model-thinking/posts/w03.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -2308,7 +2521,7 @@ Figure&nbsp;4: Bell curve and empirical rule
 <p>We can now use this standard deviation to make statistical inferences. Airlines overbook to increase their profits, so they need to know the probability of someone not getting a seat. This allows them to estimate the expected cost of offering people a second ticket to take the next flight.</p>
 <div id="exm-plane-seats" class="theorem example">
 <p><span class="theorem-title"><strong>Example 5 (Flight Overbooking)</strong></span> &nbsp;</p>
-<div id="7829c75e" class="cell" data-execution_count="1">
+<div id="5b2bbdc4" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> math</span>
@@ -3161,8 +3374,7 @@ TLDR: Schelling👍🏽, Granovettor,👍🏽 Standing Ovation 👍🏽
 <li>Which segregation level can we expect from an intolerance level of 1/3? <sup>3</sup></li>
 <li>What happens to the convergence time if we increase the intolerance? And to the final segregation level? <sup>4</sup></li>
 </ol>
-
-<div class="no-row-height column-margin column-container"><div class="">
+<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;in <span class="citation" data-cites="Mauro2022segregation">Nanni (2023)</span></p></div><div id="fn2"><p><sup>2</sup>&nbsp;in <span class="citation" data-cites="Mauro2022segregation">Nanni (2023)</span></p></div><div id="fn3"><p><sup>3</sup>&nbsp;in <span class="citation" data-cites="Mauro2022segregation">Nanni (2023)</span></p></div><div id="fn4"><p><sup>4</sup>&nbsp;in <span class="citation" data-cites="Mauro2022segregation">Nanni (2023)</span></p></div><div class="">
 <p><strong>Legend</strong></p>
 <ul>
 <li>Red is White,</li>
@@ -3190,7 +3402,8 @@ TLDR: Schelling👍🏽, Granovettor,👍🏽 Standing Ovation 👍🏽
 <figcaption>Race &amp; ethnicity: New York by <a href="https://www.flickr.com/photos/walkingsf/albums/72157624812674967/">Erica Fischer</a> CC-BY-SA</figcaption>
 </figure>
 </div>
-</div></div></section>
+</div></div>
+</section>
 <section id="sorting_and_peer_effects" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="sorting_and_peer_effects">Sorting and peer effects introduction</h2>
 <p>Why do individuals who study, reside, or spend time together often exhibit similarities in appearance, thought processes, and behaviors?</p>
@@ -3242,7 +3455,7 @@ TLDR: Schelling👍🏽, Granovettor,👍🏽 Standing Ovation 👍🏽
 </div></div><dl>
 <dt>Adverse Selection</dt>
 <dd>
-<p>When most sellers lack incentives to participate in a market, we end up with a homogenous market full of inferior products. This was investigated in the seminal paper <span class="citation" data-cites="Akerlof1970Lemons">[@Akerlof1970Lemons]</span> called the “Market for Lemons,” where the author discusses <strong>adverse selection</strong> in <em>economics</em></p>
+<p>When most sellers lack incentives to participate in a market, we end up with a homogenous market full of inferior products. This was investigated in the seminal paper <span class="citation" data-cites="Akerlof1970Lemons">(Akerlof 1970)</span> called the “Market for Lemons,” where the author discusses <strong>adverse selection</strong> in <em>economics</em></p>
 </dd>
 </dl>
 <p>If you look at the map of Detroit, you see that people of different ethnicity tend to live together in segregated communities. Birds of a feather flock together, and people who look like each other tend to live together. Since people can not change their skin color, the mechanism for this is <strong>Sorting</strong>.</p>
@@ -3318,7 +3531,7 @@ TLDR: Schelling👍🏽, Granovettor,👍🏽 Standing Ovation 👍🏽
 
 
 
-<p>In research papers <span class="citation" data-cites="schelling1969models">[@schelling1969models]</span>, <span class="citation" data-cites="schelling1971dynamic">[@schelling1971dynamic]</span>, and later in <span class="citation" data-cites="schelling1978micromotives">[@schelling1978micromotives]</span>, his famous yet erudite opus Nobel Laureate in Economist and noted game theorist <a href="https://en.wikipedia.org/wiki/Thomas_Schelling">Thomas Schelling</a> outlines how he applied his unique brand of game theory to explore how ethnic and income-based segregation arises in a city. Schelling worked out his model by hand using a game board for a city and some pennies for his agents. He soon discovered that encoding homophily as an incentive for agents to relocate rapidly segregated his city.</p>
+<p>In research papers <span class="citation" data-cites="schelling1969models">(Schelling 1969)</span>, <span class="citation" data-cites="schelling1971dynamic">(Schelling 1971)</span>, and later in <span class="citation" data-cites="schelling1978micromotives">(Schelling 1978)</span>, his famous yet erudite opus Nobel Laureate in Economist and noted game theorist <a href="https://en.wikipedia.org/wiki/Thomas_Schelling">Thomas Schelling</a> outlines how he applied his unique brand of game theory to explore how ethnic and income-based segregation arises in a city. Schelling worked out his model by hand using a game board for a city and some pennies for his agents. He soon discovered that encoding homophily as an incentive for agents to relocate rapidly segregated his city.</p>
 <p>Today we can simulate using Agent Based Modeling (ABM) packages like <a href="https://www.netlogoweb.org/launch#http://ccl.northwestern.edu/netlogo/models/models/Sample%20Models/Social%20Science/Segregation.nlogo">Netlogo</a> or <a href="w02_schelling_mesa.html">Mesa</a> to implement Schelling’s model. with different thresholds.</p>
 <div id="tbl-segregation-simulations" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -3411,7 +3624,7 @@ Table&nbsp;1: outcomes for different thresholds
 </div></div><p>In this lesson, we set our sights on the <strong>Index of Dissimilarity</strong> as a measure of segregation between two demographic groups living in the same metropolitan region. Its advantage is it’s easy to calculate. Its main shortcoming is that it cannot handle multiple groups, nor can it deal with a continuous variable like wealth. In this section, we consider wealth a dichotomous variable: people are either rich or poor.</p>
 <p>What I wanted from this section was to learn the logic for creating such statistics/metrics by myself. I guess that this is not so easy as it seems. However there are a number of other approaches for evaluating segregation and wealth in equality.</p>
 <p>Metrics follows</p>
-<p>The metric we developed for evaluating segregation called <strong>The index of dissimilarity</strong> was introduced in <span class="citation" data-cites="duncan1955methodological">[@duncan1955methodological]</span>.</p>
+<p>The metric we developed for evaluating segregation called <strong>The index of dissimilarity</strong> was introduced in <span class="citation" data-cites="duncan1955methodological">(Duncan and Duncan 1955)</span>.</p>
 <p>Let’s posit a scenario in which a mix of upper and lower class agent live in 24 residential tracts, each inhabited by 10 individuals. Within this configuration, 12 luxury tracts are priced exclusively for rich individuals, 6 tracts of public residential facilities cater only the poor while the remaining 6 tracts share a demographic mix of rich and poor in equal proportion.</p>
 <p>The aggregate count of the upper class is <img src="https://latex.codecogs.com/png.latex?%0A12%5Ctimes%2010%20+%206%5Ctimes%205%20=%20150%0A"></p>
 <p>Whereas the total number of the lower class amounts to <img src="https://latex.codecogs.com/png.latex?%0A6%5Ctimes%2010%20+%206%5Ctimes%205%20=%2090%0A"></p>
@@ -3549,8 +3762,8 @@ font-style: inherit;">*</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1024</span>)</span></code></pre></div>
 <div class="cell-output cell-output-display">
-<table id="itables_3ef6e48b_cd36_40cb_9bfe_1b2bb445bbbe" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><caption><p>Segregation in US cities with a population greater than 20k based on
-the 2020 census</p> {#a8ea5a89}</caption>
+<table id="itables_d21893ae_d0c8_435e_9280_22801375ee3f" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><caption><p>Segregation in US cities with a population greater than 20k based on
+the 2020 census</p> {#ccf9e80a}</caption>
 <thead>
     <tr style="text-align: right;">
       
@@ -3631,7 +3844,7 @@ Loading ITables v2.1.0 from the internet...
 <script type="module">
     import {DataTable, jQuery as $} from 'https://www.unpkg.com/dt_for_itables@2.0.7/dt_bundle.js';
 
-    document.querySelectorAll("#itables_3ef6e48b_cd36_40cb_9bfe_1b2bb445bbbe:not(.dataTable)").forEach(table => {
+    document.querySelectorAll("#itables_d21893ae_d0c8_435e_9280_22801375ee3f:not(.dataTable)").forEach(table => {
         // Define the table data
         const data = [[1, "Detroit city, MI", 0.806, "High Segregation"], [2, "Newark city, NJ", 0.6806, "High Segregation"], [3, "Hialeah city, FL", 0.654, "High Segregation"], [4, "Chicago city, IL", 0.6223, "High Segregation"], [5, "Milwaukee city, WI", 0.5936, "High Segregation"], [6, "Cleveland city, OH", 0.5478, "High Segregation"], [7, "New York city, NY", 0.4379, "High Segregation"], [8, "Irving city, TX", 0.4082, "High Segregation"], [9, "Miami city, FL", 0.4074, "High Segregation"], [10, "St. Louis city, MO", 0.4069, "High Segregation"], [11, "Philadelphia city, P", 0.3974, "High Segregation"], [12, "Dallas city, TX", 0.3968, "High Segregation"], [13, "Irvine city, CA", 0.3876, "High Segregation"], [14, "Santa Ana city, CA", 0.3762, "High Segregation"], [15, "Atlanta city, GA", 0.363, "High Segregation"], [16, "Oakland city, CA", 0.3572, "High Segregation"], [17, "Memphis city, TN", 0.3453, "High Segregation"], [18, "Buffalo city, NY", 0.3362, "High Segregation"], [19, "Baltimore city, MD", 0.3335, "High Segregation"], [20, "Boston city, MA", 0.3333, "High Segregation"], [21, "Fremont city, CA", 0.3297, "High Segregation"], [22, "Washington city, DC", 0.3295, "High Segregation"], [23, "New Orleans city, LA", 0.3226, "High Segregation"], [24, "Houston city, TX", 0.3187, "High Segregation"], [25, "Los Angeles city, CA", 0.3088, "High Segregation"], [26, "Cincinnati city, OH", 0.3006, "High Segregation"], [27, "Jersey City city, NJ", 0.2953, "High Segregation"], [28, "St. Paul city, MN", 0.2949, "High Segregation"], [29, "Orlando city, FL", 0.2877, "High Segregation"], [30, "Baton Rouge city, LA", 0.2817, "High Segregation"], [31, "Little Rock city, AR", 0.2813, "High Segregation"], [32, "Richmond city, VA", 0.2794, "High Segregation"], [33, "Tampa city, FL", 0.2787, "High Segregation"], [34, "Kansas City city, MO", 0.2754, "High Segregation"], [35, "Frisco city, TX", 0.2743, "High Segregation"], [36, "Plano city, TX", 0.2689, "High Segregation"], [37, "Indianapolis city (b", 0.2538, "High Segregation"], [38, "Chula Vista city, CA", 0.2522, "High Segregation"], [39, "San Diego city, CA", 0.2514, "High Segregation"], [40, "Phoenix city, AZ", 0.2429, "High Segregation"], [41, "Charlotte city, NC", 0.2347, "High Segregation"], [42, "St. Petersburg city,", 0.2278, "High Segregation"], [43, "Scottsdale city, AZ", 0.2241, "High Segregation"], [44, "Fort Worth city, TX", 0.2232, "High Segregation"], [45, "Omaha city, NE", 0.2229, "High Segregation"], [46, "Yonkers city, NY", 0.2207, "High Segregation"], [47, "Huntsville city, AL", 0.2206, "High Segregation"], [48, "Minneapolis city, MN", 0.2206, "High Segregation"], [49, "Pittsburgh city, PA", 0.2195, "High Segregation"], [50, "Rochester city, NY", 0.2182, "High Segregation"], [51, "Montgomery city, AL", 0.2135, "High Segregation"], [52, "Oklahoma City city, ", 0.2119, "High Segregation"], [53, "Tulsa city, OK", 0.2118, "High Segregation"], [54, "Columbus city, OH", 0.2088, "High Segregation"], [55, "Long Beach city, CA", 0.2077, "High Segregation"], [56, "Greensboro city, NC", 0.2055, "High Segregation"], [57, "Nashville-Davidson m", 0.203, "High Segregation"], [58, "Denver city, CO", 0.1971, "High Segregation"], [59, "Columbus city, GA", 0.1893, "High Segregation"], [60, "North Las Vegas city", 0.1888, "High Segregation"], [61, "Raleigh city, NC", 0.1878, "High Segregation"], [62, "Norfolk city, VA", 0.1858, "High Segregation"], [63, "San Jose city, CA", 0.1852, "High Segregation"], [64, "Winston-Salem city, ", 0.1851, "High Segregation"], [65, "Garland city, TX", 0.1811, "High Segregation"], [66, "San Francisco city, ", 0.1797, "High Segregation"], [67, "Louisville/Jefferson", 0.1783, "High Segregation"], [68, "Aurora city, CO", 0.1756, "Low-Medium Segregation"], [69, "Sacramento city, CA", 0.1731, "Low-Medium Segregation"], [70, "Jacksonville city, F", 0.1705, "Low-Medium Segregation"], [71, "McKinney city, TX", 0.1698, "Low-Medium Segregation"], [72, "Durham city, NC", 0.1686, "Low-Medium Segregation"], [73, "Amarillo city, TX", 0.1678, "Low-Medium Segregation"], [74, "San Bernardino city,", 0.1673, "Low-Medium Segregation"], [75, "Toledo city, OH", 0.1661, "Low-Medium Segregation"], [76, "Austin city, TX", 0.1613, "Low-Medium Segregation"], [77, "Fort Wayne city, IN", 0.161, "Low-Medium Segregation"], [78, "Lubbock city, TX", 0.1572, "Low-Medium Segregation"], [79, "Fontana city, CA", 0.153, "Low-Medium Segregation"], [80, "Augusta-Richmond Cou", 0.151, "Low-Medium Segregation"], [81, "Arlington city, TX", 0.15, "Low-Medium Segregation"], [82, "Glendale city, AZ", 0.1487, "Low-Medium Segregation"], [83, "Virginia Beach city,", 0.1487, "Low-Medium Segregation"], [84, "Wichita city, KS", 0.1485, "Low-Medium Segregation"], [85, "Las Vegas city, NV", 0.144, "Low-Medium Segregation"], [86, "San Antonio city, TX", 0.1411, "Low-Medium Segregation"], [87, "Tucson city, AZ", 0.1406, "Low-Medium Segregation"], [88, "Stockton city, CA", 0.1402, "Low-Medium Segregation"], [89, "Anaheim city, CA", 0.14, "Low-Medium Segregation"], [90, "Bakersfield city, CA", 0.1318, "Low-Medium Segregation"], [91, "Fresno city, CA", 0.1289, "Low-Medium Segregation"], [92, "Des Moines city, IA", 0.1284, "Low-Medium Segregation"], [93, "Chandler city, AZ", 0.1276, "Low-Medium Segregation"], [94, "Moreno Valley city, ", 0.1253, "Low-Medium Segregation"], [95, "Chesapeake city, VA", 0.1181, "Low-Medium Segregation"], [96, "Lexington-Fayette ur", 0.1166, "Low-Medium Segregation"], [97, "Mesa city, AZ", 0.1146, "Low-Medium Segregation"], [98, "Tacoma city, WA", 0.1135, "Low-Medium Segregation"], [99, "Henderson city, NV", 0.1111, "Low-Medium Segregation"], [100, "Corpus Christi city,", 0.1075, "Low-Medium Segregation"], [101, "Seattle city, WA", 0.1043, "Low-Medium Segregation"], [102, "Worcester city, MA", 0.0999, "Low-Medium Segregation"], [103, "Riverside city, CA", 0.0967, "Low-Medium Segregation"], [104, "Albuquerque city, NM", 0.0966, "Low-Medium Segregation"], [105, "Reno city, NV", 0.0908, "Low-Medium Segregation"], [106, "Gilbert town, AZ", 0.0879, "Low-Medium Segregation"], [107, "Fayetteville city, N", 0.0853, "Low-Medium Segregation"], [108, "Modesto city, CA", 0.0812, "Low-Medium Segregation"], [109, "Madison city, WI", 0.0812, "Low-Medium Segregation"], [110, "Anchorage municipali", 0.0775, "Low-Medium Segregation"], [111, "Portland city, OR", 0.0683, "Low-Medium Segregation"], [112, "El Paso city, TX", 0.0644, "Low-Medium Segregation"], [114, "Lincoln city, NE", 0.0464, "Low-Medium Segregation"], [115, "Cape Coral city, FL", 0.0379, "Low-Medium Segregation"], [116, "Boise City city, ID", 0.0379, "Low-Medium Segregation"], [118, "Spokane city, WA", 0.0219, "Low-Medium Segregation"], [119, "Laredo city, TX", 0.0109, "Low-Medium Segregation"], [113, "Colorado Springs cit", 0.0531, "Integrated"], [117, "Port St. Lucie city,", 0.027, "Integrated"]];
 
@@ -3646,7 +3859,7 @@ Loading ITables v2.1.0 from the internet...
 </div>
 </div>
 <p>One more point to consider is, given all the simplifying assumptions, how useful is the scheduling model for modeling reality?</p>
-<p>In real life, residential real estate is usually bought through careful deliberation, and the key factors are price per square meter and the largest loan one can get. This seems to be a far cry from the Schelling model. This point is considered in great detail in <span class="citation" data-cites="Hatna2012Schelling">[@Hatna2012Schelling]</span>, which looks at segregation in two mixed cities in Israel.</p>
+<p>In real life, residential real estate is usually bought through careful deliberation, and the key factors are price per square meter and the largest loan one can get. This seems to be a far cry from the Schelling model. This point is considered in great detail in <span class="citation" data-cites="Hatna2012Schelling">(Hatna and Benenson 2012)</span>, which looks at segregation in two mixed cities in Israel.</p>
 </section>
 <section id="peer_effects" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="peer_effects">Peer Effects</h2>
@@ -3666,7 +3879,7 @@ Loading ITables v2.1.0 from the internet...
 <figcaption>Granovettor’s model can explain riots</figcaption>
 </figure>
 </div></div><p><strong>Peer effects</strong> can have a <strong>contagious mechanism</strong> a kin to the spread of diseases. Another aspect of peer effects is called “the tail is wagging the dog,” where a small minority sets the tone for the whole group. Situations where behavior in which the most extremist people at the tail end of the political distribution determine what will happen will always be challenging to predict, for instance, political uprisings like the fall of the <a href="https://en.wikipedia.org/wiki/Berlin_Wall">Berlin Wall</a> and more recently the <a href="https://en.wikipedia.org/wiki/Orange_Revolution">Orange Revolution</a> in Ukraine. In such cases, it is difficult to predict what will happen, and the Granovetter Model explains that it is a microcosm in which we can study why it is so challenging to predict such events.</p>
-<p>In <span class="citation" data-cites="granovetter1983threshold granovetter1986threshold granovetter1988threshold">[@granovetter1983threshold; @granovetter1986threshold; @granovetter1988threshold]</span> the authors discusses <strong>Granovettor’s Threshold Model</strong> which can be described by:</p>
+<p>In <span class="citation" data-cites="granovetter1983threshold granovetter1986threshold granovetter1988threshold">(Granovetter and Soong 1983, 1986, 1988)</span> the authors discusses <strong>Granovettor’s Threshold Model</strong> which can be described by:</p>
 <ul>
 <li><img src="https://latex.codecogs.com/png.latex?N"> population size.</li>
 <li>Agent <em>j</em> has a participation threshold <img src="https://latex.codecogs.com/png.latex?T_j"> and will only participate if <img src="https://latex.codecogs.com/png.latex?T_j"> others individuals participate.</li>
@@ -3804,7 +4017,7 @@ Table&nbsp;4: another riots
 </div></div>
 <p>Granovettor’s Threshold model can explain participation in risky activities where risks and rewards are tied to the number of peers participating.</p>
 <blockquote class="blockquote">
-<p>The basic SOP can be stated as follows: A brilliant economics lecture ends, and the audience begins to applaud. The applause builds, and tentatively, a few audience members may or may not decide to stand. Does a standing ovation ensue, or does the enthusiasm fizzle? — <span class="citation" data-cites="miller2004standing">[@miller2004standing]</span></p>
+<p>The basic SOP can be stated as follows: A brilliant economics lecture ends, and the audience begins to applaud. The applause builds, and tentatively, a few audience members may or may not decide to stand. Does a standing ovation ensue, or does the enthusiasm fizzle? — <span class="citation" data-cites="miller2004standing">(Miller and Page 2004)</span></p>
 </blockquote>
 <p>The Formal Model:</p>
 <ul>
@@ -3829,7 +4042,7 @@ Table&nbsp;4: another riots
 <hr>
 <p>The authors discuss the math and internals of their models as form of noisy channel. Agents need to fuse a signal based on their private information with the information coming from their peers and arrive at a binary decision.</p>
 <p>The standing ovation model by Scott and Miller is intentionally presented in the most vague form according to their later publication. This is rather annoying as without a more formal spec it isn’t possible to reproduce any results. Also most people don’t actually seem to implement it as explained in the lesson or the paper.</p>
-<p>I found the paper <span class="citation" data-cites="miller2004standing">[@miller2004standing]</span> rather tiresome and had to have a few goes at it. The authors’ exhortation exaltation on the grandeur of their model is matched by the vagueness of its definitions — basically there are any number of variants and extensions of the standing ovation models. Criticism aside I noticed some point of interest in the paper:</p>
+<p>I found the paper <span class="citation" data-cites="miller2004standing">(Miller and Page 2004)</span> rather tiresome and had to have a few goes at it. The authors’ exhortation exaltation on the grandeur of their model is matched by the vagueness of its definitions — basically there are any number of variants and extensions of the standing ovation models. Criticism aside I noticed some point of interest in the paper:</p>
 <ol type="1">
 <li><strong>cascades</strong> I was a momentarily shocked to see many references to <a href="https://en.wikipedia.org/wiki/Information_cascade">information cascades</a> in the paper, which I mentioned above. It is evident the authors are well versed on this subject well begging the question, why it this not covered in the course but rather named tips etc.</li>
 <li><strong>ANTs</strong> (Active Nonlinear Tests) are another interesting idea - i.e.&nbsp;using them to break the model. This seems to be a from of fuzz testing. At this point though I was still more interested in demonstrating that the model actually works.</li>
@@ -3891,7 +4104,7 @@ Table&nbsp;4: another riots
 </ul></li>
 <li><p>do a run to test the paper’s suggested metrics</p></li>
 </ol>
-<p>The model has the following elements.</p>
+<div class="no-row-height column-margin column-container"><div id="fn5"><p><sup>5</sup>&nbsp;<span class="citation" data-cites="miller2004standing">Miller and Page (2004)</span></p></div><div id="fn6"><p><sup>6</sup>&nbsp;<span class="citation" data-cites="miller2004standing">Miller and Page (2004)</span></p></div><div id="fn7"><p><sup>7</sup>&nbsp;<span class="citation" data-cites="Cole2020SOM">Cole (2020)</span></p></div><div id="fn8"><p><sup>8</sup>&nbsp;<span class="citation" data-cites="Cole2020SOM">Cole (2020)</span></p></div><div id="fn9"><p><sup>9</sup>&nbsp;<span class="citation" data-cites="Cole2020SOM">Cole (2020)</span></p></div><div id="fn10"><p><sup>10</sup>&nbsp;<span class="citation" data-cites="Cole2020SOM">Cole (2020)</span></p></div></div><p>The model has the following elements.</p>
 <ul>
 <li><img src="https://latex.codecogs.com/png.latex?Q%20%5Cin%20%5B0,100%5D"> is the quality of the show</li>
 <li><img src="https://latex.codecogs.com/png.latex?%5Cepsilon"> is an error or diversity</li>
@@ -3907,7 +4120,7 @@ Table&nbsp;4: another riots
 <ol type="1">
 <li></li>
 </ol>
-<div id="071b5751" class="cell" data-execution_count="2">
+<div id="ffd09d6d" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> mesa</span>
@@ -4237,7 +4450,7 @@ background-color: null;
 font-style: inherit;">self</span>)</span></code></pre></div>
 </div>
 <p>Some code to visualize the state</p>
-<div id="8dc35640" class="cell" data-execution_count="3">
+<div id="cbe70f79" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
@@ -4439,7 +4652,7 @@ background-color: null;
 font-style: inherit;">"</span>)</span>
 <span id="cb3-34">    plt.show()</span></code></pre></div>
 </div>
-<div id="df675c17" class="cell" data-execution_count="4">
+<div id="5a62210e" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Create the model</span></span>
@@ -4493,7 +4706,7 @@ Figure&nbsp;1: Standing Ovation Model - Initial Grid State
 </div>
 </div>
 <p>Simulate the standing ovation model for 15 steps.</p>
-<div id="20630998" class="cell" data-execution_count="6">
+<div id="ca6e61c0" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Run the model for a certain number of steps</span></span>
@@ -4561,23 +4774,23 @@ font-style: inherit;">#so_model_df.Standing.plot()</span></span></code></pre></d
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">0</td>
-<td>95</td>
+<td>86</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">1</td>
-<td>135</td>
+<td>144</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2</td>
-<td>173</td>
+<td>203</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">3</td>
-<td>204</td>
+<td>238</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">4</td>
-<td>232</td>
+<td>258</td>
 </tr>
 </tbody>
 </table>
@@ -4639,19 +4852,72 @@ Figure&nbsp;3: Standing Ovation Model - Growth Analysis
 </div></div>
 <p>The challenge of distinguishing whether individuals associate with one another due to sorting (as discussed by Schelling) or peer influence (illustrated by the standing ovation example) varies in complexity. In specific scenarios, like Racial segregation, the distinction is straightforward.</p>
 <p>However, the situation becomes murkier in other instances. Consider the phenomenon of happy people gravitating towards other happy individuals and the same pattern is observed among those who are unhappy. In these cases, both sorting and peer effects could be at play, and often, it’s challenging to pinpoint which is the driving force since the end result appears the same for both mechanisms. Therefore, simply observing the outcome won’t provide clarity. Sorting, characterized by the physical movement of individuals, necessitates dynamic data for accurate identification.</p>
-<p>Author <a href="https://en.wikipedia.org/wiki/Bill_Bishop_(author)">Bill Bishop</a>, discusses sorting in <span class="citation" data-cites="bishop2009big">[@bishop2009big]</span> the. For example, in recent years, many counties in the USA have become more polarized. Bishop argues that this occurs due to sorting. However, gerrymandering is a more likely root cause.</p>
-<p><a href="https://en.wikipedia.org/wiki/Nicholas_Christakis">Nicholas A. Christakis</a> and <a href="https://en.wikipedia.org/wiki/James_H._Fowler">James H. Fowler</a>, discusses peer effects in <span class="citation" data-cites="christakis2009connected">[@christakis2009connected]</span>.</p>
+<p>Author <a href="https://en.wikipedia.org/wiki/Bill_Bishop_(author)">Bill Bishop</a>, discusses sorting in <span class="citation" data-cites="bishop2009big">(Bishop 2009)</span> the. For example, in recent years, many counties in the USA have become more polarized. Bishop argues that this occurs due to sorting. However, gerrymandering is a more likely root cause.</p>
+<p><a href="https://en.wikipedia.org/wiki/Nicholas_Christakis">Nicholas A. Christakis</a> and <a href="https://en.wikipedia.org/wiki/James_H._Fowler">James H. Fowler</a>, discusses peer effects in <span class="citation" data-cites="christakis2009connected">(Christakis and Fowler 2009)</span>.</p>
 <p>With migration data, it’s simpler to establish whether like-mindedness is caused by sorting or peer effects.</p>
 <section id="references" class="level3">
 <h3 class="anchored" data-anchor-id="references">References</h3>
 <p>Note: this page is based on the following source:</p>
 <ul>
-<li><span class="citation" data-cites="page2017modelthinking">[@page2017modelthinking]</span> MOOC, Course material &amp; Transcripts.</li>
-<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">[@fisher2017modelthinking]</span>.</li>
-<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">[@kleinikink2016naturalmoney]</span> and <span class="citation" data-cites="groh2017model">[@groh2017model]</span>.</li>
+<li><span class="citation" data-cites="page2017modelthinking">(Page 2014)</span> MOOC, Course material &amp; Transcripts.</li>
+<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">(Fisher 2014)</span>.</li>
+<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">(Klein Ikink 2016)</span> and <span class="citation" data-cites="groh2017model">(Groh 2017)</span>.</li>
 </ul>
-<div id="refs">
-
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-Akerlof1970Lemons" class="csl-entry">
+Akerlof, George A. 1970. <span>“The Market for "Lemons": Quality Uncertainty and the Market Mechanism.”</span> <em>The Quarterly Journal of Economics</em> 84 (3): 488–500.
+</div>
+<div id="ref-bishop2009big" class="csl-entry">
+Bishop, B. 2009. <em>The Big Sort: Why the Clustering of Like-Minded America Is Tearing Us Apart</em>. Houghton Mifflin Harcourt.
+</div>
+<div id="ref-christakis2009connected" class="csl-entry">
+Christakis, N. A., and J. H. Fowler. 2009. <em>Connected: The Surprising Power of Our Social Networks and How They Shape Our Lives</em>. Little, Brown.
+</div>
+<div id="ref-Cole2020SOM" class="csl-entry">
+Cole, Lewis. 2020. <span>“Standing Ovation Model.”</span> 2020. <a href="https://lewiscoleblog.com/standing-ovation">https://lewiscoleblog.com/standing-ovation</a>.
+</div>
+<div id="ref-duncan1955methodological" class="csl-entry">
+Duncan, Otis Dudley, and Beverly Duncan. 1955. <span>“A Methodological Analysis of Segregation Indexes.”</span> <em>American Sociological Review</em> 20 (2): 210–17.
+</div>
+<div id="ref-fisher2017modelthinking" class="csl-entry">
+Fisher, Steve. 2014. <span>“Model Thinking – TA Notes.”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
+<div id="ref-granovetter1983threshold" class="csl-entry">
+Granovetter, Mark, and Roland Soong. 1983. <span>“Threshold Models of Diffusion and Collective Behavior.”</span> <em>Journal of Mathematical Sociology</em>.
+</div>
+<div id="ref-granovetter1986threshold" class="csl-entry">
+———. 1986. <span>“Threshold Models of Interpersonal Effects in Consumer Demand.”</span> <em>Journal of Economic Behavior &amp; Organization</em> 7 (1): 83–99.
+</div>
+<div id="ref-granovetter1988threshold" class="csl-entry">
+———. 1988. <span>“Threshold Models of Diversity: Chinese Restaurants, Residential Segregation, and the Spiral of Silence.”</span> <em>Sociological Methodology</em>, 69–104.
+</div>
+<div id="ref-groh2017model" class="csl-entry">
+Groh, Rainer. 2017. <span>“Model Thinking - Course Notes by Rainer Groh.”</span> <a href="https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf" class="uri">https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf</a>. November 2017.
+</div>
+<div id="ref-Hatna2012Schelling" class="csl-entry">
+Hatna, Erez, and Itzhak Benenson. 2012. <span>“The Schelling Model of Ethnic Residential Dynamics: Beyond the Integrated - Segregated Dichotomy of Patterns.”</span> <em>J. Artificial Societies and Social Simulation</em> 15 (1). <a href="http://dblp.uni-trier.de/db/journals/jasss/jasss15.html#HatnaB12">http://dblp.uni-trier.de/db/journals/jasss/jasss15.html#HatnaB12</a>.
+</div>
+<div id="ref-kleinikink2016naturalmoney" class="csl-entry">
+Klein Ikink, Bart. 2016. <span>“Model Thinking.”</span> <a href="https://naturalmoney.org/modelthinking-01.html" class="uri">https://naturalmoney.org/modelthinking-01.html</a>. March 2016.
+</div>
+<div id="ref-miller2004standing" class="csl-entry">
+Miller, John H, and Scott E Page. 2004. <span>“The Standing Ovation Problem.”</span> <em>Complexity</em>. Wiley Subscription Services, Inc., A Wiley Company Hoboken.
+</div>
+<div id="ref-Mauro2022segregation" class="csl-entry">
+Nanni, Mirco. 2023. <span>“Segregation Models.”</span> 2023. <a href="http://didawiki.cli.di.unipi.it/lib/exe/fetch.php/geospatialanalytics/gsa/lesson_09_-_segregation.pdf">http://didawiki.cli.di.unipi.it/lib/exe/fetch.php/geospatialanalytics/gsa/lesson_09_-_segregation.pdf</a>.
+</div>
+<div id="ref-page2017modelthinking" class="csl-entry">
+Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
+<div id="ref-schelling1969models" class="csl-entry">
+Schelling, Thomas C. 1969. <span>“Models of Segregation.”</span> <em>The American Economic Review</em> 59 (2): 488–93.
+</div>
+<div id="ref-schelling1971dynamic" class="csl-entry">
+———. 1971. <span>“Dynamic Models of Segregation.”</span> <em>Journal of Mathematical Sociology</em> 1 (2): 143–86.
+</div>
+<div id="ref-schelling1978micromotives" class="csl-entry">
+———. 1978. <em>Micromotives and Macrobehavior</em>. Fels Lectures on Public Policy Analysis. Norton. <a href="https://www.google.com/books?id=4C5mQgAACAAJ">https://www.google.com/books?id=4C5mQgAACAAJ</a>.
+</div>
 </div>
 
 
@@ -4659,21 +4925,17 @@ Figure&nbsp;3: Standing Ovation Model - Growth Analysis
 </section>
 
 
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>in <span class="citation" data-cites="Mauro2022segregation">@Mauro2022segregation</span>↩︎</p></li>
-<li id="fn2"><p>in <span class="citation" data-cites="Mauro2022segregation">@Mauro2022segregation</span>↩︎</p></li>
-<li id="fn3"><p>in <span class="citation" data-cites="Mauro2022segregation">@Mauro2022segregation</span>↩︎</p></li>
-<li id="fn4"><p>in <span class="citation" data-cites="Mauro2022segregation">@Mauro2022segregation</span>↩︎</p></li>
-<li id="fn5"><p><span class="citation" data-cites="miller2004standing">@miller2004standing</span>↩︎</p></li>
-<li id="fn6"><p><span class="citation" data-cites="miller2004standing">@miller2004standing</span>↩︎</p></li>
-<li id="fn7"><p><span class="citation" data-cites="Cole2020SOM">@Cole2020SOM</span>↩︎</p></li>
-<li id="fn8"><p><span class="citation" data-cites="Cole2020SOM">@Cole2020SOM</span>↩︎</p></li>
-<li id="fn9"><p><span class="citation" data-cites="Cole2020SOM">@Cole2020SOM</span>↩︎</p></li>
-<li id="fn10"><p><span class="citation" data-cites="Cole2020SOM">@Cole2020SOM</span>↩︎</p></li>
-</ol>
-</section></div> ]]></description>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{2023,
+  author = {},
+  title = {Lesson 2 - {Segregation} and {Peer} {Effects}},
+  date = {2023-08-02},
+  url = {https://orenbochman.github.io/notes-model-thinking/posts/w02.html},
+  langid = {en}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-2023" class="csl-entry quarto-appendix-citeas">
+<span>“Lesson 2 - Segregation and Peer Effects.”</span> 2023. August 2,
+2023. <a href="https://orenbochman.github.io/notes-model-thinking/posts/w02.html">https://orenbochman.github.io/notes-model-thinking/posts/w02.html</a>.
+</div></div></section></div> ]]></description>
   <category>model thinking</category>
   <category>sorting</category>
   <category>peer effects</category>
@@ -4810,9 +5072,9 @@ TLDR: Skip this lecture. <span class="emoji" data-emoji="poop">💩</span> <span
 <p><img src="https://orenbochman.github.io/notes-model-thinking/posts/images/mt_george_e_box.jpg" class="img-fluid figure-img"></p>
 <figcaption>George E. P. Box — Statistician, Walmart Model, possible sweet tooth.</figcaption>
 </figure>
-</div></div><blockquote class="blockquote">
-<p>Essentially, all models are wrong, but some are useful. — <a href="https://en.wikipedia.org/wiki/George%20E.%20P.%20Box"><strong>George E. P. Box</strong></a> <span class="citation" data-cites="box1976">[@box1976]</span> <sup>1</sup></p>
-</blockquote>
+</div></div><div class="page-columns page-full"><blockquote class="blockquote">
+<p>Essentially, all models are wrong, but some are useful. — <a href="https://en.wikipedia.org/wiki/George%20E.%20P.%20Box"><strong>George E. P. Box</strong></a> <span class="citation" data-cites="box1976">(Box 1976)</span> <sup>1</sup></p>
+</blockquote><div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;:wondering: Both the course and, even more, so his book, <span class="citation" data-cites="page2018model">(Page 2018)</span>, are punctuated with quotations that repeatedly interrupt the flow, gaining nothing in the process when the author might have explained some of the more puzzling assertions he made. Let’s keep these under reign, emphasizing the few that abbreviate and aid in communicating a salient point.</p></div></div></div>
 <p>This obligatory quote on models is the most famous, and here is the next:</p>
 <blockquote class="blockquote">
 <p>It is difficult to make predictions, especially about the future. — <a href="https://en.wikipedia.org/wiki/Yogi_Berra"><strong>Yogi Berra</strong></a></p>
@@ -4821,7 +5083,7 @@ TLDR: Skip this lecture. <span class="emoji" data-emoji="poop">💩</span> <span
 <section id="reasons-to-use-models" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="reasons-to-use-models">Reasons to use models:</h2>
 <p><span class="emoji" data-emoji="-1">👎</span> I don’t buy the claims that knowing how to use a model is a requirement to be an <em>intelligent citizen of the world</em>. <sup>2</sup> Dr.&nbsp;Page makes a better claim about knowing many models and which one makes more sense in a given context - but that’s a different ballpark.</p>
-<p><span class="emoji" data-emoji="+1">👍</span> Using models helps us <strong>think</strong> <span class="emoji" data-emoji="thinking">🤔</span> <strong>more clearly</strong><sup>3</sup>. <mark>When models explicate assumptions, we can use them to divide and conquer <strong>big problems</strong> into more manageable, clearly labeled parts</mark> (like endogenous variable, exogenous variable, effect size, p-value, statistical-significance, practical-significance) and <mark>keep us focused <span class="emoji" data-emoji="camera_flash">📸</span> by prioritizing <span class="emoji" data-emoji="rotating_light">🚨</span> the effects</mark> while omitting insignificant minutia.</p>
+<div class="no-row-height column-margin column-container"><div id="fn2"><p><sup>2</sup>&nbsp;<span class="emoji" data-emoji="-1">👎</span> While knowing how to model can be helpful, I’m pretty confident it is not required. Newsflash <span class="emoji" data-emoji="newspaper">📰</span> The UN isn’t giving any world citizen cards even if you pass this course <span class="emoji" data-emoji="laughing">😆</span></p></div><div id="fn3"><p><sup>3</sup>&nbsp;<span class="emoji" data-emoji="thought_balloon">💭</span> thinking can get complicated as models grow, there can be many features, many steps so we should remember to keep asking <strong>“How does this model make my thinking clearer?”</strong> to keep us on the right track!</p></div></div><p><span class="emoji" data-emoji="+1">👍</span> Using models helps us <strong>think</strong> <span class="emoji" data-emoji="thinking">🤔</span> <strong>more clearly</strong><sup>3</sup>. <mark>When models explicate assumptions, we can use them to divide and conquer <strong>big problems</strong> into more manageable, clearly labeled parts</mark> (like endogenous variable, exogenous variable, effect size, p-value, statistical-significance, practical-significance) and <mark>keep us focused <span class="emoji" data-emoji="camera_flash">📸</span> by prioritizing <span class="emoji" data-emoji="rotating_light">🚨</span> the effects</mark> while omitting insignificant minutia.</p>
 <p><span class="emoji" data-emoji="+1">👍</span> Becoming a better decision-maker! Experts relying on intuition and rules of thumb tend to exaggerate the importance of edge cases and frequently fall victim to their bias. For these reasons, a simple linear model calibrated to actual data often makes better predictions.</p>
 <p><span class="emoji" data-emoji="+1">👍</span> Models help us to use and <strong>understand</strong>, <strong>decide</strong>, <strong>plan</strong>, and <strong>design</strong>. The primary use of modeling in industry within production systems is where they replace human decision-makers to make recommendations or decisions.</p>
 
@@ -4844,12 +5106,12 @@ TLDR: Skip this lecture. <span class="emoji" data-emoji="poop">💩</span> <span
 <li>Keep the biggest term of a linear model, AKA “the big coefficient” <sup>4</sup></li>
 <li>Equilibrium in game theory</li>
 </ol>
-<p>So, we get two dimensions of fertility.</p>
+<div class="no-row-height column-margin column-container"><div id="fn4"><p><sup>4</sup>&nbsp;rare</p></div></div><p>So, we get two dimensions of fertility.</p>
 <ul>
 <li>same law for different phenomena. <sup>5</sup></li>
 <li>same math, different applications. <sup>6</sup></li>
 </ul>
-</section>
+<div class="no-row-height column-margin column-container"><div id="fn5"><p><sup>5</sup>&nbsp;rare</p></div><div id="fn6"><p><sup>6</sup>&nbsp;Obvious</p></div></div></section>
 <section id="sec-intelligent-citizens-of-the-world" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="sec-intelligent-citizens-of-the-world">Intelligent citizens of the world</h2>
 <blockquote class="blockquote">
@@ -4857,7 +5119,7 @@ TLDR: Skip this lecture. <span class="emoji" data-emoji="poop">💩</span> <span
 </blockquote>
 <p>Models work because they are <em>abstractions</em> that simplify.</p>
 <p>Models have become essential to the <em>lingua franca</em> <sup>7</sup> of academia, business, and even politics. Companies regularly place models in their production systems, automating decisions and improving internal processes.</p>
-<p>Dr Page alludes to the <a href="https://en.wikipedia.org/wiki/Great_Books_of_the_Western_World">Great Books Movement</a>, which by all accounts was a failure not only tried to sell out copyright books to its clients but also claimed to inform the intelligentsia with a collection of ideas they should be familiar with. One such idea is <strong>“tie yourself to the mast”</strong>, alluding to Odysseus’ request from the Odyssey where he wished to the siren’s song. This idea recurs with the British painter Turner, who wanted to observe a storm.</p>
+<div class="no-row-height column-margin column-container"><div id="fn7"><p><sup>7</sup>&nbsp;new language</p></div></div><p>Dr Page alludes to the <a href="https://en.wikipedia.org/wiki/Great_Books_of_the_Western_World">Great Books Movement</a>, which by all accounts was a failure not only tried to sell out copyright books to its clients but also claimed to inform the intelligentsia with a collection of ideas they should be familiar with. One such idea is <strong>“tie yourself to the mast”</strong>, alluding to Odysseus’ request from the Odyssey where he wished to the siren’s song. This idea recurs with the British painter Turner, who wanted to observe a storm.</p>
 <p>Dr.&nbsp;Page points out that proverbs that encode these ideas sometimes come in contradictory pairs, e.g.:</p>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -4893,7 +5155,7 @@ TLDR: Skip this lecture. <span class="emoji" data-emoji="poop">💩</span> <span
 <figcaption>Performance By Tetlock</figcaption>
 </figure>
 </div></div>
-<p>This graph, taken from <span class="citation" data-cites="tetlock2015superforecasting">[@tetlock2015superforecasting]</span> by Psychologist <a href="https://en.wikipedia.org/wiki/Philip_E._Tetlock">Philip Tetlock</a>‘s research into the accuracy of political prediction by experts, compares the analysts’ accuracy called <em>calibration</em> on the horizontal axis, with how <em>conservative</em> their predictions are on average.</p>
+<p>This graph, taken from <span class="citation" data-cites="tetlock2015superforecasting">(Tetlock and Gardner 2016)</span> by Psychologist <a href="https://en.wikipedia.org/wiki/Philip_E._Tetlock">Philip Tetlock</a>‘s research into the accuracy of political prediction by experts, compares the analysts’ accuracy called <em>calibration</em> on the horizontal axis, with how <em>conservative</em> their predictions are on average.</p>
 <p>Let us review the groups we can see in the graph:</p>
 <ul>
 <li><p><span class="emoji" data-emoji="billed_cap">🧢</span> <strong>Undergrads</strong> make the worst analysts.</p></li>
@@ -4901,10 +5163,10 @@ TLDR: Skip this lecture. <span class="emoji" data-emoji="poop">💩</span> <span
 <li><p><span class="emoji" data-emoji="fox_face">🦊</span> <strong>Foxes</strong> are the analysts whom Tetlock describes as utilizing <span class="emoji" data-emoji="crystal_ball">🔮</span> many <span class="emoji" data-emoji="crystal_ball">🔮</span> loose <span class="emoji" data-emoji="crystal_ball">🔮</span> models <span class="emoji" data-emoji="crystal_ball">🔮</span>. They tend to be better than the Hedgehogs and can become good predictors once they <span class="emoji" data-emoji="school">🏫</span> learn to <span class="emoji" data-emoji="straight_ruler">📏</span> calibrate. <sup>8</sup></p></li>
 <li><p><span class="emoji" data-emoji="robot">🤖</span> <strong>Formal models</strong>, Even simple linear ones, tend to outperform the foxes. <sup>9</sup></p></li>
 </ul>
-<p><span class="emoji" data-emoji="-1">👎</span> <strong>Models make us humble</strong>. Using a model can dramatically change our initial picture of the situation. Models that work for a long time can stop working overnight, and in many cases, their users don’t know why or how to fix them.</p>
-<div id="exm-2008-crash" class="theorem example">
+<div class="no-row-height column-margin column-container"><div id="fn8"><p><sup>8</sup>&nbsp;Tatelocks describes this as learning to update their evaluation dozens or hundreds of times as they collect and evaluate new evidence. These updates are usually getting smaller as time goes by.</p></div><div id="fn9"><p><sup>9</sup>&nbsp;Formal models are mathematical abstractions. An essential point omitted in the lesson is that they tested these formal models based on the data provided by the above hedgehogs and foxes.</p></div></div><p><span class="emoji" data-emoji="-1">👎</span> <strong>Models make us humble</strong>. Using a model can dramatically change our initial picture of the situation. Models that work for a long time can stop working overnight, and in many cases, their users don’t know why or how to fix them.</p>
+<div id="exm-2008-crash" class="theorem example page-columns page-full">
 <p><span class="theorem-title"><strong>Example 1 (Real Estate Crash of 2008)</strong></span> Most people who used a simple linear model of house prices failed to forecast <strong>the housing crash of 2008</strong>. <sup>10</sup></p>
-<p>Scott stated that analysts who predicted the crash could have made a killing on the stock market. This is the plot of the <a href="https://en.wikipedia.org/wiki/The_Big_Short">The Big Short</a>. But this is overselling the model and ignoring the real complexities.</p>
+<div class="no-row-height column-margin column-container"><div id="fn10"><p><sup>10</sup>&nbsp;<span class="emoji" data-emoji="thought_balloon">💭</span> so Models may make us complacent</p></div></div><p>Scott stated that analysts who predicted the crash could have made a killing on the stock market. This is the plot of the <a href="https://en.wikipedia.org/wiki/The_Big_Short">The Big Short</a>. But this is overselling the model and ignoring the real complexities.</p>
 <ol type="1">
 <li><span class="emoji" data-emoji="imp">👿</span> almost everyone in the know knew there was a Real Estate bubble</li>
 <li>Bubbles are very profitable <span class="emoji" data-emoji="dollar">💵</span>: till they explode <span class="emoji" data-emoji="exploding_head">🤯</span>.</li>
@@ -4927,7 +5189,7 @@ TLDR: Skip this lecture. <span class="emoji" data-emoji="poop">💩</span> <span
 </div><div class="">
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/ts5MKtXNpMQ" title="A prediction for the future of Iran" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 </div></div>
-<p>Not all forecasters are humble but <strong>Good forecasters use models <em>tempered</em> by personal judgement</strong>. <a href="https://en.wikipedia.org/wiki/Bruce_Bueno_de_Mesquita">Bruce Bueno de Mesquita</a>, International Conflict predictor. Recent books include <span class="citation" data-cites="de2011dictator">@de2011dictator</span>; <span class="citation" data-cites="de2009predictioneer">@de2009predictioneer</span>; and <span class="citation" data-cites="de2005logic">@de2005logic</span>. Models give guidance that blends experience and decision-making.</p>
+<p>Not all forecasters are humble but <strong>Good forecasters use models <em>tempered</em> by personal judgement</strong>. <a href="https://en.wikipedia.org/wiki/Bruce_Bueno_de_Mesquita">Bruce Bueno de Mesquita</a>, International Conflict predictor. Recent books include <span class="citation" data-cites="de2011dictator">B. B. De Mesquita and Smith (2011)</span>; <span class="citation" data-cites="de2009predictioneer">B. B. De Mesquita (2009)</span>; and <span class="citation" data-cites="de2005logic">B. Bueno. De Mesquita et al. (2005)</span>. Models give guidance that blends experience and decision-making.</p>
 <p>The course is concerned primarily with agent based models. However, these are often rule based models, which in certain cases be formalized using game theory which may allow a more mathematical approach.</p>
 
 <div class="no-row-height column-margin column-container"><div class="quarto-figure quarto-figure-center">
@@ -4936,7 +5198,7 @@ TLDR: Skip this lecture. <span class="emoji" data-emoji="poop">💩</span> <span
 <figcaption>Game theory model</figcaption>
 </figure>
 </div></div></section>
-<section id="thinking-more-clearly" class="level2">
+<section id="thinking-more-clearly" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="thinking-more-clearly">Thinking <span class="emoji" data-emoji="thinking">🤔</span> more clearly</h2>
 <blockquote class="blockquote">
 <p>A problem well-stated is a problem half-solved — <a href="https://en.wikipedia.org/wiki/Charles_F._Kettering">Charles Kettering</a>, head of research at GM</p>
@@ -4964,28 +5226,28 @@ TLDR: Skip this lecture. <span class="emoji" data-emoji="poop">💩</span> <span
 </div>
 <p><strong>Inductively</strong> explore adding one case at a time until you arrive at a general rule</p>
 <p>Models of <span class="emoji" data-emoji="butterfly">🦋</span> dynamical systems <span class="emoji" data-emoji="cloud_with_lightning_and_rain">⛈️</span> have different classes <sup>11</sup> of outcomes, these are:</p>
-<ol type="1">
+<div class="no-row-height column-margin column-container"><div id="fn11"><p><sup>11</sup>&nbsp;each may take different forms</p></div></div><ol type="1">
 <li><span class="emoji" data-emoji="safety_pin">🧷</span> Equilibrium (characterized by some steady state pattern)</li>
 <li><span class="emoji" data-emoji="cyclone">🌀</span> Cycle (characterized by some periodicity)</li>
 <li><span class="emoji" data-emoji="clown_face">🤡</span> Random (characterized by Probability distribution)</li>
 <li><span class="emoji" data-emoji="compass">🧭</span> Complex <sup>12</sup> (characterized by Strange attractors)</li>
 </ol>
-<p>Models can help us to predict which of these outcomes will materialize.</p>
+<div class="no-row-height column-margin column-container"><div id="fn12"><p><sup>12</sup>&nbsp;Chaotic</p></div></div><p>Models can help us to predict which of these outcomes will materialize.</p>
 <p>For instance, the supply and demand for oil might increase in a relatively consistent pattern. The cost of oil is influenced by various factors, including reserves, market participants, political dynamics, etc., making its price complex and difficult to forecast, yet not entirely unpredictable.</p>
 <p><strong>Identify logical boundaries</strong>. Models help us determine what context is relevant and at what point it is no longer applicable.</p>
 <p><strong>Facilitate communication</strong>. Taking politics as an example: by evaluating how liberal or conservative both a candidate and a voter are, we can place them in a model to see which candidate aligns more closely with the voter’s preferences. This can be used to choose the best talking point for a call to that voter soliciting a campgn contribution.</p>
 </section>
-<section id="sec-using-and-understanding-data" class="level2">
+<section id="sec-using-and-understanding-data" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="sec-using-and-understanding-data">Using and understanding data</h2>
 <p>Another model type is the explicative model, which can be used to understand and understand data.</p>
 <p><strong>Understand patterns</strong>. e.g., fluctuations in GDP growth can be explained by a business cycle model.</p>
 <p><strong>Extrapolate</strong>. e.g., if the price of a house in a neighborhood is a linear function of the number of <img src="https://latex.codecogs.com/png.latex?m%5E2">, and you know the number of <img src="https://latex.codecogs.com/png.latex?m%5E2">, then you could use the function to predict the price of the house via the point value on the function graph;</p>
 <p><strong>Produce bounds</strong> models that capture uncertainty like an estimate of inflation ten years hence should produce a range rather than one specific number; this range can be used as a lower and upper bound in any downstream tasks</p>
 <p><strong>Retrodict</strong> <sup>13</sup>. We can use models with the data to predict the past. If we have missing data in our historical records, we can put our model to work to interpolate the missing past. This is also called retrodiction or imputation. Another way we use past data is for model cross-validation, where we omit part of the data from model training and then evaluate the model on the held-out data.</p>
-<p><strong>Predict other things</strong>. If you build a model that is good at predicting the unemployment rate, you are well on the way to predicting the inflation rate, which we call a downstream task. In astronomy, early models of the solar system predicted an unknown planet; guided by this, astronomers pointed the telescopes into the night sky and soon discovered Neptune.</p>
+<div class="no-row-height column-margin column-container"><div id="fn13"><p><sup>13</sup>&nbsp;predict the past</p></div></div><p><strong>Predict other things</strong>. If you build a model that is good at predicting the unemployment rate, you are well on the way to predicting the inflation rate, which we call a downstream task. In astronomy, early models of the solar system predicted an unknown planet; guided by this, astronomers pointed the telescopes into the night sky and soon discovered Neptune.</p>
 <p><strong>Informed data collection</strong>. When we build a a model to predict school performance to help improve education policy, we begin by naming the parts, in these case, we might choose the following explanatory variables: teacher quality, the parents’ highest level of education, absences, the school’s budget, size of the classroom, etc. We fit the model and we can quickly see if we need more data. Thus the model informs us determine which and how much data we need to collect.</p>
 <p><strong>Estimate hidden parameters</strong><sup>14</sup>. We can use data to tell us more about the model and then use the model to tell us more about the world.</p>
-<p>the SIR model is an established contagion model describing the spread of diseases. SIR is an acronym for the compartments of <em>Susceptible</em>, <em>Infected</em>, and <em>Recovered</em> individuals. Once we observe the data on how many people are in each compartment, we can predict how an epidemic will progress over time.</p>
+<div class="no-row-height column-margin column-container"><div id="fn14"><p><sup>14</sup>&nbsp;latent variables</p></div></div><p>the SIR model is an established contagion model describing the spread of diseases. SIR is an acronym for the compartments of <em>Susceptible</em>, <em>Infected</em>, and <em>Recovered</em> individuals. Once we observe the data on how many people are in each compartment, we can predict how an epidemic will progress over time.</p>
 <p><strong>Calibrate</strong>. After constructing a model, one should calibrate it to the data so that its predictions are as close as possible to our view of the real world.</p>
 </section>
 <section id="sec-models-for-decisions-strategy-and-design" class="level2">
@@ -5007,12 +5269,12 @@ Figure&nbsp;1: <strong>A Diagrammatic Depiction of Co-Risk Feedbacks</strong>
 </figcaption>
 </figure>
 </div></div><p>When probabilistic distributions are weighted with the cost of each possible alternative, managers get a view of the risk associated with different decisions. c.f. co-risks chart, which suggests why the US government let Lehman Brothers fail, but bailed out AIG. The economy eventually recovered and it appears the US government made a sound decision.</p>
-<div id="exm-why-company-network" class="theorem example">
+<div id="exm-why-company-network" class="theorem example page-columns page-full">
 <p><span class="theorem-title"><strong>Example 2 (Company bailout)</strong></span> We can use the <a href="@fig-co-risks">co-risk graph</a> to understand the network of relationships between financial institutions like Morgan Stanley, Bear Sterns, AIG, etc. in, in terms of how their economic success or failure are correlated to one another. Notice the hubs in red, Bear Sterns, and AIG. The layman’s term for this is <a href="https://en.wikipedia.org/wiki/Too_big_to_fail">Too big to Fail</a>.</p>
 <p>The US government, facing the prospect of cascading failure of it largest financial institutions, has to decide which banks to bail out and which ones to allow to fail. The graph which shows the dependence between the top financial institutions indicating how likely one would fail would cascade to the other.</p>
 <p>If AIG were to fail, this would be the worst-case scenario. If we sum up its incoming arrows, we get about 3000 units of systemic risk influence. Now, if we consider Lehman Brothers, it has about 190 units of systemic risk. This type of chart makes it clear that failing to bail out AIG would risk all the big banks going bankrupt, while letting Lehman Brothers fail would impact only a small part of the market</p>
 <p>p.s. Lehman Brothers is no more; AIG paid the bailout in full and ahead of schedule. <sup>15</sup></p>
-</div>
+<div class="no-row-height column-margin column-container"><div id="fn15"><p><sup>15</sup>&nbsp;Q. How do we make a model like this?</p></div></div></div>
 <div id="exm-monty-hall-problem" class="theorem example page-columns page-full">
 <p><span class="theorem-title"><strong>Example 3 (Monty hall problem)</strong></span> &nbsp;</p>
 
@@ -5037,7 +5299,7 @@ Figure&nbsp;1: <strong>A Diagrammatic Depiction of Co-Risk Feedbacks</strong>
 <li>The <a href="https://en.wikipedia.org/wiki/Monty_Hall_problem"><strong>Monty Hall problem</strong></a> is named after <a href="https://en.wikipedia.org/wiki/Monty_Hall"><strong>Monty Hall</strong></a>, the host of the show <a href="https://en.wikipedia.org/wiki/Let%27s_Make_a_Deal"><strong>Lets Make a Deal</strong></a> that aired during the 1970’s.</li>
 </ul>
 <blockquote class="blockquote">
-<p>Suppose you’re on a game show, and you’re given the choice of three doors: Behind one door is a car; behind the others, goats. You pick a door, say No.&nbsp;1, and the host, who knows what’s behind the doors, opens another door, say No.&nbsp;3, which has a goat. He then says to you, “Do you want to pick door No.&nbsp;2?” Is it to your advantage to switch your choice? – <span class="citation" data-cites="vos1990ask">[@vos1990ask]</span></p>
+<p>Suppose you’re on a game show, and you’re given the choice of three doors: Behind one door is a car; behind the others, goats. You pick a door, say No.&nbsp;1, and the host, who knows what’s behind the doors, opens another door, say No.&nbsp;3, which has a goat. He then says to you, “Do you want to pick door No.&nbsp;2?” Is it to your advantage to switch your choice? – <span class="citation" data-cites="vos1990ask">(Vos Savant 1990)</span></p>
 </blockquote>
 <p>When Savant wrote in her column, the player should switch. She received thousands of letters from reader, almost all disagreeing with her.</p>
 <p>I have added a decision tree explaining her solution although Wikipedia from which I sourced the images provides greater depth of analysis as well as alternative ways to get to the solution.</p>
@@ -5164,38 +5426,60 @@ Figure&nbsp;1: <strong>A Diagrammatic Depiction of Co-Risk Feedbacks</strong>
 <h3 class="anchored" data-anchor-id="references">References</h3>
 <p>Note: this page is based on the following source:</p>
 <ul>
-<li><span class="citation" data-cites="page2017modelthinking">[@page2017modelthinking]</span> MOOC, Course material &amp; Transcripts.</li>
-<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">[@fisher2017modelthinking]</span>.</li>
-<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">[@kleinikink2016naturalmoney]</span> and <span class="citation" data-cites="groh2017model">[@groh2017model]</span>.</li>
+<li><span class="citation" data-cites="page2017modelthinking">(Page 2014)</span> MOOC, Course material &amp; Transcripts.</li>
+<li>TA Notes by <span class="citation" data-cites="fisher2017modelthinking">(Fisher 2014)</span>.</li>
+<li>Student notes by in <span class="citation" data-cites="kleinikink2016naturalmoney">(Klein Ikink 2016)</span> and <span class="citation" data-cites="groh2017model">(Groh 2017)</span>.</li>
 </ul>
-<div id="refs">
-
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-box1976" class="csl-entry">
+Box, George E. P. 1976. <span>“Science and Statistics.”</span> <em>Journal of the American Statistical Association</em> 71 (356): 791–99. <a href="https://doi.org/10.1080/01621459.1976.10480949">https://doi.org/10.1080/01621459.1976.10480949</a>.
+</div>
+<div id="ref-de2009predictioneer" class="csl-entry">
+De Mesquita, Bruce Bueno. 2009. <em>The Predictioneer’s Game: Using the Logic of Brazen Self-Interest to See and Shape the Future</em>. Random House Publishing Group. <a href="https://www.google.com/books?id=EMMMMUqGIboC&amp;gbpv=0">https://www.google.com/books?id=EMMMMUqGIboC&amp;gbpv=0</a>.
+</div>
+<div id="ref-de2005logic" class="csl-entry">
+De Mesquita, Bruce Bueno., A. Smith, R. M. Siverson, and J. D. Morrow. 2005. <em>The Logic of Political Survival</em>. The MIT Press. MIT Press.
+</div>
+<div id="ref-de2011dictator" class="csl-entry">
+De Mesquita, Bruce Bueno, and A. Smith. 2011. <em>The Dictator’s Handbook: Why Bad Behavior Is Almost Always Good Politics</em>. PublicAffairs.
+</div>
+<div id="ref-fisher2017modelthinking" class="csl-entry">
+Fisher, Steve. 2014. <span>“Model Thinking – TA Notes.”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
+<div id="ref-groh2017model" class="csl-entry">
+Groh, Rainer. 2017. <span>“Model Thinking - Course Notes by Rainer Groh.”</span> <a href="https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf" class="uri">https://aerospaceengineeringblog.com/wp-content/uploads/2017/11/ModelThinking.pdf</a>. November 2017.
+</div>
+<div id="ref-kleinikink2016naturalmoney" class="csl-entry">
+Klein Ikink, Bart. 2016. <span>“Model Thinking.”</span> <a href="https://naturalmoney.org/modelthinking-01.html" class="uri">https://naturalmoney.org/modelthinking-01.html</a>. March 2016.
+</div>
+<div id="ref-page2017modelthinking" class="csl-entry">
+Page, Scott E. 2014. <span>“Model Thinking [MOOC].”</span> <a href="https://www.coursera.org/learn/model-thinking" class="uri">https://www.coursera.org/learn/model-thinking</a>; Coursera. November 2014.
+</div>
+<div id="ref-page2018model" class="csl-entry">
+———. 2018. <em>The Model Thinker: What You Need to Know to Make Data Work for You</em>. Basic Books. <a href="https://www.hachettebookgroup.com/titles/scott-e-page/the-model-thinker/9780465094622/?lens=basic-books">https://www.hachettebookgroup.com/titles/scott-e-page/the-model-thinker/9780465094622/?lens=basic-books</a>.
+</div>
+<div id="ref-tetlock2015superforecasting" class="csl-entry">
+Tetlock, Philip E., and Dan Gardner. 2016. <em>Superforecasting: The Art and Science of Prediction</em>. Random House. <a href="https://www.google.com/books?id=hC_qBQAAQBAJ">https://www.google.com/books?id=hC_qBQAAQBAJ</a>.
+</div>
+<div id="ref-vos1990ask" class="csl-entry">
+Vos Savant, Marilyn. 1990. <span>“Ask Marilyn.”</span> <em>Parade Magazine</em> 15 (9).
+</div>
 </div>
 
 
 </section>
 
 
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>:wondering: Both the course and, even more, so his book, <span class="citation" data-cites="page2018model">[@page2018model]</span>, are punctuated with quotations that repeatedly interrupt the flow, gaining nothing in the process when the author might have explained some of the more puzzling assertions he made. Let’s keep these under reign, emphasizing the few that abbreviate and aid in communicating a salient point.↩︎</p></li>
-<li id="fn2"><p><span class="emoji" data-emoji="-1">👎</span> While knowing how to model can be helpful, I’m pretty confident it is not required. Newsflash <span class="emoji" data-emoji="newspaper">📰</span> The UN isn’t giving any world citizen cards even if you pass this course <span class="emoji" data-emoji="laughing">😆</span>↩︎</p></li>
-<li id="fn3"><p><span class="emoji" data-emoji="thought_balloon">💭</span> thinking can get complicated as models grow, there can be many features, many steps so we should remember to keep asking <strong>“How does this model make my thinking clearer?”</strong> to keep us on the right track!↩︎</p></li>
-<li id="fn4"><p>rare↩︎</p></li>
-<li id="fn5"><p>rare↩︎</p></li>
-<li id="fn6"><p>Obvious↩︎</p></li>
-<li id="fn7"><p>new language↩︎</p></li>
-<li id="fn8"><p>Tatelocks describes this as learning to update their evaluation dozens or hundreds of times as they collect and evaluate new evidence. These updates are usually getting smaller as time goes by.↩︎</p></li>
-<li id="fn9"><p>Formal models are mathematical abstractions. An essential point omitted in the lesson is that they tested these formal models based on the data provided by the above hedgehogs and foxes.↩︎</p></li>
-<li id="fn10"><p><span class="emoji" data-emoji="thought_balloon">💭</span> so Models may make us complacent↩︎</p></li>
-<li id="fn11"><p>each may take different forms↩︎</p></li>
-<li id="fn12"><p>Chaotic↩︎</p></li>
-<li id="fn13"><p>predict the past↩︎</p></li>
-<li id="fn14"><p>latent variables↩︎</p></li>
-<li id="fn15"><p>Q. How do we make a model like this?↩︎</p></li>
-</ol>
-</section></div> ]]></description>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{2023,
+  author = {},
+  title = {Lesson 1 - {Why} {Model?}},
+  date = {2023-08-01},
+  url = {https://orenbochman.github.io/notes-model-thinking/posts/w01.html},
+  langid = {en}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-2023" class="csl-entry quarto-appendix-citeas">
+<span>“Lesson 1 - Why Model?”</span> 2023. August 1, 2023. <a href="https://orenbochman.github.io/notes-model-thinking/posts/w01.html">https://orenbochman.github.io/notes-model-thinking/posts/w01.html</a>.
+</div></div></section></div> ]]></description>
   <category>course introduction</category>
   <category>model thinking</category>
   <guid>https://orenbochman.github.io/notes-model-thinking/posts/w01.html</guid>
