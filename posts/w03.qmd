@@ -2,12 +2,8 @@
 date: 2023-08-03
 title: Lesson 3  - Aggregation
 categories: ["Model thinking", "Aggregation", "Central limit theorem", "Six Sigma", "Conway's game of life", "Cellular automata", "Langton’s Lambda", "Condorcet paradox","Arrow Impossibility theorem"]
-execute:
-    cache: false
-draft: False
-editor: 
-  markdown: 
-    wrap: sentence
+#execute:
+#    cache: false
 ---
 
 > More is different.

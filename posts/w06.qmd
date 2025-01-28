@@ -2,7 +2,6 @@
 date: 2023-08-06
 title: Lesson 6 - Categorical and Linear Models
 categories: ["Model thinking", "Linear model", "Multiple Regression", "Categorical Models","Logistic Regression","R-squared","Big coefficient","Mew reality thinking"]
-
 ---
 
 ## Introduction to categorical, linear, and nonlinear models {#sec-introduction-to-categorical-linear-and-non-linear-models}

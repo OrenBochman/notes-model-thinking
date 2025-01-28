@@ -51,10 +51,7 @@ format:
     image-placeholder: images/dnn_cover.png
     title-block-banner: images/banner_deep.jpg
 
-
-
 bibliography: references.bib
-
 
 editor: 
   markdown: 

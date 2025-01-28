@@ -1,7 +1,6 @@
 ---
 date: 2023-08-05
 title: Lesson 5 - Thinking Electrons Modelling People
-subtitle: Model Thinking
 categories: ["Model thinking","Rational Actor model", "Behavioral model", "Rule-based models"]
 ---
 
